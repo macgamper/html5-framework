@@ -1,0 +1,500 @@
+/* ***********************************************************************************
+FileName	: basics.css
+Date		: 13.11.2014
+Author		: gamperm
+Purpose		: Framework - Reset, Typo, Maincomponents
+
+Modification Log:
+
+Name		Date			Description
+================================================================================
+gamperm		13.11.2014		minor enhancements (title-classes .h1, .h2)
+gamperm		21.05.2014		added suffixes as UPPERCASE
+gamperm		26.09.2013		Created
+*********************************************************************************** */
+
+	
+/* =basic elements & typo
+--------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+body {
+	font: 0.875em/1.5 Arial, Helvetica, Geneva, sans-serif;
+	}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0 0 0.75em;
+	}
+h1, .h1 {
+	font-size: 2em;
+	}
+h2, .h2 {
+	font-size: 1.33em;
+	}
+h3, .h3 {
+	font-size: 1.17em;
+	}
+h4, .h4 {
+	font-size: 1em;
+	}
+h5, .h5 {
+	margin: 0 0 0.4em;
+	font-size: 1em;
+	}
+h6, .h6 {
+	margin: 0 0 0.2em;
+	font-size: 1em;
+	}
+p {
+	
+	}
+p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, 
+.box, .media-responsive {
+	margin: 0 0 1.4em;
+	}
+li ul,li ol {
+	margin: 0;
+	}
+ul, ol {
+	padding-left: 0;
+	}
+ul {
+	list-style: outside disc;
+	}
+ol {
+	list-style-position: outside;
+	}
+ol ol, ul ul {
+	margin-bottom: 0;
+	}
+li {
+	margin: 0 0 0 1.5em;
+	}
+ol ol li, ul ul li {
+	margin: 0 0 0 3em;
+	}
+dd {
+	padding-left: 1.5em;
+	}
+sup, sub {
+	line-height: 0px;
+	}
+abbr[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+	}
+hr {
+	height: 1px;
+	border: 0;
+	color: #000;
+	background-color: #000;
+	}
+img {
+	width: auto;
+	}
+img, embed, object, video {
+	max-width: 100%;
+	height: auto;
+	}
+figure {
+	
+	}
+figcaption {
+	font-size: 0.92em;
+	}
+blockquote {
+	padding: 0 1.4em;
+	font-style: italic;
+	}
+address {
+	
+	}
+cite {
+	
+	}
+tt, code, kbd, samp, pre {
+	font-family: "Courier New", Courier, mono;
+	}
+small, .small,
+.form-hint {
+	font-size: 0.92em;
+	}
+.optimale-zeilenlaenge { 
+	/* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
+	color: red;
+	}
+	
+/* =anchors
+--------------------------------------------------------------- */
+a, a:link {
+	
+	}
+a:visited {
+	
+	}
+a:focus, a:hover, a:active {
+	
+	}
+a img {
+	border: none;
+	}
+#content:focus {
+	outline: none; /* entfernt :focus des Skiplinks */
+	}
+	
+/* =doc-anchors font-awesome
+--------------------------------------------------------------- */
+a[href^="http:"]:after, a[href^="https:"]:after,
+a[href$=".csv"]:before, a[href$=".CSV"]:before,
+a[href$=".doc"]:before, a[href$=".DOC"]:before,
+a[href$=".docx"]:before, a[href$=".DOCX"]:before,
+a[href$=".docm"]:before, a[href$=".DOCM"]:before,
+a[href$=".dot"]:before, a[href$=".DOT"]:before,
+a[href$=".pdf"]:before, a[href$=".PDF"]:before,
+a[href$=".potm"]:before, a[href$=".POTM"]:before,
+a[href$=".potx"]:before, a[href$=".POTX"]:before,
+a[href$=".pps"]:before, a[href$=".PPS"]:before,
+a[href$=".ppsm"]:before, a[href$=".PPSM"]:before,
+a[href$=".ppsx"]:before, a[href$=".PPSX"]:before,
+a[href$=".ppt"]:before, a[href$=".PPT"]:before,
+a[href$=".pptm"]:before, a[href$=".PPTM"]:before,
+a[href$=".pptx"]:before, a[href$=".PPTX"]:before,
+a[href$=".rss"]:before, a[href$=".RSS"]:before,
+a[href$=".rtf"]:before, a[href$=".RTF"]:before,
+a[href$=".txt"]:before, a[href$=".TXT"]:before,
+a[href$=".vcf"]:before, a[href$=".VCF"]:before,
+a[href$=".xlam"]:before, a[href$=".XLAM"]:before,
+a[href$=".xls"]:before, a[href$=".XLS"]:before,
+a[href$=".xlt"]:before, a[href$=".XLT"]:before,
+a[href$=".xlsb"]:before, a[href$=".XLSB"]:before,
+a[href$=".xlsm"]:before, a[href$=".XLSM"]:before,
+a[href$=".xlsx"]:before, a[href$=".XLSX"]:before,
+a[href$=".xltm"]:before, a[href$=".XLTM"]:before,
+a[href$=".xltx"]:before, a[href$=".XLTX"]:before,
+a[href$=".zip"]:before, a[href$=".ZIP"]:before,
+a[href^="mailto\3A"]:before, a[data-email-link]::before {
+	display: inline-block;
+	padding-right: 0.25em;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	}
+a[href$=".doc"]:before, a[href$=".DOC"]:before,
+a[href$=".docm"]:before, a[href$=".DOCM"]:before,
+a[href$=".docx"]:before, a[href$=".DOCX"]:before,
+a[href$=".dot"]:before, a[href$=".DOT"]:before,
+a[href$=".rtf"]:before, a[href$=".RTF"]:before { 
+	content: "\f1c2";
+	}
+a[href$=".pdf"]:before, a[href$=".PDF"]:before {
+	content: "\f1c1";
+	}
+a[href$=".potm"]:before, a[href$=".POTM"]:before,
+a[href$=".potx"]:before, a[href$=".POTX"]:before,
+a[href$=".pps"]:before, a[href$=".PPS"]:before,
+a[href$=".ppsm"]:before, a[href$=".PPSM"]:before,
+a[href$=".ppsx"]:before, a[href$=".PPSX"]:before,
+a[href$=".ppt"]:before, a[href$=".PPT"]:before,
+a[href$=".pptm"]:before, a[href$=".PPTM"]:before,
+a[href$=".pptx"]:before, a[href$=".PPTX"]:before { 
+	content: "\f1c4";
+	}
+a[href$=".rss"]:before, a[href$=".RSS"]:before { 
+	content: "\f09e";
+	}
+a[href$=".txt"]:before, a[href$=".TXT"]:before { 
+	content: "\f0f6";
+	}
+a[href$=".vcf"]:before, a[href$=".VCF"]:before { 
+	content: "\f007";
+	}
+a[href$=".csv"]:before, a[href$=".CSV"]:before,
+a[href$=".xlam"]:before, a[href$=".XLAM"]:before,
+a[href$=".xls"]:before, a[href$=".XLS"]:before,
+a[href$=".xlt"]:before, a[href$=".XLT"]:before,
+a[href$=".xlsb"]:before, a[href$=".XLSB"]:before,
+a[href$=".xlsm"]:before, a[href$=".XLSM"]:before,
+a[href$=".xlsx"]:before, a[href$=".XLSX"]:before,
+a[href$=".xltm"]:before, a[href$=".XLTM"]:before,
+a[href$=".xltx"]:before, a[href$=".XLTX"]:before { 
+	content: "\f1c3";
+	}
+a[href$=".zip"]:before, a[href$=".ZIP"]:before { 
+	content: "\f1c6";
+	}
+a[href^="mailto:"]:before,
+a[data-email-link]:before {
+	content: "\f003";
+	}
+a[href^="http:"]:after, 
+a[href^="https:"]:after {
+	padding-right: 0;
+	padding-left: 0.25em;
+	content: "\f08e";
+	}
+a[href^="http://www.kunde.ch"]:after, 
+a[data-email-link]:after,
+.nav a[href]:after, 
+.subnav a[href]:after, 
+.footer a[href]:after {
+	padding: 0;
+	content: none;
+	}
+	
+	
+/* =forms
+--------------------------------------------------------------- */
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=file],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+	border: 1px solid #ccc;
+	padding: 3px 0 3px 3px;
+	}
+textarea {
+	resize: vertical;
+	}
+input[type=search] {
+	-webkit-appearance: none;
+	border-radius: 0;
+	}
+input[type=checkbox],
+input[type=radio] {
+	border: 0;
+	}
+input:focus,
+select:focus, 
+textarea:focus {
+	outline: none;
+	box-shadow: 
+		0 0 0 1px #2392f3 inset,
+		0 0 4px rgba(35, 146, 243, 0.5);
+	}
+fieldset {
+	clear: both;
+	border: 1px solid #666;
+	padding: 1.5em;
+	}
+legend {
+	display: table;
+	color: #000;
+	font-weight: bold;
+	font-size: 1.17em;
+	}
+	
+/* =tables
+--------------------------------------------------------------- */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+caption {
+	margin-bottom: 0.5em;
+	text-align: left;
+  	font-weight: bold;
+	}
+table th, table td {
+	vertical-align: top;
+	border-bottom: 1px solid #dcdfde;
+	padding: 5px 10px;
+	}
+table th {
+	border-bottom-width: 2px;
+	text-align: left;
+	font-weight: bold;
+	color: #23343b;
+	}
+table tbody th {
+	border-bottom-width: 1px;
+	}
+table tbody th {
+	border-bottom-width: 1px;
+	}
+table tfoot tr:first-child td {
+	border-top: 2px solid #dcdfde;
+	}
+table tfoot tr:last-child td {
+	border-top: 2px solid #dcdfde;
+	border-bottom: 3px double #dcdfde;
+	font-weight: bold;
+	}
+table.zebra tbody tr:nth-child(even) {
+	background-color: #f7fbff;
+	}
+table.hover tbody tr:hover {
+	background-color: #f7fbff;
+	}
+table.auto {
+	width: auto;
+	}
+table.vertical {
+	border-top: 1px solid #dcdfde;
+	}
+table.vertical th {
+	border-bottom-width: 1px;
+	}
+.tbl-no {
+	text-align: right;
+	}
+		
+/*=microformats
+--------------------------------------------------------------- */
+.vcard .region, 
+.vcard .country-name, 
+.vcard .url {
+	display: none;
+	}
+	
+/* =global classes
+--------------------------------------------------------------- */	
+.invis,
+.sr {
+	position: absolute;
+	display: inline;
+	top: -1000px;
+	left: -1000px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	}
+.right	{float: right;}
+.left	{float: left;}
+.clear	{clear: both;}
+.clearfix:after,
+.cf:after,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+.alignleft {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 1.5em auto;
+	}
+.alignright {
+	float: right;
+	margin: 0 0 1.5em 1.5em;
+	}
+.reset, 
+.reset li,
+nav[role="navigation"] ul,
+nav[role="navigation"] li {
+    list-style: none outside none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+	}
+.nobr {
+	white-space: nowrap;
+	}
+.box {
+	border: 1px solid #666;
+	padding: 1.4em;
+	background-color: #f6f4f3;
+	}
+.box > *:last-child,
+fieldset > *:last-child {
+	margin-bottom: 0;
+	}
+	
+.btn {
+	display: inline-block;
+	border: 0;
+	padding: 0.25em 0.5em;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	background-color: #e2001a;
+	border-radius: 3px;
+	}
+.btn:hover, 
+.btn:focus {
+	color: #fff;
+	text-decoration: none !important;
+	background-color: #c10319;
+	}
+.btn:active {
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+	}
+.btn[type="reset"] {
+	
+	}
+
+/* =grid
+--------------------------------------------------------------- */
+.row {
+	clear: both;
+	margin: 1.4em 0;
+	}
+.col {
+	position: relative;
+	float: left;
+	margin-left: 0; /* muss aufgrund der breite berechnet werden */
+	min-height: 1px;
+	}
+.row > .col:first-child {
+	margin-left: 0;
+	}
+.col-1 {
+	width: 8.333333333333332%;
+	}
+.col-2 {
+	width: 16.666666666666664%;
+	}
+.col-3 {
+	width: 25%;
+	}
+.col-4 {
+	width: 33.33333333333333%;
+	}
+.col-5 {
+	width: 41.66666666666667%;
+	}
+.col-6 {
+	width: 50%;
+	}
+.col-7 {
+	width: 58.333333333333336%;
+	}
+.col-8 {
+	width: 66.66666666666666%;
+	}
+.col-9 {
+	width: 75%;
+	}
+.col-10 {
+	width: 83.33333333333334%;
+	}
+.col-11 {
+	width: 91.66666666666666%;
+	}
+.col-12 {
+	width: 100%;
+	}

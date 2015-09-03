@@ -1,0 +1,19 @@
+/* ***********************************************************************************
+FileName	: screen.css
+Date		: 11.11.2014
+Author		: gamperm
+Purpose		: Framework
+
+Modification Log:
+
+Name		Date		Description
+================================================================================
+gamperm		11.11.2014		new application.css for comet modules & frontend UI
+gamperm		26.09.2013		Created
+*********************************************************************************** */
+@import url(normalize.css);
+@import url(basics.css);
+@import url(application.css);
+@import url(layout.css);
+@import url(responsive.css);
+@import url(http://cdn-backslash.ch/lib/font-awesome/4.3/css/font-awesome.min.css);

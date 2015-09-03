@@ -1,0 +1,86 @@
+/* ***********************************************************************************
+FileName	: responsive.css
+Date		: 25.07.2014
+Author		: gamperm
+Purpose		: Framework
+
+Modification Log:
+
+Name		Date			Description
+================================================================================
+gamperm		25.07.2014		replaced ID's with classes
+gamperm		26.09.2013		Created
+*********************************************************************************** */
+
+.table-responsive {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-bottom: 1.4em;
+	border: 1px solid #b7b7b7;
+	border-bottom: 0;
+	-webkit-overflow-scrolling: touch;
+	}
+.table-responsive > table {
+	margin-bottom: 0;
+	}
+	
+.media-responsive {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	}
+.media-responsive iframe, 
+.media-responsive object, 
+.media-responsive embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+@media only screen and (max-width: 768px) {
+	
+	
+	
+}
+
+@media only screen and (max-width: 520px) {
+
+	.wrapper {
+		width: 96%;
+		}
+	header, .container, main, nav, aside, footer {
+		position: static;
+		float: none;
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		background-image: none;
+		}
+		
+}
+
+@media only screen and (min-width: 1200px) {
+
+	
+		
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (   min--moz-device-pixel-ratio: 1.5),
+	only screen and (     -o-min-device-pixel-ratio: 3/2),
+	only screen and (        min-device-pixel-ratio: 1.5),
+	only screen and (                min-resolution: 144dpi), /* verursacht einen IE9-Bug */
+	only screen and (                min-resolution: 1.5dppx) /* verursacht einen FF-Mobile-Bug */
+	
+																{
+	
+	
+	
+}

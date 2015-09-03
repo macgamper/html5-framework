@@ -1,0 +1,19 @@
+/* ***********************************************************************************
+FileName	: ie.css
+Date		: 26.09.2013
+Author		: gamperm
+Purpose		: Framework - IE-Hacks via CC
+
+Modification Log:
+
+Name		Date		Description
+================================================================================
+gamerpm		11.07.2014		Clearfix-Hack for <IE8 removed
+gamperm		26.09.2013		Created
+
+*********************************************************************************** */
+
+legend {	margin-bottom: 10px; /*IE form margin bug*/ 	}
+img {
+	-ms-interpolation-mode: bicubic;
+	}

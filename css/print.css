@@ -1,0 +1,204 @@
+/* ***********************************************************************************
+FileName	: print.css
+Date		: 13.11.2014
+Author		: gamperm
+Purpose		: Framework - Print-Styles
+
+Modification Log:
+
+Name		Date		Description
+=====================================================================================
+gamperm		13.11.2014		form ausblenden, .print-hidden & .print-visible ergänzt
+gamperm		06.11.2014		Seitenumbruch-Optionen, .box ergänzt
+gamperm		26.09.2013		Created
+*********************************************************************************** */
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12pt/1.5 Georgia, "Times New Roman", Times, Garamond, serif;
+	color: #000;
+	background-color: #fff;
+	background-image: none;
+	}
+	
+/* =elemente ausblenden, die im druck nicht erscheinen sollen
+--------------------------------------------------------------- */
+nav[role="navigation"], form,
+.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .print-hidden,
+.region, .country-name, .url, .none {
+	display: none;
+	}
+
+/* =elemente ausblenden, die im druck  explizit erscheinen sollen
+--------------------------------------------------------------- */
+.print-visible {
+	display: block;
+	}
+	
+/* =typo
+--------------------------------------------------------------- */
+a:link {
+	color: #9d9d9d;
+	text-decoration: underline
+	}
+/* fügt in modernen Browsern den ausgeschriebenen Link hinter dem Anchor ein
+a:link:after, 
+a:link:visited:after {
+	color: #9d9d9d;
+	content: "(Link auf <" attr(href) ">)";
+	padding-left: 0.5em;
+	}
+*/
+h1, h2, h3, h4, h5, h6, p, ul, ol, table, caption, address, dl, blockquote, fieldset, hr {
+	margin-top: 0;
+	color: #000;
+	}
+p, ul, ol, table, caption, address, dl, blockquote, fieldset, hr, .box {
+	margin-bottom: 1.5em;
+	}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 { 
+	page-break-after: avoid;
+	}
+h1, .h1 {
+	margin-bottom: 20pt;
+	border-bottom: 1px solid #000;
+	padding-bottom: 8pt;
+	font-size: 20pt;
+	line-height: 22pt;
+	}
+h2, .h2 {
+	margin-bottom: 9pt;
+	font-size: 16pt;
+	line-height: 18pt;
+	}
+h3, .h3 {
+	margin-bottom: 8pt;
+	font-size: 14pt;
+	line-height: 16pt;
+	}
+h4, .h4 {
+	margin-bottom: 8pt;
+	font-size: 12pt;
+	line-height: 16pt;
+	}
+h5, h6,
+.h5, .h6 {
+	margin-bottom: 0;
+	font-size: 12pt;
+	line-height: 16pt;
+	}
+p, table, .normal {
+	
+	}
+blockquote {
+	font-size: 14pt;
+	font-style: italic;
+	}
+hr {
+	color: #000;
+	background-color: #000;
+	height: 1px;
+	border: 0
+	}
+ul, ol {
+	
+	}
+ul, ol, dl { 
+	page-break-inside: avoid;
+	}
+ul.sitemap {
+	page-break-inside: auto;
+	}
+img {
+	border: 0;
+	max-width: 100%;
+	}
+figure {
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	}
+figcaption {
+	font-size: 12pt;
+	}
+small {
+	font-size: 12pt;
+	}
+	
+/* =tables
+--------------------------------------------------------------- */	
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-bottom: 1px solid #000;
+	padding: 0;
+	}
+caption {
+	margin-bottom: 8pt;
+	font-size: 14pt;
+	line-height: 16pt;
+	font-weight: bold;
+	text-align: left;
+	}
+th {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 2pt 15pt 2pt 0;
+	font-weight: bold;
+	text-align: left;
+	}
+td {
+	padding: 2pt 15pt 2pt 0;
+	vertical-align: top;
+	}
+tfoot td {
+	font-weight: bold;
+	border-top: 1px solid #000;
+	}
+table.auto {
+	width: auto;
+	}
+.tbl-no {
+	text-align: right;
+	}
+
+/* =global classes
+--------------------------------------------------------------- */	
+.box {
+	border: 1px solid #000;
+	padding: 1.4em;
+	}
+.box > *:last-child,
+fieldset > *:last-child {
+	margin-bottom: 0;
+	}
+.reset, 
+.reset li {
+    list-style: none outside none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+	}
+.nobr {
+	white-space: nowrap;
+	}
+	
+/* =dokumente
+--------------------------------------------------------------- */
+a.pdf	{background-image: url(/icons/module/Dokument3_0/icon_pdf_klein.gif);}
+a.doc, a.rtf {background-image: url(/icons/module/Dokument3_0/icon_word_klein.gif);}
+a.xls	{background-image: url(/icons/module/Dokument3_0/icon_excel_klein.gif);}
+a.pps	{background-image: url(/icons/module/Dokument3_0/icon_powerpoint_klein.gif);}
+a.zip	{background-image: url(/icons/module/Dokument3_0/icon_zip_klein.gif);}
+a.document {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	}

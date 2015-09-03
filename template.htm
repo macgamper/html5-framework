@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-title" content="backslash">
+		<meta name="theme-color" content="#e2001a">
+		<title>backslash AG &ndash; HTML5-Framework</title>
+		<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+		<link rel="apple-touch-icon" href="/pictures/touch-icon.png">
+		<link rel="icon" sizes="192x192" href="/pictures/touch-icon.png">
+		
+		<!--[if lt IE 9]>
+			<link href="css/ie.css" rel="stylesheet" type="text/css" media="screen">
+			<script src="http://cdn-backslash.ch/lib/html5shiv/latest/html5shiv.min.js" type="text/javascript"></script>
+		<![endif]-->
+
+		<script src="http://cdn-backslash.ch/lib/modernizr/latest/modernizr.min.js"></script>
+		
+	</head>
+
+	<body>
+		<a class="invis" href="#content">Direkt zum Inhalt springen</a>
+		<div class="wrapper" id="wrapper">
+			<header class="header" role="banner">
+				<h2 class="logo"><a href="#">Header</a></h2>
+				<form class="search-form" id="search-form" role="search" action="#" method="post" name="volltextsuche">
+					<label class="invis" for="search-box-global">Suche</label>
+					<input type="search" class="search-box" id="search-box-global" accesskey="5" placeholder="Suchbegriff" required />
+					<button type="submit" class="search-btn" id="search-btn-global">suchen</button>
+				</form>
+			</header>
+			<!-- end header -->
+			<nav class="mainnav" id="mainnav" role="navigation">
+				<h2 class="invis">Hauptnavigation</h2>
+				<ul>
+					<li><a href="#">Portr&auml;t</a></li>
+					<li><a href="#">Geschichte</a></li>
+					<li class="active"><a href="#">Produkte</a>
+						<ul>
+							<li><a href="#">Produkt 1</a></li>
+							<li class="active"><a href="#">Produkt 2</a></li>
+							<li><a href="#">Produkt 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+			<!-- end nav.mainnav -->
+			<div class="container">
+				<main class="content" id="content" role="main" tabindex="-1">
+					<h1>Maincontent H1</h1>
+					<a href="#"><img src="pictures/image.jpg" style="float: right; margin: 0 0 1.5em 1.5em" alt="Testbild" /></a>
+					<p>Lorem ipsum dolor sit amet, consectetuer <span class="optimale-zeilenlaenge">adipiscing elit, sed diam nonummy</span> nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <abbr title="Cascading Style Sheet">CSS</abbr> minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate <strong>velit esse molestie consequat</strong>, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p><a rel="nofollow" data-email-link="xxx" target="_blank" title="E-Mail an die Gemeindeverwaltung Nürensdorf senden" href="https://www.nuerensdorf.ch/route/cms-index-redirectToLocation/location/jfnksh%253D%2560bjbnicbGirbubitchua%2529do/decode/1" class="email">E-Mail</a></p>
+					<div class="box">
+						<h2>Boxtitel h2</h2>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation <a href="http://www.backslash.ch" title="ein externer Link">ullamcorper suscipit</a> lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					</div>
+					<ol>
+						<li>Listeneintrag</li>
+						<li>Listeneintrag<br />
+							mit weiterer Textzeile</li>
+						<li>Listeneintrag</li>
+						<li>Listeneintrag</li>
+					</ol>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate <strong>velit esse molestie consequat</strong>, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+					<div class="row">
+						<div class="col col-6">
+							<p>Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+						</div>
+						<div class="col col-6">
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</p>
+						</div>
+					</div>
+
+
+					<h2>Untertitel H2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <a href="#" title="ein interner Link">nonummy</a> nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					
+					<table>
+						<caption>Table Caption</caption>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Produkt 1</th>
+								<th>Produkt 2</th>
+								<th>Produkt 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Gr&ouml;sse</td>
+								<td>1.20</td>
+								<td>1.30</td>
+								<td>2.30</td>
+							</tr>
+							<tr>
+								<td>Gewicht</td>
+								<td>50 kg</td>
+								<td>80 kg</td>
+								<td>120 kg</td>
+							</tr>
+							<tr>
+								<td>L&auml;nge</td>
+								<td>500</td>
+								<td>750</td>
+								<td>1000</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed <em>&laquo;diam nonummy nibh euismod&raquo;</em> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci <a href="mailto:p.muster@backlsash.ch" title="ein Mail-Link">Peter Muster</a> tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <a href="http://www.tagi.ch" title="ein externer Link">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<ul>
+						<li>Listeneintrag 1</li>
+						<li>Listeneintrag 2</li>
+						<li>Listeneintrag 3</li>
+						<li>Listeneintrag 4</li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+					<h3>Anmerkungen H3</h3>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<h4>Das ist ein kleiner Titel H4</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br />
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<h5>Das ist ein kleiner Titel H5</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nasceturm ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+					<figure>
+						<img src="pictures/image-fullwidth.jpg" alt="" />
+						<figcaption>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</figcaption>
+					</figure>
+
+					<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam m<sup>2</sup> dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
+					
+					<blockquote>
+						<p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<cite>&mdash; John Doe</cite>
+					</blockquote>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+					<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+					<h6>Das ist ein kleiner Titel H6</h6>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<address>John Doe, j.doe@gmail.com</address>
+
+					<form action="#" class="form-builder">
+						<fieldset>
+							<legend>Legende</legend>
+							<p class="clearfix"><label for="f1">Text: </label> <input type="text" id="f1" value="" /></p>
+							<p class="clearfix"><label for="f1-1">E-Mail: </label><input type="email" id="f1-1" value="" /></p>
+							<p class="clearfix"><label for="f1-2">Telefon: </label><input type="tel" id="f1-2" value="" /></p>
+							<p class="clearfix"><label for="f1-3">Web: </label><input type="url" id="f1-3" value="" placeholder="http://" /></p>
+							<p class="clearfix"><label for="f1-4">Zahl: </label><input type="number" id="f1-4" min="1" max="100" value="" /><span class="form-hint">Muss zwischen 1 und 100 liegen.</span></p>
+							<div class="clearfix form-option-lst-show-title">
+								<p class="form-option-lst-title">Radio input:</p>
+								<div class="form-option-lst">
+									<ul class="reset">
+										<li>
+											<label for="radio-01"><input type="radio" name="radiogroup" id="radio-01" checked /> Ja</label>
+										</li>
+										<li>
+											<label for="radio-02"><input type="radio" name="radiogroup" id="radio-02" /> Nein</label>
+										</li>
+										<li>
+											<label for="radio-03"><input type="radio" name="radiogroup" id="radio-03" /> Vielleicht</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix form-option-lst-show-title">
+								<p class="form-option-lst-title">Checkbox input: </p>
+								<div class="form-option-lst">
+									<ul class="reset">
+										<li>
+											<label for="checkbox-01"><input type="checkbox" name="checkbox-01" id="checkbox-01" /> per E-Mail</label>
+										</li>
+										<li>
+											<label for="checkbox-02"><input type="checkbox" name="checkbox-02" id="checkbox-02" /> per Telefon</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p class="clearfix"><label for="f5">Select field: </label><select id="f5"><option>Option 01</option><option>Option 02</option></select></p>
+							<p class="clearfix"><label for="f6">Textarea: </label><textarea id="f6" cols="30" rows="5" ></textarea></p>
+							<div class="form-builder-btn form-builder-btn-group">
+								<p class="form-builder-submit">
+									<button type="submit" name="submit">abschicken</button>
+								</p>
+								<p class="form-builder-reset">
+									<button type="reset" name="reset" tabindex="-1">zur&uuml;cksetzen</button>
+								</p>
+							</div>
+						</fieldset>
+					</form>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br />
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<ul class="services">
+						<li class="gotop"><a href="#" title="an den Anfang der Seite springen">zum Seitananfang</a></li>
+						<li class="print"><a href="print" title="Seite in druckbarer Form anzeigen" target="_blank" rel="nofollow">Seite drucken</a></li>
+						<li class="printpdf"><a href="printpdf" title="Seite als PDF speichern" target="_blank" rel="nofollow">Seite als PDF</a></li>
+					</ul>
+				</main>
+				<!-- end main -->
+				<aside class="sidebar" role="complementary">
+					<h2 class="invis">Sidebar</h2>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</aside>
+				<!-- end aside -->
+			</div>
+			<!-- end .container -->
+			<footer class="footer" role="contentinfo">
+				<p>Firma &bull; Adresse &bull; PLZ/Ort</p>
+				<p class="created"><a href="http://www.govis.ch" title="GOViS &ndash; The Swiss eGovernment Content Management System" target="_blank">GOViS</a> by <a title="Internetagentur backslash AG" href="http://www.backslash.ch" target="_blank">backslash</a></p>
+			</footer>
+			<!-- end footer -->
+		</div>
+		<!-- end .wrapper -->
+	</body>
+
+</html>
