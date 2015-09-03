@@ -41,9 +41,9 @@ Bei .form-builer Checkboxen und Radios ohne Titel (daher solche die über 100% B
 werden nun auch die .error-Labels über 100% Breite gehen und nicht mehr gefloatet.
 
 div:not([class*=«form-option-lst-show-title»]) label.error {
-float: none;
-width: 100%;
-}
+	float: none;
+	width: 100%;
+	}
 
 ## 03.06.2015
 ### basics.css
@@ -66,8 +66,8 @@ Dem Such-Eingabefeld das required-Attribut mitgegeben, so dass keine leere Suche
 
 ### basics.css
 textarea {
-resize: vertical;
-}
+	resize: vertical;
+	}
 
 ## 23.03.2015
 ### template.htm / basics.css
@@ -95,8 +95,8 @@ ID #volltextsuche gemäss Mustache ersetzt mit #search-form
 ### basics.css
 
 legend {
-display: table;
-}
+	display: table;
+	}
 
 Behebt einen Bug, der verhindert dass lange Legenden im IE umbrochen werden können.
 http://thatemil.com/blog/2015/01/03/reset-your-fieldset/
@@ -148,15 +148,15 @@ Den margin-Reset von Modul-Elementen universeller gelöst. Anstatt
 .box > ul:last-child, 
 .box > ol:last-child,
 .box > dl:last-child {
-margin-bottom: 0;
-}
+	margin-bottom: 0;
+	}
 
 #### Neu:
 
 .box > *:last-child,
 fieldset > *:last-child {
-margin-bottom: 0;
-}
+	margin-bottom: 0;
+	}
 
 Idee: http://css-tricks.com/spacing-the-bottom-of-modules/
 
@@ -241,10 +241,10 @@ ergänzt:
 *,
 *:before,
 *:after {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
 
 ## 01.11.2013
 ### normalize.css
@@ -263,8 +263,8 @@ http://goo.gl/E9dgRb
 In den IE < 9 CC’s den HTML5 Shiv ergänzt
 
 <!—[if lt IE 9]>
-<link href=«css/ie.css» rel=«stylesheet» type=«text/css» media=«screen» />
-<script src=«http://cdn-backslash.ch/lib/html5shiv/html5shiv.js» type=«text/javascript»></script>
+	<link href=«css/ie.css» rel=«stylesheet» type=«text/css» media=«screen» />
+	<script src=«http://cdn-backslash.ch/lib/html5shiv/html5shiv.js» type=«text/javascript»></script>
 <![endif]—>
 
 ## 26.09.2013
