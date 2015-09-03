@@ -1,5 +1,5 @@
 # html5-framework
-HTML5 &amp; CSS basics for backslash projects
+HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
 ## 03.09.2015
 ### basics.css
