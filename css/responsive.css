@@ -53,7 +53,7 @@ gamperm		26.09.2013		Created
 	.wrapper {
 		width: 96%;
 		}
-	header, .container, main, nav, aside, footer {
+	.header, .container, .content, .mainnav, .sidebar, .footer {
 		position: static;
 		float: none;
 		width: auto;
