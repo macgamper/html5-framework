@@ -29,8 +29,7 @@ gamperm			11.11.2014			Created
 	margin-right: 1em !important;
 	}
 .mod-nav a {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 1em;
 	color: #273941;
 	text-decoration: none;
 	}
@@ -313,8 +312,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =Reservations-Tageszustände
 --------------------------------------------------------------- */
 .calendar-legend {
-	font-size: 14px;
-	font-size: 1.4rem;
+	margin-bottom: 1.4em;
+	font-size: 1em;
+	-webkit-column-gap: 3%;
+	   -moz-column-gap: 3%;
+	        column-gap: 3%;
+	-webkit-columns: 2 10em;
+	   -moz-columns: 2 10em;
+	        columns: 2 10em; /* max. columns, max width */
 	}
 .calendar-legend li {
 	margin-bottom: .25em;
@@ -351,21 +356,22 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: #fff;
 	text-shadow: 0 1px 0 #000;
 	}
+.travelpass-cal-wrapper,
+.travelpass-order-wrapper {
+	width: 48.181818181818%;
+	float: left;
+	}
+.travelpass-order-wrapper {
+	margin-left: 3.636363636364%; /* 20 / 550 */
+	}
 
 @media only screen and (max-width: 600px) {
 
-	.calendar,
-	.calendar-legend {
+	.travelpass-cal-wrapper,
+	.travelpass-order-wrapper {
+		float: none;
 		width: 100%;
-		}
-	.calendar-legend {
-		margin-bottom: 1.4em;
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
-		-webkit-column-gap: 3%;
-		-moz-column-gap: 3%;
-		column-gap: 3%;
+		margin-left: 0;;
 		}
 
 }
@@ -422,8 +428,7 @@ ul.gallery-magnific li a:focus figcaption {
 .infobox {
 	overflow: hidden;
 	margin-bottom: 1.4em;
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 1em;
 	}
 .infobox > div {
 	float: left;
@@ -450,8 +455,7 @@ ul.gallery-magnific li a:focus figcaption {
 	width: 100%;
 	}
 .sales-basket-tbl {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 1em;
 	}
 .sales-basket-quant {
 	white-space: nowrap;
@@ -463,8 +467,7 @@ ul.gallery-magnific li a:focus figcaption {
 .sales-subtotal,	
 .sales-fee,
 .sales-shippingprice {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 1em;
 	}
 .sales-subtotal {
 	border-bottom: 2px solid #a1acb0;
