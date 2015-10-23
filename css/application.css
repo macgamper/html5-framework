@@ -136,8 +136,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	margin-bottom: 2.4em;
 	}
 .form-builder .form-builder-btn-group p {
-	display: inline;
-	margin-right: 1.4em;
+	display: inline-block;
+	margin: 0 1.4em 0 0;
 	}
 .form-builder input[disabled] {
 	opacity: 0.5;
@@ -215,8 +215,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder button {
 		width: 100%;
 		}
-	.form-builder-btn-group [type=submit] {
-		margin-bottom: 1.4em;
+	.form-builder .form-builder-btn-group p {
+        display: block;
+        margin: 0;
+        }
+	.form-builder .form-builder-btn-group > p + p {
+		margin-top: 0.7em;
 		}
 
 }
