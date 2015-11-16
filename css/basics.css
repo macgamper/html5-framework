@@ -342,12 +342,6 @@ table tfoot tr:last-child td {
 	border-bottom: 3px double #dcdfde;
 	font-weight: bold;
 	}
-table.zebra tbody tr:nth-child(even) {
-	background-color: #f7fbff;
-	}
-table.hover tbody tr:hover {
-	background-color: #f7fbff;
-	}
 table.auto {
 	width: auto;
 	}
@@ -359,6 +353,17 @@ table.vertical th {
 	}
 .tbl-no {
 	text-align: right;
+	}
+
+/*=zebras & hover
+--------------------------------------------------------------- */
+table.zebra tbody tr:nth-child(even),
+.zebra li:nth-child(even) {
+	background-color: #f8f8f8;
+	}
+table.hover tbody tr:hover,
+.hover li:hover {
+	background-color: #f7fbff;
 	}
 		
 /*=microformats

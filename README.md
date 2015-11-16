@@ -1,6 +1,11 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 16.11.2015
+### basics.css
+
+Die Klassen .zebra und .hover (alternierende, respektive hervorgehobene Hintergrundfarbe bei :hover) können nun auch auf Listen (ul und ol) angewendet werden.
+
 ## 21.10.2015
 ### basics.css
 

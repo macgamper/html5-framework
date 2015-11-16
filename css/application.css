@@ -553,7 +553,7 @@ ul.gallery-magnific li a:focus figcaption {
 	
 @media only screen and (max-width: 475px) {
 
-	.mod-index-toc:after {
+	.mod-index-toc::after {
 		display: block;
 		pointer-events: none;
 		content: '';
@@ -572,7 +572,8 @@ ul.gallery-magnific li a:focus figcaption {
 		display: block;
 		width: auto;
 		margin: 0;
-		overflow: scroll;
+		overflow-x: auto;
+		overflow-y: hidden;
 		-webkit-overflow-scrolling: touch;		
 		}
 	.mod-index-toc a {
@@ -605,4 +606,20 @@ ul.gallery-magnific li a:focus figcaption {
 	}
 .mod-index-pages > div:target ul {
 	padding-bottom: 1em;
+	}
+
+/* =collections
+--------------------------------------------------------------- */
+.collection-lst {
+	margin-bottom: 0;
+	}
+.collection-item {
+	display: block;
+	float: left;
+	}
+.collection-item::after {
+	content: '\00A0\00A0/\00A0\00A0';
+	}
+.collection-item:last-child::after {
+	content: none;
 	}
