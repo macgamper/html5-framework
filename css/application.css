@@ -160,17 +160,25 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	float: left;
 	margin-bottom: 0;
 	}
-.form-builder .form-sizer-25 {
+.form-builder .form-sizer-25,
+.form-builder .form-street-component .form-sizer:last-child,
+.form-builder .form-zip-component .form-sizer:first-child {
 	width: 23%;
 	}
 .form-builder .form-sizer-50 {
 	width: 48%;
 	}
-.form-builder .form-sizer-75 {
+.form-builder .form-sizer-75,
+.form-builder .form-street-component .form-sizer:first-child,
+.form-builder .form-zip-component .form-sizer:last-child {
 	width: 73%;
 	}
 .form-sizer + .form-sizer {
 	float: right;
+	}
+.form-builder .form-street-component label:first-child::after,
+.form-builder .form-zip-component label:first-child::after {
+	content: ' /';
 	}
 	
 /* =form-builder 30% label / 70% input
