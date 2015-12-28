@@ -18,7 +18,8 @@ gamperm		26.09.2013		Created
 --------------------------------------------------------------- */
 *,
 *:before,
-*:after {
+*:after,
+input[type="search"] {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -29,6 +30,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin: 0 0 0.75em;
+	line-height: 1.2;
 	}
 h1, .h1 {
 	font-size: 2em;

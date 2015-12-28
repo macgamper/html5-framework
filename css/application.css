@@ -176,10 +176,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-sizer + .form-sizer {
 	float: right;
 	}
-.form-builder .form-street-component label:first-child::after,
-.form-builder .form-zip-component label:first-child::after {
-	content: ' /';
-	}
 	
 /* =form-builder 30% label / 70% input
 --------------------------------------------------------------- */
