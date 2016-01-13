@@ -317,7 +317,7 @@ table {
 caption {
 	margin-bottom: 0.5em;
 	text-align: left;
-  	font-weight: bold;
+	font-weight: bold;
 	}
 table th, table td {
 	vertical-align: top;
@@ -378,6 +378,9 @@ table.hover tbody tr:hover,
 	
 /* =global classes
 --------------------------------------------------------------- */	
+.none {
+	display: none;
+	}
 .invis,
 .sr {
 	position: absolute;
@@ -413,13 +416,16 @@ table.hover tbody tr:hover,
 	}
 .reset, 
 .reset li,
-nav[role="navigation"] ul,
-nav[role="navigation"] li {
-    list-style: none outside none;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
+nav ul,
+nav li {
+	list-style: none outside none;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+	}
+nav ul {
+	margin-bottom: 0;
 	}
 .nobr {
 	white-space: nowrap;
@@ -446,6 +452,10 @@ fieldset > *:last-child {
 	background-color: #e2001a;
 	border-radius: 3px;
 	}
+.btn[type="reset"],
+.btn-secondary {
+	
+	}
 .btn:hover, 
 .btn:focus {
 	color: #fff;
@@ -454,10 +464,6 @@ fieldset > *:last-child {
 	}
 .btn:active {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
-	}
-.btn[type="reset"],
-.btn-secondary {
-	
 	}
 
 /* =grid

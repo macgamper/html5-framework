@@ -1,6 +1,18 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 13.01.2016
+### basics.css
+Globale Klasse .none wieder ergänzt. Wird für die verschlüsselten E-Mail in Comet verwendet.
+.none {
+	display: none;
+	}
+
+## 06.01.2016
+### template.htm
+WAi-ARIA Rolen-Attribute entfernt.
+
+
 ## 28.12.2015
 ### basics.css
 Zeilenabstände bei Title-Elementen auf 1.2 verkleinert. Suchfelder explizit auf border-box umgestellt (überschreibt den Wert in normalize.css)
