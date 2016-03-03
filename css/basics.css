@@ -155,35 +155,35 @@ a img {
 	
 /* =doc-anchors font-awesome
 --------------------------------------------------------------- */
-a[href^="http:"]:after, a[href^="https:"]:after,
-a[href$=".csv"]:before, a[href$=".CSV"]:before,
-a[href$=".doc"]:before, a[href$=".DOC"]:before,
-a[href$=".docx"]:before, a[href$=".DOCX"]:before,
-a[href$=".docm"]:before, a[href$=".DOCM"]:before,
-a[href$=".dot"]:before, a[href$=".DOT"]:before,
-a[href$=".pdf"]:before, a[href$=".PDF"]:before,
-a[href$=".potm"]:before, a[href$=".POTM"]:before,
-a[href$=".potx"]:before, a[href$=".POTX"]:before,
-a[href$=".pps"]:before, a[href$=".PPS"]:before,
-a[href$=".ppsm"]:before, a[href$=".PPSM"]:before,
-a[href$=".ppsx"]:before, a[href$=".PPSX"]:before,
-a[href$=".ppt"]:before, a[href$=".PPT"]:before,
-a[href$=".pptm"]:before, a[href$=".PPTM"]:before,
-a[href$=".pptx"]:before, a[href$=".PPTX"]:before,
-a[href$=".rss"]:before, a[href$=".RSS"]:before,
-a[href$=".rtf"]:before, a[href$=".RTF"]:before,
-a[href$=".txt"]:before, a[href$=".TXT"]:before,
-a[href$=".vcf"]:before, a[href$=".VCF"]:before,
-a[href$=".xlam"]:before, a[href$=".XLAM"]:before,
-a[href$=".xls"]:before, a[href$=".XLS"]:before,
-a[href$=".xlt"]:before, a[href$=".XLT"]:before,
-a[href$=".xlsb"]:before, a[href$=".XLSB"]:before,
-a[href$=".xlsm"]:before, a[href$=".XLSM"]:before,
-a[href$=".xlsx"]:before, a[href$=".XLSX"]:before,
-a[href$=".xltm"]:before, a[href$=".XLTM"]:before,
-a[href$=".xltx"]:before, a[href$=".XLTX"]:before,
-a[href$=".zip"]:before, a[href$=".ZIP"]:before,
-a[href^="mailto\3A"]:before, a[data-email-link]::before {
+a[href^="http:"]::after, a[href^="https:"]::after,
+a[href$=".csv"]::before, a[href$=".CSV"]::before,
+a[href$=".doc"]::before, a[href$=".DOC"]::before,
+a[href$=".docx"]::before, a[href$=".DOCX"]::before,
+a[href$=".docm"]::before, a[href$=".DOCM"]::before,
+a[href$=".dot"]::before, a[href$=".DOT"]::before,
+a[href$=".pdf"]::before, a[href$=".PDF"]::before,
+a[href$=".potm"]::before, a[href$=".POTM"]::before,
+a[href$=".potx"]::before, a[href$=".POTX"]::before,
+a[href$=".pps"]::before, a[href$=".PPS"]::before,
+a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
+a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
+a[href$=".ppt"]::before, a[href$=".PPT"]::before,
+a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
+a[href$=".pptx"]::before, a[href$=".PPTX"]::before,
+a[href$=".rss"]::before, a[href$=".RSS"]::before,
+a[href$=".rtf"]::before, a[href$=".RTF"]::before,
+a[href$=".txt"]::before, a[href$=".TXT"]::before,
+a[href$=".vcf"]::before, a[href$=".VCF"]::before,
+a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
+a[href$=".xls"]::before, a[href$=".XLS"]::before,
+a[href$=".xlt"]::before, a[href$=".XLT"]::before,
+a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
+a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
+a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
+a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
+a[href$=".xltx"]::before, a[href$=".XLTX"]::before,
+a[href$=".zip"]::before, a[href$=".ZIP"]::before,
+a[href^="mailto\3A"]::before, a[data-email-link]::before {
 	display: inline-block;
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -193,64 +193,65 @@ a[href^="mailto\3A"]:before, a[data-email-link]::before {
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
 	}
-a[href$=".doc"]:before, a[href$=".DOC"]:before,
-a[href$=".docm"]:before, a[href$=".DOCM"]:before,
-a[href$=".docx"]:before, a[href$=".DOCX"]:before,
-a[href$=".dot"]:before, a[href$=".DOT"]:before,
-a[href$=".rtf"]:before, a[href$=".RTF"]:before { 
+a[href$=".doc"]::before, a[href$=".DOC"]::before,
+a[href$=".docm"]::before, a[href$=".DOCM"]::before,
+a[href$=".docx"]::before, a[href$=".DOCX"]::before,
+a[href$=".dot"]::before, a[href$=".DOT"]::before,
+a[href$=".rtf"]::before, a[href$=".RTF"]::before { 
 	content: "\f1c2";
 	}
-a[href$=".pdf"]:before, a[href$=".PDF"]:before {
+a[href$=".pdf"]::before, a[href$=".PDF"]::before {
 	content: "\f1c1";
 	}
-a[href$=".potm"]:before, a[href$=".POTM"]:before,
-a[href$=".potx"]:before, a[href$=".POTX"]:before,
-a[href$=".pps"]:before, a[href$=".PPS"]:before,
-a[href$=".ppsm"]:before, a[href$=".PPSM"]:before,
-a[href$=".ppsx"]:before, a[href$=".PPSX"]:before,
-a[href$=".ppt"]:before, a[href$=".PPT"]:before,
-a[href$=".pptm"]:before, a[href$=".PPTM"]:before,
-a[href$=".pptx"]:before, a[href$=".PPTX"]:before { 
+a[href$=".potm"]::before, a[href$=".POTM"]::before,
+a[href$=".potx"]::before, a[href$=".POTX"]::before,
+a[href$=".pps"]::before, a[href$=".PPS"]::before,
+a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
+a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
+a[href$=".ppt"]::before, a[href$=".PPT"]::before,
+a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
+a[href$=".pptx"]::before, a[href$=".PPTX"]::before { 
 	content: "\f1c4";
 	}
-a[href$=".rss"]:before, a[href$=".RSS"]:before { 
+a[href$=".rss"]::before, a[href$=".RSS"]::before { 
 	content: "\f09e";
 	}
-a[href$=".txt"]:before, a[href$=".TXT"]:before { 
+a[href$=".txt"]::before, a[href$=".TXT"]::before { 
 	content: "\f0f6";
 	}
-a[href$=".vcf"]:before, a[href$=".VCF"]:before { 
+a[href$=".vcf"]::before, a[href$=".VCF"]::before { 
 	content: "\f007";
 	}
-a[href$=".csv"]:before, a[href$=".CSV"]:before,
-a[href$=".xlam"]:before, a[href$=".XLAM"]:before,
-a[href$=".xls"]:before, a[href$=".XLS"]:before,
-a[href$=".xlt"]:before, a[href$=".XLT"]:before,
-a[href$=".xlsb"]:before, a[href$=".XLSB"]:before,
-a[href$=".xlsm"]:before, a[href$=".XLSM"]:before,
-a[href$=".xlsx"]:before, a[href$=".XLSX"]:before,
-a[href$=".xltm"]:before, a[href$=".XLTM"]:before,
-a[href$=".xltx"]:before, a[href$=".XLTX"]:before { 
+a[href$=".csv"]::before, a[href$=".CSV"]::before,
+a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
+a[href$=".xls"]::before, a[href$=".XLS"]::before,
+a[href$=".xlt"]::before, a[href$=".XLT"]::before,
+a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
+a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
+a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
+a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
+a[href$=".xltx"]::before, a[href$=".XLTX"]::before { 
 	content: "\f1c3";
 	}
-a[href$=".zip"]:before, a[href$=".ZIP"]:before { 
+a[href$=".zip"]::before, a[href$=".ZIP"]::before { 
 	content: "\f1c6";
 	}
-a[href^="mailto:"]:before,
-a[data-email-link]:before {
+a[href^="mailto:"]::before,
+a[data-email-link]::before {
 	content: "\f003";
 	}
-a[href^="http:"]:after, 
-a[href^="https:"]:after {
+a[href^="http:"]::after, 
+a[href^="https:"]::after {
 	padding-right: 0;
 	padding-left: 0.25em;
 	content: "\f08e";
 	}
-a[href^="http://www.kunde.ch"]:after, 
-a[data-email-link]:after,
-.nav a[href]:after, 
-.subnav a[href]:after, 
-.footer a[href]:after {
+a[href*=".kunde.ch"]::after, 
+a[data-email-link]::after,
+a.no-icon::after, a.no-icon::before,
+.nav a[href]::after, 
+.subnav a[href]::after, 
+.footer a[href]::after {
 	padding: 0;
 	content: none;
 	}
@@ -464,6 +465,11 @@ fieldset > *:last-child {
 	}
 .btn:active {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+	}
+.btn--invis {
+	border: 0;
+	color: #000;
+	background-color: transparent;
 	}
 
 /* =grid

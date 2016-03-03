@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 03.03.2016
+### application.css
+Verbesserungen in der GA-Kalenderdarstellung bei «letzte Karte verfügbar».
+
 ## 13.01.2016
 ### basics.css
 Globale Klasse .none wieder ergänzt. Wird für die verschlüsselten E-Mail in Comet verwendet.
