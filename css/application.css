@@ -36,7 +36,7 @@ gamperm			11.11.2014			Created
 .mod-nav a:hover, 
 .mod-nav a:focus,
 .mod-nav .active a {
-	color: #e1001a;
+	color: #000;
 	}
 .mod-nav .active a {
 	font-weight: bold;
@@ -228,6 +228,38 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 		}
 
 }
+
+/* =flex-search
+--------------------------------------------------------------- */
+.flex-search {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	}
+.flex-search > label {
+	margin-right: 1em;
+	align-self: center;
+	}
+.form-builder.flex-search > label ,
+.form-builder .flex-search > label {
+	margin-right: 1em;
+	width: auto;
+	padding-right: 0 ;
+	}
+.flex-search > input {
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	border-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	}
+.flex-search > button {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding-right: 1em;
+	padding-left: 1em;
+	}
 
 /* =calendar (events, reservations)
 --------------------------------------------------------------- */
@@ -628,4 +660,40 @@ ul.gallery-magnific li a:focus figcaption {
 	}
 .collection-item:last-child::after {
 	content: none;
+	}
+
+/* =accordion
+--------------------------------------------------------------- */
+.js-accordion {
+	border-bottom: 1px solid #d2d2d2;
+	margin-bottom: 1.4em;
+	}
+.js-accordion_control {
+	margin-bottom: 0;
+	border-top: 1px solid #d2d2d2;
+	padding: 0.25em 0;
+	cursor: pointer;
+	}
+.js-accordion_control::after {
+	float: right;
+	padding-right: 0.5em;
+	content: "\f077";
+	display: inline-block;
+	font: normal normal 0.7em/1.8 FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	}
+.js-accordion_control--active::after {
+	content: "\f078";
+	}
+.js-accordion-content {
+	padding: 0.7em 0;
+	}
+.js-accordion-content > *:last-child {
+	margin-bottom: 0;
 	}
