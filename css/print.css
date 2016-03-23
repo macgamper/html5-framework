@@ -122,10 +122,11 @@ figure {
 	margin-left: 0;
 	}
 figcaption {
-	font-size: 12pt;
+	font-size: 10pt;
+	font-style: italic;
 	}
 small {
-	font-size: 12pt;
+	font-size: 10pt;
 	}
 	
 /* =tables
@@ -186,6 +187,23 @@ fieldset > *:last-child {
 	}
 .nobr {
 	white-space: nowrap;
+	}
+
+.alignleft, .alignright {
+	max-width: 33%;
+	}
+.alignleft {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 1.5em auto;
+	}
+.alignright {
+	float: right;
+	margin: 0 0 1.5em 1.5em;
 	}
 	
 /* =dokumente
