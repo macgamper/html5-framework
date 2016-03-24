@@ -18,8 +18,20 @@ gamperm			11.11.2014			Created
 	margin-bottom: 1.4em;
 	}
 
-/* module-navigation */
+/* =Files
+--------------------------------------------------------------- */
+.asset-meta {
+	white-space: nowrap;
+	}
+.asset-type {
+	text-transform: uppercase;
+	}
+.asset-size {
+	
+	}
 
+/* =module-navigation
+--------------------------------------------------------------- */
 .mod-nav {
 	overflow: hidden;
 	margin: .5em 0 1.4em 0;

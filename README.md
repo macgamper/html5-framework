@@ -1,6 +1,13 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 24.03.2016
+### application.css / basics.css
+Klassen für File-Meta-Informationen ergänzt > [pdf, 1.2 MB]
+.asset-meta.
+	.asset-type
+	.asset-size
+
 ## 23.03.2016
 ### print.css
 Align-Klassen für Bildausrichtungen ergänzt. small & figcaption verbessert.
