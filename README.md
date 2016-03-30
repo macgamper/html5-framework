@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 30.03.2016
+### basics.css
+Grundformatierungen für iFrame eingefügt, damit die veralteten HTML-Attribute weggelassen werden können.
+
 ## 24.03.2016
 ### application.css / basics.css
 Klassen für File-Meta-Informationen ergänzt > [pdf, 1.2 MB]

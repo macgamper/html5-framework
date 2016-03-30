@@ -279,9 +279,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	width: 50%;
 	line-height: 2;
 	}
-.travelpass .calendar {
-	width: 100%;
-	}
 .calendar th {
 	background-color: transparent;
 	}
@@ -410,6 +407,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: #fff;
 	text-shadow: 0 1px 0 #000;
 	}
+
+/* =travelpass
+--------------------------------------------------------------- */
+.travelpass .calendar {
+	width: 100%;
+	}
 .travelpass-cal-wrapper,
 .travelpass-order-wrapper {
 	width: 48.181818181818%;
@@ -417,6 +420,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	}
 .travelpass-order-wrapper {
 	margin-left: 3.636363636364%; /* 20 / 550 */
+	}
+.terms {
+	margin-bottom: 1.4em;
 	}
 
 @media only screen and (max-width: 600px) {

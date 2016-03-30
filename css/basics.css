@@ -131,6 +131,13 @@ label.error,
 .asset-meta {
 	font-size: 0.92em;
 	}
+iframe {
+	display: block;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 100%;
+	}
 .optimale-zeilenlaenge { 
 	/* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 	color: red;
@@ -157,6 +164,7 @@ a img {
 /* =doc-anchors font-awesome
 --------------------------------------------------------------- */
 a[href^="http:"]::after, a[href^="https:"]::after,
+a.show-icon[href^="/"]::after, a.document-lst::after,
 a[href$=".csv"]::before, a[href$=".CSV"]::before,
 a[href$=".doc"]::before, a[href$=".DOC"]::before,
 a[href$=".docx"]::before, a[href$=".DOCX"]::before,
@@ -255,6 +263,12 @@ a.no-icon::after, a.no-icon::before,
 .footer a[href]::after {
 	padding: 0;
 	content: none;
+	}
+a.show-icon[href^="/"]:after { /* OSM-lst: interne Links mit anderem Icon */
+	content: "\f0c1";
+	}
+a.document-lst:after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
+	content: "\f0c5";
 	}
 	
 	
