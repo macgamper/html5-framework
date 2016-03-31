@@ -1,6 +1,12 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 31.03.2016
+### normalize.css (1)
+### basics.css (2)
+1 Update auf v4.0.0
+2 sup/sub-CSS gelöscht (in normalize.css vorhanden)
+
 ## 30.03.2016
 ### basics.css
 Grundformatierungen für iFrame eingefügt, damit die veralteten HTML-Attribute weggelassen werden können.
