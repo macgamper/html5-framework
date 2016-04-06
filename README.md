@@ -1,6 +1,11 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 06.04.2016
+### basics.css / responsive
+Bild-Ausrichtungsklassen vereinfach, so dass margin und max-width nur noch an je einem Ort pro CSS angepasst werden müssen.
+Hier sollten idealerweise Wert aus dem Grid eingetragen werden.
+
 ## 31.03.2016
 ### normalize.css (1)
 ### basics.css (2)

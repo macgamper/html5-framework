@@ -63,6 +63,14 @@ gamperm		26.09.2013		Created
 		padding: 0;
 		background-image: none;
 		}
+		
+	.alignleft,
+	.alignright {
+		float: none;
+		display: block;
+		max-width: 100%;
+		margin: 1.5em 0; /* mit .col-Grid-Margin harmnonisieren */
+		}
 
 	/* =content
 	--------------------------------------------------------------- */
