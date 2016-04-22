@@ -83,6 +83,8 @@ gamperm			11.11.2014			Created
 	
 	.login-pw-reset {
 		float: none;
+		margin-top: 0.75em;
+		text-align: center;
 		}
 }
 
