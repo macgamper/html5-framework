@@ -12,14 +12,48 @@ gamperm			09.01.2015			added styles for OSM/sales, magnific gallery
 gamperm			11.11.2014			Created
 *********************************************************************************** */
 
-/* =basic UI-elements
+/* =global module-wrapper
 --------------------------------------------------------------- */
 .mod-wrapper {
 	margin-bottom: 1.4em;
 	}
 
-/* module-navigation */
+/* =global module-lists
+--------------------------------------------------------------- */
+.mod-lst > .mod-entry {
+	border-top: 1px solid #666;
+	padding: 0.75em 0;
+	}
+.mod-entry:first-child {
+	border-top: 0;
+	padding-top: 0;
+	}
+.mod-entry > *:last-child,
+.mod-entry a > *:last-child {
+	margin-bottom: 0;
+	}
+	
+.mod-entry-meta {
+	display: block;
+	margin-bottom: 0.5em;
+	color: #a0a0a0;
+	font-size: 0.875em; /* 14/16 */
+	}
+.mod-entry-title {
+	margin-bottom: 0.5em;
+	}
+.mod-entry-title a {
+	display: block;
+	}
+.mod-entry-desc {
+	
+	}
+.mod-entry-img {
+	display: block;
+	}
 
+/* =global module-navigation
+--------------------------------------------------------------- */
 .mod-nav {
 	overflow: hidden;
 	margin: .5em 0 1.4em 0;
@@ -36,7 +70,7 @@ gamperm			11.11.2014			Created
 .mod-nav a:hover, 
 .mod-nav a:focus,
 .mod-nav .active a {
-	color: #e1001a;
+	color: #000;
 	}
 .mod-nav .active a {
 	font-weight: bold;
@@ -49,8 +83,22 @@ gamperm			11.11.2014			Created
 	
 	.login-pw-reset {
 		float: none;
+		margin-top: 0.75em;
+		text-align: center;
 		}
 }
+
+/* =Files
+--------------------------------------------------------------- */
+.asset-meta {
+	white-space: nowrap;
+	}
+.asset-type {
+	text-transform: uppercase;
+	}
+.asset-size {
+	
+	}
 
 /* =form-builder
 --------------------------------------------------------------- */	
@@ -136,8 +184,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	margin-bottom: 2.4em;
 	}
 .form-builder .form-builder-btn-group p {
-	display: inline;
-	margin-right: 1.4em;
+	display: inline-block;
+	margin: 0 1.4em 0 0;
 	}
 .form-builder input[disabled] {
 	opacity: 0.5;
@@ -160,13 +208,17 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	float: left;
 	margin-bottom: 0;
 	}
-.form-builder .form-sizer-25 {
+.form-builder .form-sizer-25,
+.form-builder .form-street-component .form-sizer:last-child,
+.form-builder .form-zip-component .form-sizer:first-child {
 	width: 23%;
 	}
 .form-builder .form-sizer-50 {
 	width: 48%;
 	}
-.form-builder .form-sizer-75 {
+.form-builder .form-sizer-75,
+.form-builder .form-street-component .form-sizer:first-child,
+.form-builder .form-zip-component .form-sizer:last-child {
 	width: 73%;
 	}
 .form-sizer + .form-sizer {
@@ -215,20 +267,53 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder button {
 		width: 100%;
 		}
-	.form-builder-btn-group [type=submit] {
-		margin-bottom: 1.4em;
+	.form-builder .form-builder-btn-group p {
+        display: block;
+        margin: 0;
+        }
+	.form-builder .form-builder-btn-group > p + p {
+		margin-top: 0.7em;
 		}
 
 }
+
+/* =flex-search
+--------------------------------------------------------------- */
+.flex-search {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	}
+.flex-search > label {
+	margin-right: 1em;
+	align-self: center;
+	}
+.form-builder.flex-search > label ,
+.form-builder .flex-search > label {
+	margin-right: 1em;
+	width: auto;
+	padding-right: 0 ;
+	}
+.flex-search > input {
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	border-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	}
+.flex-search > button {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding-right: 1em;
+	padding-left: 1em;
+	}
 
 /* =calendar (events, reservations)
 --------------------------------------------------------------- */
 .calendar {
 	width: 50%;
 	line-height: 2;
-	}
-.travelpass .calendar {
-	width: 100%;
 	}
 .calendar th {
 	background-color: transparent;
@@ -335,6 +420,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	
 .cal-allfree.cal-allfree,
 .cal-partlyfree.cal-partlyfree,
+.cal-almostsoldout.cal-almostsoldout,
 .cal-full.cal-full {
 	box-shadow: none;
 	}
@@ -343,7 +429,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	background-color: #008000;
 	}
 .cal-partlyfree,
-.cal-partlyfree-legend span { /* teilweise frei */
+.cal-partlyfree-legend span { /* letzte freie kartei */
 	background-color: #FF8000;
 	}
 .cal-full,
@@ -352,9 +438,16 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	}
 .cal-allfree a,
 .cal-partlyfree a,
+.cal-almostsoldout a,
 .cal-full a {
 	color: #fff;
 	text-shadow: 0 1px 0 #000;
+	}
+
+/* =travelpass
+--------------------------------------------------------------- */
+.travelpass .calendar {
+	width: 100%;
 	}
 .travelpass-cal-wrapper,
 .travelpass-order-wrapper {
@@ -363,6 +456,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	}
 .travelpass-order-wrapper {
 	margin-left: 3.636363636364%; /* 20 / 550 */
+	}
+.terms {
+	margin-bottom: 1.4em;
 	}
 
 @media only screen and (max-width: 600px) {
@@ -380,36 +476,51 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 --------------------------------------------------------------- */
 ul.gallery-magnific {
 	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	}
 ul.gallery-magnific li {
 	float: left;
 	width: 30.769230769231%; /* 200 / 650 */
-	margin-left: 3.846153846154%; /* 25 / 650 */
+	margin: 3.846153846154%; /* 25 / 650 */
+	margin-top: 0;
+	margin-right: 0;
 	}
 ul.gallery-magnific li:nth-child(3n+1) {
 	clear: left;
 	margin-left: 0;
 	}
-ul.gallery-magnific li a {
+ul.gallery-magnific a {
+	display: block;
 	text-decoration: none;
 	}
-ul.gallery-magnific li a figcaption {
+ul.gallery-magnific figure {
+	margin-bottom: 0;
+	}
+ul.gallery-magnific figcaption {
+	padding: 0.5em;
 	text-align: center;
-	-webkit-transition: all .5s ease;
-	transition: all .5s ease;
 	}
 ul.gallery-magnific img {
 	display: block;
 	margin: 0 auto;
 	}
-ul.gallery-magnific li figcaption {
-	padding: 0.5em;
-	}
-ul.gallery-magnific li a:hover figcaption,
-ul.gallery-magnific li a:focus figcaption {
-	background-color: #dcdedf;
-	background-color: rgba(35, 51, 59, 0.16);
-	}
+	
+@media only screen and (max-width: 700px) {
+
+	ul.gallery-magnific li,
+	ul.gallery-magnific li:nth-child(3n+1) {
+		clear: none;
+		width: 46.153846153846%; /* 300 / 650 */
+		margin-left: 3.846153846154%; /* 25 / 650 */
+		}
+	ul.gallery-magnific li:nth-child(2n+1) {
+		clear: left;
+		margin-left: 0;
+		}
+	
+}
 
 /* =osm online-schalter
 --------------------------------------------------------------- */
@@ -470,7 +581,7 @@ ul.gallery-magnific li a:focus figcaption {
 	font-size: 1em;
 	}
 .sales-subtotal {
-	border-bottom: 2px solid #a1acb0;
+	border-bottom-width: 2px;
 	font-weight: bold;
 	}
 
@@ -549,7 +660,7 @@ ul.gallery-magnific li a:focus figcaption {
 	
 @media only screen and (max-width: 475px) {
 
-	.mod-index-toc:after {
+	.mod-index-toc::after {
 		display: block;
 		pointer-events: none;
 		content: '';
@@ -568,7 +679,8 @@ ul.gallery-magnific li a:focus figcaption {
 		display: block;
 		width: auto;
 		margin: 0;
-		overflow: scroll;
+		overflow-x: auto;
+		overflow-y: hidden;
 		-webkit-overflow-scrolling: touch;		
 		}
 	.mod-index-toc a {
@@ -601,4 +713,56 @@ ul.gallery-magnific li a:focus figcaption {
 	}
 .mod-index-pages > div:target ul {
 	padding-bottom: 1em;
+	}
+
+/* =collections
+--------------------------------------------------------------- */
+.collection-lst {
+	margin-bottom: 0;
+	}
+.collection-item {
+	display: block;
+	float: left;
+	}
+.collection-item::after {
+	content: '\00A0\00A0/\00A0\00A0';
+	}
+.collection-item:last-child::after {
+	content: none;
+	}
+
+/* =accordion
+--------------------------------------------------------------- */
+.js-accordion {
+	border-bottom: 1px solid #d2d2d2;
+	margin-bottom: 1.4em;
+	}
+.js-accordion_control {
+	margin-bottom: 0;
+	border-top: 1px solid #d2d2d2;
+	padding: 0.25em 0;
+	cursor: pointer;
+	}
+.js-accordion_control::after {
+	float: right;
+	padding-right: 0.5em;
+	content: "\f077";
+	display: inline-block;
+	font: normal normal 0.7em/1.8 FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	}
+.js-accordion_control--active::after {
+	content: "\f078";
+	}
+.js-accordion-content {
+	padding: 0.7em 0;
+	}
+.js-accordion-content > *:last-child {
+	margin-bottom: 0;
 	}

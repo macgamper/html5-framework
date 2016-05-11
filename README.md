@@ -1,6 +1,74 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 14.04.2016
+### screen.css
+FontAwesome 4.6.1 ist gekommen. Neu wird im Master auf die «latest»-Version verwiesen. In der Produktivumgebung muss es sowieso neu verknüpft werden.
+
+## 06.04.2016
+### basics.css / responsive
+Bild-Ausrichtungsklassen vereinfach, so dass margin und max-width nur noch an je einem Ort pro CSS angepasst werden müssen.
+Hier sollten idealerweise Wert aus dem Grid eingetragen werden.
+
+## 31.03.2016
+### normalize.css (1)
+### basics.css (2)
+1 Update auf v4.0.0
+2 sup/sub-CSS gelöscht (in normalize.css vorhanden)
+
+## 30.03.2016
+### basics.css
+Grundformatierungen für iFrame eingefügt, damit die veralteten HTML-Attribute weggelassen werden können.
+
+## 24.03.2016
+### application.css / basics.css
+Klassen für File-Meta-Informationen ergänzt > [pdf, 1.2 MB]
+.asset-meta.
+	.asset-type
+	.asset-size
+
+## 23.03.2016
+### print.css
+Align-Klassen für Bildausrichtungen ergänzt. small & figcaption verbessert.
+
+## 18.03.2016
+### application.css
+Magnific-Gallery etwas aufgeräumt, Media-Query als Basis integriert und Flexbox für Zentrierung der Bilder in der Höhe integriert. Firefox hat dann aber einen Bug und ignoriert den margin-bottom, zudem kann es mit Legenden und zentrierten Bildern zu unschönen Effekten kommen. Da muss noch eine bessere Lösung her…
+
+## 16.03.2016
+### application.css
+Klassen für das JS-Acordion ergänzt.
+Klassen für Flex-Search ergänzt.
+
+## 03.03.2016
+### application.css
+Verbesserungen in der GA-Kalenderdarstellung bei «letzte Karte verfügbar».
+
+## 13.01.2016
+### basics.css
+Globale Klasse .none wieder ergänzt. Wird für die verschlüsselten E-Mail in Comet verwendet.
+.none {
+	display: none;
+	}
+
+## 06.01.2016
+### template.htm
+WAI-ARIA Rolen-Attribute entfernt.
+
+
+## 28.12.2015
+### basics.css
+Zeilenabstände bei Title-Elementen auf 1.2 verkleinert. Suchfelder explizit auf border-box umgestellt (überschreibt den Wert in normalize.css)
+
+## 21.12.2015
+### application.css
+.form-builder für neue Street- und Zip/Town-Komponenten der Mustaches erweitert.
+
+## 16.11.2015
+### basics.css
+
+Die Klassen .zebra und .hover (alternierende, respektive hervorgehobene Hintergrundfarbe bei :hover) können nun auch auf Listen (ul und ol) angewendet werden.
+
 ## 21.10.2015
 ### basics.css
 
