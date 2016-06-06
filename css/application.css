@@ -20,6 +20,9 @@ gamperm			11.11.2014			Created
 
 /* =global module-lists
 --------------------------------------------------------------- */
+.mod-category {
+
+	}
 .mod-lst > .mod-entry {
 	border-top: 1px solid #666;
 	padding: 0.75em 0;
