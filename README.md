@@ -1,6 +1,14 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 01.07.2016
+### application.css
+Suchresultate-Styling entfernt. Soll neu über die globalen Modulklassen gemanagt werden.
+
+## 06.06.2016
+### normalize.css
+Update auf v4.1.1
+
 ## 14.04.2016
 ### screen.css
 FontAwesome 4.6.1 ist gekommen. Neu wird im Master auf die «latest»-Version verwiesen. In der Produktivumgebung muss es sowieso neu verknüpft werden.

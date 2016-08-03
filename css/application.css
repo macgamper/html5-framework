@@ -20,6 +20,9 @@ gamperm			11.11.2014			Created
 
 /* =global module-lists
 --------------------------------------------------------------- */
+.mod-category {
+
+	}
 .mod-lst > .mod-entry {
 	border-top: 1px solid #666;
 	padding: 0.75em 0;
@@ -307,6 +310,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	border-bottom-left-radius: 0;
 	padding-right: 1em;
 	padding-left: 1em;
+	-webkit-flex: 0 0 0;
+	    -ms-flex: 0 0 0;
+	        flex: 0 0 0;
 	}
 
 /* =calendar (events, reservations)
@@ -583,15 +589,6 @@ ul.gallery-magnific img {
 .sales-subtotal {
 	border-bottom-width: 2px;
 	font-weight: bold;
-	}
-
-/* =search-results
---------------------------------------------------------------- */
-.search-result-lst li {
-	margin-bottom: 1.5em;
-	}
-.search-result-title {
-	margin-bottom: 0;
 	}
 
 /* =messenger

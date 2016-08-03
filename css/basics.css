@@ -477,9 +477,10 @@ fieldset > *:last-child {
 	line-height: normal;
 	background-color: #e2001a;
 	border-radius: 3px;
+	cursor: pointer;
 	}
 .btn[type="reset"],
-.btn-secondary {
+.btn--secondary {
 	background-color: grey;
 	}
 .btn:hover, 
@@ -495,6 +496,9 @@ fieldset > *:last-child {
 	border: 0;
 	color: #000;
 	background-color: transparent;
+	}
+.btn--fullwidth {
+	width: 100%;
 	}
 
 /* =grid
