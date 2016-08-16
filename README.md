@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 02.08.2016
+### normalize.css
+Update auf v4.2
+
 ## 01.07.2016
 ### application.css
 Suchresultate-Styling entfernt. Soll neu über die globalen Modulklassen gemanagt werden.
