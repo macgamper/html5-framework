@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 04.08.2016
+### basics.css
+Ghost-Button Klasse .btn—ghost ergänzt. Transparenter Button mit Rahmen.
+
 ## 02.08.2016
 ### normalize.css
 Update auf v4.2
