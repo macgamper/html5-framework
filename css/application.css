@@ -539,6 +539,7 @@ ul.gallery-magnific img {
 	}
 .os-price {
 	width: 15%;
+  	text-align: right;
 	}
 .os-price-detail {
 	text-align: right;
