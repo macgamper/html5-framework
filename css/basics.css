@@ -193,7 +193,7 @@ a[href^="https://www.google.com/maps/"]::before,
 a[href^="http://www.google.com/maps/"]::before,
 a[href^="https://maps.google.com/"]::before,
 a[href^="http://maps.google.com/"]::before,
-a.vcard-link::before {
+a.download-icn::before {
 	display: inline-block;
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -252,7 +252,7 @@ a[href^="https://maps.google.com/"]:before,
 a[href^="http://maps.google.com/"]:before {
 	content: "\f041";
 	}
-a.vcard-link::before {
+a.download-icn::before {
     content: "\f019";
 	}
 a[href^="mailto:"]::before,
