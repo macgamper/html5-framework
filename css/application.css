@@ -157,6 +157,9 @@ gamperm			11.11.2014			Created
 .form-builder .form-required-hint {
 	font-style: normal;
 	}
+.form-builder .required > label.error {
+	font-weight: normal;
+	}
 .error,
 .form-builder input.error,
 .form-builder label.error {
