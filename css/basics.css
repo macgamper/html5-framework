@@ -188,7 +188,12 @@ a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
 a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
 a[href$=".xltx"]::before, a[href$=".XLTX"]::before,
 a[href$=".zip"]::before, a[href$=".ZIP"]::before,
-a[href^="mailto\3A"]::before, a[data-email-link]::before {
+a[href^="mailto\3A"]::before, a[data-email-link]::before,
+a[href^="https://www.google.com/maps/"]::before,
+a[href^="http://www.google.com/maps/"]::before,
+a[href^="https://maps.google.com/"]::before,
+a[href^="http://maps.google.com/"]::before,
+a.download-icn::before {
 	display: inline-block;
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -240,6 +245,15 @@ a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
 	}
 a[href$=".zip"]::before, a[href$=".ZIP"]::before { 
 	content: "\f1c6";
+	}
+a[href^="https://www.google.com/maps/"]:before,
+a[href^="http://www.google.com/maps/"]:before,
+a[href^="https://maps.google.com/"]:before,
+a[href^="http://maps.google.com/"]:before {
+	content: "\f041";
+	}
+a.download-icn::before {
+    content: "\f019";
 	}
 a[href^="mailto:"]::before,
 a[data-email-link]::before {
@@ -342,10 +356,10 @@ table th {
 	font-weight: bold;
 	color: #23343b;
 	}
-table tbody th {
+table th {
 	border-bottom-width: 1px;
 	}
-table tbody th {
+table th {
 	border-bottom-width: 1px;
 	}
 table tfoot tr:first-child td {
@@ -479,10 +493,6 @@ fieldset > *:last-child {
 	border-radius: 3px;
 	cursor: pointer;
 	}
-.btn[type="reset"],
-.btn--secondary {
-	background-color: grey;
-	}
 .btn:hover, 
 .btn:focus {
 	color: #fff;
@@ -491,6 +501,13 @@ fieldset > *:last-child {
 	}
 .btn:active {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+	}
+.btn-s, .btn-s:link {
+  	padding: .1em .5em;
+	}
+.btn[type="reset"],
+.btn--secondary {
+	background-color: grey;
 	}
 .btn--invis,
 .btn--ghost {
