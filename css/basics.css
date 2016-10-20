@@ -188,7 +188,12 @@ a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
 a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
 a[href$=".xltx"]::before, a[href$=".XLTX"]::before,
 a[href$=".zip"]::before, a[href$=".ZIP"]::before,
-a[href^="mailto\3A"]::before, a[data-email-link]::before {
+a[href^="mailto\3A"]::before, a[data-email-link]::before,
+a[href^="https://www.google.com/maps/"]::before,
+a[href^="http://www.google.com/maps/"]::before,
+a[href^="https://maps.google.com/"]::before,
+a[href^="http://maps.google.com/"]::before,
+a.download-icn::before {
 	display: inline-block;
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -240,6 +245,15 @@ a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
 	}
 a[href$=".zip"]::before, a[href$=".ZIP"]::before { 
 	content: "\f1c6";
+	}
+a[href^="https://www.google.com/maps/"]:before,
+a[href^="http://www.google.com/maps/"]:before,
+a[href^="https://maps.google.com/"]:before,
+a[href^="http://maps.google.com/"]:before {
+	content: "\f041";
+	}
+a.download-icn::before {
+    content: "\f019";
 	}
 a[href^="mailto:"]::before,
 a[data-email-link]::before {
@@ -478,6 +492,9 @@ fieldset > *:last-child {
 	background-color: #e2001a;
 	border-radius: 3px;
 	cursor: pointer;
+	}
+.btn-s, .btn-s:link {
+  	padding: .1em .5em;
 	}
 .btn[type="reset"],
 .btn--secondary {
