@@ -5,6 +5,9 @@ HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 ### normalize.css
 Update auf v5.0.0
 
+### basics.css
+Optischen Fokus bei Radio- und Checkbox-Inputs entfernt.
+
 ## 04.08.2016
 ### basics.css
 Ghost-Button Klasse .btn—ghost ergänzt. Transparenter Button mit Rahmen.

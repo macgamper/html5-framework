@@ -1,17 +1,3 @@
-/* ***********************************************************************************
-FileName	: application.css
-Date		: 09.01.2015
-Author		: gamperm
-Purpose		: Framework - Comet-Application Styles
-
-Modification Log:
-
-Name			Date				Description
-================================================================================
-gamperm			09.01.2015			added styles for OSM/sales, magnific gallery
-gamperm			11.11.2014			Created
-*********************************************************************************** */
-
 /* =global module-wrapper
 --------------------------------------------------------------- */
 .mod-wrapper {
@@ -231,6 +217,19 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	}
 .form-sizer + .form-sizer {
 	float: right;
+	}
+
+/* =form-builder stacked: Label sits on top of input
+--------------------------------------------------------------- */
+.form-builder .clearfix.stacked > * {
+	display: block;
+	float: none;
+	width: 100%;
+	padding-right: 0;
+	}
+.form-builder .clearfix.stacked > label {
+	padding-top: 0;
+	margin-bottom: 0.25em;
 	}
 	
 /* =form-builder 30% label / 70% input
