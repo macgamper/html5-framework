@@ -1,17 +1,5 @@
-/* ***********************************************************************************
-FileName	: layout.css
-Date		: 25.07.2014
-Author		: gamperm
-Purpose		: Framework
-
-Modification Log:
-
-Name		Date			Description
-================================================================================
-gamperm		02.10.2015		last modified
-gamperm		26.09.2013		Created
-*********************************************************************************** */
-
+/* =global layout
+--------------------------------------------------------------- */
 .wrapper {
 	border: 2px solid black;
 	width: 90%;
@@ -32,7 +20,7 @@ gamperm		26.09.2013		Created
 	width: 80%;
 	background-color: #ededed; /* grey */
 	}
-.content {
+.main {
 	float: left;
 	width: 80%;
 	background-color: #9f9; /* green */

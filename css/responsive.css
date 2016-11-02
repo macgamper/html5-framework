@@ -1,60 +1,14 @@
-/* ***********************************************************************************
-FileName	: responsive.css
-Date		: 25.07.2014
-Author		: gamperm
-Purpose		: Framework
-
-Modification Log:
-
-Name		Date			Description
-================================================================================
-gamperm		25.07.2014		replaced ID's with classes
-gamperm		26.09.2013		Created
-*********************************************************************************** */
-
-.table-responsive {
-	width: 100%;
-	overflow-x: auto;
-	overflow-y: hidden;
-	border: 1px solid #b7b7b7;
-	border-bottom: 0;
-	-webkit-overflow-scrolling: touch;
-	}
-.table-responsive > table {
-	margin-bottom: 0;
-	}
-	
-.media-responsive {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-	}
-.media-responsive iframe, 
-.media-responsive object, 
-.media-responsive embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48em) { /* 768/16 */
 	
 	
 	
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 32.5em) { /* 520/16 */
 
 	/* =basics
 	--------------------------------------------------------------- */
-	.wrapper {
-		width: 96%;
-		}
-	.header, .container, .content, .mainnav, .sidebar, .footer {
+	.header, .container, .main, .mainnav, .sidebar, .footer {
 		position: static;
 		float: none;
 		width: auto;
@@ -72,19 +26,37 @@ gamperm		26.09.2013		Created
 		margin: 1.5em 0; /* mit .col-Grid-Margin harmnonisieren */
 		}
 
-	/* =content
-	--------------------------------------------------------------- */
 	.table-responsive {
-		border: 1px solid #b7b7b7;
+		border: 1px solid #dcdfde;
 		border-bottom: 0;
 		}
-		
-}
 
-@media only screen and (min-width: 1200px) {
+	/* =global layout
+	--------------------------------------------------------------- */
+	.wrapper {
+		width: 96%;
+		}
 
+	/* =header
+	--------------------------------------------------------------- */
+	
+
+	/* =content
+	--------------------------------------------------------------- */
 	
 		
+	/* =sidebar
+	--------------------------------------------------------------- */
+	
+		
+	/* =nav
+	--------------------------------------------------------------- */
+	
+
+	/* =footer
+	--------------------------------------------------------------- */
+	
+
 }
 
 @media

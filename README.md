@@ -1,6 +1,12 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 02.11.2016
+### template.htm, basics.css, layout.css
+- Klasse .content auf .main geändert
+- .table-responsive, .media-responsive ins basics.css verschoben
+- Breakpoints auf em umgestellt (Zielwert / 16) und vereinheitlicht (768 / 520)
+
 ## 20.10.2016
 ### normalize.css
 Update auf v5.0.0

@@ -1,21 +1,3 @@
-/* ***********************************************************************************
-FileName	: basics.css
-Date		: 13.11.2014
-Author		: gamperm
-Purpose		: Framework - Reset, Typo, Maincomponents
-
-Modification Log:
-
-Name		Date			Description
-================================================================================
-gamperm		13.11.2014		minor enhancements (title-classes .h1, .h2)
-gamperm		21.05.2014		added suffixes as UPPERCASE
-gamperm		26.09.2013		Created
-*********************************************************************************** */
-
-	
-/* =basic elements & typo
---------------------------------------------------------------- */
 *,
 *:before,
 *:after,
@@ -153,7 +135,7 @@ a:focus, a:hover, a:active {
 a img {
 	border: none;
 	}
-#content:focus {
+#main:focus {
 	outline: none; /* entfernt :focus des Skiplinks */
 	}
 	
@@ -390,6 +372,35 @@ table.zebra tbody tr:nth-child(even),
 table.hover tbody tr:hover,
 .hover li:hover {
 	background-color: #f7fbff;
+	}
+
+/*=responsive tables & media
+--------------------------------------------------------------- */
+.table-responsive {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	}
+.table-responsive > table {
+	margin-bottom: 0;
+	}
+	
+.media-responsive {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	}
+.media-responsive iframe, 
+.media-responsive object, 
+.media-responsive embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	}
 		
 /*=microformats

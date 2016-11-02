@@ -68,7 +68,8 @@
 .login-pw-reset {
 	float: right;
 	}
-@media only screen and (max-width: 500px) {
+	
+@media only screen and (max-width: 32.5em) { /* 520/16 */
 	
 	.login-pw-reset {
 		float: none;
@@ -249,7 +250,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	width: 70%;
 	}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 32.5em) { /* 520/16 */
 
 	.form-builder label,
 	.form-builder .clearfix > label,
@@ -473,7 +474,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	margin-bottom: 1.4em;
 	}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 48em) { /* 768/16 */
 
 	.travelpass-cal-wrapper,
 	.travelpass-order-wrapper {
@@ -519,7 +520,7 @@ ul.gallery-magnific img {
 	margin: 0 auto;
 	}
 	
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 48em) { /* 768/16 */
 
 	ul.gallery-magnific li,
 	ul.gallery-magnific li:nth-child(3n+1) {
@@ -662,7 +663,7 @@ ul.gallery-magnific img {
 	color: #000;
 	}
 	
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 32.5em) { /* 520/16 */
 
 	.mod-index-toc::after {
 		display: block;
