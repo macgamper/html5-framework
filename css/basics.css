@@ -482,6 +482,26 @@ nav ul {
 	padding: 1.4em;
 	background-color: #f6f4f3;
 	}
+.box--warning {
+	border-color: #faebcc;
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	}
+.box--success {
+	border-color: #d6e9c6;
+	color: #3c763d;
+	background-color: #dff0d8;
+	}
+.box--error {
+	border-color: #ebccd1;
+	color: #a94442;
+	background-color: #f2dede;
+	}
+.box--info {
+	border-color: #bce8f1;
+	color: #31708f;
+	background-color: #d9edf7;
+	}
 .box > *:last-child,
 fieldset > *:last-child {
 	margin-bottom: 0;

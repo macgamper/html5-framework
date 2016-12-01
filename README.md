@@ -1,6 +1,14 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 01.12.2016
+### basics.css
+.box-Modifier-Klassen ergänzt:
+- .box--warning
+- .box--success
+- .box--error
+- .box--info
+
 ## 02.11.2016
 ### template.htm, basics.css, layout.css
 - Klasse .content auf .main geändert
