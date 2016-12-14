@@ -1,6 +1,14 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 14.12.2016
+### basics.css
+Tabellen-Klassen für table.grid und table.presentation ergänzt.
+
+Grid: Standard-Tabelle mit horizontalen Trennlinien bekommt auch vertikale Trennlinien.
+
+Presentation: Für (wenn nicht zu umgehen) Layouttabellen. Linien und Innenabstände werden zurückgesetzt; Tabelle ist also unsichtbar. Darf keine thead oder th mehr enthalten. zudem sollte manuell oder per JS das Attribut role="presentation" ergänzt werden. 
+
 ## 01.12.2016
 ### basics.css
 .box-Modifier-Klassen ergänzt:
