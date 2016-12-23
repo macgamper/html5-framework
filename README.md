@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 23.12.2016
+### basics.css
+Globale .sr-only Klasse für Screenreader ergänzt, wie sie FontAwesome verwendet. Wird in teils Modulen verwendet (OSM).
+
 ## 14.12.2016
 ### basics.css
 Tabellen-Klassen für table.grid und table.presentation ergänzt.

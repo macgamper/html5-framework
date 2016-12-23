@@ -437,7 +437,7 @@ table.presentation td {
 	display: none;
 	}
 .invis,
-.sr {
+.sr, .sr-only {
 	position: absolute;
 	display: inline;
 	top: -1000px;
