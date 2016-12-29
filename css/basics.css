@@ -180,7 +180,6 @@ a.download-icn::before {
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
 	font-size: inherit;
-	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
@@ -263,7 +262,6 @@ a.document-lst:after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 	content: "\f0c5";
 	}
 	
-	
 /* =forms
 --------------------------------------------------------------- */
 input[type=date],
@@ -295,7 +293,7 @@ input[type=checkbox],
 input[type=radio] {
 	border: 0;
 	}
-input:not[type=radio]:not[type=checkbox]:focus,
+input:not([type=radio]):not([type=checkbox]):focus,
 select:focus, 
 textarea:focus {
 	outline: none;

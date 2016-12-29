@@ -412,9 +412,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar-legend {
 	margin-bottom: 1.4em;
 	font-size: 1em;
-	-webkit-column-gap: 3%;
-	   -moz-column-gap: 3%;
-			column-gap: 3%;
+	-webkit-column-gap: 1em;
+	   -moz-column-gap: 1em;
+			column-gap: 1em;
 	-webkit-columns: 2 10em;
 	   -moz-columns: 2 10em;
 			columns: 2 10em; /* max. columns, max width */
@@ -674,11 +674,10 @@ ul.gallery-magnific img {
 		right: 0;
 		width: 20%;
 		height: 100%;
-		background-image: -webkit-gradient(linear, left center, right center, from(rgba(240, 240, 240, 0.00)), to(rgba(240, 240, 240, 1.00)));
-		background-image: -webkit-linear-gradient(left, rgba(240, 240, 240, 0.00), rgba(240, 240, 240, 1.00));
-		background-image: -moz-linear-gradient(left, rgba(240, 240, 240, 0.00), rgba(240, 240, 240, 1.00));
-		background-image: -ms-linear-gradient(left, rgba(240, 240, 240, 0.00), rgba(240, 240, 240, 1.00));
-		background-image: linear-gradient(left, rgba(240, 240, 240, 0.00), rgba(240, 240, 240, 1.00));
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+100&0+0,1+100 */
+		background-image: -moz-linear-gradient(left,  rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%); /* FF3.6-15 */
+		background-image: -webkit-linear-gradient(left,  rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background-image: linear-gradient(to right,  rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		}
 	.mod-index-toc ul {
 		display: block;
@@ -754,7 +753,6 @@ ul.gallery-magnific img {
 	content: "\f077";
 	display: inline-block;
 	font: normal normal 0.7em/1.8 FontAwesome;
-	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
