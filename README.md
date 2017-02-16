@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 06.02.2017
+### basics.css
+Datei-Präfixe .dotx / .DOTX für Word-Vorlagen ergänzt.
+
 ## 29.12.2016
 ### basics.css / application.css / responsive.css
 Einige Syntaxfehler korrigiert (falsche Klammern bei :not()-Wert, column-gap-Wert, Gradient-Wert), Legacy-Prefixes bei den Gradients und der Retina-MQ entfernt.
