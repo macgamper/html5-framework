@@ -625,7 +625,10 @@ ul.gallery-magnific img {
 .col-subscription-delivery label {
 	white-space: nowrap;
 	}
-
+.subscription-opt-lst [class*="col-"] {
+	margin-left: 0;
+	float: none;
+	}
 
 /* =mod-index toc
 --------------------------------------------------------------- */
