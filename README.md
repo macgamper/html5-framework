@@ -3,14 +3,10 @@ HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
 ## 01.03.2017
 ### basics.css
-Maximalbreite bei zentrierten Bildern/Figure entfernt, damit alle ausgerichteten Elemente (links/zentriert/rechts) die gleiche Breite haben.
-```css
-.aligncenter {
-	~~max-width: 100%;~~
-	}
-```
+Maximalbreite bei zentrierten Bildern/Figure ``.aligncenter`` entfernt, damit alle ausgerichteten Elemente (auch ``.alignleft`` / ``.alignright``) die gleiche Breite haben.
+
 ### responsive.css
-Für kleine Viewports bleibt nun die Klasse .aligncenter zentriert, behält aber die natürliche Bildgrösse bei uns ist damit nun einheitlich mit anderen platzierten Bildern (.alignleft / .alignright).
+Für kleine Viewports bleibt nun die Klasse ``.aligncenter`` zentriert, behält aber die natürliche Bildgrösse bei uns ist damit nun einheitlich mit anderen platzierten Bildern (``.alignleft`` / ``.alignright``).
 ```css
 .aligncenter {
 		display: table;
@@ -23,7 +19,7 @@ Für kleine Viewports bleibt nun die Klasse .aligncenter zentriert, behält aber
 		}
 ```
 ### application.css
-FlexBox-Anweisungen bei ul.gallery-magnific entfernt und damit Darstellungsprobleme in FF umgegangen, der keine %-Werte bei FlexBox-Margins akzeptierte.
+FlexBox-Anweisungen bei ``ul.gallery-magnific`` entfernt und damit Darstellungsprobleme in FF umgegangen, der keine %-Werte bei FlexBox-Margins akzeptierte.
 
 ## 06.02.2017
 ### basics.css
@@ -35,7 +31,7 @@ Einige Syntaxfehler korrigiert (falsche Klammern bei :not()-Wert, column-gap-Wer
 
 ## 23.12.2016
 ### basics.css
-Globale .sr-only Klasse für Screenreader ergänzt, wie sie FontAwesome verwendet. Wird in teils Modulen verwendet (OSM).
+Globale ``.sr-only`` Klasse für Screenreader ergänzt, wie sie FontAwesome verwendet. Wird in teils Modulen verwendet (OSM).
 
 ## 14.12.2016
 ### basics.css
