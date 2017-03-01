@@ -1,6 +1,26 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 01.03.2017
+### basics.css
+Maximalbreite bei zentrierten Bildern/Figure entfernt, damit alle ausgerichteten Elemente (links/zentriert/rechts) die gleiche Breite haben.
+.aligncenter {
+	~~max-width: 100%;~~
+	}
+### responsive.css
+Für kleine Viewports bleibt nun die Klasse .aligncenter zentriert, behält aber die natürliche Bildgrösse bei uns ist damit nun einheitlich mit anderen platzierten Bildern (.alignleft / .alignright).
+.aligncenter {
+		display: table;
+		width: auto;
+		max-width: none;
+		}
+.aligncenter figcaption {
+		display: table-caption;
+		caption-side: bottom;
+		}
+### application.css
+FlexBox-Anweisungen bei ul.gallery-magnific entfernt und damit Darstellungsprobleme in FF umgegangen, der keine %-Werte bei FlexBox-Margins akzeptierte.
+
 ## 06.02.2017
 ### basics.css
 Datei-Präfixe .dotx / .DOTX für Word-Vorlagen ergänzt.
@@ -44,7 +64,7 @@ Optischen Fokus bei Radio- und Checkbox-Inputs entfernt.
 
 ## 04.08.2016
 ### basics.css
-Ghost-Button Klasse .btn—ghost ergänzt. Transparenter Button mit Rahmen.
+Ghost-Button Klasse .btn-ghost ergänzt. Transparenter Button mit Rahmen.
 
 ## 02.08.2016
 ### normalize.css

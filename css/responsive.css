@@ -25,6 +25,15 @@
 		max-width: 100%;
 		margin: 1.5em 0; /* mit .col-Grid-Margin harmnonisieren */
 		}
+	.aligncenter {
+		display: table;
+		width: auto;
+		max-width: none;
+		}
+	.aligncenter figcaption {
+		display: table-caption;
+		caption-side: bottom;
+		}
 
 	.table-responsive {
 		border: 1px solid #dcdfde;

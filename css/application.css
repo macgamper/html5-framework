@@ -489,9 +489,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 --------------------------------------------------------------- */
 ul.gallery-magnific {
 	overflow: hidden;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	}
 ul.gallery-magnific li {
 	float: left;
