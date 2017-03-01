@@ -4,12 +4,15 @@ HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 ## 01.03.2017
 ### basics.css
 Maximalbreite bei zentrierten Bildern/Figure entfernt, damit alle ausgerichteten Elemente (links/zentriert/rechts) die gleiche Breite haben.
-```.aligncenter {
+```css
+.aligncenter {
 	~~max-width: 100%;~~
-	}```
+	}
+```
 ### responsive.css
 Für kleine Viewports bleibt nun die Klasse .aligncenter zentriert, behält aber die natürliche Bildgrösse bei uns ist damit nun einheitlich mit anderen platzierten Bildern (.alignleft / .alignright).
-```.aligncenter {
+```css
+.aligncenter {
 		display: table;
 		width: auto;
 		max-width: none;
@@ -17,7 +20,8 @@ Für kleine Viewports bleibt nun die Klasse .aligncenter zentriert, behält aber
 .aligncenter figcaption {
 		display: table-caption;
 		caption-side: bottom;
-		}```
+		}
+```
 ### application.css
 FlexBox-Anweisungen bei ul.gallery-magnific entfernt und damit Darstellungsprobleme in FF umgegangen, der keine %-Werte bei FlexBox-Margins akzeptierte.
 
