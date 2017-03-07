@@ -11,7 +11,7 @@ body {
 /* =elemente ausblenden, die im druck nicht erscheinen sollen
 --------------------------------------------------------------- */
 nav[role="navigation"], form,
-.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .print-hidden, .breadcrumb,
+.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .print-hidden, .breadcrumb,
 .region, .country-name, .url, .none {
 	display: none;
 	}
