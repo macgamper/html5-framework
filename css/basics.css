@@ -336,7 +336,6 @@ table th {
 	border-bottom-width: 2px;
 	text-align: left;
 	font-weight: bold;
-	color: #23343b;
 	}
 table tbody th {
 	border-bottom-width: 1px;
@@ -388,7 +387,10 @@ table.grid td:last-child {
 --------------------------------------------------------------- */
 table.presentation,
 table.presentation th,
-table.presentation td {
+table.presentation td,
+table.reset,
+table.reset th,
+table.reset td {
 	border: 0;
 	padding: 0;
 	}
