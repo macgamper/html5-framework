@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 16.03.2017
+### application.css
+Kalender-Links mit ``:link``-Pseudoklasse versehen, damit Grundfarbwerte überschrieben werden.
+
 ## 07.03.2017
 ### basics.css
 Farbwert von Table-Header ``th`` entfernt.

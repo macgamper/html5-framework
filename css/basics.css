@@ -383,7 +383,7 @@ table.grid td:last-child {
 	border-right: 1px solid #bdbdbd;
 	}
 
-/*=presentation (layout-tables). don't foget role="presentation"
+/*=presentation (layout-tables). don't forget role="presentation"
 --------------------------------------------------------------- */
 table.presentation,
 table.presentation th,
