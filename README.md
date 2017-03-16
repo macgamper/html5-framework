@@ -18,14 +18,14 @@ Maximalbreite bei zentrierten Bildern/Figure ``.aligncenter`` entfernt, damit al
 Für kleine Viewports bleibt nun die Klasse ``.aligncenter`` zentriert, behält aber die natürliche Bildgrösse bei uns ist damit nun einheitlich mit anderen platzierten Bildern (``.alignleft`` / ``.alignright``).
 ```css
 .aligncenter {
-		display: table;
-		width: auto;
-		max-width: none;
-		}
+	display: table;
+	width: auto;
+	max-width: none;
+	}
 .aligncenter figcaption {
-		display: table-caption;
-		caption-side: bottom;
-		}
+	display: table-caption;
+	caption-side: bottom;
+	}
 ```
 ### application.css
 FlexBox-Anweisungen bei ``ul.gallery-magnific`` entfernt und damit Darstellungsprobleme in FF umgegangen, der keine %-Werte bei FlexBox-Margins akzeptierte.
@@ -139,8 +139,7 @@ Globale Klasse .none wieder ergänzt. Wird für die verschlüsselten E-Mail in C
 
 ## 06.01.2016
 ### template.htm
-WAI-ARIA Rolen-Attribute entfernt.
-
+WAI-ARIA Rolen-Attribute entfernt, da inzwischen überall native HTML5-Elemente im Einsatz. Validator sollte dadurch keinen Fehler mehr bringen.
 
 ## 28.12.2015
 ### basics.css
