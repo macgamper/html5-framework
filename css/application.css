@@ -596,6 +596,63 @@ ul.gallery-magnific img {
 	font-weight: bold;
 	}
 
+/* =osm payment: KK-Auswahl
+--------------------------------------------------------------- */
+.cc-lst li {
+	position: relative;
+	display: flex;
+	margin-bottom: 0.5em;
+	}
+.cc-lst li > * {
+	transition: all 0.2s ease-in-out 0s;
+	}
+.cc-lst label {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(0,0,0,0);
+	cursor: pointer;
+	}
+.cc-lst .cc-lst-img {
+	flex: 0 0 auto;
+	min-width: 50px;
+	max-width: 80px;
+	margin: 5px;
+    filter: grayscale(100%);
+    }
+.cc-lst .cc-lst-img > img {
+	display: block;
+	}
+.cc-lst .cc-lst-txt {
+	display: block;
+	flex: 1 1 auto;
+	padding-left: 1em;
+	align-self: center;
+	}
+.cc-lst input[type="radio"] {
+	position: absolute;
+	display: inline;
+	top: -1000px;
+	left: -1000px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	}
+.cc-lst input[type="radio"]:checked ~ label {
+	border: 2px solid #49b1eb;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	}
+.cc-lst input[type="radio"]:checked ~ .cc-lst-img {
+	filter: none;
+	}
+.cc-lst input[type="radio"]:checked ~ .cc-lst-txt {
+	font-weight: 500;
+	}
+
 /* =messenger
 --------------------------------------------------------------- */
 .subscription-opt-lst thead th {

@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 17.03.2017
+### application.css
+Kreditkartenauswahl im OSM-Bestellprozess ergänzt.
+
 ## 16.03.2017
 ### application.css
 Kalender-Links mit ``:link``-Pseudoklasse versehen, damit Grundfarbwerte überschrieben werden.
