@@ -1,6 +1,10 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## 22.03.2017
+### basics.css / print.css
+Print-CSS optimiert
+
 ## 17.03.2017
 ### application.css
 Kreditkartenauswahl im OSM-Bestellprozess ergänzt.

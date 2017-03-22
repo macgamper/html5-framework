@@ -626,6 +626,7 @@ ul.gallery-magnific img {
     }
 .cc-lst .cc-lst-img > img {
 	display: block;
+	width: 100%; /* for IE */
 	}
 .cc-lst .cc-lst-txt {
 	display: block;
