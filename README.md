@@ -23,7 +23,7 @@ Farbwert von Table-Header ``th`` entfernt.
 Maximalbreite bei zentrierten Bildern/Figure ``.aligncenter`` entfernt, damit alle ausgerichteten Elemente (auch ``.alignleft`` / ``.alignright``) die gleiche Breite haben.
 
 ### responsive.css
-Für kleine Viewports bleibt nun die Klasse ``.aligncenter`` zentriert, behält aber die natürliche Bildgrösse bei uns ist damit nun einheitlich mit anderen platzierten Bildern (``.alignleft`` / ``.alignright``).
+Für kleine Viewports bleibt nun die Klasse ``.aligncenter`` zentriert, behält aber die natürliche Bildgrösse bei und ist damit nun einheitlich mit anderen platzierten Bildern (``.alignleft`` / ``.alignright``).
 ```css
 .aligncenter {
 	display: table;
