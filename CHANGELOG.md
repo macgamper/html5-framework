@@ -5,7 +5,7 @@ HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 ### Added
 - Versionierung eingeführt gemäss [Semantic Versioning 2.0.0](http://semver.org/lang/de/)
 ### Changed
-- normalize.css auf Version 7.0.0 aktualisiert
+- [normalize.css](https://github.com/necolas/normalize.css/) auf Version 7.0.0 aktualisiert
 - Beginn der Umstellung des Changelog gemäss [Keep a Changelog](http://keepachangelog.com/)
 
 ## [] - 2017-03-22
