@@ -1,6 +1,21 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## [1.0.2] - 2017-06-08
+
+### Changed
+- basics.css & application.css: Forms mit Reset-Buttons bekommen Abstände:
+```
+button + button[type=reset] {
+	margin-left: 1em;
+	}
+```
+
+## [1.0.1] - 2017-05-23
+
+### Changed
+- screen.css: [FontAwesome-Pfad] (https://ext.cdn-backslash.ch/lib/font-awesome/latest/css/font-awesome.min.css) auf aktuellen CDN-URL umgestellt 
+
 ## [1.0.0] - 2017-05-08
 ### Added
 - Versionierung eingeführt gemäss [Semantic Versioning 2.0.0](http://semver.org/lang/de/)
