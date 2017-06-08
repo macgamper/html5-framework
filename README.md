@@ -3,7 +3,7 @@ HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
 ## [1.0.2] - 2017-06-08
 
-### Changed
+### Added
 - basics.css & application.css: Forms mit Reset-Buttons bekommen Abstände:
 ```
 button + button[type=reset] {
