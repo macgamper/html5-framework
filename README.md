@@ -1,11 +1,26 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## [1.0.3] - 2017-06-15
+
+### Added
+- basics.css: ``.p`` Klasse ergänzt, die Überschriften optisch in Grundtext zurücksetzt. Kann mit ``.nmb`` ergänzt werden, um auch den Margin zu entfernen.
+```css
+.p {
+	font-size: 1em;
+	font-weight: normal;
+	}
+	
+.nmb {
+	margin-bottom: 0;
+	}
+```
+
 ## [1.0.2] - 2017-06-08
 
 ### Added
 - basics.css & application.css: Forms mit Reset-Buttons bekommen Abstände:
-```
+```css
 button + button[type=reset] {
 	margin-left: 1em;
 	}

@@ -7,11 +7,11 @@ input[type="search"] {
 	box-sizing: border-box;
 	}
 body {
-	font: 0.875em/1.5 Arial, Helvetica, Geneva, sans-serif;
+	font: 1em/1.5 Arial, Helvetica, Geneva, sans-serif;
 	}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	margin: 0 0 0.75em;
+	margin: 0 0 0.7em;
 	line-height: 1.2;
 	}
 h1, .h1 {
@@ -34,12 +34,16 @@ h6, .h6 {
 	margin: 0 0 0.2em;
 	font-size: 1em;
 	}
+p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
+.p, .box, .table-responsive, .media-responsive, .flex-search {
+	margin: 0 0 1.4em;
+	}
 p {
 	
 	}
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, 
-.box, .table-responsive, .media-responsive, .flex-search {
-	margin: 0 0 1.4em;
+.p {
+	font-size: 1em;
+	font-weight: normal;
 	}
 li ul,li ol {
 	margin: 0;
@@ -448,6 +452,9 @@ table.reset td {
 	width: 0;
 	height: 0;
 	overflow: hidden;
+	}
+.nmb {
+	margin-bottom: 0;
 	}
 .right	{float: right;}
 .left	{float: left;}
