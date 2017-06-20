@@ -337,7 +337,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar td {
     color: #000;
     font-weight: inherit;
-}
+	}
 .calendar th {
 	background-color: transparent;
 	}
@@ -823,8 +823,7 @@ ul.gallery-magnific img {
 	font: normal normal 0.7em/1.8 FontAwesome;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	transform: translate(0, 0);
-	
+	transform: translate(0, 0);	
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 	}

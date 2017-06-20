@@ -1,6 +1,11 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
 
+## [1.0.4] - 2017-06-20
+
+### Added
+- application.css: Kalender-Klassen für einfachere Schriftschnitt und -farbenregelung ergänzt. 
+
 ## [1.0.3] - 2017-06-15
 
 ### Added
