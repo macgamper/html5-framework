@@ -332,6 +332,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	width: 50%;
 	line-height: 2;
 	}
+.calendar,
+.calendar th,
+.calendar td {
+    color: #000;
+    font-weight: inherit;
+}
 .calendar th {
 	background-color: transparent;
 	}
