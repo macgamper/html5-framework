@@ -1,5 +1,24 @@
 # html5-framework
-HTML5 &amp; CSS boilerplate für unsere Projekte bei backslash.
+HTML5 &amp; CSS boilerplate für Projekte bei backslash.
+
+## [1.0.5] - 2017-07-26
+
+### Added
+- basics.css: Helfer-Klasse für fixe Tabellenbreiten integriert
+- Helfer-Klasse für Margin-Bottom ergänzt.
+
+```css
+table.fixed {
+	table-layout: fixed;
+	}
+…
+.mb {
+	margin: 0 0 1.5em;
+	}
+```
+
+### Changed
+- basics.css / application.css / print.css: Margin-Bottom-Abstände vereinheitlicht (1.5em).
 
 ## [1.0.4] - 2017-06-20
 

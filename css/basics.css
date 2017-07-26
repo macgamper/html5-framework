@@ -7,11 +7,11 @@ input[type="search"] {
 	box-sizing: border-box;
 	}
 body {
-	font: 1em/1.5 Arial, Helvetica, Geneva, sans-serif;
+	font: 1em/1.5 Helvetica, Arial, Geneva, sans-serif;
 	}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	margin: 0 0 0.7em;
+	margin: 0 0 0.75em;
 	line-height: 1.2;
 	}
 h1, .h1 {
@@ -35,8 +35,8 @@ h6, .h6 {
 	font-size: 1em;
 	}
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.p, .box, .table-responsive, .media-responsive, .flex-search {
-	margin: 0 0 1.4em;
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb {
+	margin: 0 0 1.5em;
 	}
 p {
 	
@@ -95,7 +95,7 @@ figcaption {
 	font-size: 0.92em;
 	}
 blockquote {
-	padding: 0 1.4em;
+	padding: 0 1.5em;
 	font-style: italic;
 	}
 address {
@@ -232,10 +232,10 @@ a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
 a[href$=".zip"]::before, a[href$=".ZIP"]::before { 
 	content: "\f1c6";
 	}
-a[href^="https://www.google.com/maps/"]:before,
-a[href^="http://www.google.com/maps/"]:before,
-a[href^="https://maps.google.com/"]:before,
-a[href^="http://maps.google.com/"]:before {
+a[href^="https://www.google.com/maps/"]::before,
+a[href^="http://www.google.com/maps/"]::before,
+a[href^="https://maps.google.com/"]::before,
+a[href^="http://maps.google.com/"]::before {
 	content: "\f041";
 	}
 a.download-icn::before {
@@ -358,6 +358,9 @@ table tfoot tr:last-child td {
 table.auto {
 	width: auto;
 	}
+table.fixed {
+	table-layout: fixed;
+	}
 table.vertical {
 	border-top: 1px solid #dcdfde;
 	}
@@ -471,7 +474,7 @@ table.reset td {
 .alignright,
 .aligncenter {
 	max-width: 50%; /* mit .col-Grid-Breiten harmnonisieren */
-	margin: 1.4em; /* mit .col-Grid-Margin harmnonisieren */
+	margin: 1.5em; /* mit .col-Grid-Margin harmnonisieren */
 	}
 .alignleft {
 	float: left;
@@ -508,7 +511,7 @@ nav ul {
 	}
 .box {
 	border: 1px solid #666;
-	padding: 1.4em;
+	padding: 1.5em;
 	background-color: #f6f4f3;
 	}
 .box--warning {
@@ -585,7 +588,7 @@ fieldset > *:last-child {
 --------------------------------------------------------------- */
 .row {
 	clear: both;
-	margin: 1.4em 0;
+	margin: 1.5em 0;
 	}
 [class*="col-"] {
 	position: relative;

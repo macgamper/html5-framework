@@ -1,7 +1,7 @@
 /* =global module-wrapper
 --------------------------------------------------------------- */
 .mod-wrapper {
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	}
 
 /* =global module-lists
@@ -45,7 +45,7 @@
 --------------------------------------------------------------- */
 .mod-nav {
 	overflow: hidden;
-	margin: .5em 0 1.4em 0;
+	margin: .5em 0 1.5em 0;
 	}
 .mod-nav li {
 	display: inline-block;
@@ -180,7 +180,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	}
 .form-builder .form-builder-btn-group p {
 	display: inline-block;
-	margin: 0 1.4em 0 0;
+	margin: 0 1.5em 0 0;
 	}
 .form-builder input[disabled] {
 	opacity: 0.5;
@@ -420,7 +420,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =Reservations-Tageszustände
 --------------------------------------------------------------- */
 .calendar-legend {
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	font-size: 1em;
 	-webkit-column-gap: 1em;
 	   -moz-column-gap: 1em;
@@ -481,7 +481,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	margin-left: 3.636363636364%; /* 20 / 550 */
 	}
 .terms {
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	}
 
 @media only screen and (max-width: 48em) { /* 768/16 */
@@ -559,7 +559,7 @@ ul.gallery-magnific img {
 	}
 .infobox {
 	overflow: hidden;
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	font-size: 1em;
 	}
 .infobox > div {
@@ -764,7 +764,7 @@ ul.gallery-magnific img {
 /* =mod-index a-z list
 --------------------------------------------------------------- */
 .mod-index-pages > div {
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	}
 .mod-index-pages > div > h2 {
 	position: -webkit-sticky;
@@ -807,7 +807,7 @@ ul.gallery-magnific img {
 --------------------------------------------------------------- */
 .js-accordion {
 	border-bottom: 1px solid #d2d2d2;
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	}
 .js-accordion_control {
 	margin-bottom: 0;
@@ -835,4 +835,64 @@ ul.gallery-magnific img {
 	}
 .js-accordion-content > *:last-child {
 	margin-bottom: 0;
+	}
+
+/* =blog (news in blogform)
+--------------------------------------------------------------- */
+.mod-blog .mod-entry {
+	clear: both;
+	}
+.mod-blog .mod-entry--has-img > a {
+  	overflow: hidden;
+	padding-top: 0.75em;
+	}
+.mod-blog .mod-entry-title {
+	clear: none;
+	}
+.mod-blog .mod-entry img.alignright {
+	margin: 0 0 3.448275862069% 3.448275862069%;
+  	max-width: 48.275862068966%; /* 280/580 */
+	}
+
+.news-stats{
+	border: 1px solid #d9d9d9;
+  	border-right: 0;
+  	border-left: 0;
+  	padding: 1em;
+	}
+
+/* =kommentare
+--------------------------------------------------------------- */
+.mod-lst-comments li {
+	list-style: none;
+	}
+.mod-lst-comments > li {
+	margin-left: 0;
+	}
+.mod-comments .mod-entry-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+	align-items: baseline;
+    margin-bottom: 0.7em;
+	}
+.mod-comments .mod-entry-header > * {
+	margin: 0;
+	}
+.mod-comments .mod-entry-body {
+	margin-bottom: 0.7em;
+	}
+.mod-comments .mod-entry-footer {
+	text-align: right;
+	}
+.mod-entry-footer + ol {
+    margin-top: 0.75em;
+	}
+.mod-entry-footer + ol > .mod-entry,
+.mod-entry-footer + ol > .mod-entry:first-child {
+    border-top: 1px solid #d9d9d9;
+	}
+.mod-comments .mod-entry-footer a {
+	border-bottom: 0;
+	font-size: 0.86666666666667em; /* 13/15 */
 	}
