@@ -1,6 +1,33 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.0.6] - 2017-08-09
+
+### Added
+- basics.css: Helfer-Klasse für Sticky-Elemente.
+
+```css
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	}
+```
+
+### Changed
+- application.css: Mehrzeilige Texteinzüge bei Checkbox- und Radio-Listen korrigiert.
+
+```css
+.form-builder .form-option-lst li label {
+	…
+	padding-left: 1.5em;
+	}
+.form-builder .form-option-lst li label > input {
+	…
+	margin-left: -1.5em;
+	}
+```
+
 ## [1.0.5] - 2017-07-26
 
 ### Added
@@ -10,10 +37,6 @@ HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 ```css
 table.fixed {
 	table-layout: fixed;
-	}
-…
-.mb {
-	margin: 0 0 1.5em;
 	}
 ```
 

@@ -441,7 +441,7 @@ table.reset td {
 	display: none;
 	}
 	
-/* =global classes
+/* =helper classes
 --------------------------------------------------------------- */
 .none, .print-visible {
 	display: none;
@@ -469,7 +469,11 @@ table.reset td {
 	display: table;
 	clear: both;
 	}
-
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	}
 .alignleft,
 .alignright,
 .aligncenter {

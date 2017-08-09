@@ -166,10 +166,12 @@
 .form-builder .form-option-lst li label {
 	display: block;
 	padding-right: 0;
+	padding-left: 1.5em;
 	}
 .form-builder .form-option-lst li label > input {
 	width: auto;
 	float: none;
+	margin-left: -1.5em;
 	}
 div:not([class*="form-option-lst-show-title"]) label.error {
 	float: none;
