@@ -123,6 +123,19 @@ a:link {
 	color: #9d9d9d;
 	text-decoration: underline
 	}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	}
+sub {
+    bottom: -0.25em;
+    }
+sup {
+    top: -0.5em;
+    }
 /* fügt in modernen Browsern den ausgeschriebenen Link hinter dem Anchor ein
 a:link:after, 
 a:link:visited:after {

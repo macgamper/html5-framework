@@ -1,6 +1,53 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.0.8] - 2017-08-23
+
+### Added
+- application.css: Form-Builder-Komponente für «Terms & Conditions» ergänzt.
+
+```css
+.form-builder .form-builder-tac {
+	position: relative;
+	}
+.form-builder .form-builder-tac label {
+	float: none;
+	width: 100%;
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 1.5em;
+	font-weight: normal;
+	}
+.form-builder .form-builder-tac input[type=checkbox] {
+	float: none;
+	width: auto;
+	position: absolute;
+	left: 0;
+	top: 0.3em;
+	}
+```
+
+## [1.0.7] - 2017-08-14
+
+### Added
+- print.css: Hoch-/Tiefstellen korrekt Formatieren_ ``sub`` und ``sup`` von normalize.css übernommen.
+
+```css
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	}
+sub {
+    bottom: -0.25em;
+    }
+sup {
+    top: -0.5em;
+    }
+```
+
 ## [1.0.6] - 2017-08-09
 
 ### Added
