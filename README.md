@@ -1,6 +1,28 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.0.9] - 2017-08-25
+
+### Changed
+- basics.css: Die .invis (aka «Screenreader-only») Klassen gemäss Artikel «[2017 edition of .visuallyhidden](https://allyjs.io/tutorials/hiding-elements.html#2017-edition-of-visuallyhidden)» angepasst. Ausgeblendete Sprunglinks werden so bei :focus/:active sichtbar in den Viewport geschoben. 
+
+```css
+.invis:not(:focus):not(:active),
+.sr:not(:focus):not(:active),
+.sr-only:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	}
+```
+
 ## [1.0.8] - 2017-08-23
 
 ### Added

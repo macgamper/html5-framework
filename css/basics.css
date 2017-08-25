@@ -450,14 +450,18 @@ table.reset td {
 .none, .print-visible {
 	display: none;
 	}
-.invis,
-.sr, .sr-only {
+.invis:not(:focus):not(:active),
+.sr:not(:focus):not(:active),
+.sr-only:not(:focus):not(:active) {
 	position: absolute;
-	display: inline;
-	top: -1000px;
-	left: -1000px;
-	width: 0;
-	height: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
 	overflow: hidden;
 	}
 .nmb {
