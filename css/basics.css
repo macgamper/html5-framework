@@ -264,10 +264,12 @@ a.no-icon::after, a.no-icon::before,
 	padding: 0;
 	content: none;
 	}
-a.show-icon[href^="/"]:after { /* OSM-lst: interne Links mit anderem Icon */
+.os-url a.show-icon[href^="https://govis-kunde.backslash.ch"]::after,
+.os-url a.show-icon[href^="https://www.kunde.ch"]::after,
+a.show-icon[href^="/"]::after { /* OSM-lst: interne Links mit anderem Icon */
 	content: "\f0c1";
 	}
-a.document-lst:after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
+a.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 	content: "\f0c5";
 	}
 	
@@ -347,6 +349,15 @@ table th {
 	border-bottom-width: 2px;
 	text-align: left;
 	font-weight: bold;
+	}
+table th[align="left"] {
+	text-align: left;
+	}
+table th[align="center"] {
+	text-align: center;
+	}
+table th[align="right"] {
+	text-align: right;
 	}
 table tbody th {
 	border-bottom-width: 1px;
@@ -546,8 +557,11 @@ nav ul {
 	color: #31708f;
 	background-color: #d9edf7;
 	}
+
+fieldset > *:last-child,
+blockquote > *:last-child,
 .box > *:last-child,
-fieldset > *:last-child {
+.row > [class*="col-"] > *:last-child {
 	margin-bottom: 0;
 	}
 

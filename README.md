@@ -1,6 +1,11 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.0] - 2017-10-04
+
+### Removed
+- print.css: Die alten Dokument-Icon-Klassen entfernt, deren Pfade sowieso nicht mehr aktuell waren.
+
 ## [1.0.9] - 2017-08-25
 
 ### Changed

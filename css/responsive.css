@@ -19,16 +19,16 @@
 		}
 		
 	.alignleft,
-	.alignright {
+	.alignright,
+	.aligncenter {
 		float: none;
 		display: block;
 		max-width: 100%;
-		margin: 1.5em 0; /* mit .col-Grid-Margin harmnonisieren */
+		margin: 1.5em 0;
 		}
 	.aligncenter {
 		display: table;
 		width: auto;
-		max-width: none;
 		}
 	.aligncenter figcaption {
 		display: table-caption;

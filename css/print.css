@@ -223,18 +223,4 @@ fieldset > *:last-child {
 	float: right;
 	margin: 0 0 1.5em 1.5em;
 	}
-	
-/* =dokumente
---------------------------------------------------------------- */
-a.pdf	{background-image: url(/icons/module/Dokument3_0/icon_pdf_klein.gif);}
-a.doc, a.rtf {background-image: url(/icons/module/Dokument3_0/icon_word_klein.gif);}
-a.xls	{background-image: url(/icons/module/Dokument3_0/icon_excel_klein.gif);}
-a.pps	{background-image: url(/icons/module/Dokument3_0/icon_powerpoint_klein.gif);}
-a.zip	{background-image: url(/icons/module/Dokument3_0/icon_zip_klein.gif);}
-a.document {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 20px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	}
+
