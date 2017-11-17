@@ -661,3 +661,22 @@ blockquote > *:last-child,
 .col-12 {
 	width: 100%;
 	}
+
+/* =editor styles (backend)
+--------------------------------------------------------------- */
+.editor .element {
+	position: relative;
+	border: 1px dotted red;
+	}
+.editor .element::before {
+	content: 'Container';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 3px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: red;
+	}

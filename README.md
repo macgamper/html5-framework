@@ -1,6 +1,32 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.1] - 2017-11-17
+
+### Added
+- basics.css: Vorlage für im Editor besonders ausgezeichnete Bereiche integriert. Kann beispielsweise zur Kennzeichnung eines Akkordeon-Bereichs verwendet werden. ``.element``-Klasse und der  Pseudo-Content müssen je nach Fall angepasst werden. 
+
+```css
+/* =editor styles (backend)
+--------------------------------------------------------------- */
+.editor .element {
+	position: relative;
+	border: 1px dotted red;
+	}
+.editor .element::before {
+	content: 'Container';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 3px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: red;
+	}
+```
+
 ## [1.1.0] - 2017-10-04
 
 ### Removed

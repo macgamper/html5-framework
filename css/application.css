@@ -21,7 +21,9 @@
 .mod-entry a > *:last-child {
 	margin-bottom: 0;
 	}
+.mod-category-title {
 	
+	}
 .mod-entry-meta {
 	display: block;
 	margin-bottom: 0.5em;
@@ -97,7 +99,8 @@
 	margin-bottom: .75em;
 	}
 .form-builder fieldset > *:last-child,
-.form-builder  .last {
+.form-builder .last,
+.form-builder .form-builder-container > *:last-child {
 	margin-bottom: 0;
 	}
 .form-builder .clearfix > label,
