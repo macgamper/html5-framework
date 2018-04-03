@@ -1,6 +1,16 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.3] - 2018-04-03
+
+### Added
+Files für Browsersync:
+- gulpfile.js
+- package.json
+
+### Changed
+Umbenennung des HTML-Files in default.html (Standard für Browsersync).
+
 ## [1.1.2] - 2018-02-26
 
 ### Changed

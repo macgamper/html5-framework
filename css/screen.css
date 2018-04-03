@@ -17,3 +17,12 @@ gamperm		26.09.2013		Created
 @import url(layout.css);
 @import url(responsive.css);
 @import url(https://ext.cdn-backslash.ch/lib/font-awesome/latest/css/font-awesome.min.css);
+
+#__bs_notify__ {
+	/* Move notification to bottom */
+	top: auto !important;
+	bottom: 0 !important;
+	border-top-left-radius: 5px !important; 
+	border-bottom-left-radius: 0 !important;
+	opacity: .75;
+	}
