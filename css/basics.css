@@ -640,7 +640,7 @@ blockquote > *:last-child,
 .col-5 {
 	width: 41.66666666666667%;
 	}
-.col-6 {
+.col-6, .col-half {
 	width: 50%;
 	}
 .col-7 {

@@ -27,24 +27,3 @@ $(document).ready(function(){
     }
 
 });
-
-// ************************************
-// Auto-Responsive-Tables. Copyright: https://goo.gl/zKhPMy
-function scrollWideTables(container) { // puts scrolling container around wide tables
-    var tables = document.querySelectorAll(container), wrap, i;
-    for (i=0; i<tables.length; i++) {
-        var table = tables[i];
-        wrap = document.createElement('div');
-        wrap.className = 'table-responsive';
-        table.parentNode.insertBefore(wrap, table);
-        wrap.appendChild(table);
-        if (wrap.scrollWidth > wrap.clientWidth) { 
-          wrap.className += ' table-responsive--active';
-        }
-    }
-}
-window.addEventListener('resize', function() { // add or remove wide-table-gradient if viewport resized 
-    var wrap = document.querySelector('.table-responsive');
-    wrap.className = wrap.scrollWidth > wrap.clientWidth ? 'table-responsive table-responsive--active' : 'table-responsive';
-    }, false);
-scrollWideTables('main table'); // class of wide tables (can just be 'table' to target all tables on page)

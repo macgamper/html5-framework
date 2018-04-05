@@ -1,6 +1,17 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.4] - 2018-04-05
+
+### Added
+- basics.css: .col-half ergänzt (halbe Inhaltsbreite)
+
+### Changed
+- Test-Bilder durch 12 hochauflösende und frei verwendbare Bilder ausgetauscht, die sich auch für den CMS-Test eignen.
+
+### Removed
+- custom.js: Responsive-Tabellen entfernt
+
 ## [1.1.3] - 2018-04-03
 
 ### Added
