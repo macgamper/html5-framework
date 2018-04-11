@@ -197,6 +197,7 @@ a[href$=".doc"]::before, a[href$=".DOC"]::before,
 a[href$=".docm"]::before, a[href$=".DOCM"]::before,
 a[href$=".docx"]::before, a[href$=".DOCX"]::before,
 a[href$=".dot"]::before, a[href$=".DOT"]::before,
+a[href$=".dotx"]::before, a[href$=".DOTX"]::before,
 a[href$=".rtf"]::before, a[href$=".RTF"]::before { 
 	content: "\f1c2";
 	}
