@@ -293,6 +293,7 @@ input[type=week],
 textarea {
 	border: 1px solid #ccc;
 	padding: 3px 0 3px 3px;
+	font-family: inherit;
 	}
 textarea {
 	resize: vertical;
@@ -517,7 +518,7 @@ table.reset td {
 	margin-right: 0;
 	}
 	
-.reset, 
+.reset,
 .reset li,
 nav ul,
 nav li {
