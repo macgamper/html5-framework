@@ -7,7 +7,7 @@ HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 - basics.css: .col-half ergänzt (halbe Inhaltsbreite)
 
 ### Changed
-- Test-Bilder durch 12 hochauflösende und frei verwendbare Bilder ausgetauscht, die sich auch für den CMS-Test eignen.
+- Test-Bilder durch 16 hochauflösende und frei verwendbare Bilder ausgetauscht, die sich auch für den CMS-Test eignen.
 
 ### Removed
 - custom.js: Responsive-Tabellen entfernt
