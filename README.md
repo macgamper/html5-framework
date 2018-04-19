@@ -1,6 +1,11 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.5] - 2018-04-19
+
+### Added
+- basics.css: DOTX/dotx fontsome icons ergänzt
+
 ## [1.1.4] - 2018-04-05
 
 ### Added
