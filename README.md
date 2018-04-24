@@ -1,6 +1,17 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.6] - 2018-04-24
+
+### Removed
+- basics.css: Bild-Breite ``auto`` entfernt, da sie sich mit dem neuen Editor-Plugin des CMS nicht verstanden haben.
+
+```css
+~~img {
+	width: auto;
+	}~~
+```
+
 ## [1.1.5] - 2018-04-19
 
 ### Added

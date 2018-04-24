@@ -81,9 +81,6 @@ hr {
 	color: #666;
 	background-color: #666;
 	}
-img {
-	width: auto;
-	}
 img, embed, object, video {
 	max-width: 100%;
 	height: auto;
