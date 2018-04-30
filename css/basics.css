@@ -613,11 +613,11 @@ blockquote > *:last-child,
 --------------------------------------------------------------- */
 .row {
 	clear: both;
-	margin: 1.5em 0;
 	}
 [class*="col-"] {
 	position: relative;
 	float: left;
+	margin-bottom: 1.5em;
 	margin-left: 0; /* muss aufgrund der breite berechnet werden */
 	min-height: 1px;
 	}

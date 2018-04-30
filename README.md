@@ -1,6 +1,29 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.7] - 2018-04-30
+
+### Changed
+- application.css: unschönen Abstand bei Bildlegenden von Magnific-Popups entfernt 
+```css
+.mfp-content figcaption {
+	margin-top: 0;
+	}
+```
+- basics.css: top/bottom Margins bei ``.row`` entfernt und bei der ``[class*="col-"]`` ergänzt. So muss bei einem späteren Umbruch der Cols kein Margin mehr ergänzt werden und es kommt auch nicht zu einer Verdoppelung der Margins.
+```css
+.row {
+	clear: both;
+	}
+[class*="col-"] {
+	position: relative;
+	float: left;
+	margin-bottom: 1.5em;
+	margin-left: 0; /* muss aufgrund der breite berechnet werden */
+	min-height: 1px;
+	}
+```
+
 ## [1.1.6] - 2018-04-24
 
 ### Removed

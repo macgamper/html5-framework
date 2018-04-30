@@ -552,7 +552,10 @@ ul.gallery-magnific img {
 	display: block;
 	margin: 0 auto;
 	}
-	
+.mfp-content figcaption {
+	margin-top: 0;
+	}
+
 @media only screen and (max-width: 48em) { /* 768/16 */
 
 	ul.gallery-magnific li,
@@ -565,7 +568,7 @@ ul.gallery-magnific img {
 		clear: left;
 		margin-left: 0;
 		}
-	
+
 }
 
 /* =osm online-schalter
