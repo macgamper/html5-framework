@@ -1,6 +1,17 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.1.8] - 2018-05-14
+
+### Changed
+- basics.css: Webkit-Styling von Suchfeldern zurücksetzen, weil es in normalize.css v8 nicht mehr enthalten ist.
+```css
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+	}
+```
+
 ## [1.1.7] - 2018-04-30
 
 ### Changed
