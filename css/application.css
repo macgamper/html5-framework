@@ -925,3 +925,22 @@ ul.gallery-magnific img {
 	border-bottom: 0;
 	font-size: 0.86666666666667em; /* 13/15 */
 	}
+
+/* =cookie law
+--------------------------------------------------------------- */
+.cookie-alert {
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top-style: solid;
+    border-top-width: 1px;
+	padding: 1em 0;
+	}
+.btn-row {
+	text-align: center;
+	}
+.btn-row button + button {
+    margin-left: 1em;
+	}

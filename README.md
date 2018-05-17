@@ -1,6 +1,52 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.2.0] - 2018-05-17
+
+### Added
+- mail.css: Neues CSS für die Message-Templates (nicht im Website-CSS-Set zu verwenden)
+- application.css: Styling für das neue Cookie-Law-Modul ergänzt.
+
+```css
+/* =cookie law
+--------------------------------------------------------------- */
+.cookie-alert {
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-top-style: solid;
+    border-top-width: 1px;
+	padding: 1em 0;
+	}
+.btn-row {
+	text-align: center;
+	}
+.btn-row button + button {
+	margin-left: 1em;
+	}
+```
+
+- basics.css: Neue ``.btn``-Modifier ergänzt
+
+```css
+.btn--reject {
+	background-color: red;
+	}
+.btn--accept {
+	background-color: green;
+	}
+```
+
+### Changed
+- basics.css: Die oben genannten Regeln basieren teils auf Ergänzungen bei bestehenden Regeln. Dort wurde ``.cookie-alert`` bei den kleinen Schriftgrössen und der Warnungs-Box ergänzt.
+
+## [1.1.9] - 2018-05-15
+
+### Changed
+- basics.css: Spezifität verkleinert auch Entfernen von überflüssigen Element-Selektoren bei den Forms.
+
 ## [1.1.8] - 2018-05-14
 
 ### Changed
