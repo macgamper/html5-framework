@@ -17,7 +17,7 @@ HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 	left: 0;
 	width: 100%;
 	border-top-style: solid;
-    border-top-width: 1px;
+	border-top-width: 1px;
 	padding: 1em 0;
 	}
 .btn-row {
