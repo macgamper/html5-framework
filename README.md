@@ -1,6 +1,11 @@
 # html5-framework
 HTML5 &amp; CSS boilerplate für Projekte bei backslash.
 
+## [1.2.1] - 2018-07-25
+
+### Added
+- basics.css: Links mit dem Protokoll ``tel:`` werden nun wie andere Links automatisch mit einem FontAwesome-Icon (Telefonhörer) versehen.
+
 ## [1.2.0] - 2018-05-17
 
 ### Added
