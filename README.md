@@ -1,5 +1,20 @@
 # html5-framework
-HTML5 &amp; CSS boilerplate für Projekte bei backslash.
+HTML &amp; CSS-Boilerplate für Projekte bei backslash.
+
+## [1.2.2] - 2018-09-12
+
+### Added
+- basics.css: Formatierungen für Tastatureingaben ergänzt ``<kbd>``.
+
+```css
+kbd {
+	border-style: solid;
+	border-width: 1px 2px 2px 1px;
+	padding: 0 2px;
+	border-radius: 3px;
+	background-color: #ededed;
+	}
+```
 
 ## [1.2.1] - 2018-07-25
 
