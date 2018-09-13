@@ -1,6 +1,17 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.2.3] - 2018-09-13
+
+### Added
+- basics.css: Helferklasse für fixe Table-Layouts ergänzt.
+
+```css
+.tbl-fixed {
+	table-layout: fixed;
+	}
+```
+
 ## [1.2.2] - 2018-09-12
 
 ### Added

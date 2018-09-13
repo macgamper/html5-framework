@@ -396,6 +396,9 @@ table.vertical th {
 .tbl-no {
 	text-align: right;
 	}
+.tbl-fixed {
+	table-layout: fixed;
+	}
 
 /*=zebras & hover
 --------------------------------------------------------------- */
