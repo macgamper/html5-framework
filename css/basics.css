@@ -590,7 +590,7 @@ blockquote > *:last-child,
 	text-decoration: none;
 	font-weight: bold;
 	text-align: center;
-	line-height: normal;
+	line-height: inherit;
 	background-color: #e2001a;
 	border-radius: 3px;
 	cursor: pointer;

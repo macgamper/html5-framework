@@ -1,6 +1,38 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.2.4] - 2018-09-27
+
+### Added
+- application.css: Styles für Form-Builder Multisteps ergänzt
+
+```css
+/* =form-builder multistep
+--------------------------------------------------------------- */
+.form-to-wizard-commands .btn + .btn {
+	margin-left: 1.5em;
+	}
+```
+
+### Changed
+- basics.css: Zeilenabstand bei Buttons gefixt.
+
+```css
+.btn, .btn:link, .btn:visited {
+	line-height: inherit;
+	}
+```
+
+### Removed
+- default.html: IE Conditional Comments und HTML5-Shiv entfernt.
+- 
+```html
+<!--[if lt IE 9]>
+			<link href="css/ie.css" rel="stylesheet" type="text/css" media="screen">
+			<script src="https://ext.cdn-backslash.ch/lib/html5shiv/latest/html5shiv.min.js" type="text/javascript"></script>
+<![endif]-->
+```
+
 ## [1.2.3] - 2018-09-13
 
 ### Added

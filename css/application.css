@@ -317,6 +317,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 }
 
+/* =form-builder multistep
+--------------------------------------------------------------- */
+.form-to-wizard-commands .btn + .btn {
+    margin-left: 1.5em;
+	}
+
 /* =flex-search
 --------------------------------------------------------------- */
 .flex-search {
