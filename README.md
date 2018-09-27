@@ -25,11 +25,11 @@ HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
 ### Removed
 - default.html: IE Conditional Comments und HTML5-Shiv entfernt.
-- 
+
 ```html
 <!--[if lt IE 9]>
-			<link href="css/ie.css" rel="stylesheet" type="text/css" media="screen">
-			<script src="https://ext.cdn-backslash.ch/lib/html5shiv/latest/html5shiv.min.js" type="text/javascript"></script>
+	<link href="css/ie.css" rel="stylesheet" type="text/css" media="screen">
+	<script src="https://ext.cdn-backslash.ch/lib/html5shiv/latest/html5shiv.min.js" type="text/javascript"></script>
 <![endif]-->
 ```
 
