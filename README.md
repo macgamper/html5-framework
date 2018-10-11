@@ -1,6 +1,19 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.2.5] - 2018-10-11
+
+### Changed
+- default.html: Suche dem Handlebars-Template angeglichen.
+
+```html
+<form class="search-form" role="search" method="post" action="#" >
+	<label class="invis" for="search-input">Suche</label>
+	<input type="search" id="search-input" placeholder="Suchbegriff" required />
+	<button type="submit">suchen</button>
+</form>
+```
+
 ## [1.2.4] - 2018-09-27
 
 ### Added
