@@ -76,6 +76,7 @@ abbr[title] {
 	cursor: help;
 	}
 hr {
+	clear: both;
 	height: 1px;
 	border: 0;
 	color: #666;

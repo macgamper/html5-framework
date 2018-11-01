@@ -1,6 +1,12 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.2.6] - 2018-11-01
+
+### Changed
+- basics.css: HR-Element mit `clear: both` ergänzt.
+- mail.css: Fixes, damit Tabellen-Zeilen in Outlook Win kleinere/gleiche Abstände wie in anderen Mail-Clients haben.
+
 ## [1.2.5] - 2018-10-11
 
 ### Changed
