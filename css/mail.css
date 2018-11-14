@@ -94,6 +94,9 @@ table.zebra tbody tr:nth-child(even),
 .form-label {
 	padding-right: 15px;
 	}
+.tbl-legend .form-label {
+	background-color: #f7f7f7;
+	}
 .col-number {
 	text-align: right;
 	}
