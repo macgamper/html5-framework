@@ -7,16 +7,6 @@ HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 - application.css: Radios bei der Kreditkartenauswahl werden nicht mehr vertikal aus dem Viewport geschoben, da Browser sonst den Viewport verschieben.
 - mail.css: Hintergrundfarbe für Tabellenzeilen, die den Form-Legenden entsprechen ergänzt.
 
-```css
-.cc-lst input[type="radio"] {
-	position: absolute;
-	display: inline;
-	top: -1000px;
-~~	left: -1000px;~~
-	…
-	}
-```
-
 ## [1.2.6] - 2018-11-01
 
 ### Changed
