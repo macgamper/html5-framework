@@ -682,7 +682,6 @@ ul.gallery-magnific img {
 .cc-lst input[type="radio"] {
 	position: absolute;
 	display: inline;
-	top: -1000px;
 	left: -1000px;
 	width: 0;
 	height: 0;
