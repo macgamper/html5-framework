@@ -1,17 +1,17 @@
-/* =global layout
+/* =global
 --------------------------------------------------------------- */
 .wrapper {
 	border: 2px solid black;
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-	}
+}
 	
 /* =header
 --------------------------------------------------------------- */
-.header {
+header {
 	background-color: #9cf; /* blue */
-	}
+}
 
 /* =content
 --------------------------------------------------------------- */
@@ -19,20 +19,20 @@
 	float: right;
 	width: 80%;
 	background-color: #ededed; /* grey */
-	}
-.main {
+}
+main {
 	float: left;
 	width: 80%;
 	background-color: #9f9; /* green */
-	}
+}
 	
 /* =sidebar
 --------------------------------------------------------------- */
-.sidebar {
+aside {
 	float: right;
 	width: 20%;
 	background-color: #ff6; /* yellow */
-	}
+}
 	
 /* =nav
 --------------------------------------------------------------- */
@@ -40,11 +40,11 @@
 	float: left;
 	width: 20%;
 	background-color: #f99; /* red */
-	}
+}
 
 /* =footer
 --------------------------------------------------------------- */
-.footer {
+footer {
 	clear: both;
 	background-color: #c9f; /* violet */
-	}
+}

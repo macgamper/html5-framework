@@ -6,9 +6,16 @@
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
 
-	/* =basics
+	/* =global
 	--------------------------------------------------------------- */
-	.header, .container, .main, .mainnav, .sidebar, .footer {
+	.wrapper {
+		width: 96%;
+	}
+
+	/* =reset
+	--------------------------------------------------------------- */
+	header,  main, aside, footer,
+	.container, .mainnav {
 		position: static;
 		float: none;
 		width: auto;
@@ -16,39 +23,15 @@
 		margin: 0;
 		padding: 0;
 		background-image: none;
-		}
-		
-	.alignleft,
-	.alignright,
-	.aligncenter {
-		float: none;
-		display: block;
-		max-width: 100%;
-		margin: 1.5em 0;
-		}
-	.aligncenter {
-		display: table;
-		width: auto;
-		}
-	.aligncenter figcaption {
-		display: table-caption;
-		caption-side: bottom;
-		}
-
-	.table-responsive {
-		border-right: 1px solid #dcdfde;
-		border-bottom: 0;
-		}
-
-	/* =global layout
-	--------------------------------------------------------------- */
-	.wrapper {
-		width: 96%;
-		}
+	}
 
 	/* =header
 	--------------------------------------------------------------- */
 	
+
+	/* =nav
+	--------------------------------------------------------------- */
+
 
 	/* =content
 	--------------------------------------------------------------- */
@@ -57,14 +40,34 @@
 	/* =sidebar
 	--------------------------------------------------------------- */
 	
-		
-	/* =nav
-	--------------------------------------------------------------- */
-	
 
 	/* =footer
 	--------------------------------------------------------------- */
+
 	
+	/* =helper
+	--------------------------------------------------------------- */
+	.alignleft,
+	.alignright,
+	.aligncenter {
+		float: none;
+		display: block;
+		max-width: 100%;
+		margin: 1.5em 0;
+	}
+	.aligncenter {
+		display: table;
+		width: auto;
+	}
+	.aligncenter figcaption {
+		display: table-caption;
+		caption-side: bottom;
+	}
+
+	.table-responsive {
+		border-right: 1px solid #dcdfde;
+		border-bottom: 0;
+	}
 
 }
 

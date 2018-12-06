@@ -1,6 +1,6 @@
 @page {
 	margin: 2cm 2cm 2cm 2cm;
-	}
+}
 
 body {
 	margin: 0;
@@ -10,7 +10,7 @@ body {
 	color: #000;
 	background-color: #fff;
 	background-image: none;
-	}
+}
 	
 /* =elemente ausblenden, die im druck nicht erscheinen sollen
 --------------------------------------------------------------- */
@@ -18,132 +18,124 @@ nav, form, aside, header,
 .accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .print-hidden, .breadcrumb,
 .region, .country-name, .url, .none, .slidebars-menu {
 	display: none;
-	}
+}
 
 /* =elemente einblenden, die im druck explizit erscheinen sollen
 --------------------------------------------------------------- */
 .print-visible {
 	display: block;
-	}
+}
 	
 /* =typo
 --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, ul, ol, table, caption, address, dl, blockquote, fieldset, hr {
 	margin-top: 0;
 	color: #000;
-	}
+}
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, 
 .box, .table-responsive, .media-responsive {
 	margin-bottom: 1.5em;
-	}
+}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.3;
 	page-break-after: avoid;
-	}
+}
 h1, .h1 {
 	margin-bottom: 1em;
 	border-bottom: 1px solid #000;
 	padding-bottom: 0.25em;
 	font-size: 20pt;
-	}
+}
 h2, .h2 {
 	margin-bottom: 0.5em;
 	font-size: 16pt;
-	}
+}
 h3, .h3 {
 	margin-bottom: 0.5em;
 	font-size: 14pt;
-	}
+}
 h4, .h4 {
 	margin-bottom: 0.25em;
 	font-size: 12pt;
-	}
+}
 h5, h6,
 .h5, .h6 {
 	margin-bottom: 0;
 	font-size: 10pt;
-	}
+}
 p, table, .p {
 	
-	}
+}
 hr {
 	color: #000;
 	background-color: #000;
 	height: 1px;
 	border: 0
-	}
+}
 ul, ol {
 	
-	}
+}
 ul, ol, dl { 
 	page-break-inside: avoid;
-	}
+}
 ul.sitemap {
 	page-break-inside: auto;
-	}
+}
 img {
 	border: 0;
 	max-width: 100%;
-	}
+}
 figure {
 	margin-top: 0;
 	margin-right: 0;
 	margin-left: 0;
-	}
+}
 figcaption {
 	font-size: 10pt;
 	font-style: italic;
-	}
+}
 blockquote {
 	font-size: 14pt;
 	font-style: italic;
-	}
+}
 cite {
 	
-	}
+}
 address {
 	
-	}
+}
 small, .small,
 .form-hint,
 label.error,
 .asset-meta {
 	font-size: 10pt;
-	}
+}
 iframe {
 	display: block;
 	margin: 0;
 	border: 0;
 	padding: 0;
 	width: 100%;
-	}
+}
 
 a:link {
 	color: #9d9d9d;
 	text-decoration: underline
-	}
+}
 sub,
 sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
-	}
+}
 sub {
     bottom: -0.25em;
     }
 sup {
     top: -0.5em;
     }
-/* fügt in modernen Browsern den ausgeschriebenen Link hinter dem Anchor ein
-a:link:after, 
-a:link:visited:after {
-	color: #9d9d9d;
-	content: "(Link auf <" attr(href) ">)";
-	padding-left: 0.5em;
-	}
-*/
 	
 /* =tables
 --------------------------------------------------------------- */	
@@ -153,48 +145,48 @@ table {
 	border-spacing: 0;
 	border-bottom: 1px solid #000;
 	padding: 0;
-	}
+}
 caption {
 	margin-bottom: 8pt;
 	font-size: 14pt;
 	line-height: 16pt;
 	font-weight: bold;
 	text-align: left;
-	}
+}
 th {
 	border-bottom: 1px solid #000;
 	padding: 2pt 15pt 2pt 0;
 	font-weight: bold;
 	text-align: left;
-	}
+}
 tbody th {
 	border-bottom: 0;
-	}
+}
 td {
 	padding: 2pt 15pt 2pt 0;
 	vertical-align: top;
-	}
+}
 tfoot td {
 	font-weight: bold;
 	border-top: 1px solid #000;
-	}
+}
 table.auto {
 	width: auto;
-	}
+}
 .tbl-no {
 	text-align: right;
-	}
+}
 
-/* =global classes
+/* =helper & global
 --------------------------------------------------------------- */	
 .box {
 	border: 1px solid #000;
 	padding: 1.5em;
-	}
+}
 .box > *:last-child,
 fieldset > *:last-child {
 	margin-bottom: 0;
-	}
+}
 .reset, 
 .reset li {
     list-style: none outside none;
@@ -202,25 +194,24 @@ fieldset > *:last-child {
     margin-right: 0;
     margin-left: 0;
     padding: 0;
-	}
+}
 .nobr {
 	white-space: nowrap;
-	}
+}
 
 .alignleft, .alignright {
 	max-width: 33%;
-	}
+}
 .alignleft {
 	float: left;
 	margin: 0 1.5em 1.5em 0;
-	}
+}
 .aligncenter {
 	clear: both;
 	display: block;
 	margin: 1.5em auto;
-	}
+}
 .alignright {
 	float: right;
 	margin: 0 0 1.5em 1.5em;
-	}
-
+}

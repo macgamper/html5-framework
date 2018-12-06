@@ -1,6 +1,12 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.2.8] - 2018-12-06
+
+### Added
+- application.css: Basis-Styling für Breadcrumb-Pfade nach BEM ergänzt. Primär für Mobilgeräte mit Overflow.
+- Global die Einzüge bei allen CSS-Files harmonisiert.
+
 ## [1.2.7] - 2018-11-15
 
 ### Changed
