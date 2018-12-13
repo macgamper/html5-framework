@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.2.9] - 2018-12-13
+
+### Added
+- application.css: Styles für Multistep-Forms ergänzt.
+
 ## [1.2.8] - 2018-12-06
 
 ### Added

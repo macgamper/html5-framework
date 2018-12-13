@@ -322,6 +322,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-to-wizard-commands .btn + .btn {
     margin-left: 1.5em;
 }
+.form-to-wizard-current {
+	font-weight: bold;
+}
+.form-to-wizard-current ~ li {
+	color: grey;
+}
 
 /* =flex-search
 --------------------------------------------------------------- */
