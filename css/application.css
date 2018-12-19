@@ -468,17 +468,18 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 			columns: 2 10em; /* max. columns, max width */
 }
 .calendar-legend li {
-	margin-bottom: .25em;
+	display: flex;
+	align-items: center;
 }
 .calendar-legend span {
-	border: 1px solid #ccc;
 	display: block;
+	float: left;
 	width: 1.4em;
 	height: 1.4em;
-	float: left;
 	margin-right: .5em;
+	border: 1px solid #ccc;
 }
-	
+
 .cal-allfree.cal-allfree,
 .cal-partlyfree.cal-partlyfree,
 .cal-almostsoldout.cal-almostsoldout,
@@ -490,15 +491,21 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	background-color: #008000;
 }
 .cal-partlyfree,
-.cal-partlyfree-legend span { /* letzte freie kartei */
-	background-color: #FF8000;
+.cal-partlyfree-legend span { /* teilweise frei */
+	background-color: #fffc00;
+}
+.cal-almostsoldout,
+.cal-almostsoldout-legend span { /* letzte karte(n) */
+	background-color: #ff9c00;
 }
 .cal-full,
-.cal-full-legend span { /* besetzt */
-	background-color: #FF0000;
+.cal-full-legend span { /* ausgebucht */
+	background-color: #ff0000;
+}
+.cal-partlyfree a:link {
+	color: #000;
 }
 .cal-allfree a:link,
-.cal-partlyfree a:link,
 .cal-almostsoldout a:link,
 .cal-full a:link {
 	color: #fff;

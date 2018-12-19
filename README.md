@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.0] - 2018-12-19
+
+### Added
+- application.css: Neuen Reservations-Tageszustand «letzte Karte(n)» ``.cal-almostsoldout`` ergänzt.
+
 ## [1.2.9] - 2018-12-13
 
 ### Added
