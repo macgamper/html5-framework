@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.1] - 2018-12-27
+
+### Changed
+- normalize.css: Update auf 8.0.1.
+
 ## [1.3.0] - 2018-12-19
 
 ### Added
