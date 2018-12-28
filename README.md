@@ -1,6 +1,21 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.3] - 2018-12-28
+
+### Added
+- basics.css / print.css: Neue Helferklassen zum Ein-/Ausblenden von Elementen auf dem Medium Screen oder Print.
+
+```css
+[hidden],
+.none, .screenhidden, .printvisible {
+	display: none;
+}
+.screenvisible, .printhidden,  {
+	display: block;
+}
+```
+
 ## [1.3.2] - 2018-12-28
 
 ### Changed

@@ -491,8 +491,12 @@ table.reset td {
 
 /* =helper
 --------------------------------------------------------------- */
-.screenhidden, .none, .print-visible {
+[hidden],
+.none, .screenhidden, .printvisible {
 	display: none;
+}
+.screenvisible, .printhidden,  {
+	display: block;
 }
 .visuallyhidden,
 .invis,
