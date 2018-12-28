@@ -6,7 +6,7 @@ HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 ### Changed
 Accessibility-Verbesserungen:
 - default.html: Bessere Überschriftenstruktur, neue Skiplinks
-- 
+- entsprechende CSS-Anpassungen
 - Platzhalter-File für touch-icon.png (anstatt 404)
 
 ## [1.3.1] - 2018-12-27
