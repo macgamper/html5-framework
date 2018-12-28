@@ -22,7 +22,7 @@ nav, form, aside, header,
 
 /* =elemente einblenden, die im druck explizit erscheinen sollen
 --------------------------------------------------------------- */
-.print-visible {
+.screenhidden, .print-visible {
 	display: block;
 }
 	

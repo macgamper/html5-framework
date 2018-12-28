@@ -1,6 +1,14 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.2] - 2018-12-28
+
+### Changed
+Accessibility-Verbesserungen:
+- default.html: Bessere Überschriftenstruktur, neue Skiplinks
+- 
+- Platzhalter-File für touch-icon.png (anstatt 404)
+
 ## [1.3.1] - 2018-12-27
 
 ### Changed

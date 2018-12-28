@@ -8,6 +8,7 @@ input[type="search"] {
 }
 body {
 	font: 1em/1.5 Helvetica, Arial, Geneva, sans-serif;
+	position: relative;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -148,9 +149,6 @@ a:focus, a:hover, a:active {
 }
 a img {
 	border: none;
-}
-#main:focus {
-	outline: none; /* entfernt :focus des Skiplinks */
 }
 
 /* =doc-anchors font-awesome
@@ -493,12 +491,13 @@ table.reset td {
 
 /* =helper
 --------------------------------------------------------------- */
-.none, .print-visible {
+.screenhidden, .none, .print-visible {
 	display: none;
 }
-.invis:not(:focus):not(:active),
-.sr:not(:focus):not(:active),
-.sr-only:not(:focus):not(:active) {
+.visuallyhidden,
+.invis,
+.sr,
+.sr-only {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -599,6 +598,25 @@ blockquote > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child {
 	margin-bottom: 0;
+}
+
+/* =skiplinks
+--------------------------------------------------------------- */
+.skiplinks__link {
+	position: absolute;
+	top: -9999px;
+	left: 1.5em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+}
+.skiplinks__link:focus,
+.skiplinks__link:active {
+	top: 1.5em;
+}
+#main:focus {
+	outline: none; /* entfernt :focus des Skiplinks */
 }
 
 /* =buttons
