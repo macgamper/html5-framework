@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after,
+*::before,
+*::after,
 input[type="search"] {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -495,7 +495,7 @@ table.reset td {
 .none, .screenhidden, .printvisible {
 	display: none;
 }
-.screenvisible, .printhidden,  {
+.screenvisible, .printhidden {
 	display: block;
 }
 .visuallyhidden,
@@ -600,7 +600,8 @@ nav ul {
 fieldset > *:last-child,
 blockquote > *:last-child,
 .box > *:last-child,
-.row > [class*="col-"] > *:last-child {
+.row > [class*="col-"] > *:last-child,
+.lc-reset > *:last-child {
 	margin-bottom: 0;
 }
 

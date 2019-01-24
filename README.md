@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.3] - 2019-01-24
+
+### Changed
+- basics.css / print.css: Falsches Komma gefixt
+
 ## [1.3.3] - 2018-12-28
 
 ### Added
