@@ -1,6 +1,31 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.4] - 2019-01-30
+
+### Changed
+- basics.css: Der Wrapper ``.table-responsive`` bekommt nun – sobald er überfliessenden Inhalt hat – links und/oder rechts einen Schatten.
+
+```css
+.table-responsive {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	max-width: 100%;
+	background:
+		linear-gradient(to right, #9f9 30%, rgba(255,255,255,0)), /* needs matching background-color */
+		linear-gradient(to right, rgba(255,255,255,0), #9f9 70%) 0 100%, /* needs matching background-color */
+		radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+	background-repeat: no-repeat;
+	background-color: #9f9; /* needs matching background-color */
+	background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+  	background-position: 0 0, 100%, 0 0, 100%;
+	background-attachment: local, local, scroll, scroll;
+	-webkit-overflow-scrolling: touch;
+}
+```
+
 ## [1.3.3] - 2019-01-24
 
 ### Changed
