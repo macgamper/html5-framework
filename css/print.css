@@ -16,7 +16,7 @@ body {
 --------------------------------------------------------------- */
 nav, form, aside, header,
 .accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .print-hidden, .breadcrumb,
-.region, .country-name, .url, .none, .slidebars-menu {
+.region, .country-name, .url, .none, .slidebars-menu, .visuallyhidden {
 	display: none;
 }
 
