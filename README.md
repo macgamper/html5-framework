@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.5] - 2019-02-20
+
+### Changed
+- print.css: Elemente, die nicht gedruckt werden sollten, sind nun zusammengefasst.
+
 ## [1.3.4] - 2019-01-30
 
 ### Changed
