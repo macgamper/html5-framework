@@ -11,7 +11,7 @@ body {
 	background-color: #fff;
 	background-image: none;
 }
-	
+
 /* =elemente ausblenden, die im druck nicht erscheinen sollen
 --------------------------------------------------------------- */
 nav, form, aside, header,
@@ -29,14 +29,14 @@ nav, form, aside, header,
 .screenhidden, .none, .printvisible {
 	display: block;
 }
-	
+
 /* =typo
 --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, p, ul, ol, table, caption, address, dl, blockquote, fieldset, hr {
 	margin-top: 0;
 	color: #000;
 }
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, 
+p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
 .box, .table-responsive, .media-responsive {
 	margin-bottom: 1.5em;
 }
@@ -69,7 +69,7 @@ h5, h6,
 	font-size: 10pt;
 }
 p, table, .p {
-	
+
 }
 hr {
 	color: #000;
@@ -78,9 +78,9 @@ hr {
 	border: 0
 }
 ul, ol {
-	
+
 }
-ul, ol, dl, li { 
+ul, ol, dl, li {
 	page-break-inside: avoid;
 }
 .sitemap,
@@ -105,10 +105,10 @@ blockquote {
 	font-style: italic;
 }
 cite {
-	
+
 }
 address {
-	
+
 }
 small, .small,
 .form-hint,
@@ -141,9 +141,9 @@ sub {
 sup {
     top: -0.5em;
     }
-	
+
 /* =tables
---------------------------------------------------------------- */	
+--------------------------------------------------------------- */
 table {
 	width: 100%;
 	border-collapse: collapse;
@@ -208,7 +208,7 @@ table.auto {
 }
 
 /* =helper & global
---------------------------------------------------------------- */	
+--------------------------------------------------------------- */
 .box {
 	border: 1px solid #000;
 	padding: 1.5em;
@@ -217,7 +217,7 @@ table.auto {
 fieldset > *:last-child {
 	margin-bottom: 0;
 }
-.reset, 
+.reset,
 .reset li {
     list-style: none outside none;
     margin-top: 0;
