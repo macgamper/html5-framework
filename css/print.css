@@ -16,7 +16,7 @@ body {
 --------------------------------------------------------------- */
 nav, form, aside, header,
 [hidden],
-.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .print-hidden, .printhidden, .screenvisible, .breadcrumb,
+.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .visuallyhidden, .print-hidden, .printhidden, .screenvisible, .breadcrumb,
 .region, .country-name, .url, .none, .slidebars-menu, .mod-nav {
 	display: none;
 }
