@@ -15,18 +15,15 @@ body {
 /* =elemente ausblenden, die im druck nicht erscheinen sollen
 --------------------------------------------------------------- */
 nav, form, aside, header,
-.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .print-hidden, .breadcrumb,
+[hidden],
+.accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .print-hidden, .printhidden, .screenvisible, .breadcrumb,
 .region, .country-name, .url, .none, .slidebars-menu, .mod-nav {
 	display: none;
 }
 
 /* =elemente einblenden, die im druck explizit erscheinen sollen
 --------------------------------------------------------------- */
-[hidden],
-.none, .screenvisible, .printhidden {
-	display: none;
-}
-.screenhidden, .none, .printvisible {
+.screenhidden, .printvisible {
 	display: block;
 }
 
@@ -86,7 +83,7 @@ ul, ol, dl, li {
 .sitemap,
 .mod-lst {
 	page-break-inside: auto;
-	}
+}
 img {
 	border: 0;
 	max-width: 100%;
