@@ -36,7 +36,7 @@ h6, .h6 {
 	font-size: 1em;
 }
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.p, .box, .table-responsive, .media-responsive, .flex-search, .mb {
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion {
 	margin: 0 0 1.5em;
 }
 p {
