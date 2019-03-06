@@ -58,7 +58,7 @@
 	color: #273941;
 	text-decoration: none;
 }
-.mod-nav a:hover, 
+.mod-nav a:hover,
 .mod-nav a:focus,
 .mod-nav .active a {
 	color: #000;
@@ -66,18 +66,18 @@
 .mod-nav .active a {
 	font-weight: bold;
 }
-	
+
 .login-pw-reset {
 	float: right;
 }
-	
+
 @media only screen and (max-width: 32.5em) { /* 520/16 */
-	
+
 	.login-pw-reset {
 		float: none;
 		margin-top: 0.75em;
 		text-align: center;
-}
+	}
 }
 
 /* =Files
@@ -93,7 +93,7 @@
 }
 
 /* =form-builder
---------------------------------------------------------------- */	
+--------------------------------------------------------------- */
 .form-builder .clearfix,
 .form-builder .cf {
 	margin-bottom: .75em;
@@ -190,7 +190,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder input[disabled] {
 	opacity: 0.5;
 }
-	
+
 .form-builder .form-sizer label {
 	white-space: nowrap;
 	float: none;
@@ -258,7 +258,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	padding-top: 0;
 	margin-bottom: 0.25em;
 }
-	
+
 /* =form-builder 30% label / 70% input
 --------------------------------------------------------------- */
 .form-builder-30 .clearfix > label,
@@ -406,13 +406,13 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cal-year a {
 	display: inline;
 }
-	
+
 /* =Tageszustände
 --------------------------------------------------------------- */
 .cal-entry { /* Daten mit Eintrag */
 	font-weight: bold;
 }
-	
+
 .cal-noentry { /* Daten ohne Eintrag */
 	
 }
@@ -423,7 +423,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cal-noentry a:focus {
 	color: #000;
 }
-	
+
 .cal-disabled,
 .cal-disabled-legend span { /* inaktive Tage */
 	color: #adadad;
@@ -446,7 +446,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: #fff;
 	text-shadow: none;
 }
-	
+
 .cal-selected { /* ausgewählten Datum */
 	box-shadow: none !important;
 }
@@ -684,7 +684,7 @@ ul.gallery-magnific img {
 	width: 3em;
 }
 
-.sales-subtotal,	
+.sales-subtotal,
 .sales-fee,
 .sales-shippingprice {
 	font-size: 1em;
@@ -817,7 +817,7 @@ ul.gallery-magnific img {
 .mod-index-toc a:focus {
 	color: #000;
 }
-	
+
 @media only screen and (max-width: 32.5em) { /* 520/16 */
 
 	.mod-index-toc::after {
@@ -840,7 +840,7 @@ ul.gallery-magnific img {
 		margin: 0;
 		overflow-x: auto;
 		overflow-y: hidden;
-		-webkit-overflow-scrolling: touch;		
+		-webkit-overflow-scrolling: touch;
 	}
 	.mod-index-toc a {
 		padding: 0.25em 0.5em;
