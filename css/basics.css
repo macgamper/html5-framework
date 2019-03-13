@@ -1,3 +1,6 @@
+:root {
+	
+}
 *,
 *::before,
 *::after,
@@ -6,8 +9,12 @@ input[type="search"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+html {
+	font-size: 62.5%; /* 10/16 */
+}
 body {
-	font: 1em/1.5 Helvetica, Arial, Geneva, sans-serif;
+	font-size: 16px; /* IE < 11 fallback */
+	font: 1.6rem/1.5 Helvetica, Arial, Geneva, sans-serif;
 	position: relative;
 }
 h1, h2, h3, h4, h5, h6,

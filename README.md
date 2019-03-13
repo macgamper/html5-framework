@@ -1,6 +1,27 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.6] - 2019-03-13
+
+### Changed
+- Struktur: pictures-Folder in img umbenannt
+- default.html: Bild-Pfade angepasst
+- basics.css: Root-Element für Custom-Properties ergänzt
+- basics.css: HTML-Schriftgrösse deklariert für einfache Definitionen in `rem`-Einheiten und IE < 11-Fallback.
+
+```css
+:root {
+	
+}
+html {
+	font-size: 62.5%; /* 10/16 */
+}
+body {
+	font-size: 16px; /* IE < 11 fallback */
+	font: 1.6rem/1.5 Helvetica, Arial, Geneva, sans-serif;
+}
+```
+
 ## [1.3.5] - 2019-02-20
 
 ### Changed
