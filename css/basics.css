@@ -43,7 +43,7 @@ h6, .h6 {
 	font-size: 1em;
 }
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion {
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion, [data-oembed-url] {
 	margin: 0 0 1.5em;
 }
 p {
@@ -528,7 +528,6 @@ table.reset td {
 	padding: 0;
 	white-space: nowrap;
 	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
 .nmb {
@@ -537,9 +536,9 @@ table.reset td {
 .right	{float: right;}
 .left	{float: left;}
 .clear	{clear: both;}
-.clearfix:after,
-.cf:after,
-.row:after {
+.clearfix::after,
+.cf::after,
+.row::after {
 	content: "";
 	display: table;
 	clear: both;

@@ -1,6 +1,14 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.7] - 2019-03-29
+
+### Removed
+- basics.css: Bei visuell versteckten Elementen `clip: rect(0 0 0 0);` entfernt, das bei aktuellen Google Audits als A11Y-Fehler deklariert wird. Dieses wurde sowieso nur noch von IE 6/7 genutzt.
+
+### Changed
+- Cleanup
+
 ## [1.3.6] - 2019-03-13
 
 ### Changed
