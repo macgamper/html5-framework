@@ -1,6 +1,14 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.8] - 2019-04-02
+
+### Added
+- basics.css: Google-Maps-Short-URL (https://goo.gl/maps/) bei den FontAwesome-Icons ergänzt.
+
+### Changed
+- Cleanup
+
 ## [1.3.7] - 2019-03-29
 
 ### Removed

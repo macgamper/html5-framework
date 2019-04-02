@@ -205,6 +205,7 @@ a[href^="https://www.google.com/maps/"]::before,
 a[href^="http://www.google.com/maps/"]::before,
 a[href^="https://maps.google.com/"]::before,
 a[href^="http://maps.google.com/"]::before,
+a[href^="https://goo.gl/maps/"]::before,
 a.download-icn::before {
 	display: inline-block;
 	padding-right: 0.25em;
@@ -261,7 +262,8 @@ a[href$=".zip"]::before, a[href$=".ZIP"]::before {
 a[href^="https://www.google.com/maps/"]::before,
 a[href^="http://www.google.com/maps/"]::before,
 a[href^="https://maps.google.com/"]::before,
-a[href^="http://maps.google.com/"]::before {
+a[href^="http://maps.google.com/"]::before,
+a[href^="https://goo.gl/maps/"]::before {
 	content: "\f041";
 }
 a[href$=".jpg"]::before, a[href$=".JPG"]::before,
