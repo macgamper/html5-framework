@@ -421,11 +421,11 @@ table.vertical th {
 /*=zebras & hover
 --------------------------------------------------------------- */
 table.zebra tbody tr:nth-child(even),
-.zebra li:nth-child(even) {
+ul.zebra>li:nth-child(even) {
 	background-color: #f8f8f8;
 }
 table.hover tbody tr:hover,
-.hover li:hover {
+ul.hover>li:hover {
 	background-color: #f7fbff;
 }
 
