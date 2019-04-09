@@ -630,6 +630,7 @@ blockquote > *:last-child,
 .skiplinks__link:focus,
 .skiplinks__link:active {
 	top: 1.5em;
+	color: #fff;
 }
 #main:focus {
 	outline: none; /* entfernt :focus des Skiplinks */
