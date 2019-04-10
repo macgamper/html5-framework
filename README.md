@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.3.9] - 2019-04-10
+
+### Changed
+- basics.css: Helferklassen `.zebra` und `.hover` sprechen nur noch direkte Kind-Elemente an.
+
 ## [1.3.8] - 2019-04-02
 
 ### Added
