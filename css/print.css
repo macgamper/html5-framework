@@ -242,3 +242,9 @@ fieldset > *:last-child {
 	float: right;
 	margin: 0 0 1.5em 1.5em;
 }
+
+/* =accordion
+--------------------------------------------------------------- */
+.js-accordion_panel {
+    display: block !important;
+}

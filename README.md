@@ -1,6 +1,15 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.0] - 2019-04-16
+
+### Changed
+- basics.css: Skiplinks mit `z-index: 10` versehen,
+- print.css: geschlossene Akkordeons werden beim Print geöffnet
+
+### Changed
+- basics.css: Helferklassen `.zebra` und `.hover` sprechen nur noch direkte Kind-Elemente an.
+
 ## [1.3.9] - 2019-04-10
 
 ### Changed
