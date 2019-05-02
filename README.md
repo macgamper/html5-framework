@@ -1,14 +1,32 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.1] - 2019-05-02
+
+### Added
+- default.html: Code für [Schema.org-Logo](https://developers.google.com/search/docs/data-types/logo) ergänzt. 
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "http://www.example.com",
+  "logo": "http://www.example.com/images/logo.png"
+}
+</script>
+```
+
+Hier kann üblicherweise das bestehende Touch-Icon eingebunden werden, sofern es dem Logo entspricht und folgenden Vorgaben einhält:
+- Das Bild muss mindestens 112 × 112 Pixel groß sein.
+- Die Bild-URL muss gecrawlt und indexiert werden können.
+- Das Bild muss im Format JPG, PNG oder GIF vorliegen.
+
 ## [1.4.0] - 2019-04-16
 
 ### Changed
-- basics.css: Skiplinks mit `z-index: 10` versehen,
+- basics.css: Skiplinks mit `z-index: 10` versehen, Helferklassen `.zebra` und `.hover` sprechen nur noch direkte Kind-Elemente an.
 - print.css: geschlossene Akkordeons werden beim Print geöffnet
-
-### Changed
-- basics.css: Helferklassen `.zebra` und `.hover` sprechen nur noch direkte Kind-Elemente an.
 
 ## [1.3.9] - 2019-04-10
 
