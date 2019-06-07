@@ -43,7 +43,7 @@ h6, .h6 {
 	font-size: 1em;
 }
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion, [data-oembed-url] {
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion, [data-oembed-url], [class*="col-"] {
 	margin: 0 0 1.5em;
 }
 p {
@@ -329,7 +329,7 @@ a.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 [type=week],
 textarea {
 	border: 1px solid #ccc;
-	padding: 3px 0 3px 3px;
+	padding: 0.25em 0.5em;
 }
 textarea {
 	resize: vertical;
@@ -483,15 +483,15 @@ table.reset td {
 .table-responsive > table {
 	margin-bottom: 0;
 }
-	
+
 .media-responsive {
 	position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
 }
-.media-responsive iframe, 
-.media-responsive object, 
+.media-responsive iframe,
+.media-responsive object,
 .media-responsive embed,
 .editor .media-responsive img.cke_iframe {
 	position: absolute;
@@ -704,7 +704,6 @@ blockquote > *:last-child,
 [class*="col-"] {
 	position: relative;
 	float: left;
-	margin-bottom: 1.5em;
 	margin-left: 0; /* muss aufgrund der breite berechnet werden */
 	min-height: 1px;
 }
@@ -766,7 +765,7 @@ blockquote > *:last-child,
 	color: #fff;
 	background-color: red;
 }
-	
+
 .editor img.cke_iframe {
 	width: 100% !important;
 	height: 100% !important;
