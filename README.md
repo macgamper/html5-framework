@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.2] - 2019-07-01
+
+### Changed
+- print.css: Links sind nun auch schwarz. `figure`-Elemente vom Seitenumbruch ausgeschlossen.
+
 ## [1.4.1] - 2019-05-02
 
 ### Added
