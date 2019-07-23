@@ -1,6 +1,17 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.3] - 2019-07-23
+
+### Removed
+- default.html: `tabindex="-1"` vom `main` Element entfernt. Dies wurde in einigen Browsern benötigt, damit der Inhalt bei Skiplinks einen Fokus bekommen konnte und wird laut [knowbility.org](https://knowbility.org/blog/2019/skip-links/) nicht mehr benötigt.
+- basics.css: Aus dem gleichen Grund konnte der zugehörige CSS-Part entfernt werden: 
+```css
+#main:focus {
+	outline: none; /* entfernt :focus des Skiplinks */
+}
+```
+
 ## [1.4.2] - 2019-07-01
 
 ### Changed

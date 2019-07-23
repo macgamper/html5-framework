@@ -641,9 +641,6 @@ blockquote > *:last-child,
 	top: 1.5em;
 	color: #fff;
 }
-#main:focus {
-	outline: none; /* entfernt :focus des Skiplinks */
-}
 
 /* =buttons
 --------------------------------------------------------------- */
