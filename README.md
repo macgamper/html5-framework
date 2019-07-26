@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.4] - 2019-07-25
+
+### Added
+- basics.css: Webkit-Prefix für die `clip-path`-Eigenschaft `.visuallyhidden` ergänzt. 
+
 ## [1.4.3] - 2019-07-23
 
 ### Removed
