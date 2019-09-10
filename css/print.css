@@ -21,6 +21,10 @@ nav, form, aside, header,
 	display: none;
 }
 
+[type="hidden"] {
+	visibility: hidden; /* used for PDF-print */
+}
+
 /* =elemente einblenden, die im druck explizit erscheinen sollen
 --------------------------------------------------------------- */
 .screenhidden, .printvisible {

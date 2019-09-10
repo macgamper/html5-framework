@@ -1,6 +1,30 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.6] - 2019-09-10
+
+### Added
+- print.css: `type="hidden"` wird neu ausgeblendet, als Workaround für einen Bug, der in PDF-Ausgabe das Generieren des Outputs bei Seiten mit Hidden-Inputfeldern verhinderte.
+
+```css
+[type="hidden"] {
+	visibility: hidden; /* used for PDF-print */
+}
+```
+
+## [1.4.5] - 2019-08-23
+
+### Added
+- basics.css: Bildergalerien-Links ohne Bild-Dateiicon.
+
+```css
+…
+.mod-dam--gallery a::before {
+	content: none;
+	padding: 0;
+}
+```
+
 ## [1.4.4] - 2019-07-25
 
 ### Added
