@@ -702,7 +702,7 @@ ul.gallery-magnific img {
 	margin-bottom: 0.5em;
 }
 .cc-lst li > * {
-	transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out;
 }
 .cc-lst label {
 	display: block;

@@ -1,6 +1,12 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.7] - 2019-09-23
+
+### Changed
+- application.css: Kleine Fehlerkorrektur
+- basics.css: Martins beim `hr` eingefügt
+
 ## [1.4.6] - 2019-09-10
 
 ### Added
