@@ -596,7 +596,7 @@ ul.gallery-magnific img {
 	position: relative;
 	overflow: hidden;
 }
-.breadcrumb:after {
+.breadcrumb::after {
 	content: '';
 	display: block;
 	position: absolute;

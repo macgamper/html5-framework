@@ -1,6 +1,23 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.8] - 2019-10-08
+
+### Added
+- basics.css: Animationen können mit der `prefers-reduced-motion` Media Query nun deaktiviert werden. [Quelle](https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/).
+
+```css
+/* =animations
+--------------------------------------------------------------- */
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+	* {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+	}
+}
+```
+
 ## [1.4.7] - 2019-09-23
 
 ### Changed
