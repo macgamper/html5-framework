@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.4.9] - 2019-10-18
+
+### Added
+- print.css: Basis-Styling für die Print-Fussnoten ergänzt.
+
 ## [1.4.8] - 2019-10-08
 
 ### Added
