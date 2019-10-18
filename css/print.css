@@ -253,3 +253,11 @@ fieldset > *:last-child {
 .js-accordion_panel {
     display: block !important;
 }
+
+/* =fussnoten für links
+--------------------------------------------------------------- */
+[data-cms-footnotes] {
+    border-top: 1px solid #000;
+    padding: 1.5em 0;
+    font-size: 8pt;
+}
