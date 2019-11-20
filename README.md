@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5] - 2019-11-20
+
+### Removed
+- basics.css: FontAwesome-File-Icons wurden bei backslash-Domains versehentlich zurückgesetzt. `a[href*=".backslash.ch"]::before` 
+
 ## [1.4.9] - 2019-10-18
 
 ### Added

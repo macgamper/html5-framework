@@ -296,7 +296,7 @@ a[href^="https:"]::after {
 	content: "\f08e";
 }
 a[href*=".kunde.ch"]::after, 
-a[href*=".backslash.ch"]::before, a[href*=".backslash.ch"]::after, 
+a[href*=".backslash.ch"]::after, 
 a[data-email-link]::after,
 a.no-icon::after, a.no-icon::before,
 .nav a[href]::after, 
