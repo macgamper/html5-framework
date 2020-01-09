@@ -1,6 +1,22 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.1] - 2020-01-09
+
+### Added
+- basics.css: Falls das `scroll-behavior: smooth;` aktiviert wurde, wird dieses nun ebenfalls in `prefers-reduced-motion` deaktiviert.
+
+```css
+/* =animations
+--------------------------------------------------------------- */
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+	* {
+		…
+		scroll-behavior: auto !important;
+	}
+}
+```
+
 ## [1.5] - 2019-11-20
 
 ### Removed
