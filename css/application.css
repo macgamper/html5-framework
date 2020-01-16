@@ -1,9 +1,3 @@
-/* =global module-wrapper
---------------------------------------------------------------- */
-.mod-wrapper {
-	margin-bottom: 1.5em;
-}
-
 /* =global module-lists
 --------------------------------------------------------------- */
 .mod-category {
@@ -399,7 +393,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	-webkit-transition: box-shadow .3s ease;
 	transition: box-shadow .3s ease;
 }
-.calendar tbody a:hover, 
+.calendar tbody a:hover,
 .calendar tbody a:focus {
 	box-shadow: inset 0 0 0 100px rgba(0,0,0,.25);
 }
@@ -419,7 +413,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cal-noentry a {
 	color: #707070;
 }
-.cal-noentry a:hover, 
+.cal-noentry a:hover,
 .cal-noentry a:focus {
 	color: #000;
 }
@@ -429,11 +423,11 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: #adadad;
 	background-color: #eee;
 }
-	
+
 .cal-othermonth { /* Tage ausserhalb des ausgewählten Monats */
 	background-color: #fff;
 }
-	
+
 .cal-today,
 .cal-today-legend span {  /* heute */
 	color: #fff;
@@ -912,7 +906,7 @@ ul.gallery-magnific img {
 	font: normal normal 0.7em/1.8 FontAwesome;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	transform: translate(0, 0);	
+	transform: translate(0, 0);
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 }

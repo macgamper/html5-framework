@@ -43,7 +43,7 @@ h6, .h6 {
 	font-size: 1em;
 }
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion, [data-oembed-url], [class*="col-"] {
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .mod-wrapper, .accordion, [data-oembed-url], [class*="col-"] {
 	margin: 0 0 1.5em;
 }
 p {
@@ -141,7 +141,7 @@ iframe {
 	padding: 0;
 	width: 100%;
 }
-.optimale-zeilenlaenge { 
+.optimale-zeilenlaenge {
 	color: red; /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 }
 
@@ -222,7 +222,7 @@ a[href$=".docm"]::before, a[href$=".DOCM"]::before,
 a[href$=".docx"]::before, a[href$=".DOCX"]::before,
 a[href$=".dot"]::before, a[href$=".DOT"]::before,
 a[href$=".dotx"]::before, a[href$=".DOTX"]::before,
-a[href$=".rtf"]::before, a[href$=".RTF"]::before { 
+a[href$=".rtf"]::before, a[href$=".RTF"]::before {
 	content: "\f1c2";
 }
 a[href$=".pdf"]::before, a[href$=".PDF"]::before {
@@ -235,16 +235,16 @@ a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
 a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
 a[href$=".ppt"]::before, a[href$=".PPT"]::before,
 a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
-a[href$=".pptx"]::before, a[href$=".PPTX"]::before { 
+a[href$=".pptx"]::before, a[href$=".PPTX"]::before {
 	content: "\f1c4";
 }
-a[href$=".rss"]::before, a[href$=".RSS"]::before { 
+a[href$=".rss"]::before, a[href$=".RSS"]::before {
 	content: "\f09e";
 }
-a[href$=".txt"]::before, a[href$=".TXT"]::before { 
+a[href$=".txt"]::before, a[href$=".TXT"]::before {
 	content: "\f0f6";
 }
-a[href$=".vcf"]::before, a[href$=".VCF"]::before { 
+a[href$=".vcf"]::before, a[href$=".VCF"]::before {
 	content: "\f007";
 }
 a[href$=".csv"]::before, a[href$=".CSV"]::before,
@@ -258,7 +258,7 @@ a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
 a[href$=".xltx"]::before, a[href$=".XLTX"]::before { 
 	content: "\f1c3";
 }
-a[href$=".zip"]::before, a[href$=".ZIP"]::before { 
+a[href$=".zip"]::before, a[href$=".ZIP"]::before {
 	content: "\f1c6";
 }
 a[href^="https://www.google.com/maps/"]::before,
@@ -289,18 +289,18 @@ a[data-email-link]::before {
 a[href^="tel:"]::before {
 	content: "\f095";
 }
-a[href^="http:"]::after, 
+a[href^="http:"]::after,
 a[href^="https:"]::after {
 	padding-right: 0;
 	padding-left: 0.25em;
 	content: "\f08e";
 }
-a[href*=".kunde.ch"]::after, 
-a[href*=".backslash.ch"]::after, 
+a[href*=".kunde.ch"]::after,
+a[href*=".backslash.ch"]::after,
 a[data-email-link]::after,
 a.no-icon::after, a.no-icon::before,
-.nav a[href]::after, 
-.subnav a[href]::after, 
+.nav a[href]::after,
+.subnav a[href]::after,
 .footer a[href]::after,
 .mod-dam--gallery a::before {
 	content: none;
@@ -381,7 +381,7 @@ caption {
 	text-align: left;
 	font-weight: bold;
 }
-table th, 
+table th,
 table td {
 	vertical-align: top;
 	border-bottom: 1px solid #dcdfde;
@@ -507,8 +507,8 @@ table.reset td {
 
 /*=microformats
 --------------------------------------------------------------- */
-.vcard .region, 
-.vcard .country-name, 
+.vcard .region,
+.vcard .country-name,
 .vcard .url {
 	display: none;
 }
@@ -577,7 +577,7 @@ table.reset td {
 	margin-top: 0;
 	margin-right: 0;
 }
-	
+
 .reset,
 .reset li,
 nav ul,
@@ -662,7 +662,7 @@ blockquote > *:last-child,
 	border-radius: 3px;
 	cursor: pointer;
 }
-.btn:hover, 
+.btn:hover,
 .btn:focus {
 	color: #fff;
 	text-decoration: none !important;
@@ -671,7 +671,7 @@ blockquote > *:last-child,
 .btn:active {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
 }
-	
+
 .btn--small, .btn--small {
   	padding: .1em .5em;
 }

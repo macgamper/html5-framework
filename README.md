@@ -5,6 +5,7 @@ HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
 ### Changed
 - application.css: Mehrspaltigen Kalender-Legende optimiert, damit die Einträge auch bei unregelmässiger Anzahl auf der gleichen Baseline dargestellt werden.
+- `.mod-wrapper` Abstand wird nun wie die anderen Grundabstände im `basics.css` geregelt.
 
 ## [1.5.1] - 2020-01-09
 
