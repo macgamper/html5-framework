@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.2] - 2020-01-16
+
+### Changed
+- application.css: Mehrspaltigen Kalender-Legende optimiert, damit die Einträge auch bei unregelmässiger Anzahl auf der gleichen Baseline dargestellt werden.
+
 ## [1.5.1] - 2020-01-09
 
 ### Added

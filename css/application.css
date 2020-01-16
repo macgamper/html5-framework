@@ -468,8 +468,10 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 			columns: 2 10em; /* max. columns, max width */
 }
 .calendar-legend li {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
+	width: 100%;
+	margin-bottom: 0.25em;
 }
 .calendar-legend span {
 	display: block;
