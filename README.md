@@ -1,7 +1,7 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
-## [1.5.3] - 2020-01-1
+## [1.5.3] - 2020-01-17
 
 ### Changed
 - application.css: Farbkonstrast der Form-Hints erhöht, so dass auch der Standardwert einen A11Y-Check besteht.
