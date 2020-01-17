@@ -1,6 +1,25 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.3] - 2020-01-1
+
+### Changed
+- application.css: Farbkonstrast der Form-Hints erhöht, so dass auch der Standardwert einen A11Y-Check besteht.
+
+### Added
+- basics.css: Bei Input-Elementen die Browser `appearance` zurückgesetzt, um insbesondere in Mobil-Browsern ein konsistenteres Erscheinungsbild zu haben.
+
+```css
+…
+[type=week],
+textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	…
+}
+```
+
 ## [1.5.2] - 2020-01-16
 
 ### Changed

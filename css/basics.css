@@ -332,9 +332,13 @@ a.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 [type=url],
 [type=week],
 textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 	border: 1px solid #ccc;
 	padding: 0.25em 0.5em;
 }
+
 textarea {
 	resize: vertical;
 }
