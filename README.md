@@ -16,6 +16,7 @@ HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
 ### Changed
 - basics.css: (noch) leere Selektoren kompakt auf eine Zeile genommen
+- basics.css: `prefers-reduced-motion` greift nun auch bei Pseudo-Elementen.
 
 ## [1.5.3] - 2020-01-17
 
