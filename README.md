@@ -1,6 +1,22 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.4] - 2020-01-30
+
+### Added
+- default.html: `details` / `summary` Element ergänzt im Inhalt.
+- basics.css: Basic-Styling für `details` / `summary` Elemente ergänzt.
+
+```html
+<details>
+	<summary>Risus Fermentum Mollis Nibh.</summary>
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+</details>
+```
+
+### Changed
+- basics.css: (noch) leere Selektoren kompakt auf eine Zeile genommen
+
 ## [1.5.3] - 2020-01-17
 
 ### Changed

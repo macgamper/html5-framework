@@ -1,6 +1,4 @@
-:root {
-	
-}
+:root {}
 *,
 *::before,
 *::after,
@@ -42,13 +40,11 @@ h6, .h6 {
 	margin: 0 0 0.2em;
 	font-size: 1em;
 }
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
+p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, details,
 .p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .mod-wrapper, .accordion, [data-oembed-url], [class*="col-"] {
 	margin: 0 0 1.5em;
 }
-p {
-	
-}
+p {}
 .p {
 	font-size: 1em;
 	font-weight: normal;
@@ -96,9 +92,7 @@ img, embed, object, video {
 	height: auto;
 }
 
-figure {
-	
-}
+figure {}
 figure > img,
 figure > a > img{
 	display: block;
@@ -110,12 +104,8 @@ blockquote {
 	padding: 0 1.5em;
 	font-style: italic;
 }
-address {
-	
-}
-cite {
-	
-}
+address {}
+cite {}
 tt, code, kbd, samp, pre {
 	font-family: "Courier New", Courier, mono;
 }
@@ -140,6 +130,14 @@ iframe {
 	border: 0;
 	padding: 0;
 	width: 100%;
+}
+details {}
+details[open] {}
+summary {
+	font-weight: bold;
+}
+details[open] > summary {
+	margin-bottom: 0.75em;
 }
 .optimale-zeilenlaenge {
 	color: red; /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
@@ -598,6 +596,7 @@ nav ul {
 .nobr {
 	white-space: nowrap;
 }
+details,
 .box {
 	border: 1px solid #666;
 	padding: 1.5em;
@@ -625,8 +624,9 @@ nav ul {
 	background-color: #d9edf7;
 }
 
-fieldset > *:last-child,
 blockquote > *:last-child,
+fieldset > *:last-child,
+details > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child,
 .lc-reset > *:last-child {
