@@ -1,6 +1,12 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.5] - 2020-02-05
+
+### Changed
+- basics.css: Einheitlicheres Basic-Styling von Forms mit besser sichtbarem `:focus`, der gleichzeitig weniger Spezifität hat (einfacheres überschreiben) und neu berücksichtigtem `select` Element.
+- print.css: Codeblöcke erhalten einen Monospace-Font.
+
 ## [1.5.4] - 2020-01-30
 
 ### Added
