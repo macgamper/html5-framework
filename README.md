@@ -1,10 +1,18 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.6] - 2020-03-03
+
+### Added
+- default.html: Bei den Tabellen-Containern `.table-responsive` noch `role="region"` und `tabindex="0"` nachgerüstet, dass die Tabellen auch mit der Tastatur zugänglicher und scrollbar macht. [Keyboard-Friendly Scroll](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html#ResponsiveScrollingKeyboard).
+- basics.css: iFrames haben nun den üblichen vertikalen Abstand von Blockelementen.
+- application.css: Im Form-Builder-Part Klassen für die Anzeige von Passwortstärken ergänzt.
+- application.css: Legacy Flex-Prefixes entfernt.
+
 ## [1.5.5] - 2020-02-05
 
 ### Changed
-- basics.css: Einheitlicheres Basic-Styling von Forms mit besser sichtbarem `:focus`, der gleichzeitig weniger Spezifität hat (einfacheres überschreiben) und neu berücksichtigtem `select` Element.
+- basics.css: Einheitlicheres Basic-Styling von Forms mit besser sichtbarem `:focus`, der gleichzeitig weniger Spezifität hat und neu berücksichtigtem `select` Element.
 - print.css: Codeblöcke erhalten einen Monospace-Font.
 
 ## [1.5.4] - 2020-01-30
@@ -96,7 +104,7 @@ textarea {
 
 ### Changed
 - application.css: Kleine Fehlerkorrektur
-- basics.css: Martins beim `hr` eingefügt
+- basics.css: Margins beim `hr` eingefügt
 
 ## [1.4.6] - 2019-09-10
 

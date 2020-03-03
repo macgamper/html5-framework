@@ -40,7 +40,7 @@ h6, .h6 {
 	margin: 0 0 0.2em;
 	font-size: 1em;
 }
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, details,
+p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, details, iframe,
 .p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .mod-wrapper, .accordion, [data-oembed-url], [class*="col-"] {
 	margin: 0 0 1.5em;
 }
@@ -126,7 +126,6 @@ label.error,
 }
 iframe {
 	display: block;
-	margin: 0;
 	border: 0;
 	padding: 0;
 	width: 100%;
