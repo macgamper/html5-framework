@@ -7,6 +7,8 @@ HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 - default.html: Bei den Tabellen-Containern `.table-responsive` noch `role="region"` und `tabindex="0"` nachgerüstet, dass die Tabellen auch mit der Tastatur zugänglicher und scrollbar macht. [Keyboard-Friendly Scroll](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html#ResponsiveScrollingKeyboard).
 - basics.css: iFrames haben nun den üblichen vertikalen Abstand von Blockelementen.
 - application.css: Im Form-Builder-Part Klassen für die Anzeige von Passwortstärken ergänzt.
+
+### Removed
 - application.css: Legacy Flex-Prefixes entfernt.
 
 ## [1.5.5] - 2020-02-05
