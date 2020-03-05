@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.7] - 2020-03-05
+
+### Added
+- application.css: Basic-Styling für KataBox ergänzt.
+
 ## [1.5.6] - 2020-03-03
 
 ### Added
