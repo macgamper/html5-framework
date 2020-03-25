@@ -659,7 +659,8 @@ fieldset > *:last-child,
 details > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child,
-.lc-reset > *:last-child {
+.lc-reset > *:last-child,
+.katabox > *:last-child {
 	margin-bottom: 0;
 }
 

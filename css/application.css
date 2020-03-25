@@ -1000,13 +1000,13 @@ ul.gallery-magnific img {
 
 /* =KataBox
 --------------------------------------------------------------- */
-.mod-katabox {
+.katabox {
   position: relative;
   border: 1px solid #000;
   padding: 2em 1.5em;
 }
-.mod-katabox::before,
-.mod-katabox::after {
+.katabox::before,
+.katabox::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1021,13 +1021,10 @@ ul.gallery-magnific img {
     #000000 20px
   );
 }
-.mod-katabox::after {
+.katabox::after {
   top: auto;
   bottom: 0;
 }
-.mod-katabox > *:last-child {
-  margin-bottom: 0;
-}
-.mod-katabox > h2 {
-  text-align: left;
+.katabox__title {
+  text-align: center;
 }
