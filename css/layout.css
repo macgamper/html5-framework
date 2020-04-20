@@ -1,7 +1,7 @@
 /* =global
 --------------------------------------------------------------- */
 .wrapper {
-	border: 2px solid black;
+	outline: 2px solid black;
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;

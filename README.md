@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.8] - 2020-04-20
+
+### Changed
+- layout.css: `outline` ersetzt `border`, damit es keinen Einfluss auf das Layout haben kann.
+
 ## [1.5.7] - 2020-03-05
 
 ### Added
