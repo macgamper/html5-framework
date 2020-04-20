@@ -34,11 +34,4 @@ gulp.task('serve', function() {
 
 });
 
-
-
-/**
- * Default task, running just `gulp` will compile the sass,
- * compile the site, launch BrowserSync then watch
- * files for changes
- */
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.parallel('serve'));
