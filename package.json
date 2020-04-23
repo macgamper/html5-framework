@@ -1,6 +1,6 @@
 {
   "name": "browsersync-starterpack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple browsersync starterpack with html and css filewatcher",
   "main": "gulpfile.js",
   "scripts": {
