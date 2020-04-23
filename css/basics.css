@@ -1,6 +1,4 @@
-:root {
-	
-}
+:root {}
 *,
 *::before,
 *::after,
@@ -42,13 +40,11 @@ h6, .h6 {
 	margin: 0 0 0.2em;
 	font-size: 1em;
 }
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .accordion, [data-oembed-url] {
+p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, details, iframe,
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .mod-wrapper, .accordion, [data-oembed-url], [class*="col-"] {
 	margin: 0 0 1.5em;
 }
-p {
-	
-}
+p {}
 .p {
 	font-size: 1em;
 	font-weight: normal;
@@ -86,6 +82,7 @@ abbr[title] {
 hr {
 	clear: both;
 	height: 1px;
+	margin: 1.5em 0;
 	border: 0;
 	color: #666;
 	background-color: #666;
@@ -94,9 +91,8 @@ img, embed, object, video {
 	max-width: 100%;
 	height: auto;
 }
-figure {
-	
-}
+
+figure {}
 figure > img,
 figure > a > img{
 	display: block;
@@ -108,12 +104,8 @@ blockquote {
 	padding: 0 1.5em;
 	font-style: italic;
 }
-address {
-	
-}
-cite {
-	
-}
+address {}
+cite {}
 tt, code, kbd, samp, pre {
 	font-family: "Courier New", Courier, mono;
 }
@@ -134,12 +126,19 @@ label.error,
 }
 iframe {
 	display: block;
-	margin: 0;
 	border: 0;
 	padding: 0;
 	width: 100%;
 }
-.optimale-zeilenlaenge { 
+details {}
+details[open] {}
+summary {
+	font-weight: bold;
+}
+details[open] > summary {
+	margin-bottom: 0.75em;
+}
+.optimale-zeilenlaenge {
 	color: red; /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 }
 
@@ -220,7 +219,7 @@ a[href$=".docm"]::before, a[href$=".DOCM"]::before,
 a[href$=".docx"]::before, a[href$=".DOCX"]::before,
 a[href$=".dot"]::before, a[href$=".DOT"]::before,
 a[href$=".dotx"]::before, a[href$=".DOTX"]::before,
-a[href$=".rtf"]::before, a[href$=".RTF"]::before { 
+a[href$=".rtf"]::before, a[href$=".RTF"]::before {
 	content: "\f1c2";
 }
 a[href$=".pdf"]::before, a[href$=".PDF"]::before {
@@ -233,16 +232,16 @@ a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
 a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
 a[href$=".ppt"]::before, a[href$=".PPT"]::before,
 a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
-a[href$=".pptx"]::before, a[href$=".PPTX"]::before { 
+a[href$=".pptx"]::before, a[href$=".PPTX"]::before {
 	content: "\f1c4";
 }
-a[href$=".rss"]::before, a[href$=".RSS"]::before { 
+a[href$=".rss"]::before, a[href$=".RSS"]::before {
 	content: "\f09e";
 }
-a[href$=".txt"]::before, a[href$=".TXT"]::before { 
+a[href$=".txt"]::before, a[href$=".TXT"]::before {
 	content: "\f0f6";
 }
-a[href$=".vcf"]::before, a[href$=".VCF"]::before { 
+a[href$=".vcf"]::before, a[href$=".VCF"]::before {
 	content: "\f007";
 }
 a[href$=".csv"]::before, a[href$=".CSV"]::before,
@@ -253,10 +252,10 @@ a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
 a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
 a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
 a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
-a[href$=".xltx"]::before, a[href$=".XLTX"]::before { 
+a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
 	content: "\f1c3";
 }
-a[href$=".zip"]::before, a[href$=".ZIP"]::before { 
+a[href$=".zip"]::before, a[href$=".ZIP"]::before {
 	content: "\f1c6";
 }
 a[href^="https://www.google.com/maps/"]::before,
@@ -287,20 +286,22 @@ a[data-email-link]::before {
 a[href^="tel:"]::before {
 	content: "\f095";
 }
-a[href^="http:"]::after, 
+a[href^="http:"]::after,
 a[href^="https:"]::after {
 	padding-right: 0;
 	padding-left: 0.25em;
 	content: "\f08e";
 }
-a[href*=".kunde.ch"]::after, 
+a[href*=".kunde.ch"]::after,
+a[href*=".backslash.ch"]::after,
 a[data-email-link]::after,
 a.no-icon::after, a.no-icon::before,
-.nav a[href]::after, 
-.subnav a[href]::after, 
-.footer a[href]::after {
-	padding: 0;
+.nav a[href]::after,
+.subnav a[href]::after,
+.footer a[href]::after,
+.mod-dam--gallery a::before {
 	content: none;
+	padding: 0;
 }
 .os-url a.show-icon[href^="https://govis-kunde.backslash.ch"]::after,
 .os-url a.show-icon[href^="https://www.kunde.ch"]::after,
@@ -313,6 +314,17 @@ a.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 
 /* =forms
 --------------------------------------------------------------- */
+fieldset {
+	clear: both;
+	border: 1px solid #666;
+	padding: 1.5em;
+}
+legend {
+	display: table;
+	color: #000;
+	font-weight: bold;
+	font-size: 1.17em;
+}
 [type=date],
 [type=datetime],
 [type=datetime-local],
@@ -327,12 +339,33 @@ a.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 [type=time],
 [type=url],
 [type=week],
-textarea {
+select,
+textarea,
+button, [type="button"], [type="reset"], [type="submit"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 	border: 1px solid #ccc;
-	padding: 3px 0 3px 3px;
+	padding: 0.25em 0.5em;
+	background-color: #fff;
+	border-radius: 2px;
 }
 textarea {
 	resize: vertical;
+}
+select:not([multiple]) {
+	display: block;
+	padding-right: 1.5em;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-position: right .75em top 50%;
+	background-size: .75em auto;
+}
+select::-ms-expand { /* Hide arrow icon in IE browsers */
+    display: none;
 }
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
@@ -341,25 +374,28 @@ textarea {
 [type=checkbox],
 [type=radio] {
 	border: 0;
+	margin-right: 0.25em;
 }
-input:not([type=radio]):not([type=checkbox]):focus,
+[type=date]:focus,
+[type=datetime]:focus,
+[type=datetime-local]:focus,
+[type=email]:focus,
+[type=file]:focus,
+[type=month]:focus,
+[type=number]:focus,
+[type=password]:focus,
+[type=search]:focus,
+[type=tel]:focus,
+[type=text]:focus,
+[type=time]:focus,
+[type=url]:focus,
+[type=week]:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus {
 	outline: 0;
-	box-shadow: 
-		0 0 0 1px #2392f3 inset,
-		0 0 4px rgba(35, 146, 243, 0.5);
-}
-fieldset {
-	clear: both;
-	border: 1px solid #666;
-	padding: 1.5em;
-}
-legend {
-	display: table;
-	color: #000;
-	font-weight: bold;
-	font-size: 1.17em;
+	border-color: #0074a9;
+	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
 }
 button + button[type=reset] {
 	margin-left: 1em;
@@ -377,7 +413,7 @@ caption {
 	text-align: left;
 	font-weight: bold;
 }
-table th, 
+table th,
 table td {
 	vertical-align: top;
 	border-bottom: 1px solid #dcdfde;
@@ -483,15 +519,15 @@ table.reset td {
 .table-responsive > table {
 	margin-bottom: 0;
 }
-	
+
 .media-responsive {
 	position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
 }
-.media-responsive iframe, 
-.media-responsive object, 
+.media-responsive iframe,
+.media-responsive object,
 .media-responsive embed,
 .editor .media-responsive img.cke_iframe {
 	position: absolute;
@@ -503,8 +539,8 @@ table.reset td {
 
 /*=microformats
 --------------------------------------------------------------- */
-.vcard .region, 
-.vcard .country-name, 
+.vcard .region,
+.vcard .country-name,
 .vcard .url {
 	display: none;
 }
@@ -529,6 +565,7 @@ table.reset td {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
+	 -webkit-clip-path: inset(100%);
 	clip-path: inset(100%);
 	overflow: hidden;
 }
@@ -572,7 +609,7 @@ table.reset td {
 	margin-top: 0;
 	margin-right: 0;
 }
-	
+
 .reset,
 .reset li,
 nav ul,
@@ -589,6 +626,7 @@ nav ul {
 .nobr {
 	white-space: nowrap;
 }
+details,
 .box {
 	border: 1px solid #666;
 	padding: 1.5em;
@@ -616,11 +654,13 @@ nav ul {
 	background-color: #d9edf7;
 }
 
-fieldset > *:last-child,
 blockquote > *:last-child,
+fieldset > *:last-child,
+details > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child,
-.lc-reset > *:last-child {
+.lc-reset > *:last-child,
+.katabox > *:last-child {
 	margin-bottom: 0;
 }
 
@@ -630,6 +670,7 @@ blockquote > *:last-child,
 	position: absolute;
 	top: -9999px;
 	left: 1.5em;
+	z-index: 10;
 	padding: 0.5em 1em;
 	text-decoration: none;
 	color: #fff;
@@ -639,9 +680,6 @@ blockquote > *:last-child,
 .skiplinks__link:active {
 	top: 1.5em;
 	color: #fff;
-}
-#main:focus {
-	outline: none; /* entfernt :focus des Skiplinks */
 }
 
 /* =buttons
@@ -659,7 +697,7 @@ blockquote > *:last-child,
 	border-radius: 3px;
 	cursor: pointer;
 }
-.btn:hover, 
+.btn:hover,
 .btn:focus {
 	color: #fff;
 	text-decoration: none !important;
@@ -668,7 +706,7 @@ blockquote > *:last-child,
 .btn:active {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
 }
-	
+
 .btn--small, .btn--small {
   	padding: .1em .5em;
 }
@@ -695,6 +733,17 @@ blockquote > *:last-child,
 	background-color: green;
 }
 
+/* =animations
+--------------------------------------------------------------- */
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+	*, *::before, *::after {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
 /* =grid
 --------------------------------------------------------------- */
 .row {
@@ -703,7 +752,6 @@ blockquote > *:last-child,
 [class*="col-"] {
 	position: relative;
 	float: left;
-	margin-bottom: 1.5em;
 	margin-left: 0; /* muss aufgrund der breite berechnet werden */
 	min-height: 1px;
 }
@@ -765,7 +813,7 @@ blockquote > *:last-child,
 	color: #fff;
 	background-color: red;
 }
-	
+
 .editor img.cke_iframe {
 	width: 100% !important;
 	height: 100% !important;

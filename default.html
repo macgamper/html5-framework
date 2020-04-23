@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="de" class="no-js">
+<html lang="de-CH" class="no-js">
 
 	<head>
 		<meta charset="utf-8">
@@ -12,7 +12,14 @@
 		<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
 		<link rel="apple-touch-icon" href="img/touch-icon.png">
 		<link rel="icon" sizes="192x192" href="img/touch-icon.png">
-
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "url": "https://www.example.ch",
+		  "logo": "https://www.example.ch/images/logo.png"
+		}
+		</script>
 		<script src="https://ext.cdn-backslash.ch/lib/modernizr/latest/modernizr.min.js"></script>
 		
 	</head>
@@ -56,7 +63,7 @@
 			</nav>
 			<!-- end nav.mainnav -->
 			<div class="container">
-				<main class="main" id="main" tabindex="-1" aria-labelledby="main__title">
+				<main class="main" id="main" aria-labelledby="main__title">
 					<h1 class="main__title" id="main__title">Maincontent H1</h1>
 					<figure>
 						<img src="img/musterbild-05.jpg" alt="" />
@@ -89,37 +96,39 @@
 					<h2>Untertitel H2</h2>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <a href="#" title="ein interner Link">nonummy</a> nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 					
-					<table>
-						<caption>Table Caption</caption>
-						<thead>
-							<tr>
-								<th></th>
-								<th>Produkt 1</th>
-								<th>Produkt 2</th>
-								<th>Produkt 3</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Gr&ouml;sse</td>
-								<td>1.20</td>
-								<td>1.30</td>
-								<td>2.30</td>
-							</tr>
-							<tr>
-								<td>Gewicht</td>
-								<td>50 kg</td>
-								<td>80 kg</td>
-								<td>120 kg</td>
-							</tr>
-							<tr>
-								<td>L&auml;nge</td>
-								<td>500</td>
-								<td>750</td>
-								<td>1000</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-responsive" role="region" tabindex="0">
+						<table>
+							<caption id="cap-1">Table Caption</caption>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Produkt 1</th>
+									<th>Produkt 2</th>
+									<th>Produkt 3</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Gr&ouml;sse</td>
+									<td>1.20</td>
+									<td>1.30</td>
+									<td>2.30</td>
+								</tr>
+								<tr>
+									<td>Gewicht</td>
+									<td>50 kg</td>
+									<td>80 kg</td>
+									<td>120 kg</td>
+								</tr>
+								<tr>
+									<td>L&auml;nge</td>
+									<td>500</td>
+									<td>750</td>
+									<td>1000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed <em>&laquo;diam nonummy nibh euismod&raquo;</em> tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci <a href="mailto:p.muster@backlsash.ch" title="ein Mail-Link">Peter Muster</a> tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <a href="http://www.tagi.ch" title="ein externer Link">Lorem ipsum dolor</a> sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<ul>
@@ -131,6 +140,10 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
 					<h3>Anmerkungen H3</h3>
 					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<details>
+						<summary>Risus Fermentum Mollis Nibh.</summary>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					</details>
 					<h4>Das ist ein kleiner Titel H4</h4>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br />
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -203,9 +216,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br />
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<ul class="services">
-						<li class="services-gotop"><a href="#" title="an den Anfang der Seite springen">zum Seitenanfang</a></li>
-						<li class="services-print"><a href="print" title="Seite in druckbarer Form anzeigen" target="_blank" rel="nofollow">Seite drucken</a></li>
-						<li class="services-printpdf"><a href="printpdf" title="Seite als PDF speichern" target="_blank" rel="nofollow">Seite als PDF</a></li>
+						<li class="services__item services__item--gotop"><a href="#" title="an den Anfang der Seite springen">zum Seitenanfang</a></li>
+						<li class="services__item services__item--print"><a href="print" title="Seite in druckbarer Form anzeigen" target="_blank" rel="nofollow">Seite drucken</a></li>
+						<li class="services__item services__item--printpdf"><a href="printpdf" title="Seite als PDF speichern" target="_blank" rel="nofollow">Seite als PDF</a></li>
 					</ul>
 				</main>
 				<aside class="sidebar" aria-describedby="sidebar__title">

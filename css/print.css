@@ -21,6 +21,10 @@ nav, form, aside, header,
 	display: none;
 }
 
+[type="hidden"] {
+	visibility: hidden; /* used for PDF-print */
+}
+
 /* =elemente einblenden, die im druck explizit erscheinen sollen
 --------------------------------------------------------------- */
 .screenhidden, .printvisible {
@@ -34,7 +38,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, table, caption, address, dl, blockquote, fiel
 	color: #000;
 }
 p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table,
-.box, .table-responsive, .media-responsive {
+.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .mod-wrapper, .accordion, [data-oembed-url], [class*="col-"] {
 	margin-bottom: 1.5em;
 }
 h1, h2, h3, h4, h5, h6,
@@ -77,7 +81,7 @@ hr {
 ul, ol {
 
 }
-ul, ol, dl, li {
+ul, ol, dl, li, figure {
 	page-break-inside: avoid;
 }
 .sitemap,
@@ -89,6 +93,7 @@ img {
 	max-width: 100%;
 }
 figure {
+	display: block;
 	margin-top: 0;
 	margin-right: 0;
 	margin-left: 0;
@@ -122,8 +127,8 @@ iframe {
 }
 
 a:link {
-	color: #9d9d9d;
-	text-decoration: underline
+	color: #000;
+	text-decoration: underline;
 }
 sub,
 sup {
@@ -138,6 +143,14 @@ sub {
 sup {
     top: -0.5em;
     }
+
+tt, code, kbd, samp, pre {
+	display: inline-block;
+	padding: 3px 5px;
+	font-family: "Courier New", Courier, mono;
+	background-color: #ededed;
+	border-radius: 2px;
+}
 
 /* =tables
 --------------------------------------------------------------- */
@@ -241,4 +254,18 @@ fieldset > *:last-child {
 .alignright {
 	float: right;
 	margin: 0 0 1.5em 1.5em;
+}
+
+/* =accordion
+--------------------------------------------------------------- */
+.js-accordion_panel {
+    display: block !important;
+}
+
+/* =fussnoten für links
+--------------------------------------------------------------- */
+[data-cms-footnotes] {
+    border-top: 1px solid #000;
+    padding: 1.5em 0;
+    font-size: 8pt;
 }

@@ -1,6 +1,195 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.8] - 2020-04-20
+
+### Changed
+- layout.css: `outline` ersetzt `border`, damit es keinen Einfluss auf das Layout haben kann.
+
+## [1.5.7] - 2020-03-05
+
+### Added
+- application.css: Basic-Styling für KataBox ergänzt.
+
+## [1.5.6] - 2020-03-03
+
+### Added
+- default.html: Bei den Tabellen-Containern `.table-responsive` noch `role="region"` und `tabindex="0"` nachgerüstet, dass die Tabellen auch mit der Tastatur zugänglicher und scrollbar macht. [Keyboard-Friendly Scroll](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html#ResponsiveScrollingKeyboard).
+- basics.css: iFrames haben nun den üblichen vertikalen Abstand von Blockelementen.
+- application.css: Im Form-Builder-Part Klassen für die Anzeige von Passwortstärken ergänzt.
+
+### Removed
+- application.css: Legacy Flex-Prefixes entfernt.
+
+## [1.5.5] - 2020-02-05
+
+### Changed
+- basics.css: Einheitlicheres Basic-Styling von Forms mit besser sichtbarem `:focus`, der gleichzeitig weniger Spezifität hat und neu berücksichtigtem `select` Element.
+- print.css: Codeblöcke erhalten einen Monospace-Font.
+
+## [1.5.4] - 2020-01-30
+
+### Added
+- default.html: `details` / `summary` Element ergänzt im Inhalt.
+- basics.css: Basic-Styling für `details` / `summary` Elemente ergänzt.
+
+```html
+<details>
+	<summary>Risus Fermentum Mollis Nibh.</summary>
+	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+</details>
+```
+
+### Changed
+- basics.css: (noch) leere Selektoren kompakt auf eine Zeile genommen
+- basics.css: `prefers-reduced-motion` greift nun auch bei Pseudo-Elementen.
+
+## [1.5.3] - 2020-01-17
+
+### Changed
+- application.css: Farbkonstrast der Form-Hints erhöht, so dass auch der Standardwert einen A11Y-Check besteht.
+
+### Added
+- basics.css: Bei Input-Elementen die Browser `appearance` zurückgesetzt, um insbesondere in Mobil-Browsern ein konsistenteres Erscheinungsbild zu haben.
+
+```css
+…
+[type=week],
+textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	…
+}
+```
+
+## [1.5.2] - 2020-01-16
+
+### Changed
+- application.css: Mehrspaltigen Kalender-Legende optimiert, damit die Einträge auch bei unregelmässiger Anzahl auf der gleichen Baseline dargestellt werden.
+- `.mod-wrapper` Abstand wird nun wie die anderen Grundabstände im `basics.css` geregelt.
+
+## [1.5.1] - 2020-01-09
+
+### Added
+- basics.css: Falls das `scroll-behavior: smooth;` aktiviert wurde, wird dieses nun ebenfalls in `prefers-reduced-motion` deaktiviert.
+
+```css
+/* =animations
+--------------------------------------------------------------- */
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+	* {
+		…
+		scroll-behavior: auto !important;
+	}
+}
+```
+
+## [1.5] - 2019-11-20
+
+### Removed
+- basics.css: FontAwesome-File-Icons wurden bei backslash-Domains versehentlich zurückgesetzt. `a[href*=".backslash.ch"]::before` 
+
+## [1.4.9] - 2019-10-18
+
+### Added
+- print.css: Basis-Styling für die Print-Fussnoten ergänzt.
+
+## [1.4.8] - 2019-10-08
+
+### Added
+- basics.css: Animationen können mit der `prefers-reduced-motion` Media Query nun deaktiviert werden. [Quelle](https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/).
+
+```css
+/* =animations
+--------------------------------------------------------------- */
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+	* {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+	}
+}
+```
+
+## [1.4.7] - 2019-09-23
+
+### Changed
+- application.css: Kleine Fehlerkorrektur
+- basics.css: Margins beim `hr` eingefügt
+
+## [1.4.6] - 2019-09-10
+
+### Added
+- print.css: `type="hidden"` wird neu ausgeblendet, als Workaround für einen Bug, der in PDF-Ausgabe das Generieren des Outputs bei Seiten mit Hidden-Inputfeldern verhinderte.
+
+```css
+[type="hidden"] {
+	visibility: hidden; /* used for PDF-print */
+}
+```
+
+## [1.4.5] - 2019-08-23
+
+### Added
+- basics.css: Bildergalerien-Links ohne Bild-Dateiicon.
+
+```css
+…
+.mod-dam--gallery a::before {
+	content: none;
+	padding: 0;
+}
+```
+
+## [1.4.4] - 2019-07-25
+
+### Added
+- basics.css: Webkit-Prefix für die `clip-path`-Eigenschaft `.visuallyhidden` ergänzt. 
+
+## [1.4.3] - 2019-07-23
+
+### Removed
+- default.html: `tabindex="-1"` vom `main` Element entfernt. Dies wurde in einigen Browsern benötigt, damit der Inhalt bei Skiplinks einen Fokus bekommen konnte und wird laut [knowbility.org](https://knowbility.org/blog/2019/skip-links/) nicht mehr benötigt.
+- basics.css: Aus dem gleichen Grund konnte der zugehörige CSS-Part entfernt werden: 
+```css
+#main:focus {
+	outline: none; /* entfernt :focus des Skiplinks */
+}
+```
+
+## [1.4.2] - 2019-07-01
+
+### Changed
+- print.css: Links sind nun auch schwarz. `figure`-Elemente vom Seitenumbruch ausgeschlossen.
+
+## [1.4.1] - 2019-05-02
+
+### Added
+- default.html: Code für [Schema.org-Logo](https://developers.google.com/search/docs/data-types/logo) ergänzt. 
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "http://www.example.com",
+  "logo": "http://www.example.com/images/logo.png"
+}
+</script>
+```
+
+Hier kann üblicherweise das bestehende Touch-Icon eingebunden werden, sofern es dem Logo entspricht und folgenden Vorgaben einhält:
+- Das Bild muss mindestens 112 × 112 Pixel groß sein.
+- Die Bild-URL muss gecrawlt und indexiert werden können.
+- Das Bild muss im Format JPG, PNG oder GIF vorliegen.
+
+## [1.4.0] - 2019-04-16
+
+### Changed
+- basics.css: Skiplinks mit `z-index: 10` versehen, Helferklassen `.zebra` und `.hover` sprechen nur noch direkte Kind-Elemente an.
+- print.css: geschlossene Akkordeons werden beim Print geöffnet
+
 ## [1.3.9] - 2019-04-10
 
 ### Changed
