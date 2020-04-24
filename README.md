@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.5.9] - 2020-04-24
+
+### Changed
+- package.json / gulpfile.js: Aktualisiert auf Pulp 4 um Node 12-Kompatibilität wieder herzustellen.
+
 ## [1.5.8] - 2020-04-20
 
 ### Changed
