@@ -159,53 +159,53 @@ a img {
 
 /* =doc-anchors font-awesome
 --------------------------------------------------------------- */
-a[href^="http:"]::after, a[href^="https:"]::after,
-a.show-icon[href^="/"]::after, a.document-lst::after,
-a[href$=".csv"]::before, a[href$=".CSV"]::before,
-a[href$=".doc"]::before, a[href$=".DOC"]::before,
-a[href$=".docx"]::before, a[href$=".DOCX"]::before,
-a[href$=".dotx"]::before, a[href$=".DOTX"]::before,
-a[href$=".docm"]::before, a[href$=".DOCM"]::before,
-a[href$=".dot"]::before, a[href$=".DOT"]::before,
-a[href$=".jpg"]::before, a[href$=".JPG"]::before,
-a[href$=".jpeg"]::before, a[href$=".JPEG"]::before,
-a[href$=".gif"]::before, a[href$=".GIF"]::before,
-a[href$=".eps"]::before, a[href$=".EPS"]::before,
-a[href$=".pdf"]::before, a[href$=".PDF"]::before,
-a[href$=".png"]::before, a[href$=".PNG"]::before,
-a[href$=".potm"]::before, a[href$=".POTM"]::before,
-a[href$=".potx"]::before, a[href$=".POTX"]::before,
-a[href$=".pps"]::before, a[href$=".PPS"]::before,
-a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
-a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
-a[href$=".ppt"]::before, a[href$=".PPT"]::before,
-a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
-a[href$=".pptx"]::before, a[href$=".PPTX"]::before,
-a[href$=".psd"]::before, a[href$=".PSD"]::before,
-a[href$=".rss"]::before, a[href$=".RSS"]::before,
-a[href$=".rtf"]::before, a[href$=".RTF"]::before,
-a[href$=".svg"]::before, a[href$=".SVG"]::before,
-a[href$=".tif"]::before, a[href$=".TIF"]::before,
-a[href$=".tiff"]::before, a[href$=".TIFF"]::before,
-a[href$=".txt"]::before, a[href$=".TXT"]::before,
-a[href$=".vcf"]::before, a[href$=".VCF"]::before,
-a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
-a[href$=".xls"]::before, a[href$=".XLS"]::before,
-a[href$=".xlt"]::before, a[href$=".XLT"]::before,
-a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
-a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
-a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
-a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
-a[href$=".xltx"]::before, a[href$=".XLTX"]::before,
-a[href$=".zip"]::before, a[href$=".ZIP"]::before,
-a[href^="mailto\3A"]::before, a[data-email-link]::before,
-a[href^="tel\3A"]::before,
-a[href^="https://www.google.com/maps/"]::before,
-a[href^="http://www.google.com/maps/"]::before,
-a[href^="https://maps.google.com/"]::before,
-a[href^="http://maps.google.com/"]::before,
-a[href^="https://goo.gl/maps/"]::before,
-a.download-icn::before {
+[href^="http:"]::after, [href^="https:"]::after,
+.show-icon[href^="/"]::after, .document-lst::after,
+[href$=".csv"]::before, [href$=".CSV"]::before,
+[href$=".doc"]::before, [href$=".DOC"]::before,
+[href$=".docx"]::before, [href$=".DOCX"]::before,
+[href$=".dotx"]::before, [href$=".DOTX"]::before,
+[href$=".docm"]::before, [href$=".DOCM"]::before,
+[href$=".dot"]::before, [href$=".DOT"]::before,
+[href$=".jpg"]::before, [href$=".JPG"]::before,
+[href$=".jpeg"]::before, [href$=".JPEG"]::before,
+[href$=".gif"]::before, [href$=".GIF"]::before,
+[href$=".eps"]::before, [href$=".EPS"]::before,
+[href$=".pdf"]::before, [href$=".PDF"]::before,
+[href$=".png"]::before, [href$=".PNG"]::before,
+[href$=".potm"]::before, [href$=".POTM"]::before,
+[href$=".potx"]::before, [href$=".POTX"]::before,
+[href$=".pps"]::before, [href$=".PPS"]::before,
+[href$=".ppsm"]::before, [href$=".PPSM"]::before,
+[href$=".ppsx"]::before, [href$=".PPSX"]::before,
+[href$=".ppt"]::before, [href$=".PPT"]::before,
+[href$=".pptm"]::before, [href$=".PPTM"]::before,
+[href$=".pptx"]::before, [href$=".PPTX"]::before,
+[href$=".psd"]::before, [href$=".PSD"]::before,
+[href$=".rss"]::before, [href$=".RSS"]::before,
+[href$=".rtf"]::before, [href$=".RTF"]::before,
+[href$=".svg"]::before, [href$=".SVG"]::before,
+[href$=".tif"]::before, [href$=".TIF"]::before,
+[href$=".tiff"]::before, [href$=".TIFF"]::before,
+[href$=".txt"]::before, [href$=".TXT"]::before,
+[href$=".vcf"]::before, [href$=".VCF"]::before,
+[href$=".xlam"]::before, [href$=".XLAM"]::before,
+[href$=".xls"]::before, [href$=".XLS"]::before,
+[href$=".xlt"]::before, [href$=".XLT"]::before,
+[href$=".xlsb"]::before, [href$=".XLSB"]::before,
+[href$=".xlsm"]::before, [href$=".XLSM"]::before,
+[href$=".xlsx"]::before, [href$=".XLSX"]::before,
+[href$=".xltm"]::before, [href$=".XLTM"]::before,
+[href$=".xltx"]::before, [href$=".XLTX"]::before,
+[href$=".zip"]::before, [href$=".ZIP"]::before,
+[href^="mailto\3A"]::before, [data-email-link]::before,
+[href^="tel\3A"]::before,
+[href^="https://www.google.com/maps/"]::before,
+[href^="http://www.google.com/maps/"]::before,
+[href^="https://maps.google.com/"]::before,
+[href^="http://maps.google.com/"]::before,
+[href^="https://goo.gl/maps/"]::before,
+.download-icn::before {
 	display: inline-block;
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -214,101 +214,101 @@ a.download-icn::before {
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
 }
-a[href$=".doc"]::before, a[href$=".DOC"]::before,
-a[href$=".docm"]::before, a[href$=".DOCM"]::before,
-a[href$=".docx"]::before, a[href$=".DOCX"]::before,
-a[href$=".dot"]::before, a[href$=".DOT"]::before,
-a[href$=".dotx"]::before, a[href$=".DOTX"]::before,
-a[href$=".rtf"]::before, a[href$=".RTF"]::before {
+[href$=".doc"]::before, [href$=".DOC"]::before,
+[href$=".docm"]::before, [href$=".DOCM"]::before,
+[href$=".docx"]::before, [href$=".DOCX"]::before,
+[href$=".dot"]::before, [href$=".DOT"]::before,
+[href$=".dotx"]::before, [href$=".DOTX"]::before,
+[href$=".rtf"]::before, [href$=".RTF"]::before {
 	content: "\f1c2";
 }
-a[href$=".pdf"]::before, a[href$=".PDF"]::before {
+[href$=".pdf"]::before, [href$=".PDF"]::before {
 	content: "\f1c1";
 }
-a[href$=".potm"]::before, a[href$=".POTM"]::before,
-a[href$=".potx"]::before, a[href$=".POTX"]::before,
-a[href$=".pps"]::before, a[href$=".PPS"]::before,
-a[href$=".ppsm"]::before, a[href$=".PPSM"]::before,
-a[href$=".ppsx"]::before, a[href$=".PPSX"]::before,
-a[href$=".ppt"]::before, a[href$=".PPT"]::before,
-a[href$=".pptm"]::before, a[href$=".PPTM"]::before,
-a[href$=".pptx"]::before, a[href$=".PPTX"]::before {
+[href$=".potm"]::before, [href$=".POTM"]::before,
+[href$=".potx"]::before, [href$=".POTX"]::before,
+[href$=".pps"]::before, [href$=".PPS"]::before,
+[href$=".ppsm"]::before, [href$=".PPSM"]::before,
+[href$=".ppsx"]::before, [href$=".PPSX"]::before,
+[href$=".ppt"]::before, [href$=".PPT"]::before,
+[href$=".pptm"]::before, [href$=".PPTM"]::before,
+[href$=".pptx"]::before, [href$=".PPTX"]::before {
 	content: "\f1c4";
 }
-a[href$=".rss"]::before, a[href$=".RSS"]::before {
+[href$=".rss"]::before, [href$=".RSS"]::before {
 	content: "\f09e";
 }
-a[href$=".txt"]::before, a[href$=".TXT"]::before {
+[href$=".txt"]::before, [href$=".TXT"]::before {
 	content: "\f0f6";
 }
-a[href$=".vcf"]::before, a[href$=".VCF"]::before {
+[href$=".vcf"]::before, [href$=".VCF"]::before {
 	content: "\f007";
 }
-a[href$=".csv"]::before, a[href$=".CSV"]::before,
-a[href$=".xlam"]::before, a[href$=".XLAM"]::before,
-a[href$=".xls"]::before, a[href$=".XLS"]::before,
-a[href$=".xlt"]::before, a[href$=".XLT"]::before,
-a[href$=".xlsb"]::before, a[href$=".XLSB"]::before,
-a[href$=".xlsm"]::before, a[href$=".XLSM"]::before,
-a[href$=".xlsx"]::before, a[href$=".XLSX"]::before,
-a[href$=".xltm"]::before, a[href$=".XLTM"]::before,
-a[href$=".xltx"]::before, a[href$=".XLTX"]::before {
+[href$=".csv"]::before, [href$=".CSV"]::before,
+[href$=".xlam"]::before, [href$=".XLAM"]::before,
+[href$=".xls"]::before, [href$=".XLS"]::before,
+[href$=".xlt"]::before, [href$=".XLT"]::before,
+[href$=".xlsb"]::before, [href$=".XLSB"]::before,
+[href$=".xlsm"]::before, [href$=".XLSM"]::before,
+[href$=".xlsx"]::before, [href$=".XLSX"]::before,
+[href$=".xltm"]::before, [href$=".XLTM"]::before,
+[href$=".xltx"]::before, [href$=".XLTX"]::before {
 	content: "\f1c3";
 }
-a[href$=".zip"]::before, a[href$=".ZIP"]::before {
+[href$=".zip"]::before, [href$=".ZIP"]::before {
 	content: "\f1c6";
 }
-a[href^="https://www.google.com/maps/"]::before,
-a[href^="http://www.google.com/maps/"]::before,
-a[href^="https://maps.google.com/"]::before,
-a[href^="http://maps.google.com/"]::before,
-a[href^="https://goo.gl/maps/"]::before {
+[href^="https://www.google.com/maps/"]::before,
+[href^="http://www.google.com/maps/"]::before,
+[href^="https://maps.google.com/"]::before,
+[href^="http://maps.google.com/"]::before,
+[href^="https://goo.gl/maps/"]::before {
 	content: "\f041";
 }
-a[href$=".jpg"]::before, a[href$=".JPG"]::before,
-a[href$=".jpeg"]::before, a[href$=".JPEG"]::before,
-a[href$=".gif"]::before, a[href$=".GIF"]::before,
-a[href$=".eps"]::before, a[href$=".EPS"]::before,
-a[href$=".png"]::before, a[href$=".PNG"]::before,
-a[href$=".psd"]::before, a[href$=".PSD"]::before,
-a[href$=".svg"]::before, a[href$=".SVG"]::before,
-a[href$=".tif"]::before, a[href$=".TIF"]::before,
-a[href$=".tiff"]::before, a[href$=".TIFF"]::before {
+[href$=".jpg"]::before, [href$=".JPG"]::before,
+[href$=".jpeg"]::before, [href$=".JPEG"]::before,
+[href$=".gif"]::before, [href$=".GIF"]::before,
+[href$=".eps"]::before, [href$=".EPS"]::before,
+[href$=".png"]::before, [href$=".PNG"]::before,
+[href$=".psd"]::before, [href$=".PSD"]::before,
+[href$=".svg"]::before, [href$=".SVG"]::before,
+[href$=".tif"]::before, [href$=".TIF"]::before,
+[href$=".tiff"]::before, [href$=".TIFF"]::before {
 	content: "\f1c5";
 }
-a.download-icn::before {
+.download-icn::before {
     content: "\f019";
 }
-a[href^="mailto:"]::before,
-a[data-email-link]::before {
+[href^="mailto:"]::before,
+[data-email-link]::before {
 	content: "\f003";
 }
-a[href^="tel:"]::before {
+[href^="tel:"]::before {
 	content: "\f095";
 }
-a[href^="http:"]::after,
-a[href^="https:"]::after {
+[href^="http:"]::after,
+[href^="https:"]::after {
 	padding-right: 0;
 	padding-left: 0.25em;
 	content: "\f08e";
 }
-a[href*=".kunde.ch"]::after,
-a[href*=".backslash.ch"]::after,
-a[data-email-link]::after,
-a.no-icon::after, a.no-icon::before,
-.nav a[href]::after,
-.subnav a[href]::after,
-.footer a[href]::after,
+[href*=".kunde.ch"]::after,
+[href*=".backslash.ch"]::after,
+[data-email-link]::after,
+.no-icon::after, .no-icon::before,
+.nav [href]::after,
+.subnav [href]::after,
+.footer [href]::after,
 .mod-dam--gallery a::before {
 	content: none;
 	padding: 0;
 }
-.os-url a.show-icon[href^="https://govis-kunde.backslash.ch"]::after,
-.os-url a.show-icon[href^="https://www.kunde.ch"]::after,
-a.show-icon[href^="/"]::after { /* OSM-lst: interne Links mit anderem Icon */
+.os-url .show-icon[href^="https://govis-kunde.backslash.ch"]::after,
+.os-url .show-icon[href^="https://www.kunde.ch"]::after,
+.show-icon[href^="/"]::after { /* OSM-lst: interne Links mit anderem Icon */
 	content: "\f0c1";
 }
-a.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
+.document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 	content: "\f0c5";
 }
 

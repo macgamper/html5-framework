@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.6] - 2020-04-30
+
+### Changed
+- basics.css: Spezifität bei den Link-Selektoren reduziert.
+
 ## [1.5.9] - 2020-04-24
 
 ### Changed
