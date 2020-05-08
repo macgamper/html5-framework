@@ -1,6 +1,11 @@
 # html5-framework
 HTML &amp; CSS-Boilerplate für Projekte bei backslash.
 
+## [1.6.1] - 2020-05-08
+
+### Added
+- basics.css: Standardformatierungen für `audio` und `video` Elemente.
+
 ## [1.6] - 2020-04-30
 
 ### Changed
