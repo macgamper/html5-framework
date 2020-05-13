@@ -553,6 +553,7 @@ table.reset td {
 .none, .screenhidden, .printvisible {
 	display: none;
 }
+.block,
 .screenvisible, .printhidden {
 	display: block;
 }

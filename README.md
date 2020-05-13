@@ -1,5 +1,11 @@
 # html5-framework
-HTML &amp; CSS-Boilerplate für Projekte bei backslash.
+HTML & CSS-Boilerplate für Projekte bei backslash.
+
+## [1.6.2] - 2020-05-13
+
+### Added
+- custom.js: Änderung der Formular-Methode bei Suchformularen `form.js-mod-search` in alten IE‘s, um sicherzustellen, dass  die Zurück-Navigation funktioniert.
+- basics.css: Eine Helferklasse `.block` ergänzt, um Inline-Elemente bei Bedarf auf Block umzustellen.
 
 ## [1.6.1] - 2020-05-08
 

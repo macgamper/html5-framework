@@ -25,5 +25,10 @@ $(document).ready(function(){
             }
         });
     }
-
+    
+    // ************************************
+    // change form methods from post to get for old IE to be able to navigate back
+    if ( window.helperJs.changeFormSubmitMethod != 'undefined' ){
+        window.helperJs.changeFormSubmitMethod('form.js-mod-search');
+    }
 });
