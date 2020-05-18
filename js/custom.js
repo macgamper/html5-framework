@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     // ************************************
     // keine icons für verlinkte bilder
-    $('main a > img').closest('a').addClass('no-icon');
+    $('main a img').closest('a').addClass('no-icon');
 
     // ************************************
     // touch-friendly dropdown-menus

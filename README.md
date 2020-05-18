@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.6.4] - 2020-05-18
+
+### Added
+- application.css: Die Styles aus den AJAX-Menüs sind nun nicht mehr im Theme-Ordner abgelegt, sondern nun fix im Applikations-CSS. Damit sollte das Kopieren des Template-Ordners nicht mehr nötig sein.
+- custom.js: Bild/Link-Selektor angepasst, der Bilder in der Galerie wegen eines anderen HTML-Aufbaus nicht berücksichtigt hatte.
+
+## [1.6.3] - 2020-05-15
+
+### Added
+- basics.css: Helferklasse `.reverse` ergänzt, die die Reihenfolge von gewissen Elementen visuell umkehrt, damit beispielsweise Titel auch mit vorangestelltem Daum an erster Stelle stehen können.
+
 ## [1.6.2] - 2020-05-13
 
 ### Added

@@ -613,6 +613,16 @@ table.reset td {
 	margin-right: 0;
 }
 
+.reverse {
+	display: flex;
+    flex-direction: column;
+}
+.reverse > .date,
+.reverse > .visuallyfirst,
+.reverse > .mod-entry-meta {
+	order: -1;
+}
+
 .reset,
 .reset li,
 nav ul,
