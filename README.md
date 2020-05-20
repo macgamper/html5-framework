@@ -4,7 +4,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ## [1.6.5] - 2020-05-20
 
 ### Changed
-- default.html: Verknüpfungen der HTML-Grundstruktur mit Ihren zugehörigen Titeln von `aria-describedby` durch `aria-labelledby` ersetzt. Das ist Treffender und validiert im *Total Validator*-Test.
+- default.html: Verknüpfungen der HTML-Grundstruktur mit Ihren zugehörigen Titeln von `aria-describedby` durch `aria-labelledby` ersetzt. Das validiert nun auch im *Total Validator*-Test.
 
 ## [1.6.4] - 2020-05-18
 
