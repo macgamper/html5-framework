@@ -315,8 +315,15 @@ a img {
 --------------------------------------------------------------- */
 fieldset {
 	clear: both;
+	min-width: 0;
 	border: 1px solid #666;
 	padding: 1.5em;
+}
+fieldset.reset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background-color: transparent;
 }
 legend {
 	display: table;

@@ -106,6 +106,15 @@
 	padding-top: .2em;
 	padding-right: 2em;
 }
+.form-builder label > em,
+.form-builder legend > em {
+	font-style: normal;
+}
+.form-builder legend.form-option-lst-title {
+	font-size: 1em;
+	color: currentColor;
+	font-weight: normal;
+}
 .form-builder .form-option-lst-title label {
 	display: inline;
 }

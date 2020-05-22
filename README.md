@@ -3,6 +3,11 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ## [1.6.6] - 2020-05-22
 
+### Added
+- basics.css: `fieldset` neu mit `.reset`.
+- basics.css: `fieldset` neu mit `min-width: 0;`. Stellt sicher, dass der Overflow bei zu breiten Inhalten funktioniert.
+- application.css: Im `.form-builder` Klassen für `legend` ergänzt, die es erlauben Radio- oder Checkboxlisten nun wie für die Accessibility empfohlen in einem `fieldset` zu gruppieren.
+
 ### Changed
 - basics.css: Farbkontraste der `.box`-Modifier wurden leicht erhöht, damit diese mindestens ein Kontrastverhältnis von 1:4.5 aufweisen (WCAG Level AA).
 - basics.css: Auf Bildern wurde `display: block;` entfernt und stattdessen `vertical-align: middle;` ergänzt, das in den meisten Fällen den gleichen optischen Effekt hat und den Unterlängen-Abstand unten entfernt.
