@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.6.6] - 2020-05-22
+
+### Changed
+- basics.css: Farbkontraste der `.box`-Modifier wurden leicht erhöht, damit diese mindestens ein Kontrastverhältnis von 1:4.5 aufweisen (WCAG Level AA).
+- basics.css: Auf Bildern wurde `display: block;` entfernt und stattdessen `vertical-align: middle;` ergänzt, das in den meisten Fällen den gleichen optischen Effekt hat und den Unterlängen-Abstand unten entfernt.
+
 ## [1.6.5] - 2020-05-20
 
 ### Changed

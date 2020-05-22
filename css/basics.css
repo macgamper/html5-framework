@@ -90,15 +90,12 @@ hr {
 img, embed, object, video {
 	max-width: 100%;
 	height: auto;
+	vertical-align: middle;
 }
 video, audio {
 	display: block;
 }
 figure {}
-figure > img,
-figure > a > img{
-	display: block;
-}
 figcaption {
 	margin-top: 0.75em;
 }
@@ -648,22 +645,22 @@ details,
 .box--warning,
 .cookie-alert {
 	border-color: #faebcc;
-	color: #8a6d3b;
+	color: #85662b;
 	background-color: #fcf8e3;
 }
 .box--success {
 	border-color: #d6e9c6;
-	color: #3c763d;
+	color: #337234;
 	background-color: #dff0d8;
 }
 .box--error {
 	border-color: #ebccd1;
-	color: #a94442;
+	color: #a43431;
 	background-color: #f2dede;
 }
 .box--info {
 	border-color: #bce8f1;
-	color: #31708f;
+	color: #216b8b;
 	background-color: #d9edf7;
 }
 
