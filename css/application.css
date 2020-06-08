@@ -140,11 +140,14 @@
 	margin: .5em 0 0 0;
 	color: #585858;
 }
+.form-builder label.error + label.error {
+	margin-top: 0;
+    padding-top: 0;
+}
 .form-builder .form-option-lst .form-hint {
 	float: none;
 	width: auto;
 }
-
 .form-builder .required > label,
 .form-builder .required .form-option-lst-title,
 .form-builder .password-strength__rule-title {
@@ -300,7 +303,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 		display: block;
 		float: none;
 		width: 100%;
-		padding-right: 0;
 	}
 	.form-builder input[type=radio],
 	.form-builder input[type=checkbox] {
@@ -1010,32 +1012,32 @@ ul.gallery-magnific img {
 /* =KataBox
 --------------------------------------------------------------- */
 .katabox {
-  position: relative;
-  border: 1px solid #000;
-  padding: 2em 1.5em;
+	position: relative;
+	border: 1px solid #000;
+	padding: 2em 1.5em;
 }
 .katabox::before,
 .katabox::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: repeating-linear-gradient(
-    45deg,
-    #FFEB3B,
-    #FFEB3B 10px,
-    #000000 10px,
-    #000000 20px
-  );
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: repeating-linear-gradient(
+	    45deg,
+	    #FFEB3B,
+	    #FFEB3B 10px,
+	    #000000 10px,
+	    #000000 20px
+	);
 }
 .katabox::after {
-  top: auto;
-  bottom: 0;
+	top: auto;
+	bottom: 0;
 }
 .katabox__title {
-  text-align: center;
+	text-align: center;
 }
 
 /* =Mobilenav AJAX
@@ -1061,15 +1063,6 @@ ul.gallery-magnific img {
     margin: 0;
     background-color: rgba(0,0,0,0.2);
 }
-
-.mobilenav a {
-    display: block;
-}
-.mobilenav a:hover,
-.mobilenav a:focus {
-	text-decoration: none;
-}
-
 .mobilenav-box {
     width: 100%;
 }
@@ -1081,26 +1074,12 @@ ul.gallery-magnific img {
     position: static;
     right: inherit;
 }
-.mobilenav-current-pagetitle a {
-	display: flex;
-	text-transform: uppercase;
-    letter-spacing: 2px;
-	background-color: #000;
-}
-.mobilenav-current-pagetitle a .icon {
-	margin-right: .25em;
-    transition: transform 0.2s 0;
-    transform: translateX(0) scale(1.5);
-}
-.mobilenav-current-pagetitle a:hover .icon,
-.mobilenav-current-pagetitle a:focus .icon {
-    transform: translateX(-.25em) scale(1.5);
-}
+
 .govis-menu-node-item {
 	position: relative;
     margin: 0;
+    border-bottom: 1px solid #555;
 }
-
 .govis-menu-node-item.title,
 .govis-menu-node-item > a {
 	position: relative;
@@ -1108,13 +1087,19 @@ ul.gallery-magnific img {
 	overflow: hidden;
     position: relative;
     margin: 0;
-    border-bottom: 1px solid #555;
     padding: 1em 0.75em 1em 3%;
     list-style-type: none;
     color: #fff;
 	white-space: nowrap;
 	text-overflow: ellipsis;
     text-decoration: none;
+}
+.govis-menu-node-item > a {
+    display: block;
+}
+.govis-menu-node-item > a:hover,
+.govis-menu-node-item > a:focus {
+	text-decoration: none;
 }
 .govis-menu-node-item.folder > a {
 	padding-right: 25%;
@@ -1130,36 +1115,56 @@ ul.gallery-magnific img {
     right: inherit;
 }
 
+.mobilenav-current-pagetitle a {
+	display: flex;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+	background-color: #000;
+}
+.mobilenav-current-pagetitle a .icon {
+	margin-right: .25em;
+    transition: transform 0.2s 0;
+    transform: translateX(0) scale(1.5);
+}
+.mobilenav-current-pagetitle a:hover .icon,
+.mobilenav-current-pagetitle a:focus .icon {
+    transform: translateX(-.25em) scale(1.5);
+}
+
 /* =expander */
 .no-js .govis-menu-node-controller {
 	display: none;
 }
 .govis-menu-node-controller {
-	position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+	position: absolute;
+    top: 0;
 	right: 0;
-    top:0;
-	cursor: pointer;
     width: calc(3% + 54px);
     height:100%;
     border: 0;
     border-top: 1px solid transparent;
+	cursor: pointer;
     font-size: 1em;
     text-align: center;
     background: #625d5b;
     border-radius: 0;
 }
 .govis-menu-node-controller .icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
 	color: #fff;
-	transform: rotate(0deg);
-	-webkit-transition: transform .2s ease;
-    transform: scale(1.5);
+	transform: rotate(0deg) scale(1.5);
 	transition: transform .2s ease;
 }
 .govis-menu-node-controller.expanded .icon {
-	transform: rotate(180deg) scale(1.5);
+	transform: rotate(90deg) scale(1.5);
 }
 .govis-menu-node-controller.loading .icon {
 	-webkit-animation: fa-spin 1s infinite steps(8);
@@ -1185,14 +1190,4 @@ ul.gallery-magnific img {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
-}
-
-/* externes svg */
-.mobilenav .icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
 }

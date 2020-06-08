@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.6.7] - 2020-06-08
+
+### Added
+- application.css: Styles für das Mobile-AJAX-Menü übernommen aus den Handlebars-Templates, damit der Rest vom Master kommen kann.
+- application.css: Abstand-Reset bei aufeinanderfolgenden `label.error` Elementen.
+
 ## [1.6.6] - 2020-05-22
 
 ### Added
