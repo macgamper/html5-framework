@@ -681,6 +681,18 @@ details > *:last-child,
 	margin-bottom: 0;
 }
 
+.link-expanded {
+	position: relative;
+}
+.link-expanded a::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 /* =skiplinks
 --------------------------------------------------------------- */
 .skiplinks__link {

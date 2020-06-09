@@ -1,6 +1,25 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.6.8] - 2020-06-09
+
+### Added
+- basics.css: Neuer Helper um Links um ihre Elternelemente aufzuspannen.
+
+```css
+.link-expanded {
+	position: relative;
+}
+.link-expanded a::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+```
+
 ## [1.6.7] - 2020-06-08
 
 ### Added
