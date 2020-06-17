@@ -1123,7 +1123,7 @@ ul.gallery-magnific img {
 }
 .mobilenav-current-pagetitle a .icon {
 	margin-right: .25em;
-    transition: transform 0.2s 0;
+    transition: transform 0.2s 0s;
     transform: translateX(0) scale(1.5);
 }
 .mobilenav-current-pagetitle a:hover .icon,
