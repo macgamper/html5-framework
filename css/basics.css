@@ -621,6 +621,7 @@ table.reset td {
 	display: flex;
     flex-direction: column;
 }
+.reverse > .reverse__child,
 .reverse > .date,
 .reverse > .visuallyfirst,
 .reverse > .mod-entry-meta {

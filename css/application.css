@@ -33,9 +33,13 @@
 .mod-entry-desc {
 	
 }
+.mod-entry-lead {
+	font-weight: bold;
+}
 .mod-entry-img {
 	display: block;
 }
+
 
 /* =global module-navigation
 --------------------------------------------------------------- */
@@ -570,7 +574,7 @@ ul.gallery-magnific figure {
 	margin-bottom: 0;
 }
 ul.gallery-magnific figcaption {
-	padding: 0.5em;
+	padding: 0 0.5em 0.5em 0.5em;
 	text-align: center;
 }
 ul.gallery-magnific img {
