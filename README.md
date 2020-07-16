@@ -1,7 +1,7 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
-## [1.6.8] - 2020-07-16
+## [1.6.9] - 2020-07-16
 
 ### Changed
 - basics.css: Mangels Mobilebrowser-Kompatibilität und Problemen mit den `.zebra` und `.hover` Klassen die Schatten (v 1.3.4) von Tabellen mit Overflow entfernt und stattdessen [mit gestylten Scrollbars versehen](https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar), die beim Mac auch angezeigt werden, wenn man die Scrollbar-Anzeige auf «beim Scrollen» beschränkt hat.
