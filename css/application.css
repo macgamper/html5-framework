@@ -163,7 +163,6 @@
 .form-builder .required > label.error {
 	font-weight: normal;
 }
-.error,
 .form-builder input.error,
 .form-builder label.error {
 	color: red;

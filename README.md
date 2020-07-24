@@ -1,6 +1,30 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7] - 2020-07-24
+
+### Changed
+- basics.css: Die in 1.6.9 ergänzten Scrollbar-Erweiterungen in einen eigenen Abschnitt überführt, wo auch weitere Elemente, die sichtbare Scollbars haben sollen ergänzt werden können. Eine entsprechende Helper-Class `.visible-scrollbar` wurde auch eingeführt.
+
+```css
+/*=scrollbars
+-------------------------------------- */
+pre,
+.table-responsive, .visible-scrollbar {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+```
+
+- application.css: Die Klasse `.error` im Formbuilder wurde entfernt. Einerseits hatte sie an der Stelle einen anderen Scope und mit den jüngsten Anpassungen wurde damit alles rot eingefärbt, nicht nur die Fehlermeldung selber. Neu darum nur noch:
+
+```css
+.form-builder input.error,
+.form-builder label.error {
+	color: red;
+	}
+```
+
 ## [1.6.9] - 2020-07-16
 
 ### Changed
