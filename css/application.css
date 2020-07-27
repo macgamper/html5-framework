@@ -1043,10 +1043,78 @@ ul.gallery-magnific img {
 	text-align: center;
 }
 
+/* =hamburger
+--------------------------------------------------------------- */
+.hamburger {
+	position: relative;
+    z-index: 4;
+	flex: 0 0 auto;
+	margin: 0;
+	width: 55px;
+	height: 45px;
+	border: 0;
+	text-indent: -9999px;
+	border-radius: 3px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	background-color: red;
+	-ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	transition: .5s ease-in-out;
+}
+.hamburger span {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 10px;
+	height: 3px;
+	width: 35px;
+	background: #fff;
+	border-radius: 2px;
+	opacity: 1;
+	-ms-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+	top: 11px;
+}
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+	top: 21px;
+}
+.hamburger span:nth-child(4) {
+	top: 31px;
+}
+
+.hamburger--active {
+	background: #000;
+}
+.hamburger--active span:nth-child(1) {
+	top: 20px;
+	width: 0%;
+	left: 50%;
+}
+.hamburger--active span:nth-child(2) {
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+}
+.hamburger--active span:nth-child(3) {
+	-ms-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+}
+.hamburger--active span:nth-child(4) {
+	top: 20px;
+	width: 0%;
+	left: 50%;
+}
+
 /* =Mobilenav AJAX
 --------------------------------------------------------------- */
-.mobilenav {
+.mobilenav__container {
+    display: none;
     position: absolute;
+    left: 0;
     z-index: 100;
     width: 100%;
     padding: 0 0 1.5em 0;

@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.1] - 2020-07-27
+
+### Added
+- application.css: Der `.hamburger` wurde fix integriert.
+
+### Changed
+- application.css: Die `.mobilenav` wird nun nicht mehr direkt gestylt, sondern ein `.mobilenav__container` darin. Damit muss die Mobile-Nav nicht mehr ausgeblendet werden, was  erlaubt den Hamburger-Button auch innerhalb der Navigation `.mobilenav` zu verwenden, [wie es für die bessere Accessibility empfohlen wird](https://www.a11ymatters.com/pattern/mobile-nav/#3--dont-hide-the-nav-element).
+
 ## [1.7] - 2020-07-24
 
 ### Changed
@@ -22,7 +30,7 @@ pre,
 .form-builder input.error,
 .form-builder label.error {
 	color: red;
-	}
+}
 ```
 
 ## [1.6.9] - 2020-07-16
