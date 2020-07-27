@@ -96,7 +96,7 @@ $(document).ready(function(){
     
     // ************************************
     // change form methods from post to get for old IE to be able to navigate back
-    if ( window.helperJs.changeFormSubmitMethod != 'undefined' ){
+    if (window.hasOwnProperty("helperJs") && window.helperJs.hasOwnProperty("changeFormSubmitMethod")){
         window.helperJs.changeFormSubmitMethod('form.js-mod-search');
     }
 });
