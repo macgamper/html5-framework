@@ -1,6 +1,74 @@
 $(document).ready(function(){
 
     // ************************************
+    // mobile-navigation
+
+    // toggles aria-attribute
+    // sets aria to false if closeMenu === true
+    function toggleAriaExpanded(target, closeMenu) {
+        let expanded = closeMenu ? 'true' : $(target).attr('aria-expanded');
+        expanded = (expanded === 'true');
+        $(target).attr('aria-expanded', !expanded);
+    }
+
+    // toggles menu
+    // close menu if closeMenu === true
+    function toggleMenu(container, list, btn, closeMenu) {
+        if (closeMenu) {
+            $('html').removeClass('js-mobilenav-visible');
+            $(btn).removeClass(navToggleClass);
+            $(container).slideUp(200);
+            $(navBackgroundClass).fadeOut(200);
+        } else {
+            $('html').toggleClass('js-mobilenav-visible');
+            $(btn).toggleClass(navToggleClass);
+            $(navBackgroundClass).fadeToggle(200);
+            $(container).slideToggle(200);
+        }
+        toggleAriaExpanded(btn, closeMenu);
+    }
+
+    // hamburger & mobilenav
+    const navButtonClass = '.js-hamburger';
+    const navBackgroundClass = '.js-mobilenav__bg';
+    const navContainerClass = '.mobilenav__container';
+    const navListClass = '.mobilenav-box > ul';
+    const navToggleClass = 'hamburger--active';
+    const navSkiplink = 'a[href="#mainnav"]';
+    let navIsOpen = false;
+
+    $(navButtonClass + ', ' + navBackgroundClass).on('click', function(e) {
+        // toggle menu
+        toggleMenu(navContainerClass, navListClass, navButtonClass);
+
+        // close by pressing ESC
+        // loop through menu by tab
+        $(navContainerClass + ', ' + navButtonClass).keydown(function(e) {
+            if (e.keyCode === 27) {
+                toggleMenu(navContainerClass, navListClass, navButtonClass, true);
+                $(navButtonClass).focus();
+                return false;
+            } else if (e.keyCode === 9) {
+                if (e.target === $(navListClass).find('li:last > *:last-child')[0]) {
+                    e.preventDefault;
+                    $(navButtonClass).focus();
+                    return false;
+                }
+            }
+        });
+    });
+
+    // change skiplink-href for navigation, when mobilenav is visible
+    $(navSkiplink).on('click', function(e){
+        if ($(navButtonClass).is(":visible")){
+            e.preventDefault;
+            $(navButtonClass).click();
+            $(navListClass).find('>li:first-child()>a').focus();
+            return false;
+        }
+    });
+
+    // ************************************
     // presentation-tabellen mit entprechender ARIA-Role versehen
     $('table.presentation').attr("role","presentation");
 

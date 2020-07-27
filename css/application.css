@@ -1111,6 +1111,21 @@ ul.gallery-magnific img {
 
 /* =Mobilenav AJAX
 --------------------------------------------------------------- */
+.mobilenav {
+	display: none;
+}
+
+@media only screen and (max-width: 32.5em) { /* 520/16 */
+
+	.mainnav {
+		display: none;
+	}
+	.mobilenav {
+		display: block;
+	}
+
+}
+
 .mobilenav__container {
     display: none;
     position: absolute;
