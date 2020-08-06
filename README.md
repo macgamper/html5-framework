@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.2] - 2020-08-06
+
+### Changed
+- default.html: Die Grundtabelle enthält realistischere Daten, damit auch das vertikale Scrollen besser getestet werden kann. Zudem wurden die `scope` Attribute und das `tfoot` Element ergänzt.
+- basics.css: Spaces durchgängig durch Tabs ersetzt. In Tabellen werden die möglichen Kombinationen aus vertikalen und/oder horizontalen Headern sowie `thead`, `tbody` und `tfoot` besser abgedeckt.
+- application.css: Spaces durchgängig durch Tabs ersetzt. `-webkit` Prefixes bei `transform` ausgemustert. 
+
 ## [1.7.1] - 2020-07-27
 
 ### Added

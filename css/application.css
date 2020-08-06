@@ -146,7 +146,7 @@
 }
 .form-builder label.error + label.error {
 	margin-top: 0;
-    padding-top: 0;
+	padding-top: 0;
 }
 .form-builder .form-option-lst .form-hint {
 	float: none;
@@ -333,7 +333,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =form-builder multistep
 --------------------------------------------------------------- */
 .form-to-wizard-commands .btn + .btn {
-    margin-left: 1.5em;
+	margin-left: 1.5em;
 }
 .form-to-wizard-current {
 	font-weight: bold;
@@ -380,8 +380,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar,
 .calendar th,
 .calendar td {
-    color: #000;
-    font-weight: inherit;
+	color: #000;
+	font-weight: inherit;
 }
 .calendar th {
 	background-color: transparent;
@@ -729,8 +729,8 @@ ul.gallery-magnific img {
 	min-width: 50px;
 	max-width: 80px;
 	margin: 5px;
-    filter: grayscale(100%);
-    }
+	filter: grayscale(100%);
+	}
 .cc-lst .cc-lst-img > img {
 	display: block;
 	width: 100%; /* for IE */
@@ -966,11 +966,11 @@ ul.gallery-magnific img {
 	margin-left: 0;
 }
 .mod-comments .mod-entry-header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	align-items: baseline;
-    margin-bottom: 0.7em;
+	margin-bottom: 0.7em;
 }
 .mod-comments .mod-entry-header > * {
 	margin: 0;
@@ -982,11 +982,11 @@ ul.gallery-magnific img {
 	text-align: right;
 }
 .mod-entry-footer + ol {
-    margin-top: 0.75em;
+	margin-top: 0.75em;
 }
 .mod-entry-footer + ol > .mod-entry,
 .mod-entry-footer + ol > .mod-entry:first-child {
-    border-top: 1px solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
 }
 .mod-comments .mod-entry-footer a {
 	border-bottom: 0;
@@ -1002,14 +1002,14 @@ ul.gallery-magnific img {
 	left: 0;
 	width: 100%;
 	border-top-style: solid;
-    border-top-width: 1px;
+	border-top-width: 1px;
 	padding: 1em 0;
 }
 .btn-row {
 	text-align: center;
 }
 .btn-row button + button {
-    margin-left: 1em;
+	margin-left: 1em;
 }
 
 /* =KataBox
@@ -1028,11 +1028,11 @@ ul.gallery-magnific img {
 	width: 100%;
 	height: 10px;
 	background: repeating-linear-gradient(
-	    45deg,
-	    #FFEB3B,
-	    #FFEB3B 10px,
-	    #000000 10px,
-	    #000000 20px
+		45deg,
+		#FFEB3B,
+		#FFEB3B 10px,
+		#000000 10px,
+		#000000 20px
 	);
 }
 .katabox::after {
@@ -1047,7 +1047,7 @@ ul.gallery-magnific img {
 --------------------------------------------------------------- */
 .hamburger {
 	position: relative;
-    z-index: 4;
+	z-index: 4;
 	flex: 0 0 auto;
 	margin: 0;
 	width: 55px;
@@ -1058,8 +1058,7 @@ ul.gallery-magnific img {
 	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	background-color: red;
-	-ms-transform: rotate(0deg);
-	    transform: rotate(0deg);
+	transform: rotate(0deg);
 	transition: .5s ease-in-out;
 }
 .hamburger span {
@@ -1072,8 +1071,7 @@ ul.gallery-magnific img {
 	background: #fff;
 	border-radius: 2px;
 	opacity: 1;
-	-ms-transform: rotate(0deg);
-	    transform: rotate(0deg);
+	transform: rotate(0deg);
 	transition: .25s ease-in-out;
 }
 .hamburger span:nth-child(1) {
@@ -1096,12 +1094,10 @@ ul.gallery-magnific img {
 	left: 50%;
 }
 .hamburger--active span:nth-child(2) {
-	-ms-transform: rotate(45deg);
-	    transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 .hamburger--active span:nth-child(3) {
-	-ms-transform: rotate(-45deg);
-	    transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 .hamburger--active span:nth-child(4) {
 	top: 20px;
@@ -1127,61 +1123,61 @@ ul.gallery-magnific img {
 }
 
 .mobilenav__container {
-    display: none;
-    position: absolute;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    padding: 0 0 1.5em 0;
-    background-color: #000;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+	display: none;
+	position: absolute;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 0 0 1.5em 0;
+	background-color: #000;
+	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
 }
 .mobilenav__bg {
-    display: none;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background-color: rgba(0,0,0,0.2);
+	display: none;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: rgba(0,0,0,0.2);
 }
 .mobilenav-box {
-    width: 100%;
+	width: 100%;
 }
 .mobilenav-box .level-nav {
-    margin: 0;
+	margin: 0;
 }
 .mobilenav-box .levelup span {
-    float: left;
-    position: static;
-    right: inherit;
+	float: left;
+	position: static;
+	right: inherit;
 }
 
 .govis-menu-node-item {
 	position: relative;
-    margin: 0;
-    border-bottom: 1px solid #555;
+	margin: 0;
+	border-bottom: 1px solid #555;
 }
 .govis-menu-node-item.title,
 .govis-menu-node-item > a {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-    position: relative;
-    margin: 0;
-    padding: 1em 0.75em 1em 3%;
-    list-style-type: none;
-    color: #fff;
+	position: relative;
+	margin: 0;
+	padding: 1em 0.75em 1em 3%;
+	list-style-type: none;
+	color: #fff;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-    text-decoration: none;
+	text-decoration: none;
 }
 .govis-menu-node-item > a {
-    display: block;
+	display: block;
 }
 .govis-menu-node-item > a:hover,
 .govis-menu-node-item > a:focus {
@@ -1196,25 +1192,26 @@ ul.gallery-magnific img {
 }
 
 .title .govis-menu-node-controller {
-    left: 0;
-    top: 0;
-    right: inherit;
+	left: 0;
+	top: 0;
+	right: inherit;
 }
 
 .mobilenav-current-pagetitle a {
 	display: flex;
 	text-transform: uppercase;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	white-space: normal;
 	background-color: #000;
 }
 .mobilenav-current-pagetitle a .icon {
 	margin-right: .25em;
-    transition: transform 0.2s 0s;
-    transform: translateX(0) scale(1.5);
+	transition: transform 0.2s 0s;
+	transform: translateX(0) scale(1.5);
 }
 .mobilenav-current-pagetitle a:hover .icon,
 .mobilenav-current-pagetitle a:focus .icon {
-    transform: translateX(-.25em) scale(1.5);
+	transform: translateX(-.25em) scale(1.5);
 }
 
 /* =expander */
@@ -1222,21 +1219,21 @@ ul.gallery-magnific img {
 	display: none;
 }
 .govis-menu-node-controller {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
-    top: 0;
+	top: 0;
 	right: 0;
-    width: calc(3% + 54px);
-    height:100%;
-    border: 0;
-    border-top: 1px solid transparent;
+	width: calc(3% + 54px);
+	height:100%;
+	border: 0;
+	border-top: 1px solid transparent;
 	cursor: pointer;
-    font-size: 1em;
-    text-align: center;
-    background: #625d5b;
-    border-radius: 0;
+	font-size: 1em;
+	text-align: center;
+	background: #625d5b;
+	border-radius: 0;
 }
 .govis-menu-node-controller .icon {
 	display: inline-block;
@@ -1254,26 +1251,23 @@ ul.gallery-magnific img {
 }
 .govis-menu-node-controller.loading .icon {
 	-webkit-animation: fa-spin 1s infinite steps(8);
-	animation: fa-spin 1s infinite steps(8);
+			animation: fa-spin 1s infinite steps(8);
 }
 
 @-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
 }
+
 @keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
 }
