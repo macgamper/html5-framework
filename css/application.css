@@ -1129,7 +1129,7 @@ ul.gallery-magnific img {
 	z-index: 100;
 	width: 100%;
 	padding: 0 0 1.5em 0;
-	background-color: #000;
+	background-color: #333;
 	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
 }
 .mobilenav__bg {
@@ -1199,13 +1199,14 @@ ul.gallery-magnific img {
 
 .mobilenav-current-pagetitle a {
 	display: flex;
+	padding-right: 3%;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	white-space: normal;
 	background-color: #000;
 }
 .mobilenav-current-pagetitle a .icon {
-	margin-right: .25em;
+	margin-right: .5em;
 	transition: transform 0.2s 0s;
 	transform: translateX(0) scale(1.5);
 }
@@ -1245,6 +1246,9 @@ ul.gallery-magnific img {
 	color: #fff;
 	transform: rotate(0deg) scale(1.5);
 	transition: transform .2s ease;
+}
+.govis-menu-node-controller:hover .icon {
+	transform: translateX(.25em) scale(1.5);
 }
 .govis-menu-node-controller.expanded .icon {
 	transform: rotate(90deg) scale(1.5);

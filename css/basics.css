@@ -441,16 +441,6 @@ table tbody th,
 table tfoot th {
 	border-right: 1px solid #f2f2f2;
 }
-
-table th[align="left"] {
-	text-align: left;
-}
-table th[align="center"] {
-	text-align: center;
-}
-table th[align="right"] {
-	text-align: right;
-}
 table tr:first-child th,
 table tr:first-child td {
 	border-top: 1px solid #f2f2f2;
@@ -474,31 +464,41 @@ table tfoot tr:last-child td {
 table.auto {
 	width: auto;
 }
-table.fixed {
-	table-layout: fixed;
-}
-table.vertical {
-	border-top: 1px solid #f2f2f2;
-}
-table.vertical th {
-	border-bottom-width: 1px;
-}
-.tbl-no {
-	text-align: right;
-}
+table.fixed,
 .tbl-fixed {
 	table-layout: fixed;
+}
+th[align="left"], th.left, td.left {
+	float: none;
+	text-align: left;
+}
+th[align="center"], th.center, td.center {
+	text-align: center;
+}
+th[align="right"], th.right, td.right,
+.tbl-no {
+	float: none;
+	text-align: right;
+}
+table.no-pad th:first-child,
+table.no-pad td:first-child {
+	padding-left: 0;
+}
+table.no-pad th:last-child,
+table.no-pad td:last-child {
+	padding-right: 0;
 }
 
 /*=zebras & hover
 --------------------------------------------------------------- */
 table.zebra tbody tr:nth-child(even),
 ul.zebra > li:nth-child(even) {
-	background-color: #fafafa;
+	background-color: rgba(0,0,0,0.05);
 }
 table.hover tbody tr:hover,
+table.hover tfoot tr:hover,
 ul.hover > li:hover {
-	background-color: #fafafa;
+	background-color: rgba(0,0,0,0.05);
 }
 
 /*=grid-tables
@@ -517,9 +517,13 @@ table.grid td:last-child {
 table.presentation,
 table.presentation th,
 table.presentation td,
+table.presentation tr:first-child th,
+table.presentation tr:first-child td,
 table.reset,
 table.reset th,
-table.reset td {
+table.reset td,
+table.reset tr:first-child th, 
+table.reset tr:first-child td {
 	border: 0;
 	padding: 0;
 }

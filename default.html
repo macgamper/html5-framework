@@ -74,6 +74,14 @@
 					<!-- modulausgabe -->
 					<div class="mobilenav-block" id="responsivenav__toc">
 						<div class="mobilenav-box ajax-menu active">
+							<h3 class="mobilenav-current-pagetitle govis-menu-parent-node-item govis-menu-node-item">
+								<a class="govis-menu-node-controller" href="https://doku.backslash.ch/page/162">
+									<svg aria-hidden="true" class="icon icon-angle-left" viewBox="0 0 12 32">
+										<path d="M11.196 9.714q0 0.232-0.179 0.411l-7.018 7.018 7.018 7.018q0.179 0.179 0.179 0.411t-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path>
+									</svg>
+									Level-Titel
+								</a>
+							</h3>
 							<ul class="govis-menu-node">
 								<li class="govis-menu-node-item folder" id="item-2">
 									<a href="#">Porträt</a>
@@ -142,42 +150,42 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <a href="#" title="ein interner Link">nonummy</a> nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 					
 					<div class="table-responsive" role="region" tabindex="0">
-						<table>
+						<table class="hover">
 							<caption>Table Caption</caption>
 							<thead>
 								<tr>
 									<th scope="col">Land</th>
-									<th scope="col" align="right">Einwohner</th>
-									<th scope="col" align="right">Fl&auml;che</th>
-									<th scope="col" align="right">BIP/Einw.</th>
+									<th scope="col" class="right">Einwohner</th>
+									<th scope="col" class="right">Fl&auml;che</th>
+									<th scope="col" class="right">BIP/Einw.</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<th scope="row">Schweiz</th>
-									<td align="right">8.57</td>
-									<td align="right">41&nbsp;285&nbsp;km<sup>2</sup></td>
-									<td align="right">83 USD</td>
+									<td class="right nobr">8.57</td>
+									<td class="right nobr">41&nbsp;285&nbsp;km<sup>2</sup></td>
+									<td class="right nobr">83 USD</td>
 								</tr>
 								<tr>
 									<th scope="row">Deutschland</th>
-									<td align="right">83.02</td>
-									<td align="right">357&nbsp;582&nbsp;km<sup>2</sup></td>
-									<td align="right">48 USD</td>
+									<td class="right nobr">83.02</td>
+									<td class="right nobr">357&nbsp;582&nbsp;km<sup>2</sup></td>
+									<td class="right nobr">48 USD</td>
 								</tr>
 								<tr>
 									<th scope="row">&Ouml;sterreich</th>
-									<td align="right">8.86</td>
-									<td align="right">83&nbsp;878&nbsp;km<sup>2</sup></td>
-									<td align="right">51 USD</td>
+									<td class="right nobr">8.86</td>
+									<td class="right nobr">83&nbsp;878&nbsp;km<sup>2</sup></td>
+									<td class="right nobr">51 USD</td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
 									<th scope="row">Total</th>
-									<td align="right">100.45</td>
-									<td align="right">482&nbsp;745&nbsp;km<sup>2</sup></td>
-									<td align="right">⌀ 61 USD</td>
+									<td class="right nobr">100.45</td>
+									<td class="right nobr">482&nbsp;745&nbsp;km<sup>2</sup></td>
+									<td class="right nobr">⌀ 61 USD</td>
 								</tr>
 							</tfoot>
 						</table>
@@ -219,13 +227,13 @@
 					<form action="#" class="form-builder">
 						<fieldset>
 							<legend>Legende</legend>
-							<p class="clearfix"><label for="f1">Text: </label> <input type="text" id="f1" value="" /></p>
-							<p class="clearfix"><label for="f1-1">E-Mail: </label><input type="email" id="f1-1" value="" /></p>
-							<p class="clearfix"><label for="f1-2">Telefon: </label><input type="tel" id="f1-2" value="" /></p>
-							<p class="clearfix"><label for="f1-3">Web: </label><input type="url" id="f1-3" value="" placeholder="http://" /></p>
-							<p class="clearfix"><label for="f1-4">Zahl: </label><input type="number" id="f1-4" min="1" max="100" value="" /><span class="form-hint">Muss zwischen 1 und 100 liegen.</span></p>
+							<p class="clearfix required"><label for="f1">Name und Vorname<em aria-hidden="true" title="Pflichtfeld" class="form-required-hint">*</em></label> <input type="text" id="f1" required /></p>
+							<p class="clearfix"><label for="f1-1">E-Mail</label><input type="email" id="f1-1" /></p>
+							<p class="clearfix"><label for="f1-2">Telefon</label><input type="tel" id="f1-2" /></p>
+							<p class="clearfix"><label for="f1-3">Web</label><input type="url" id="f1-3" placeholder="http://" /></p>
+							<p class="clearfix"><label for="f1-4">Zahl</label><input type="number" id="f1-4" min="1" max="100" value="" /><span class="form-hint">Muss zwischen 1 und 100 liegen.</span></p>
 							<div class="clearfix form-option-lst-show-title">
-								<p class="form-option-lst-title">Radio input:</p>
+								<p class="form-option-lst-title">Radio input</p>
 								<div class="form-option-lst">
 									<ul class="reset">
 										<li>
@@ -241,7 +249,7 @@
 								</div>
 							</div>
 							<div class="clearfix form-option-lst-show-title">
-								<p class="form-option-lst-title">Checkbox input: </p>
+								<p class="form-option-lst-title">Checkbox input</p>
 								<div class="form-option-lst">
 									<ul class="reset">
 										<li>
@@ -253,8 +261,8 @@
 									</ul>
 								</div>
 							</div>
-							<p class="clearfix"><label for="f5">Select field: </label><select id="f5"><option>Option 01</option><option>Option 02</option></select></p>
-							<p class="clearfix"><label for="f6">Textarea: </label><textarea id="f6" cols="30" rows="5" ></textarea></p>
+							<p class="clearfix"><label for="f5">Select field</label><select id="f5"><option>Option 01</option><option>Option 02</option></select></p>
+							<p class="clearfix"><label for="f6">Textarea</label><textarea id="f6" cols="30" rows="5" ></textarea></p>
 							<div class="form-builder-btn form-builder-btn-group">
 								<p class="form-builder-submit">
 									<button type="submit" class="btn" name="submit">abschicken</button>
