@@ -4,9 +4,12 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ## [1.7.2] - 2020-08-06
 
 ### Changed
-- default.html: Die Grundtabelle enthält realistischere Daten, damit auch das vertikale Scrollen besser getestet werden kann. Zudem wurden die `scope` Attribute und das `tfoot` Element ergänzt.\
-	Doppelpunkte bei den Form-Labels entfernt, damit es dem neuen Comet-Update 1.8.7 entspricht.
-- basics.css: Spaces durchgängig durch Tabs ersetzt. In Tabellen werden die möglichen Kombinationen aus vertikalen und/oder horizontalen Headern sowie `thead`, `tbody` und `tfoot` besser abgedeckt. Neu steht die Tabellen-Klasse `table.no-pad` zur Verfügung, die Paddings in der ersten und letzten Spalte entfernt. Die Zeilen-Hintergrundfarben der `.zebra` und `.hover` Klassen sind neu RGBA-Werte, so dass sie besser mit verschiedenen Hintergrundfarben klarkommen.
+- default.html: Die Grundtabelle enthält realistischere Daten, damit auch das vertikale Scrollen besser getestet werden kann.\
+	Die `scope` Attribute und das `tfoot` Element wurden ergänzt.\
+	Doppelpunkte bei den Form-Labels \entfernt, damit es dem neuen Comet-Update 1.8.7 entspricht.
+- basics.css: Spaces durchgängig durch Tabs ersetzt. \In Tabellen werden die möglichen Kombinationen aus vertikalen und/oder horizontalen Headern sowie `thead`, `tbody` und `tfoot` besser abgedeckt. \
+	Neu steht die Tabellen-Klasse `table.no-pad` zur Verfügung, die Paddings in der ersten und letzten Spalte entfernt.\
+	Die Zeilen-Hintergrundfarben der `.zebra` und `.hover` Klassen sind neu RGBA-Werte, so dass sie besser mit verschiedenen Hintergrundfarben klarkommen.
 - application.css: Spaces durchgängig durch Tabs ersetzt. `-webkit` Prefixes bei `transform` ausgemustert. 
 
 ### Removed
