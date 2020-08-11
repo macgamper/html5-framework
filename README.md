@@ -4,7 +4,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ## [1.7.3] - 2020-08-11
 
 ### Changed
-- basics.css: Bei Form-Elementen, wo standardmässig der Outline-Focus durch einen box-shadow ersetzt wird, ist die Outline neu transparent definiert. So wird sichergestellt, dass die Outline im [Windows High Contrast Mode](https://benmyers.dev/blog/whcm-outlines/) sichtbar bleibt.
+- basics.css: Bei Form-Elementen, wo wir den Outline-Focus durch einen `box-shadow` ersetzen, ist die Outline neu transparent definiert. So wird sichergestellt, dass die Outline im [Windows High Contrast Mode](https://benmyers.dev/blog/whcm-outlines/) dargestellt wird.
 
 ```css
 …
