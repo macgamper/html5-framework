@@ -400,7 +400,7 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 select:focus,
 textarea:focus,
 button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus {
-	outline: 0;
+	outline: 3px solid transparent;
 	border-color: #0074a9;
 	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
 }
@@ -519,11 +519,13 @@ table.presentation th,
 table.presentation td,
 table.presentation tr:first-child th,
 table.presentation tr:first-child td,
+table.presentation thead ~ tbody tr:last-child,
 table.reset,
 table.reset th,
 table.reset td,
 table.reset tr:first-child th, 
-table.reset tr:first-child td {
+table.reset tr:first-child td,
+table.reset thead ~ tbody tr:last-child {
 	border: 0;
 	padding: 0;
 }
