@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.4] - 2020-08-20
+
+### Changed
+- application.css: Kontrast der `.mod-entry-meta` Farbe hat nun den nötigen Mindestkontrast auf weissem Hintergrund.\
+	Der Kalender bekommt bei Viewports unter 37.5em (600px) nun 100% Breite (diese Anweisung kam bis anhin noch aus dem Handlebars-CSS).\
+	Der Breadcrumb-Liste funktioniert neu mit Flex, was einige Folgedeklarationen auf den Listenelementen erspart.
+
 ## [1.7.3] - 2020-08-11
 
 ### Changed

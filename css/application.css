@@ -21,7 +21,7 @@
 .mod-entry-meta {
 	display: block;
 	margin-bottom: 0.5em;
-	color: #a0a0a0;
+	color: #767676;
 	font-size: 0.875em; /* 14/16 */
 }
 .mod-entry-title {
@@ -403,7 +403,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-shadow: 0 1px 0 #fff;
 }
 .calendar tbody a {
-	-webkit-transition: box-shadow .3s ease;
 	transition: box-shadow .3s ease;
 }
 .calendar tbody a:hover,
@@ -412,6 +411,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .cal-year a {
 	display: inline;
+}
+
+@media only screen and (max-width: 37.5em) { /* 600/16 */
+
+	.calendar {
+		width: 100%;
+	}
+
 }
 
 /* =Tageszustände
@@ -454,7 +461,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-shadow: none;
 }
 
-.cal-selected { /* ausgewählten Datum */
+.cal-selected { /* ausgewähltes Datum */
 	box-shadow: none !important;
 }
 .cal-selected a,
@@ -620,7 +627,7 @@ ul.gallery-magnific img {
 	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .breadcrumb__lst {
-	display: block;
+	display: flex;
 	width: 100%;
 	margin: 0;
 	padding: 0.5em 0;
@@ -630,8 +637,6 @@ ul.gallery-magnific img {
 	box-sizing: border-box;
 }
 .breadcrumb__item {
-	display: table-cell;
-	float: none;
 	padding-right: 0.5em;
 	white-space: nowrap;
 }
