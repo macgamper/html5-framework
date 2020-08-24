@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.5] - 2020-08-24
+
+### Changed
+- application.css: Reservations-Kalender neu mit optionaler `.cal-available` Klasse, falls nur die Zustände «ausgebucht» und «verfügbar» unterscheiden werden.\
+	Breadcrumb-Trenner nun im Standard verfügbar, ebenso wie Basic-Styles für das Breadcrumb-Dropdown-Menü, wie es [der Kanton Glarus](https://www.gl.ch/services/datenschutzerklaerung.html/18) einsetzt.
+
 ## [1.7.4] - 2020-08-20
 
 ### Changed

@@ -497,13 +497,16 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 
 .cal-allfree.cal-allfree,
+.cal-available.cal-available,
 .cal-partlyfree.cal-partlyfree,
 .cal-almostsoldout.cal-almostsoldout,
 .cal-full.cal-full {
 	box-shadow: none;
 }
 .cal-allfree,
-.cal-allfree-legend span { /* alles frei */
+.cal-allfree-legend span,
+.cal-available,
+.cal-available-legend span { /* alles frei */
 	background-color: #008000;
 }
 .cal-partlyfree,
@@ -522,6 +525,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: #000;
 }
 .cal-allfree a:link,
+.cal-available a:link,
 .cal-almostsoldout a:link,
 .cal-full a:link {
 	color: #fff;
@@ -622,8 +626,6 @@ ul.gallery-magnific img {
 	height: 100%;
 	pointer-events: none;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .breadcrumb__lst {
@@ -634,14 +636,41 @@ ul.gallery-magnific img {
 	overflow-y: hidden;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
-	box-sizing: border-box;
 }
 .breadcrumb__item {
+	position: relative;
 	padding-right: 0.5em;
 	white-space: nowrap;
 }
 .breadcrumb__item:last-child {
 	padding-right: 1em;
+}
+.breadcrumb__link {
+	text-decoration: none;
+}
+
+/* separator icon */
+.breadcrumb__item:not(:first-child)::before {
+	content: "\f105";
+	display: inline-block;
+	margin: 0 .75em;
+	font-family: FontAwesome;
+}
+
+
+/* breadcrumb dropdown */
+.breadcrumb__dropdown {
+    display: none;
+    position: absolute;
+    top: 1.55rem;
+    left: 0;
+    z-index: 800;
+}
+.breadcrumb__dropdown.expanded {
+    display: block;
+}
+.breadcrumb__dropdown ul {
+    min-width: 200px;
 }
 
 /* =osm online-schalter
