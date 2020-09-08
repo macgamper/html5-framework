@@ -1,6 +1,18 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.6] - 2020-09-08
+
+### Added
+- basics.css: Letztes Element in Tabellenzellen hat keinen Margin.
+
+```css
+…
+th > *:last-child, td > *:last-child … {
+	margin-bottom: 0;
+}
+```
+
 ## [1.7.5] - 2020-08-24
 
 ### Changed

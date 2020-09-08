@@ -307,6 +307,11 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 		float: none;
 		width: 100%;
 	}
+	.form-builder .clearfix > label,
+	.form-builder .cf > label {
+		padding-right: 0;
+		padding-bottom: 0.2em;
+	}
 	.form-builder input[type=radio],
 	.form-builder input[type=checkbox] {
 		display: inline;
