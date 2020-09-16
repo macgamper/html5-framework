@@ -199,10 +199,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: inline-block;
 	margin: 0 1.5em 0 0;
 }
-.form-builder input[disabled] {
-	opacity: 0.5;
-}
-
 .form-builder .form-sizer label {
 	white-space: nowrap;
 	float: none;

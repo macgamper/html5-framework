@@ -404,6 +404,13 @@ button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus
 	border-color: #0074a9;
 	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
 }
+[disabled], [readonly] {
+	border-style: dotted;
+	cursor: not-allowed;
+}
+[disabled] {
+	opacity: 0.5;
+}
 button + button[type=reset] {
 	margin-left: 1em;
 }

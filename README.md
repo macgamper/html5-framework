@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.7] - 2020-09-16
+
+### Added
+- basics.css: Grundstyles für Inputs mit den Attributen `disabled` und `readonly` ergänzt.
+
+### Removed
+- application.css: Form-Builder-Grundstyle für Inputs mit dem Attribut `disabled` entfernt, da es neu – weniger spezifisch – im basics.css abgedeckt ist.
+
 ## [1.7.6] - 2020-09-08
 
 ### Added
