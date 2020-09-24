@@ -678,7 +678,7 @@ pre::-webkit-scrollbar-thumb:hover,
 .reset,
 .reset li,
 nav ul,
-nav li {
+nav ul li {
 	list-style: none outside none;
 	margin-top: 0;
 	margin-right: 0;
