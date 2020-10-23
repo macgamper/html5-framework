@@ -153,6 +153,9 @@ a:visited {
 a:focus, a:hover, a:active {
 	
 }
+:focus:not(:focus-visible) {
+	outline: none;
+}
 a img {
 	border: none;
 }

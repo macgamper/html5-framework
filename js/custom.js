@@ -61,7 +61,7 @@ $(document).ready(function(){
 
     // change skiplink-href for navigation, when mobilenav is visible
     $(selectors.navSkiplink).on('click', function(e){
-        if ($(selectors.navButton).is(":visible")){
+        if ($(selectors.navButton).is(':visible')){
             e.preventDefault;
             $(selectors.navButton).click();
             $(selectors.navList).find('>li:first-child()>a').focus();

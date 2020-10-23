@@ -377,15 +377,13 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar {
 	width: 50%;
 	line-height: 2;
+	border-top: 1px solid #ccc;
 }
 .calendar,
 .calendar th,
 .calendar td {
 	color: #000;
 	font-weight: inherit;
-}
-.calendar th {
-	background-color: transparent;
 }
 .calendar th,
 .calendar td {
@@ -394,6 +392,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	padding: 0;
 	text-align: center;
 	box-shadow: inset 1px 1px 0 rgba(255,255,255,0.5);
+}
+.calendar th {
+	font-size: inherit;
+    line-height: inherit;
+	letter-spacing: inherit;
+	background-color: transparent;
 }
 .calendar tbody {
 	background-color: #dcdfde;

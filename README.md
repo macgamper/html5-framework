@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.8] - 2020-10-23
+
+### Added
+- basics.css: In Browsern, welche die neue Pseudo-Klasse `:focus-visible` verstehen, wird bei Mouse-Eingaben die Outline standardmässig entfernt. [Mehr Infos](https://css-tricks.com/the-focus-visible-trick/).
+
+```css
+:focus:not(:focus-visible) {
+	outline: none;
+}
+```
+
 ## [1.7.7] - 2020-09-16
 
 ### Added
