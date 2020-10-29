@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.7.9] - 2020-10-29
+
+### Added
+- application.css: `.hamburger` neu mit `display: block;`.
+
 ## [1.7.8] - 2020-10-23
 
 ### Added

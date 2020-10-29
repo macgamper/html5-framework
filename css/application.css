@@ -1085,6 +1085,7 @@ ul.gallery-magnific img {
 /* =hamburger
 --------------------------------------------------------------- */
 .hamburger {
+	display: block;
 	position: relative;
 	z-index: 4;
 	flex: 0 0 auto;
