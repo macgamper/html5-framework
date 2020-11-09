@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8] - 2020-11-09
+
+### Added
+- basics.css: Fixt einen VoiceOver-Bug, der verhindert, dass Listen mit deaktivierten Listenpunkten `list-style-type: none;` als Listen vorgelesen werden. Quelle: [Accessibility issues when removing list markers](https://www.tempertemper.net/blog/accessibility-issues-when-removing-list-markers)
+
+```css
+nav li::before {
+	content: "\200B"; /* fixes VoiceOver Issue */
+}
+```
+
 ## [1.7.9] - 2020-10-29
 
 ### Added

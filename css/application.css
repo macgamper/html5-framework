@@ -680,6 +680,8 @@ ul.gallery-magnific img {
 
 /* =osm online-schalter
 --------------------------------------------------------------- */
+.os-category-title {}
+.os-tbl-caption {}
 .os-article {
 	width: 85%;
 }
