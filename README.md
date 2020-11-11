@@ -1,6 +1,18 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.1] - 2020-11-11
+
+### Changed
+- basics.css: Der mit 1.8 eingeführte Listen-Fix beansprucht mit dem Pseudo-Zeichen (zero-width space) in den Skiplinks, aber auch mit Block-Links zusätzliche Höhe. Er muss darum zusätzlich absolut positioniert werden. Diese Lösung ist in der Praxis weiter zu beobachten.
+
+```css
+nav li::before {
+	content: "\200B"; /* fixes VoiceOver Issue */
+	position: absolute;
+}
+```
+
 ## [1.8] - 2020-11-09
 
 ### Added

@@ -693,6 +693,7 @@ nav ul {
 }
 nav li::before {
 	content: "\200B"; /* fixes VoiceOver Issue */
+	position: absolute;
 }
 .nobr {
 	white-space: nowrap;
