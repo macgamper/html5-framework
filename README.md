@@ -4,7 +4,8 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ## [1.8.1] - 2020-11-11
 
 ### Changed
-- basics.css: Der mit 1.8 eingeführte Listen-Fix beansprucht mit dem Pseudo-Zeichen (zero-width space) in den Skiplinks, aber auch mit Block-Links zusätzliche Höhe. Er muss darum zusätzlich absolut positioniert werden. Diese Lösung ist in der Praxis weiter zu beobachten.
+- basics.css: Der mit 1.8 eingeführte Listen-Fix beansprucht mit dem Pseudo-Zeichen (zero-width space) in den Skiplinks, aber auch mit Block-Links zusätzliche Höhe. Er muss darum zusätzlich absolut positioniert werden. Diese Lösung ist in der Praxis weiter zu beobachten.\
+	Alternativ kann das VoiceOver-Problem bei Listen mit `list-style-type: none;` auch direkt im HTML gefixt werden via `role="list"` auf dem Listen-Element. Quelle: [Fixing Lists](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html)
 
 ```css
 nav li::before {
