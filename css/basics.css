@@ -442,7 +442,7 @@ table th {
 	text-align: left;
 	font-weight: bold;
 }
-table thead th {
+table:not(.calendar) thead th {
 	vertical-align: bottom;
 	border-bottom-width: 2px;
 	padding: calc((1.6 / 1.2) * 0.5em) calc((1.6 / 1.2) * 1em); /* Faktor der Schriftgrösse * padding */
