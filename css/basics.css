@@ -361,6 +361,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 	border-radius: 2px;
 }
 textarea {
+	min-height: 5em;
 	resize: vertical;
 }
 select:not([multiple]) {
@@ -372,10 +373,13 @@ select:not([multiple]) {
 	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
 	background-repeat: no-repeat;
 	background-position: right .75em top 50%;
-	background-size: .75em auto;
+	background-size: .75em .86em;
 }
 select::-ms-expand { /* Hide arrow icon in IE browsers */
 	display: none;
+}
+::-webkit-date-and-time-value { /* fixes Safari Mobile Bug, where empty date fields colapses */
+	min-height: 1.25em;
 }
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
@@ -455,11 +459,11 @@ table tr:first-child th,
 table tr:first-child td {
 	border-top: 1px solid #f2f2f2;
 }
-table thead tr:first-child th,
-table thead tr:first-child td {
+table:not(.calendar) thead tr:first-child th,
+table:not(.calendar) thead tr:first-child td {
 	border-top: 0;
 }
-table thead ~ tbody tr:last-child {
+table:not(.calendar) thead ~ tbody tr:last-child {
 	border-bottom: 2px solid #f2f2f2;
 }
 table tfoot tr:first-child td {
@@ -666,7 +670,6 @@ pre::-webkit-scrollbar-thumb:hover,
 	margin-top: 0;
 	margin-right: 0;
 }
-
 .reverse {
 	display: flex;
 	flex-direction: column;

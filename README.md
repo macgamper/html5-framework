@@ -1,6 +1,21 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.2] - 2020-12-09
+
+### Changed
+- basics.css: Bei einigen Tabellen-Formatierungen werden die `.calendar` Tabellen ausgeschlossen um fehlende Linien und falsch formatierte `th` zu verhindern.
+- basics.css: Formular-Anpassungen
+  - `textarea`Elemente haben eine Mindesthöhe, da das `row` Attribut meist nicht gesetzt wird.
+  - Date-Inputs in Mobile Safari haben eine Mindesthöhe, da sie ohne Inhalt zusammengestaucht werden.
+  - Dropdown-Icon bei `select` gefixt, das in IE11 ohne Breitenangabe verzogen wurde.
+
+```css
+::-webkit-date-and-time-value {
+	min-height: 1.25em;
+}
+```
+
 ## [1.8.1] - 2020-11-11
 
 ### Changed

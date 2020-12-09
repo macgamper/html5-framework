@@ -96,6 +96,9 @@
 .form-builder .cf {
 	margin-bottom: .75em;
 }
+.form-builder .form-builder-container {
+	margin-bottom: 1.5em;
+}
 .form-builder fieldset > *:last-child,
 .form-builder .last,
 .form-builder .form-builder-container > *:last-child {
