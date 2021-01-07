@@ -1,7 +1,7 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
-## [1.8.4] - 2021-01-07
+## [1.8.3] - 2021-01-07
 
 ### Removed
 - custom.js: Einige Teile wurden ins den globale helper.js ausgelagert:
@@ -9,11 +9,6 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
   - TochDevice-Abfrage
   - Role `presentation` für Tabellen mit gleichnamiger Klasse
   - Submit-Methode von Suchen
-
-## [1.8.3] - 2020-12-11
-
-### Added
-- application.css: Bildergalerien erhalten ein Grid-Progressive enhancement, womit sich Galerien mit verschieden grossen Bildern besser steuern lassen.
 
 ## [1.8.2] - 2020-12-09
 
