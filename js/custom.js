@@ -3,14 +3,6 @@ $(document).ready(function(){
     // ************************************
     // mobile-navigation
 
-    // toggles aria-attribute
-    // sets aria to false if closeMenu === true
-    function toggleAriaExpanded(target, closeMenu) {
-        let expanded = closeMenu ? 'true' : $(target).attr('aria-expanded');
-        expanded = (expanded === 'true');
-        $(target).attr('aria-expanded', !expanded);
-    }
-
     // toggles menu
     const navToggleClass = 'hamburger--active';
     // close menu if closeMenu === true
@@ -26,7 +18,7 @@ $(document).ready(function(){
             $(selectors.navBackground).fadeToggle(200);
             $(container).slideToggle(200);
         }
-        toggleAriaExpanded(btn, closeMenu);
+        window.helperJs.toggleAriaExpanded(btn, closeMenu);
     }
 
     // hamburger & mobilenav
@@ -70,20 +62,13 @@ $(document).ready(function(){
     });
 
     // ************************************
-    // presentation-tabellen mit entprechender ARIA-Role versehen
-    $('table.presentation').attr('role','presentation');
-
-    // ************************************
     // keine icons für verlinkte bilder
     $('main a img').closest('a').addClass('no-icon');
 
     // ************************************
     // touch-friendly dropdown-menus
-    function isTouchDevice(){
-        return typeof window.ontouchstart !== 'undefined';
-    }
     /* If mobile browser, prevent click on parent nav item from redirecting to URL */
-    if(isTouchDevice()) {
+    if(window.helperJs.isTouchDevice()) {
         // 1st click, add "clicked" class, preventing the location change. 2nd click will go through.
         $('.mainnav .folder > a').click(function(event) {
             // Perform a reset - Remove the "clicked" class on all other menu items
@@ -94,10 +79,5 @@ $(document).ready(function(){
             }
         });
     }
-    
-    // ************************************
-    // change form methods from post to get for old IE to be able to navigate back
-    if (window.hasOwnProperty("helperJs") && window.helperJs.hasOwnProperty("changeFormSubmitMethod")){
-        window.helperJs.changeFormSubmitMethod('form.js-mod-search');
-    }
+
 });
