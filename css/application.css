@@ -584,6 +584,21 @@ ul.gallery-magnific li:nth-child(3n+1) {
 	clear: left;
 	margin-left: 0;
 }
+
+@supports (display: grid) {
+	ul.gallery-magnific {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5em;
+        gap: 1.5em;
+    }
+	ul.gallery-magnific li,
+    ul.gallery-magnific li:nth-child(1n+1) {
+        max-width: none;
+        margin: 0;
+    }
+}
+
 ul.gallery-magnific a {
 	display: block;
 	text-decoration: none;
@@ -616,6 +631,17 @@ ul.gallery-magnific img {
 		margin-left: 0;
 	}
 
+    @supports (display: grid) {
+        ul.gallery-magnific {
+            grid-template-columns: 1fr 1fr;
+        }
+        ul.gallery-magnific li,
+        ul.gallery-magnific li:nth-child(1n+1) {
+            max-width: none;
+            margin: 0;
+        }
+    }
+
 }
 
 /* =breadcrumb
@@ -634,7 +660,7 @@ ul.gallery-magnific img {
 	height: 100%;
 	pointer-events: none;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .breadcrumb__lst {
 	display: flex;

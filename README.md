@@ -1,6 +1,32 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.5] - 2021-01-18
+
+### Changed
+- basics.css: `details` und `summary` Erweiterungen:
+  - sind nun mit einem Custom-Pfeil gestylt und `summary` ist ganzflächig klickbar. Weil diese Elemente IE11 und Edge ≤18 noch nicht bekannt sind, wurden diese Anweisungen in eine entsprechende Support-Mediaquery gestellt. In den Legacy Browsern erscheint das `details` Element damit einfach offen, wie eine Element `.box`. 
+  - Die Modifier-Klassen für Boxen lassen sich nun bei Bedarf ebenfalls auf das `details`-Element anwenden.
+  - Das `:focus`-Handling von `summary` wurde dem der Form-Elemente angeglichen.
+  - Ein bekanntest Problem ist noch die fehlerhafte Darstellung des Custom-Pfeils in Safari. Hier muss noch eine Lösung – wahrscheinlich via JS – gefunden werden.
+
+### Added
+- print.css: Grosse Bilder wurden in PDF’s nicht verkleinert, da `max-width` scheinbar ignoriert wird. Eine Breitenangabe soll nun zumindest die Skalierung des Bildes auf Layoutbreite erzwingen.
+
+```css
+.cms-print-pdf img {
+    width: 100%;
+}
+```
+
+### Removed
+- default.html: [Modernizr](https://modernizr.com/) wird standardmässig nicht mehr eingebunden. Die noch genutzten Abfragen (primär für die Input-Attribute) sind nun im `helper.js` integriert. Falls weitere Features abgefragt werden sollen, kann Modernizr projektspezifisch ergänzt werden.
+
+## [1.8.4] - 2021-01-14
+
+### Added
+- application.css: Bildergalerien erhalten ein Grid-Progressive enhancement, womit sich Galerien mit verschieden grossen Bildern besser steuern lassen. Noch im Detail zu testen.
+
 ## [1.8.3] - 2021-01-07
 
 ### Removed

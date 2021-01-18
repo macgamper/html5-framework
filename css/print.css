@@ -92,6 +92,9 @@ img {
 	border: 0;
 	max-width: 100%;
 }
+.cms-print-pdf img {
+    width: 100%;
+}
 figure {
 	display: block;
 	margin-top: 0;

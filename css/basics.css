@@ -128,16 +128,58 @@ iframe {
 	display: block;
 	border: 0;
 	padding: 0;
+	
 	width: 100%;
 }
-details {}
-details[open] {}
+
 summary {
+	list-style: none;
 	font-weight: bold;
 }
-details[open] > summary {
-	margin-bottom: 0.75em;
+
+@supports not (-ms-ime-align: auto) { /* no ie11 & legacy edge ≤18 */
+
+	summary {
+		cursor: pointer;
+		margin: -1.5em;
+		padding: 1.5em;
+		overflow: hidden;
+	}
+	summary::-webkit-details-marker {
+		display: none;
+	}
+	summary {
+		display: flex;
+		align-items: baseline;
+	}
+	summary::before {
+		content: "";
+		position: relative;
+		flex: 0 0 auto;
+		top: 0.2em;
+		width: 1em;
+		height: 1em;
+		margin-right: 0.5em;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: .75em .86em;
+		transform: rotate(-90deg);
+		transition: transform .2s;
+	}
+	details[open] summary::before {
+		transform: rotate(0);
+	}
+	summary > * {
+		display: inline;
+		margin-bottom: 0;
+	}
+	summary + * {
+		margin-top: 1.5em;
+	}
+
 }
+
 .optimale-zeilenlaenge {
 	color: red; /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 }
@@ -406,7 +448,8 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 [type=week]:focus,
 select:focus,
 textarea:focus,
-button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus {
+button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus,
+summary:focus {
 	outline: 3px solid transparent;
 	border-color: #0074a9;
 	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
@@ -730,8 +773,8 @@ details,
 }
 
 blockquote > *:last-child,
+details > *:last-child, summary ~ div > *:last-child,
 fieldset > *:last-child,
-details > *:last-child,
 th > *:last-child, td > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child,
