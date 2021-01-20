@@ -363,6 +363,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .flex-search > input {
 	flex: 1 1 auto;
+	min-width: 0;
 	border-right: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
@@ -1129,8 +1130,7 @@ ul.gallery-magnific img {
 	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	background-color: red;
-	transform: rotate(0deg);
-	transition: .5s ease-in-out;
+	transition: background-color .5s;
 }
 .hamburger span {
 	content: '';
@@ -1157,7 +1157,7 @@ ul.gallery-magnific img {
 }
 
 .hamburger--active {
-	background: #000;
+	background-color: #000;
 }
 .hamburger--active span:nth-child(1) {
 	top: 20px;
