@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.6] - 2021-01-27
+
+### Added
+- basics.css: kleinere Optimierungen
+  - `details` / `.box`: `clear` ergänzt
+  - `.link-expanded`: `z-index` ergänzt
+  - `.tag` ergänzt bei kleinen Schriftgrössen
+- application.css: kleinere Optimierungen
+  - Basis für `.tags` ergänzt
+  - Basis für `.cards` (Layout) und `.cards` (Content) ergänzt
+
 ## [1.8.5] - 2021-01-18
 
 ### Changed
