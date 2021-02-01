@@ -185,7 +185,7 @@ summary {
 	color: red; /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 }
 
-/* =anchors
+/* =links
 --------------------------------------------------------------- */
 a, a:link {
 	
@@ -201,6 +201,44 @@ a:focus, a:hover, a:active {
 }
 a img {
 	border: none;
+}
+
+[id] {
+	scroll-snap-margin-top: 2ex;
+	scroll-margin-top: 2ex;
+}
+
+/* =link expanded
+--------------------------------------------------------------- */
+.link-expanded {
+	position: relative;
+}
+.link-expanded a::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* =skiplinks
+--------------------------------------------------------------- */
+.skiplinks__link {
+	position: absolute;
+	top: -9999px;
+	left: 1.5em;
+	z-index: 10;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+}
+.skiplinks__link:focus,
+.skiplinks__link:active {
+	top: 1.5em;
+	color: #fff;
 }
 
 /* =doc-anchors font-awesome
@@ -649,7 +687,7 @@ pre::-webkit-scrollbar-thumb:hover,
 	display: none;
 }
 
-/* =helper
+/* =helper/utility classes
 --------------------------------------------------------------- */
 [hidden],
 .none, .screenhidden, .printvisible {
@@ -783,37 +821,6 @@ th > *:last-child, td > *:last-child,
 .lc-reset > *:last-child,
 .katabox > *:last-child {
 	margin-bottom: 0;
-}
-
-.link-expanded {
-	position: relative;
-}
-.link-expanded a::after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
-/* =skiplinks
---------------------------------------------------------------- */
-.skiplinks__link {
-	position: absolute;
-	top: -9999px;
-	left: 1.5em;
-	z-index: 10;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	color: #fff;
-	background-color: #000;
-}
-.skiplinks__link:focus,
-.skiplinks__link:active {
-	top: 1.5em;
-	color: #fff;
 }
 
 /* =buttons

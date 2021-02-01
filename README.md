@@ -1,6 +1,21 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.7] - 2021-02-01
+
+### Added
+- basics.css: Potenziell anspringbaren Elementen – daher alle Elemente mit ID’s – wird nun ein genereller `scroll-margin-top`-Wert mitgegeben. Der verhindert, dass ein angesprungenes Element direkt am Viewport-Rand zu stehen kommt und bei Elementen die `sticky` oder `fixed` sind, kann der Wert entsprechend erhöht werden. [Quelle](https://piccalil.li/quick-tip/add-scroll-margin-to-all-elements-which-can-be-targeted).
+
+```css
+[id] {
+	scroll-snap-margin-top: 2ex;
+	scroll-margin-top: 2ex;
+}
+```
+
+### Changed
+- basics.css: Utility-Klassen, die mit Links in Verbindung stehen werden neu direkt nach den Links aufgeführt.
+
 ## [1.8.6] - 2021-01-27
 
 ### Added
