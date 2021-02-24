@@ -369,7 +369,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	border-bottom-right-radius: 0;
 }
 .flex-search > button {
-	flex: 0 0 0;
+	flex: 0 0 auto;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 	padding-right: 1em;
