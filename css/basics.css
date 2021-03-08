@@ -140,17 +140,16 @@ summary {
 @supports not (-ms-ime-align: auto) { /* no ie11 & legacy edge ≤18 */
 
 	summary {
+		display: flex;
+		align-items: baseline;
 		cursor: pointer;
 		margin: -1.5em;
 		padding: 1.5em;
 		overflow: hidden;
 	}
-	summary::-webkit-details-marker {
+	summary::-webkit-details-marker,
+	summary::marker {
 		display: none;
-	}
-	summary {
-		display: flex;
-		align-items: baseline;
 	}
 	summary::before {
 		content: "";
@@ -181,7 +180,7 @@ summary {
 }
 
 .optimale-zeilenlaenge {
-	color: red; /* Zeichen von 45-75 werden hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
+	color: #ee0000; /* Zeichen von 45-75 werden rot hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 }
 
 /* =links

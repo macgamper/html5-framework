@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.8] - 2021-03-08
+
+### Added
+- application.css: Basic-Styles für den Online-Schalter Checkout ergänzt.
+
+### Changed
+- basics.css: `details` und `summary` vereinfacht.
+- default.html: Alt-Text bei Bildern ergänzt (ergab beim verlinkten Bild neu einen Abzug im aktualisierten Lighthouse-Score).
+
 ## [1.8.7] - 2021-02-01
 
 ### Added
