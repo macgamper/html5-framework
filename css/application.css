@@ -399,7 +399,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .calendar th {
 	font-size: inherit;
-    line-height: inherit;
+	line-height: inherit;
 	letter-spacing: inherit;
 	background-color: transparent;
 }
@@ -588,16 +588,16 @@ ul.gallery-magnific li:nth-child(3n+1) {
 
 @supports (display: grid) {
 	ul.gallery-magnific {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1.5em;
-        gap: 1.5em;
-    }
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1.5em;
+		gap: 1.5em;
+	}
 	ul.gallery-magnific li,
-    ul.gallery-magnific li:nth-child(1n+1) {
-        max-width: none;
-        margin: 0;
-    }
+	ul.gallery-magnific li:nth-child(1n+1) {
+		max-width: none;
+		margin: 0;
+	}
 }
 
 ul.gallery-magnific a {
@@ -632,16 +632,16 @@ ul.gallery-magnific img {
 		margin-left: 0;
 	}
 
-    @supports (display: grid) {
-        ul.gallery-magnific {
-            grid-template-columns: 1fr 1fr;
-        }
-        ul.gallery-magnific li,
-        ul.gallery-magnific li:nth-child(1n+1) {
-            max-width: none;
-            margin: 0;
-        }
-    }
+	@supports (display: grid) {
+		ul.gallery-magnific {
+			grid-template-columns: 1fr 1fr;
+		}
+		ul.gallery-magnific li,
+		ul.gallery-magnific li:nth-child(1n+1) {
+			max-width: none;
+			margin: 0;
+		}
+	}
 
 }
 
@@ -695,17 +695,17 @@ ul.gallery-magnific img {
 
 /* breadcrumb dropdown */
 .breadcrumb__dropdown {
-    display: none;
-    position: absolute;
-    top: 1.55rem;
-    left: 0;
-    z-index: 800;
+	display: none;
+	position: absolute;
+	top: 1.55rem;
+	left: 0;
+	z-index: 800;
 }
 .breadcrumb__dropdown.expanded {
-    display: block;
+	display: block;
 }
 .breadcrumb__dropdown ul {
-    min-width: 200px;
+	min-width: 200px;
 }
 
 /* =osm online-schalter
@@ -782,25 +782,25 @@ ul.gallery-magnific img {
 .cart-checkout__lst,
 .cart-checkout__item {
 	margin: 0;
-    padding: 0;
-    list-style: none;
+	padding: 0;
+	list-style: none;
 }
 .cart-checkout__lst {
 	display: flex;
-    width: 100%;
-    box-shadow: inset 0 1px 0 #ccc,
-        		inset 0 -1px 0 #ccc;
+	width: 100%;
+	box-shadow: inset 0 1px 0 #ccc,
+				inset 0 -1px 0 #ccc;
 }
 .cart-checkout__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1.5em 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 1.5em 0;
 	text-align: center;
 	line-height: 1.2;
 }
 .cart-checkout__item + .cart-checkout__item {
-    margin-left: 1.5em;
+	margin-left: 1.5em;
 }
 .cart-checkout__item--active {
 	position: relative;
@@ -834,21 +834,21 @@ ul.gallery-magnific img {
 
 .cart-checkout__step {
 	display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5em;
-    width: 1.5em;
-    height: 1.5em;
-    color: #fff;
-    background-color: #706f6f;
-    border-radius: 3em;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	color: #fff;
+	background-color: #706f6f;
+	border-radius: 3em;
 }
 
 .checkout__step-checkmark {
-    display: none;
+	display: none;
 }
 .cart-checkout__item--completed .checkout__step-checkmark {
-    display: block;
+	display: block;
 }
 .cart-checkout__item--completed .checkout__step-number {
 	position: absolute;
@@ -863,7 +863,32 @@ ul.gallery-magnific img {
 	overflow: hidden;
 }
 .cart-checkout__item--active .cart-checkout__step {
-    background-color: #bc111e;
+	background-color: #bc111e;
+}
+
+@media only screen and (max-width: 48em) { /* 768/16 */
+
+	.cart-checkout__lst {
+		flex-direction: column;
+		box-shadow: none;
+	}
+	.cart-checkout__item {
+		justify-content: flex-start;
+		align-items: center;
+		padding: .15em 0;
+		text-align: left;
+	}
+	.cart-checkout__item + .cart-checkout__item {
+		margin: inherit;
+	}
+	.cart-checkout__item--active::after, .cart-checkout__item--active::before {
+		content: none;
+	}
+	.cart-checkout__step {
+		margin-right: .5em;
+		margin-bottom: 0;
+	}
+
 }
 
 /* =osm payment: KK-Auswahl
@@ -1444,9 +1469,9 @@ ul.gallery-magnific img {
 --------------------------------------------------------------- */
 .tag {
 	display: inline-block;
-    padding: .25em 1em;
+	padding: .25em 1em;
 	background-color: #f6f4f3;
-    border-radius: 2em;
+	border-radius: 2em;
 }
 
 /* =cards-layout
@@ -1455,8 +1480,8 @@ ul.gallery-magnific img {
 .cards__item {}
 .cards__lst {
 	display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
 }
 
 /* =card-item
