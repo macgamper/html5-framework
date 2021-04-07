@@ -1,6 +1,22 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.8.9] - 2021-04-07
+
+### Added
+- print.css: Ausgerichtete Bilder in generierten PDF’s verstehen `max-width` nicht. Darum bekommen diese Bilder nun zusätzlich eine `width`.
+
+```css
+.cms-print-pdf .alignleft,
+.cms-print-pdf .aligncenter,
+.cms-print-pdf .alignright {
+	width: 33%; /* PDF max-width-bug */
+}
+```
+
+### Changed
+- jQuery auf 3.6.0 aktualisiert
+
 ## [1.8.8] - 2021-03-08
 
 ### Added

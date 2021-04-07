@@ -245,6 +245,11 @@ fieldset > *:last-child {
 .alignleft, .alignright {
 	max-width: 33%;
 }
+.cms-print-pdf .alignleft,
+.cms-print-pdf .aligncenter,
+.cms-print-pdf .alignright {
+	width: 33%; /* PDF max-width-bug */
+}
 .alignleft {
 	float: left;
 	margin: 0 1.5em 1.5em 0;
