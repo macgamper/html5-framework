@@ -4,10 +4,12 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ## [1.9] - 2021-05-04
 
 ### Added
-- default.html: `.table-responsive` entfernt (wird neu per JS gesetzt).
 - custom.js: Initialisieren `responsiveTable` ergänzt.
 - basics.css: Custom Properties für «natürlichere» Box-Shadows in verschiedenen Grössen ergänzt.
 - application.css: `.flex-search` mit `select` ergänzt (z.B. für Rubrikenauswahl im OS), Resizing des `.flex-search button` auf Mobile verhindert.
+
+### Removed
+- default.html: `.table-responsive` entfernt (wird neu per JS gesetzt).
 
 ## [1.8.9] - 2021-04-07
 
