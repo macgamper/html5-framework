@@ -320,6 +320,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder button {
 		width: 100%;
 	}
+	.form-builder.flex-search button {
+		width: auto;
+	}
 	.form-builder .form-builder-btn-group p {
 		display: block;
 		margin: 0;
@@ -361,7 +364,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	width: auto;
 	padding-right: 0 ;
 }
-.flex-search > input {
+.flex-search > input,
+.flex-search > select {
 	flex: 1 1 auto;
 	min-width: 0;
 	border-right: 0;

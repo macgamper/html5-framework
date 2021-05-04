@@ -65,6 +65,9 @@ $(document).ready(function(){
     // keine icons für verlinkte bilder
     $('main a img').closest('a').addClass('no-icon');
 
+    // responsive-container für tabellen
+    window.helperJs.responsiveTable();
+
     // ************************************
     // touch-friendly dropdown-menus
     /* If mobile browser, prevent click on parent nav item from redirecting to URL */
