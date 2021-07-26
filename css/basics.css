@@ -217,7 +217,8 @@ a img {
 .link-expanded {
 	position: relative;
 }
-.link-expanded a::after {
+.link-expanded a::after,
+a.link-expanded__child::after {
 	content: "";
 	position: absolute;
 	z-index: 1;
@@ -455,6 +456,9 @@ select:not([multiple]) {
 	width: 100%;
 	max-width: 100%;
 	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
 	background-repeat: no-repeat;
 	background-position: right .75em top 50%;
@@ -823,7 +827,8 @@ th > *:last-child, td > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child,
 .lc-reset > *:last-child,
-.katabox > *:last-child {
+.katabox > *:last-child,
+.js-accordion-content > *:last-child {
 	margin-bottom: 0;
 }
 

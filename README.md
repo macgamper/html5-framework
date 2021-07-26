@@ -1,10 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.9.1] - 2021-07-26
+
+### Added
+- application.css: Styles für die Accessible-Date-Komponente ergänzt.
+- basics.css: Lange Select-Beschriftungen werden nun standardmässig gekürzt mit `text-overflow: ellipsis;`. Dies war insbesondere bei der Accessible-Date-Komponente nötig, wo Tag, Monat und Jahr jeweils eigene Selects nebeneinander bekommen.
+- default.html: Klassen für Navigations-Level `.level-x` ergänzt.
+
 ## [1.9] - 2021-05-04
 
 ### Added
-- custom.js: Initialisieren `responsiveTable` ergänzt.
+- custom.js: Initialisierung  `responsiveTable` ergänzt.
 - basics.css: Custom Properties für «natürlichere» Box-Shadows in verschiedenen Grössen ergänzt.
 - application.css: `.flex-search` mit `select` ergänzt (z.B. für Rubrikenauswahl im OS), Resizing des `.flex-search button` auf Mobile verhindert.
 
