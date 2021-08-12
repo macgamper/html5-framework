@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.9.2] - 2021-08-12
+
+### Added
+- basics.css: Klassen für die File-Upload-Hints `.form-hint-complex` in Formularen ergänzt
+- application.css: Klassen für die File-Upload-Hints `.form-hint-complex` in Formularen ergänzt
+
 ## [1.9.1] - 2021-07-26
 
 ### Added

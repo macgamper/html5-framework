@@ -137,6 +137,7 @@
 	width: auto;
 }
 .form-builder .form-hint,
+.form-builder .form-hint-complex__rules,
 .form-builder label.error,
 .form-builder .password-strength,
 .form-builder .password-rules {
@@ -146,6 +147,13 @@
 	width: 50%;
 	margin: .5em 0 0 0;
 	color: #585858;
+}
+.form-builder .form-hint-complex__rules {
+	margin-top: 0;
+}
+.form-builder .form-hint-complex--fullwidth .form-hint-complex__rules {
+	float: none;
+	width: 100%;
 }
 .form-builder label.error + label.error {
 	margin-top: 0;
@@ -298,6 +306,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder-30 textarea,
 .form-builder-30 select,
 .form-builder-30 .form-hint,
+.form-builder-30 .form-hint-complex__rules,
 .form-builder-30 label.error,
 .form-builder-30 .form-option-lst-show-title .form-option-lst,
 .form-builder-30 .form-sizer-wrapper,
@@ -316,6 +325,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .form-option-lst-show-title .form-option-lst,
 	.form-builder .form-option-lst-title,
 	.form-builder .form-hint,
+	.form-builder .form-hint-complex__rules,
 	.form-builder label.error,
 	.form-builder .form-sizer-wrapper,
 	.form-builder .password-strength,
