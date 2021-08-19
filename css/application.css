@@ -40,7 +40,6 @@
 	display: block;
 }
 
-
 /* =global module-navigation
 --------------------------------------------------------------- */
 .mod-nav {
@@ -410,6 +409,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	border-bottom-left-radius: 0;
 	padding-right: 1em;
 	padding-left: 1em;
+}
+
+/* =searchresults
+--------------------------------------------------------------- */
+.search-result-desc {
+	overflow-wrap: break-word; /* umbricht auch PDF-Inhalte  */
 }
 
 /* =calendar (events, reservations)

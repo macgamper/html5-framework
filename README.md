@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [1.9.3] - 2021-08-19
+
+### Added
+- application.css: Neue Regel erzwingt den Umbruch von indexierten PDF-Inhalten ohne Wortabstände auf der Suchresultatseite.
+
+```css
+.search-result-desc {
+	overflow-wrap: break-word; /* umbricht auch PDF-Inhalte  */
+}
+```
+
 ## [1.9.2] - 2021-08-12
 
 ### Added

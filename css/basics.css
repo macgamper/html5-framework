@@ -687,14 +687,6 @@ pre::-webkit-scrollbar-thumb:hover,
 	background-color: black;
 }
 
-/*=microformats
---------------------------------------------------------------- */
-.vcard .region,
-.vcard .country-name,
-.vcard .url {
-	display: none;
-}
-
 /* =helper/utility classes
 --------------------------------------------------------------- */
 [hidden],
@@ -828,7 +820,8 @@ th > *:last-child, td > *:last-child,
 .row > [class*="col-"] > *:last-child,
 .lc-reset > *:last-child,
 .katabox > *:last-child,
-.js-accordion-content > *:last-child {
+.js-accordion-content > *:last-child,
+.faq__content > *:last-child {
 	margin-bottom: 0;
 }
 
