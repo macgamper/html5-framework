@@ -435,17 +435,80 @@ legend {
 [type=time],
 [type=url],
 [type=week],
+[type=radio],
+[type=checkbox],
 select,
 textarea,
 button, [type="button"], [type="reset"], [type="submit"] {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
-	border: 1px solid #ccc;
+	border: 1px solid #666;
 	padding: 0.25em 0.5em;
 	background-color: #fff;
 	border-radius: 2px;
+	transition: box-shadow 0.2s;
 }
+
+@supports (-ms-ime-align: auto) { /* targets only legacy edge */
+	[type=radio],
+	[type=checkbox] {
+		-webkit-appearance: checkbox;
+	}
+}
+
+[type=radio],
+[type=checkbox] {
+	position: relative;
+	height: 1.25em;
+	width: 1.25em;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+[type=radio] {
+	border-radius: 100%;
+}
+
+[type=radio]::before,
+[type=checkbox]::before,
+[type=checkbox]::after {
+	content: "";
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+[type=radio]::before {
+	height: 0;
+	width: 0;
+}
+
+[type=radio]:checked::before {
+	border: 5px solid transparent;
+	border-radius: 100%;
+	outline-offset: -6px;
+	background-color: #000;
+}
+[type=checkbox]:checked::before,
+[type=checkbox]:checked::after {
+	border-color: #000;
+	border-width: 3px;
+	border-top: 0;
+	border-left: 0;
+	height: 80%;
+	width: 40%;
+	transform: rotate(45deg) translateY(-10%) translateX(-10%);
+}
+[type=checkbox]:checked::before {
+	border-right-style: solid;
+}
+[type=checkbox]:checked::after {
+	border-bottom-style: solid;
+}
+
 textarea {
 	min-height: 5em;
 	resize: vertical;
@@ -474,11 +537,6 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 [type=search]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-[type=checkbox],
-[type=radio] {
-	border: 0;
-	margin-right: 0.25em;
-}
 [type=date]:focus,
 [type=datetime]:focus,
 [type=datetime-local]:focus,
@@ -493,19 +551,21 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 [type=time]:focus,
 [type=url]:focus,
 [type=week]:focus,
+[type=checkbox]:focus,
+[type=radio]:focus,
 select:focus,
 textarea:focus,
 button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus,
 summary:focus {
 	outline: 3px solid transparent;
-	border-color: #0074a9;
+	border-color: #000;
 	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
 }
 [disabled], [readonly] {
 	border-style: dotted;
 	cursor: not-allowed;
 }
-[disabled] {
+[disabled], [aria-disabled=true] {
 	opacity: 0.5;
 }
 button + button[type=reset] {
@@ -895,44 +955,45 @@ th > *:last-child, td > *:last-child,
 [class*="col-"] {
 	position: relative;
 	float: left;
-	margin-left: 0; /* muss aufgrund der breite berechnet werden */
+	margin-left: 2.1276595745%; /* 30/1410 */
 	min-height: 1px;
 }
 [class*="col-"]:first-child {
 	margin-left: 0;
 }
 .col-1 {
-	width: 8.333333333333332%;
+	width: 6.3829787234%; /* 90/1410 */
 }
 .col-2 {
-	width: 16.666666666666664%;
+	width: 14.8936170213%; /* 210/1410 */
 }
 .col-3 {
-	width: 25%;
+	width: 23.4042553191%; /* 330/1410 */
 }
 .col-4 {
-	width: 33.33333333333333%;
+	width: 31.914893617%; /* 450/1410 */
 }
 .col-5 {
-	width: 41.66666666666667%;
+	width: 40.4255319149%; /* 570/1410 */
 }
-.col-6, .col-half {
-	width: 50%;
+.col-6,
+.col-half {
+	width: 48.9361702128%; /* 690/1410 */
 }
 .col-7 {
-	width: 58.333333333333336%;
+	width: 57.4468085106%; /* 810/1410 */
 }
 .col-8 {
-	width: 66.66666666666666%;
+	width: 65.9574468085%; /* 930/1410 */
 }
 .col-9 {
-	width: 75%;
+	width: 74.4680851064%; /* 1050/1410 */
 }
 .col-10 {
-	width: 83.33333333333334%;
+	width: 82.9787234043%; /* 1170/1410 */
 }
 .col-11 {
-	width: 91.66666666666666%;
+	width: 91.4893617021%; /* 1290/1410 */
 }
 .col-12 {
 	width: 100%;

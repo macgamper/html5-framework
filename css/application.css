@@ -124,7 +124,20 @@
 .form-builder .form-option-lst-title label {
 	display: inline;
 }
-.form-builder input,
+.form-builder [type=date],
+.form-builder [type=datetime],
+.form-builder [type=datetime-local],
+.form-builder [type=email],
+.form-builder [type=file],
+.form-builder [type=month],
+.form-builder [type=number],
+.form-builder [type=password],
+.form-builder [type=search],
+.form-builder [type=tel],
+.form-builder [type=text],
+.form-builder [type=time],
+.form-builder [type=url],
+.form-builder [type=week],
 .form-builder textarea,
 .form-builder select {
 	float: right;
@@ -134,6 +147,10 @@
 .form-builder button {
 	float: none;
 	width: auto;
+}
+.form-builder [type=radio],
+.form-builder [type=checkbox] {
+	margin-right: 0.25em;
 }
 .form-builder .form-hint,
 .form-builder .form-hint-complex__rules,
@@ -157,6 +174,9 @@
 .form-builder label.error + label.error {
 	margin-top: 0;
 	padding-top: 0;
+}
+.form-builder .form-option-lst li + li {
+    margin-top: 0.25em;
 }
 .form-builder .form-option-lst .form-hint {
 	float: none;
@@ -196,8 +216,6 @@
 	padding-left: 1.5em;
 }
 .form-builder .form-option-lst li label > input {
-	width: auto;
-	float: none;
 	margin-left: -1.5em;
 }
 div:not([class*="form-option-lst-show-title"]) label.error {

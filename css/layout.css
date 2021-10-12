@@ -3,48 +3,51 @@
 .wrapper {
 	outline: 2px solid black;
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1410px;
 	margin: 0 auto;
 }
 	
 /* =header
 --------------------------------------------------------------- */
-header {
+.header {
 	background-color: #9cf; /* blue */
+}
+
+/* =mainnav
+--------------------------------------------------------------- */
+.mainnav {
+	background-color: #f99; /* red */
 }
 
 /* =content
 --------------------------------------------------------------- */
-.container {
-	float: right;
-	width: 80%;
+.content {
 	background-color: #ededed; /* grey */
 }
-main {
-	float: left;
-	width: 80%;
+.wrapper--content {
+	display: flex;
+}
+.main {
+	width: 60%;
 	background-color: #9f9; /* green */
 }
-	
-/* =sidebar
+
+/* =subnav
 --------------------------------------------------------------- */
-aside {
-	float: right;
-	width: 20%;
-	background-color: #ff6; /* yellow */
-}
-	
-/* =nav
---------------------------------------------------------------- */
-.mainnav {
-	float: left;
+.subnav {
 	width: 20%;
 	background-color: #f99; /* red */
 }
 
+/* =sidebar
+--------------------------------------------------------------- */
+.sidebar {
+	width: 20%;
+	background-color: #ff6; /* yellow */
+}
+
 /* =footer
 --------------------------------------------------------------- */
-footer {
-	clear: both;
+.footer {
 	background-color: #c9f; /* violet */
 }

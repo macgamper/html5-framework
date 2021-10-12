@@ -36,16 +36,20 @@
 				<li><a class="skiplinks__link" accesskey="4" href="/sitemap#main" title="[CTRL + ALT + 4]">Sitemap</a></li>
 			</ul>
 		</nav>
-		<div class="wrapper" id="wrapper">
-			<header class="header" id="header">
+		
+		<header class="header" id="header">
+			<div class="wrapper wrapper--header">
 				<div class="logo"><a href="#" title="Homepage">Logo</a></div>
 				<form class="searchform" id="searchform" role="search" method="post" action="#" >
 					<label class="searchform__label visuallyhidden" for="search-input">Suche</label>
 					<input class="searchform__input" type="search" id="search-input" placeholder="Suchbegriff" required />
 					<button class="searchform__submit" type="submit">suchen</button>
 				</form>
-			</header>
-			<nav class="mainnav" id="mainnav" aria-labelledby="mainnav__title">
+			</div>
+		</header>
+
+		<nav class="mainnav" id="mainnav" aria-labelledby="mainnav__title">
+			<div class="wrapper wrapper--mainnav">
 				<h2 class="mainnav__title visuallyhidden" id="mainnav__title">Hauptnavigation</h2>
 				<ul class="level-1">
 					<li><a href="#">Porträt</a></li>
@@ -60,66 +64,89 @@
 					<li><a href="#">Links</a></li>
 					<li><a href="#">Kontakt</a></li>
 				</ul>
-			</nav>
-			<!-- end nav.mainnav -->
-			<nav class="mobilenav js-mobilenav" id="mobilenav" aria-labelledby="mobilenav__title">
-				<h2 class="visuallyhidden" id="mobilenav__title">Hauptnavigation</h2>
-				<button type="button" class="hamburger js-hamburger" id="js-mobilnav-toggle" aria-controls="mobilenav" aria-expanded="false">
-					<span>Menü</span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-				<div class="mobilenav__container">
-					<!-- modulausgabe -->
-					<div class="mobilenav-block" id="responsivenav__toc">
-						<div class="mobilenav-box ajax-menu active">
-							<h3 class="mobilenav-current-pagetitle govis-menu-parent-node-item govis-menu-node-item">
-								<a class="govis-menu-node-controller" href="https://doku.backslash.ch/page/162">
-									<svg aria-hidden="true" class="icon icon-angle-left" viewBox="0 0 12 32">
-										<path d="M11.196 9.714q0 0.232-0.179 0.411l-7.018 7.018 7.018 7.018q0.179 0.179 0.179 0.411t-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path>
+			</div>
+		</nav>
+		<!-- end nav.mainnav -->
+
+		<nav class="mobilenav js-mobilenav" id="mobilenav" aria-labelledby="mobilenav__title">
+			<h2 class="visuallyhidden" id="mobilenav__title">Hauptnavigation</h2>
+			<button type="button" class="hamburger js-hamburger" id="js-mobilnav-toggle" aria-controls="mobilenav" aria-expanded="false">
+				<span>Menü</span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="mobilenav__container">
+				<!-- modulausgabe -->
+				<div class="mobilenav-block" id="responsivenav__toc">
+					<div class="mobilenav-box ajax-menu active">
+						<h3 class="mobilenav-current-pagetitle govis-menu-parent-node-item govis-menu-node-item">
+							<a class="govis-menu-node-controller" href="https://doku.backslash.ch/page/162">
+								<svg aria-hidden="true" class="icon icon-angle-left" viewBox="0 0 12 32">
+									<path d="M11.196 9.714q0 0.232-0.179 0.411l-7.018 7.018 7.018 7.018q0.179 0.179 0.179 0.411t-0.179 0.411l-0.893 0.893q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l8.321-8.321q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path>
+								</svg>
+								Level-Titel
+							</a>
+						</h3>
+						<ul class="govis-menu-node">
+							<li class="govis-menu-node-item folder" id="item-2">
+								<a href="#">Porträt</a>
+								<button type="button" class="govis-menu-node-controller collapsed">
+									<svg aria-hidden="true" class="icon icon-angle-right js-indicator" viewBox="0 0 11 32">
+										<path d="M10.625 17.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l7.018-7.018-7.018-7.018q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path>
 									</svg>
-									Level-Titel
-								</a>
-							</h3>
-							<ul class="govis-menu-node">
-								<li class="govis-menu-node-item folder" id="item-2">
-									<a href="#">Porträt</a>
-									<button type="button" class="govis-menu-node-controller collapsed">
-										<svg aria-hidden="true" class="icon icon-angle-right js-indicator" viewBox="0 0 11 32">
-											<path d="M10.625 17.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l7.018-7.018-7.018-7.018q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path>
-										</svg>
-										<span class="visuallyhidden">Navigationsebene «Porträt» öffnen</span>
-									</button>
-								</li>
-								<li class="govis-menu-node-item page" id="item-3">
-									<a href="#">Politik</a>
-								</li>
-								<li class="govis-menu-node-item page" id="item-4">
-									<a href="#">Verwaltung</a>
-								</li>
-								<li class="govis-menu-node-item folder" id="item-5">
-									<a href="#">Leben</a>
-									<button type="button" class="govis-menu-node-controller collapsed">
-										<svg aria-hidden="true" class="icon icon-angle-right js-indicator" viewBox="0 0 11 32">
-											<path d="M10.625 17.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l7.018-7.018-7.018-7.018q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path>
-										</svg>
-										<span class="visuallyhidden">Navigationsebene «Leben» öffnen</span>
-									</button>
-								</li>
-							</ul>
-						</div>
+									<span class="visuallyhidden">Navigationsebene «Porträt» öffnen</span>
+								</button>
+							</li>
+							<li class="govis-menu-node-item page" id="item-3">
+								<a href="#">Politik</a>
+							</li>
+							<li class="govis-menu-node-item page" id="item-4">
+								<a href="#">Verwaltung</a>
+							</li>
+							<li class="govis-menu-node-item folder" id="item-5">
+								<a href="#">Leben</a>
+								<button type="button" class="govis-menu-node-controller collapsed">
+									<svg aria-hidden="true" class="icon icon-angle-right js-indicator" viewBox="0 0 11 32">
+										<path d="M10.625 17.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-0.893-0.893q-0.179-0.179-0.179-0.411t0.179-0.411l7.018-7.018-7.018-7.018q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l8.321 8.321q0.179 0.179 0.179 0.411z"></path>
+									</svg>
+									<span class="visuallyhidden">Navigationsebene «Leben» öffnen</span>
+								</button>
+							</li>
+						</ul>
 					</div>
-					<!-- / .modulausgabe -->
 				</div>
-			</nav>
-			<!-- end nav.mobilenav -->
-			<div class="mobilenav__bg js-mobilenav__bg"></div>
-			<div class="container">
+				<!-- / .modulausgabe -->
+			</div>
+		</nav>
+		<!-- end nav.mobilenav -->
+		<div class="mobilenav__bg js-mobilenav__bg"></div>
+
+		<div class="content">
+			<div class="wrapper wrapper--content">
+
+				<nav class="subnav" id="subnav" aria-labelledby="subnav__title">
+					<h2 class="subnav__title visuallyhidden" id="subnav__title">Subnavigation</h2>
+					<ul class="level-1">
+						<li><a href="#">Willkommen</a></li>
+						<li><a href="#">Geografie</a></li>
+						<li class="active folder-active"><a href="#">Zahlen</a>
+							<ul class="level-2">
+								<li><a href="#">Zahlen 1</a></li>
+								<li class="active current"><a href="#">Zahlen 2</a></li>
+								<li><a href="#">Zahlen 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Links</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</nav>
+				<!-- end nav.mainnav -->
+
 				<main class="main" id="main" aria-labelledby="main__title">
 					<h1 class="main__title" id="main__title">Maincontent H1</h1>
 					<figure>
-						<img src="img/musterbild-05.jpg" alt="Musterbild" />
+						<img src="img/musterbild-13.jpg" alt="Musterbild" width="1600" height="900" />
 						<figcaption>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</figcaption>
 					</figure>
 					<p>Lorem ipsum dolor sit amet, consectetuer <span class="optimale-zeilenlaenge">adipiscing elit, sed diam nonummy</span> nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <abbr title="Cascading Style Sheet">CSS</abbr> minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate <strong>velit esse molestie consequat</strong>, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -217,7 +244,7 @@
 					</blockquote>
 
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
-					<p><a href="#"><img src="img/musterbild-04.jpg" class="alignright" alt="Musterbild 2" /></a>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+					<p><a href="#"><img src="img/musterbild-12.jpg" class="alignright" alt="Musterbild 2" width="1600" height="900" /></a>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
 					<h6>Das ist ein kleiner Titel H6</h6>
 					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
 					<address>John Doe, j.doe@gmail.com</address>
@@ -244,6 +271,10 @@
 								<label for="f1-4">Zahl</label>
 								<input type="number" id="f1-4" min="1" max="100" value="" /><span class="form-hint">Muss zwischen 1 und 100 liegen.</span>
 							</p>
+							<p class="clearfix">
+								<label for="f1-5">Inaktiv</label>
+								<input type="text" id="f1-5" value="nicht verf&uuml;gbar" disabled />
+							</p>
 							<div class="clearfix form-option-lst-show-title">
 								<p class="form-option-lst-title">Radio input</p>
 								<div class="form-option-lst">
@@ -255,7 +286,7 @@
 											<label for="radio-02"><input type="radio" name="radiogroup" id="radio-02" /> Nein</label>
 										</li>
 										<li>
-											<label for="radio-03"><input type="radio" name="radiogroup" id="radio-03" /> Vielleicht</label>
+											<label for="radio-03"><input type="radio" name="radiogroup" id="radio-03" disabled /> Vielleicht</label>
 										</li>
 									</ul>
 								</div>
@@ -265,10 +296,13 @@
 								<div class="form-option-lst">
 									<ul class="reset">
 										<li>
-											<label for="checkbox-01"><input type="checkbox" name="checkbox-01" id="checkbox-01" /> per E-Mail</label>
+											<label for="checkbox-01"><input type="checkbox" name="checkbox-01" id="checkbox-01" checked /> per E-Mail</label>
 										</li>
 										<li>
 											<label for="checkbox-02"><input type="checkbox" name="checkbox-02" id="checkbox-02" /> per Telefon</label>
+										</li>
+										<li>
+											<label for="checkbox-03"><input type="checkbox" name="checkbox-03" id="checkbox-03" disabled /> per Fax</label>
 										</li>
 									</ul>
 								</div>
@@ -289,7 +323,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br />
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<ul class="services">
-						<li class="services__item services__item--gotop"><a href="#" title="an den Anfang der Seite springen">zum Seitenanfang</a></li>
+						<li class="services__item services__item--gotop"><a href="#header" title="an den Anfang der Seite springen">zum Seitenanfang</a></li>
 						<li class="services__item services__item--print"><a href="print" title="Seite in druckbarer Form anzeigen" target="_blank" rel="nofollow">Seite drucken</a></li>
 						<li class="services__item services__item--printpdf"><a href="printpdf" title="Seite als PDF speichern" target="_blank" rel="nofollow">Seite als PDF</a></li>
 					</ul>
@@ -305,14 +339,15 @@
 					</ul>
 				</aside>
 			</div>
-			<!-- end .container -->
-			<footer class="footer" aria-labelledby="footer__title">
+		</div>
+		<!-- end .content -->
+		<footer class="footer" aria-labelledby="footer__title">
+			<div class="wrapper wrapper--footer">
 				<h1 class="footer__title visuallyhidden" id="footer__title">Footer</h1>
 				<p>Firma &bull; Adresse &bull; PLZ/Ort</p>
 				<p class="created"><a href="http://www.govis.ch" title="GOViS &ndash; The Swiss eGovernment Content Management System" target="_blank">GOViS</a> by <a title="Internetagentur backslash AG" href="https://www.backslash.ch" target="_blank">backslash</a></p>
-			</footer>
-		</div>
-		<!-- end .wrapper -->
+			</div>
+		</footer>
 		<script src="js/custom.js"></script>
 	</body>
 

@@ -1,6 +1,21 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0] - 2021-10-12
+
+### Added
+- default.html: Inaktive Form-Inputs `disabled` ergänzt.
+- default.html: Der `.wrapper` um die ganze Seite wurde entfernt. Stattdessen befinden sich neue `.wrapper`-Elemente innerhalb jedes Hauptelements, damit die meist üblichen Hintergrundfarben die Viewportbreite füllen können.
+- default.html: Bei Bildern wurden die Attribute `width` und `height` ergänzt.
+- basics.css: Die Inputs für Checkboxen und Radios können in modernen Browsern nativ gestylt werden. Entsprechendes CSS wurde ergänzt. Entsprechend können diese Typen nun wie die anderen Inputs bei Bedarf ebenfalls mit den passenden Farben versehen werden. Zudem haben damit nun alle Form-Inputs einen konsistenten `:focus`-Style. [Weiterführende Infos.](https://www.scottohara.me/blog/2021/09/24/custom-radio-checkbox-again.html). Für Edge Legacy musste ein Reset als Fallback eingebaut werden.
+- basics.css: Die Kontraste der Input-Rahmen wurden erhöht, um dem Mindeskontrastverhältnis von 4.5:1 zu entsprechen.
+- basics.css: Die Spaltenbreiten der `.col-` Klassen wurden auf eine Gesamtbreite von 1410 Pixel angepasst, was in vielen Fällen dann bereits stimmt.
+- application.css: Anpassungen für das native Styling von Checkboxen und Radios: Abstände zwischen Checkbox- und Radio-Listen haben nun einen eigenen Wert.
+- layout.css: Alle Elemente werden konsistent nur noch via Klassen angesprochen.
+- layout.css: Floats entfernt und durch Flexbox ersetzt.
+- layout.css: `.wrapper`-Breite auf 1410 Pixel erhöht.
+- responsive.css: Resets für Floats entfernt.
+
 ## [1.9.3] - 2021-08-19
 
 ### Added

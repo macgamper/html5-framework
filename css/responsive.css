@@ -12,31 +12,28 @@
 		width: 96%;
 	}
 
-	/* =reset
+	/* =reset layout
 	--------------------------------------------------------------- */
-	header,  main, aside, footer,
-	.container, .mainnav {
-		position: static;
-		float: none;
-		width: auto;
-		height: auto;
-		margin: 0;
-		padding: 0;
-		background-image: none;
+	.mainnav, .subnav, .main, .sidebar  {
+		width: 100%;
 	}
 
 	/* =header
 	--------------------------------------------------------------- */
-	
 
-	/* =nav
+	/* =mainnav
 	--------------------------------------------------------------- */
-
 
 	/* =content
 	--------------------------------------------------------------- */
+	.wrapper--content {
+		display: block;
+	}
 	
-		
+	/* =subnav
+	--------------------------------------------------------------- */
+
+
 	/* =sidebar
 	--------------------------------------------------------------- */
 	
