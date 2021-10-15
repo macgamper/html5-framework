@@ -37,14 +37,25 @@ $(document).ready(function(){
         // close by pressing ESC
         // loop through menu by tab
         $(selectors.navContainer + ', ' + selectors.navButton).keydown(function(e) {
-            if (e.keyCode === 27) {
+            // get last link in Menu
+            const lastLinkInList = $(selectors.navList).find('li:last > *:last-child')[0];
+            // close menu with escape and focus button
+            if (e.key === 'Escape') {
                 toggleMenu(selectors.navContainer, selectors.navList, selectors.navButton, true);
                 $(selectors.navButton).focus();
                 return false;
-            } else if (e.keyCode === 9) {
-                if (e.target === $(selectors.navList).find('li:last > *:last-child')[0]) {
+            // go to button clicking tab and last link focused
+            } else if (!e.shiftKey && e.key === 'Tab') {
+                if (e.target === lastLinkInList) {
                     e.preventDefault;
                     $(selectors.navButton).focus();
+                    return false;
+                }
+            // go to last link when clicking shift-tab, open menu and button focused
+            } else if (e.shiftKey && e.key === 'Tab') {
+                if ($(e.target).hasClass(selectors.navButton.substring(1)) && $(selectors.navContainer).is(':visible')) {
+                    e.preventDefault;
+                    lastLinkInList.focus();
                     return false;
                 }
             }
