@@ -746,6 +746,7 @@ ul.gallery-magnific img {
 /* separator icon */
 .breadcrumb__item:not(:first-child)::before {
 	content: "\f105";
+	position: static;
 	display: inline-block;
 	margin: 0 .75em;
 	font-family: FontAwesome;
