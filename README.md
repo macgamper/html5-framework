@@ -1,10 +1,19 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
-## [2.0.1] - 2021-10-18
+## [2.0.2] - 2021-10-18
 
 ### Changed
 application.css: Breadcrumb-Trenner mit `position: static` versehen, damit der A11Y-Listen-Fix (1.8.1) deren Positionierung nicht mehr beeinflusst.
+
+## [2.0.1] - 2021-10-15
+
+### Added
+- custom.js: Ergänzung in der Mobilenav, dass man mit Shift-Tab beim fokussierten Button, bei geöffnetem Menu, auf den letzten Menueintrag springt
+
+### Changed
+- custom.js: Veraltete Funktion `keyCode` mit `key` ersetzt.
+- custom.js: Abfrage, dass Shift nicht gedrückt wird, bei dem normalen Tab-Listener ergänzt
 
 ## [2.0] - 2021-10-12
 
