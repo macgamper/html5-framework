@@ -1,6 +1,18 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.3] - 2021-10-28
+
+### Added
+- basics.css: Neue Klasse `.crisp` ergänzt, um die Bildglättung des Browsers gezielt zu deaktivieren (beispielsweise bei QR-Codes).
+
+```css
+.crisp {
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+```
+
 ## [2.0.2] - 2021-10-18
 
 ### Changed

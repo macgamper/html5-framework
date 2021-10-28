@@ -56,7 +56,7 @@ p {}
 	font-size: 1em;
 	font-weight: normal;
 }
-li ul,li ol {
+li ul, li ol {
 	margin: 0;
 }
 ul, ol {
@@ -811,6 +811,10 @@ pre::-webkit-scrollbar-thumb:hover,
 	float: right;
 	margin-top: 0;
 	margin-right: 0;
+}
+.crisp {
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 }
 .reverse {
 	display: flex;
