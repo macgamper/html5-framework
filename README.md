@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.4] - 2021-11-04
+
+### Changed
+- application.css: Form-Fix für Mobile-Grössen.
+
 ## [2.0.3] - 2021-10-28
 
 ### Added

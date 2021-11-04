@@ -336,7 +336,20 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder label,
 	.form-builder .clearfix > label,
 	.form-builder .cf > label,
-	.form-builder input,
+	.form-builder [type=date],
+	.form-builder [type=datetime],
+	.form-builder [type=datetime-local],
+	.form-builder [type=email],
+	.form-builder [type=file],
+	.form-builder [type=month],
+	.form-builder [type=number],
+	.form-builder [type=password],
+	.form-builder [type=search],
+	.form-builder [type=tel],
+	.form-builder [type=text],
+	.form-builder [type=time],
+	.form-builder [type=url],
+	.form-builder [type=week],
 	.form-builder textarea,
 	.form-builder select,
 	.form-builder .form-option-lst-show-title .form-option-lst,
@@ -359,11 +372,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .cf > label {
 		padding-right: 0;
 		padding-bottom: 0.2em;
-	}
-	.form-builder input[type=radio],
-	.form-builder input[type=checkbox] {
-		display: inline;
-		width: auto;
 	}
 	.form-builder [type=submit],
 	.form-builder button {
