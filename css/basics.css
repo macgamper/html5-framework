@@ -212,22 +212,6 @@ a img {
 	scroll-margin-top: 2ex;
 }
 
-/* =link expanded
---------------------------------------------------------------- */
-.link-expanded {
-	position: relative;
-}
-.link-expanded a::after,
-a.link-expanded__child::after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
 /* =skiplinks
 --------------------------------------------------------------- */
 .skiplinks__link {
@@ -399,6 +383,22 @@ a.link-expanded__child::after {
 }
 .document-lst::after { /* OSM-lst: mehrere Files pro Artikel zugewiesen */
 	content: "\f0c5";
+}
+
+/* =link expanded
+--------------------------------------------------------------- */
+.link-expanded {
+	position: relative;
+}
+.link-expanded a::after,
+a.link-expanded__child::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 /* =forms

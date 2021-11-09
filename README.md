@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.5] - 2021-11-09
+
+### Changed
+- basics.css: `.link-expanded` hinter die Icon-Links verschoben, damit diese das Pseudo-Element nicht reseten bei internen Links.
+
 ## [2.0.4] - 2021-11-04
 
 ### Changed
