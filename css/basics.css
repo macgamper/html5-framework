@@ -234,43 +234,43 @@ a img {
 --------------------------------------------------------------- */
 [href^="http:"]::after, [href^="https:"]::after,
 .show-icon[href^="/"]::after, .document-lst::after,
-[href$=".csv"]::before, [href$=".CSV"]::before,
-[href$=".doc"]::before, [href$=".DOC"]::before,
-[href$=".docx"]::before, [href$=".DOCX"]::before,
-[href$=".dotx"]::before, [href$=".DOTX"]::before,
-[href$=".docm"]::before, [href$=".DOCM"]::before,
-[href$=".dot"]::before, [href$=".DOT"]::before,
-[href$=".jpg"]::before, [href$=".JPG"]::before,
-[href$=".jpeg"]::before, [href$=".JPEG"]::before,
-[href$=".gif"]::before, [href$=".GIF"]::before,
-[href$=".eps"]::before, [href$=".EPS"]::before,
-[href$=".pdf"]::before, [href$=".PDF"]::before,
-[href$=".png"]::before, [href$=".PNG"]::before,
-[href$=".potm"]::before, [href$=".POTM"]::before,
-[href$=".potx"]::before, [href$=".POTX"]::before,
-[href$=".pps"]::before, [href$=".PPS"]::before,
-[href$=".ppsm"]::before, [href$=".PPSM"]::before,
-[href$=".ppsx"]::before, [href$=".PPSX"]::before,
-[href$=".ppt"]::before, [href$=".PPT"]::before,
-[href$=".pptm"]::before, [href$=".PPTM"]::before,
-[href$=".pptx"]::before, [href$=".PPTX"]::before,
-[href$=".psd"]::before, [href$=".PSD"]::before,
-[href$=".rss"]::before, [href$=".RSS"]::before,
-[href$=".rtf"]::before, [href$=".RTF"]::before,
-[href$=".svg"]::before, [href$=".SVG"]::before,
-[href$=".tif"]::before, [href$=".TIF"]::before,
-[href$=".tiff"]::before, [href$=".TIFF"]::before,
-[href$=".txt"]::before, [href$=".TXT"]::before,
-[href$=".vcf"]::before, [href$=".VCF"]::before,
-[href$=".xlam"]::before, [href$=".XLAM"]::before,
-[href$=".xls"]::before, [href$=".XLS"]::before,
-[href$=".xlt"]::before, [href$=".XLT"]::before,
-[href$=".xlsb"]::before, [href$=".XLSB"]::before,
-[href$=".xlsm"]::before, [href$=".XLSM"]::before,
-[href$=".xlsx"]::before, [href$=".XLSX"]::before,
-[href$=".xltm"]::before, [href$=".XLTM"]::before,
-[href$=".xltx"]::before, [href$=".XLTX"]::before,
-[href$=".zip"]::before, [href$=".ZIP"]::before,
+[href$=".csv" i]::before, [href*=".csv?" i]::before,
+[href$=".doc" i]::before, [href*=".doc?" i]::before,
+[href$=".docx" i]::before, [href*=".docx?" i]::before,
+[href$=".dotx" i]::before, [href*=".dotx?" i]::before,
+[href$=".docm" i]::before, [href*=".docm?" i]::before,
+[href$=".dot" i]::before, [href*=".dot?" i]::before,
+[href$=".jpg" i]::before, [href*=".jpg?" i]::before,
+[href$=".jpeg" i]::before, [href*=".jpeg?" i]::before,
+[href$=".gif" i]::before, [href*=".gif?" i]::before,
+[href$=".eps" i]::before, [href*=".eps?" i]::before,
+[href$=".pdf" i]::before, [href*=".pdf?" i]::before,
+[href$=".png" i]::before, [href*=".png?" i]::before,
+[href$=".potm" i]::before, [href*=".potm?" i]::before,
+[href$=".potx" i]::before, [href*=".potx?" i]::before,
+[href$=".pps" i]::before, [href*=".pps?" i]::before,
+[href$=".ppsm" i]::before, [href*=".ppsm?" i]::before,
+[href$=".ppsx" i]::before, [href*=".ppsx?" i]::before,
+[href$=".ppt" i]::before, [href*=".ppt?" i]::before,
+[href$=".pptm" i]::before, [href*=".pptm?" i]::before,
+[href$=".pptx" i]::before, [href*=".pptx?" i]::before,
+[href$=".psd" i]::before, [href*=".psd? " i]::before,
+[href$=".rss" i]::before, [href*=".rss?" i]::before,
+[href$=".rtf" i]::before, [href*=".rtf" i]::before,
+[href$=".svg" i]::before, [href*=".svg?" i]::before,
+[href$=".tif" i]::before, [href*=".tif?" i]::before,
+[href$=".tiff" i]::before, [href*=".tiff?" i]::before,
+[href$=".txt" i]::before, [href*=".txt?" i]::before,
+[href$=".vcf" i]::before, [href*=".vcf?" i]::before,
+[href$=".xlam" i]::before, [href*=".xlam?" i]::before,
+[href$=".xls" i]::before, [href*=".xls?" i]::before,
+[href$=".xlt" i]::before, [href*=".xlt?" i]::before,
+[href$=".xlsb" i]::before, [href*=".xlsb?" i]::before,
+[href$=".xlsm" i]::before, [href*=".xlsm?" i]::before,
+[href$=".xlsx" i]::before, [href*=".xlsx?" i]::before,
+[href$=".xltm" i]::before, [href*=".xltm?" i]::before,
+[href$=".xltx" i]::before, [href*=".xltx?" i]::before,
+[href$=".zip" i]::before, [href*=".zip?" i]::before,
 [href^="mailto\3A"]::before, [data-email-link]::before,
 [href^="tel\3A"]::before,
 [href^="https://www.google.com/maps/"]::before,
@@ -287,48 +287,48 @@ a img {
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
 }
-[href$=".doc"]::before, [href$=".DOC"]::before,
-[href$=".docm"]::before, [href$=".DOCM"]::before,
-[href$=".docx"]::before, [href$=".DOCX"]::before,
-[href$=".dot"]::before, [href$=".DOT"]::before,
-[href$=".dotx"]::before, [href$=".DOTX"]::before,
-[href$=".rtf"]::before, [href$=".RTF"]::before {
+[href$=".doc" i]::before, [href*=".doc?" i]::before,
+[href$=".docm" i]::before, [href*=".docm?" i]::before,
+[href$=".docx" i]::before, [href*=".docx?" i]::before,
+[href$=".dot" i]::before, [href*=".dot?" i]::before,
+[href$=".dotx" i]::before, [href*=".dotx?" i]::before,
+[href$=".rtf" i]::before, [href*=".rtf?" i]::before {
 	content: "\f1c2";
 }
-[href$=".pdf"]::before, [href$=".PDF"]::before {
+[href$=".pdf" i]::before, [href*=".pdf?" i]::before {
 	content: "\f1c1";
 }
-[href$=".potm"]::before, [href$=".POTM"]::before,
-[href$=".potx"]::before, [href$=".POTX"]::before,
-[href$=".pps"]::before, [href$=".PPS"]::before,
-[href$=".ppsm"]::before, [href$=".PPSM"]::before,
-[href$=".ppsx"]::before, [href$=".PPSX"]::before,
-[href$=".ppt"]::before, [href$=".PPT"]::before,
-[href$=".pptm"]::before, [href$=".PPTM"]::before,
-[href$=".pptx"]::before, [href$=".PPTX"]::before {
+[href$=".potm" i]::before, [href*=".potm?" i]::before,
+[href$=".potx" i]::before, [href*=".potx?" i]::before,
+[href$=".pps" i]::before, [href*=".pps?" i]::before,
+[href$=".ppsm" i]::before, [href*=".ppsm?" i]::before,
+[href$=".ppsx" i]::before, [href*=".ppsx?" i]::before,
+[href$=".ppt" i]::before, [href*=".ppt?" i]::before,
+[href$=".pptm" i]::before, [href*=".pptm?" i]::before,
+[href$=".pptx" i]::before, [href*=".pptx?" i]::before {
 	content: "\f1c4";
 }
-[href$=".rss"]::before, [href$=".RSS"]::before {
+[href$=".rss" i]::before, [href*=".rss?" i]::before {
 	content: "\f09e";
 }
-[href$=".txt"]::before, [href$=".TXT"]::before {
+[href$=".txt" i]::before, [href*=".txt?" i]::before {
 	content: "\f0f6";
 }
-[href$=".vcf"]::before, [href$=".VCF"]::before {
+[href$=".vcf" i]::before, [href*=".vcf?" i]::before {
 	content: "\f007";
 }
-[href$=".csv"]::before, [href$=".CSV"]::before,
-[href$=".xlam"]::before, [href$=".XLAM"]::before,
-[href$=".xls"]::before, [href$=".XLS"]::before,
-[href$=".xlt"]::before, [href$=".XLT"]::before,
-[href$=".xlsb"]::before, [href$=".XLSB"]::before,
-[href$=".xlsm"]::before, [href$=".XLSM"]::before,
-[href$=".xlsx"]::before, [href$=".XLSX"]::before,
-[href$=".xltm"]::before, [href$=".XLTM"]::before,
-[href$=".xltx"]::before, [href$=".XLTX"]::before {
+[href$=".csv" i]::before, [href*=".csv?" i]::before,
+[href$=".xlam" i]::before, [href*=".xlam?" i]::before,
+[href$=".xls" i]::before, [href*=".xls?" i]::before,
+[href$=".xlt" i]::before, [href*=".xlt?" i]::before,
+[href$=".xlsb" i]::before, [href*=".xlsb?" i]::before,
+[href$=".xlsm" i]::before, [href*=".xlsm?" i]::before,
+[href$=".xlsx" i]::before, [href*=".xlsx?" i]::before,
+[href$=".xltm" i]::before, [href*=".xltm?" i]::before,
+[href$=".xltx" i]::before, [href*=".xltx?" i]::before {
 	content: "\f1c3";
 }
-[href$=".zip"]::before, [href$=".ZIP"]::before {
+[href$=".zip" i]::before, [href*=".zip?" i]::before {
 	content: "\f1c6";
 }
 [href^="https://www.google.com/maps/"]::before,
@@ -338,15 +338,15 @@ a img {
 [href^="https://goo.gl/maps/"]::before {
 	content: "\f041";
 }
-[href$=".jpg"]::before, [href$=".JPG"]::before,
-[href$=".jpeg"]::before, [href$=".JPEG"]::before,
-[href$=".gif"]::before, [href$=".GIF"]::before,
-[href$=".eps"]::before, [href$=".EPS"]::before,
-[href$=".png"]::before, [href$=".PNG"]::before,
-[href$=".psd"]::before, [href$=".PSD"]::before,
-[href$=".svg"]::before, [href$=".SVG"]::before,
-[href$=".tif"]::before, [href$=".TIF"]::before,
-[href$=".tiff"]::before, [href$=".TIFF"]::before {
+[href$=".jpg" i]::before, [href*=".jpg?" i]::before,
+[href$=".jpeg" i]::before, [href*=".jpeg?" i]::before,
+[href$=".gif" i]::before, [href*=".gif?" i]::before,
+[href$=".eps" i]::before, [href*=".eps?" i]::before,
+[href$=".png" i]::before, [href*=".png?" i]::before,
+[href$=".psd" i]::before, [href*=".psd?" i]::before,
+[href$=".svg" i]::before, [href*=".svg?" i]::before,
+[href$=".tif" i]::before, [href*=".tif?" i]::before,
+[href$=".tiff" i]::before, [href*=".tiff?" i]::before {
 	content: "\f1c5";
 }
 .download-icn::before {
