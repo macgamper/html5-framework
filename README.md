@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.6] - 2021-11-18
+
+### Changed
+- basics.css: Attribut-Selektoren für Icon-Links angepasst, damit sie mit den neuen URL-Parametern aus Comet zurechtkommen. Neu sind sie zudem *case insensitiv* und unterstützen damit IE11 nicht mehr.
+
 ## [2.0.5] - 2021-11-09
 
 ### Changed
