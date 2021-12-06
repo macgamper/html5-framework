@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.7] - 2021-12-06
+
+### Changed
+- basics.css: `.visuallyhidden` neu mit transparentem Hintergrund um in Firefox einen weissen Pixel auf farbigem Grund zu verhindern.
+
 ## [2.0.6] - 2021-11-18
 
 ### Changed

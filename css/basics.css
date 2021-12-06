@@ -771,6 +771,7 @@ pre::-webkit-scrollbar-thumb:hover,
 	 -webkit-clip-path: inset(100%);
 	clip-path: inset(100%);
 	overflow: hidden;
+	background-color: transparent;
 }
 .nmb {
 	margin-bottom: 0;
