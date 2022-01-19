@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.9] - 2022-01-19
+
+### Added
+- application.css: CSS-Grundstyling für die barrierefreie Dropdown-Komponente ergänzt.
+
 ## [2.0.8] - 2022-01-19
 
 ### Removed
