@@ -208,7 +208,6 @@ a img {
 }
 
 [id] {
-	scroll-snap-margin-top: 2ex;
 	scroll-margin-top: 2ex;
 }
 
@@ -232,7 +231,7 @@ a img {
 
 /* =doc-anchors font-awesome
 --------------------------------------------------------------- */
-[href^="http:"]::after, [href^="https:"]::after,
+[href^="https:"]::after, [href^="http:"]::after,
 .show-icon[href^="/"]::after, .document-lst::after,
 [href$=".csv" i]::before, [href*=".csv?" i]::before,
 [href$=".doc" i]::before, [href*=".doc?" i]::before,
@@ -771,6 +770,7 @@ pre::-webkit-scrollbar-thumb:hover,
 	 -webkit-clip-path: inset(100%);
 	clip-path: inset(100%);
 	overflow: hidden;
+	background-color: transparent;
 }
 .nmb {
 	margin-bottom: 0;
