@@ -780,7 +780,8 @@ pre::-webkit-scrollbar-thumb:hover,
 .clear	{clear: both;}
 .clearfix::after,
 .cf::after,
-.row::after {
+.row::after,
+.js-accordion-content::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -1021,7 +1022,9 @@ th > *:last-child, td > *:last-child,
 	color: #fff;
 	background-color: red;
 }
-
+.editor .accordion > *:is(h2, h3, h4, h5, h6) {
+	clear: both;
+}
 .editor img.cke_iframe {
 	width: 100% !important;
 	height: 100% !important;

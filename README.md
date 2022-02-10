@@ -1,6 +1,25 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.10] - 2022-02-10
+
+### Added
+- basics.css: Akkordeons mit gefloateten Elementen (zB. Bilder) konnten im Frontend und Backend Probleme machen. Entsprechende Clearfixes wurden ergänzt.
+
+```css
+.js-accordion-content::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.editor .accordion > *:is(h2, h3, h4, h5, h6) {
+	clear: both;
+}
+```
+
+### Changed
+- application.css: Akkordeon-Handle etwas vereinfacht: Standard-Icon ist nun das «Angle-Up», das in offenem Zustand nun gespiegelt anstatt ersetzt wird.
+
 ## [2.0.9] - 2022-01-19
 
 ### Added
