@@ -182,6 +182,10 @@ summary {
 	summary + * {
 		margin-top: 1.5em;
 	}
+	summary:focus:not(:focus-visible) {
+		outline: none;
+		box-shadow: none;
+	}
 
 }
 

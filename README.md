@@ -1,6 +1,18 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.11] - 2022-02-15
+
+### Added
+- basics.css: Den vielfach störenden, sichtbaren Fokus bei `summary` entfernt, wenn es nicht per Tastatur bedient wird.
+
+ ```css
+summary:focus:not(:focus-visible) {
+	outline: none;
+	box-shadow: none;
+}
+```
+
 ## [2.0.10] - 2022-02-10
 
 ### Added
