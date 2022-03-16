@@ -3,9 +3,11 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ## [2.0.12] - 2022-03-16
 
+### Added
+- application.css: Nummern-Inputfeld «Nice Number» mit Grundstyling versehen.
+
 ### Removed
 - application.css: Breite von Radios und Checkboxen in Kampagnen-Anmeldungen gefixt.
-- application.css: Nummern-Inputfeld «Nice Number» mit Grundstyling versehen.
 
 ## [2.0.11] - 2022-02-15
 
