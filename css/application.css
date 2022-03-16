@@ -406,6 +406,21 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: grey;
 }
 
+/* =form-builder nice-number
+--------------------------------------------------------------- */
+.nice-number .btn--decrease {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.nice-number input {
+	float: none;
+	border-radius: 0;
+}
+.nice-number .btn--increase {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
 /* =flex-search
 --------------------------------------------------------------- */
 .flex-search {
@@ -1033,7 +1048,6 @@ ul.gallery-magnific img {
 }
 .subscription-opt-lst input {
 	float: none;
-	width: auto;
 }
 .col-subscription-delivery {
 	padding-right: 0;
@@ -1326,7 +1340,7 @@ ul.gallery-magnific img {
 	left: 10px;
 	height: 3px;
 	width: 35px;
-	background: #fff;
+	background-color: #fff;
 	border-radius: 2px;
 	opacity: 1;
 	transform: rotate(0deg);
