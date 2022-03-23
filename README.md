@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.13] - 2022-03-23
+
+### Changed
+- basics.css: Kleine Verbesserungen für einfacheres Überschreiben von Custom-Outline-Styles.
+- basics.css: Vorbereitung für neue FontAwesome-Iconsfonts für Links. 
+
 ## [2.0.12] - 2022-03-16
 
 ### Added
