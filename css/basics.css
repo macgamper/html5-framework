@@ -247,6 +247,8 @@ a img {
 [href$=".jpeg" i]::before, [href*=".jpeg?" i]::before,
 [href$=".gif" i]::before, [href*=".gif?" i]::before,
 [href$=".eps" i]::before, [href*=".eps?" i]::before,
+[href$=".mp3" i]::before, [href*=".mp3?" i]::before,
+[href$=".mp4" i]::before, [href*=".mp4?" i]::before,
 [href$=".pdf" i]::before, [href*=".pdf?" i]::before,
 [href$=".png" i]::before, [href*=".png?" i]::before,
 [href$=".potm" i]::before, [href*=".potm?" i]::before,
@@ -275,13 +277,19 @@ a img {
 [href$=".xltx" i]::before, [href*=".xltx?" i]::before,
 [href$=".zip" i]::before, [href*=".zip?" i]::before,
 [href^="mailto\3A"]::before, [data-email-link]::before,
-[href^="tel\3A"]::before,
+[href^="tel\3A"]::before, [href^="skype\3A"]::before,
 [href^="https://www.google.com/maps/"]::before,
 [href^="http://www.google.com/maps/"]::before,
 [href^="https://maps.google.com/"]::before,
 [href^="http://maps.google.com/"]::before,
 [href^="https://goo.gl/maps/"]::before,
-.download-icn::before {
+.download-icn::before,
+.facebook-icn::before,
+.insta-icn::before,
+.linkedin-icn::before,
+.twitter-icn::before,
+.xing-icn::before,
+.youtube-icn::before {
 	display: inline-block;
 	padding-right: 0.25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -352,8 +360,32 @@ a img {
 [href$=".tiff" i]::before, [href*=".tiff?" i]::before {
 	content: "\f1c5";
 }
+[href$=".mp3" i]::before, [href*=".mp3?" i]::before {
+	content: "\f1c5";
+}
+[href$=".mp4" i]::before, [href*=".mp4?" i]::before {
+	content: "\f1c7";
+}
 .download-icn::before {
 	content: "\f019";
+}
+.facebook-icn::before {
+	content: "\f230";
+}
+.insta-icn::before {
+	content: "\f16d";
+}
+.linkedin-icn::before {
+	content: "\f08c";
+}
+.twitter-icn::before {
+	content: "\f081";
+}
+.xing-icn::before {
+	content: "\f169";
+}
+.youtube-icn::before {
+	content: "\f169";
 }
 [href^="mailto:"]::before,
 [data-email-link]::before {
@@ -361,6 +393,9 @@ a img {
 }
 [href^="tel:"]::before {
 	content: "\f095";
+}
+[href^="skype:"]::before {
+	content: "\f17e";
 }
 [href^="http:"]::after,
 [href^="https:"]::after {
