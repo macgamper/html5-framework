@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.14] - 2022-04-05
+
+### Changed
+- basics.css: Für die Umstellung auf [FontAwesome 6](https://fontawesome.com/icons) stehen neu Font-Subsets für die bestehenden Icons bereit, die in CSS via Pseudo-Element und Webfont eingefügt werden. Die Subsets enthalten nur noch die wichtigsten Basic-Icons. Andere Layout-Icons sollten künftig via FontAwesome 6-Kit geladen werden. Da wir von FA4.7 updaten, haben die Unicodes einiger Icons geändert.
+
 ## [2.0.13] - 2022-03-23
 
 ### Changed

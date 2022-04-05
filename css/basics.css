@@ -285,9 +285,10 @@ a img {
 [href^="https://goo.gl/maps/"]::before,
 .download-icn::before,
 .facebook-icn::before,
-.insta-icn::before,
+.instagram-icn::before,
 .linkedin-icn::before,
 .twitter-icn::before,
+.whatsapp-icn::before,
 .xing-icn::before,
 .youtube-icn::before {
 	display: inline-block;
@@ -297,6 +298,15 @@ a img {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
+}
+.facebook-icn::before,
+.instagram-icn::before,
+.linkedin-icn::before,
+.twitter-icn::before,
+.whatsapp-icn::before,
+.xing-icn::before,
+.youtube-icn::before {
+	font-family: "FontAwesome Brands";
 }
 [href$=".doc" i]::before, [href*=".doc?" i]::before,
 [href$=".docm" i]::before, [href*=".docm?" i]::before,
@@ -323,10 +333,10 @@ a img {
 	content: "\f09e";
 }
 [href$=".txt" i]::before, [href*=".txt?" i]::before {
-	content: "\f0f6";
+	content: "\f15c";
 }
 [href$=".vcf" i]::before, [href*=".vcf?" i]::before {
-	content: "\f007";
+	content: "\f2bb";
 }
 [href$=".csv" i]::before, [href*=".csv?" i]::before,
 [href$=".xlam" i]::before, [href*=".xlam?" i]::before,
@@ -347,7 +357,7 @@ a img {
 [href^="https://maps.google.com/"]::before,
 [href^="http://maps.google.com/"]::before,
 [href^="https://goo.gl/maps/"]::before {
-	content: "\f041";
+	content: "\f3c5";
 }
 [href$=".jpg" i]::before, [href*=".jpg?" i]::before,
 [href$=".jpeg" i]::before, [href*=".jpeg?" i]::before,
@@ -361,10 +371,10 @@ a img {
 	content: "\f1c5";
 }
 [href$=".mp3" i]::before, [href*=".mp3?" i]::before {
-	content: "\f1c5";
+	content: "\f1c7";
 }
 [href$=".mp4" i]::before, [href*=".mp4?" i]::before {
-	content: "\f1c7";
+	content: "\f1c8";
 }
 .download-icn::before {
 	content: "\f019";
@@ -372,7 +382,7 @@ a img {
 .facebook-icn::before {
 	content: "\f230";
 }
-.insta-icn::before {
+.instagram-icn::before, {
 	content: "\f16d";
 }
 .linkedin-icn::before {
@@ -380,6 +390,9 @@ a img {
 }
 .twitter-icn::before {
 	content: "\f081";
+}
+.whatsapp-icn::before {
+	content: "\f232";
 }
 .xing-icn::before {
 	content: "\f169";
@@ -389,7 +402,7 @@ a img {
 }
 [href^="mailto:"]::before,
 [data-email-link]::before {
-	content: "\f003";
+	content: "\f0e0";
 }
 [href^="tel:"]::before {
 	content: "\f095";
@@ -890,6 +903,7 @@ nav li::before {
 }
 details,
 .box {
+	display: flow-root;
 	clear: both;
 	border: 1px solid #666;
 	padding: 1.5em;
