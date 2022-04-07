@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.15] - 2022-04-07
+
+### Added
+- default.html: Neues FontAwesome 6-Kit-JS ergänzt
+- screen.css: FontAwesome 5-Subset ergänzt
+
+### Removed
+- screen.css: FontAwesome 4.7 entfernt
+
 ## [2.0.14] - 2022-04-05
 
 ### Changed

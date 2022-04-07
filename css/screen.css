@@ -16,7 +16,7 @@ gamperm		26.09.2013		Created
 @import url(application.css);
 @import url(layout.css);
 @import url(responsive.css);
-@import url(https://ext.cdn-backslash.ch/lib/font-awesome/4.7/css/font-awesome.min.css);
+@import url(https://ext.cdn-backslash.ch/lib/font-awesome6/6.0.0/fontawesome-light.css);
 
 #__bs_notify__ {
 	/* Move notification to bottom */
