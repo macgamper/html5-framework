@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.16] - 2022-04-20
+
+### Added
+- basics.css: Listen-Einträge bekommen etwas Zusatzabstand
+
+### Changed
+- basics.css: Legenden erben ihre Farbe.
+
 ## [2.0.15] - 2022-04-07
 
 ### Added
