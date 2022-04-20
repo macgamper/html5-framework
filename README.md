@@ -5,6 +5,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ### Added
 - basics.css: Listen-Einträge bekommen etwas Zusatzabstand
+- print.css: Listen-Einträge bekommen etwas Zusatzabstand
 
 ### Changed
 - basics.css: Legenden erben ihre Farbe.

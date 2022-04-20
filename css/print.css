@@ -78,8 +78,9 @@ hr {
 	height: 1px;
 	border: 0
 }
-ul, ol {
-
+li + li, ul ul li, ol ol li,
+ul ol li, ol ul li  {
+	margin-top: 2.5pt;
 }
 ul, ol, dl, li, figure {
 	page-break-inside: avoid;
