@@ -386,7 +386,7 @@ a img {
 .facebook-icn::before {
 	content: "\f230";
 }
-.instagram-icn::before, {
+.instagram-icn::before {
 	content: "\f16d";
 }
 .linkedin-icn::before {
