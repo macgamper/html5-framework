@@ -1,6 +1,22 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.17] - 2022-06-01
+
+### Added
+default.html: SVG-Favicon aufgenommen.
+
+### Changed
+- basics.css: Kleine Schriftgrösse angepasst, damit der Unterschied deutlicher ist zu normalem Grundtext.
+- responsive.css: Legenden von zentriert ausgerichteter Bilder waren bei kleinen Viewports nur sehr schmal, da die nötigen Angaben auf den umgebenden `div` anstatt das `figure`-Element angewendet wurden.
+
+```css
+.aligncenter > figure {
+		display: table;
+		width: auto;
+	}
+```
+
 ## [2.0.16] - 2022-04-20
 
 ### Added
