@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.18] - 2022-06-15
+
+### Changed
+- custom.js: Tab in Mobile-Nav berücksichtigt nun alle fokussierbaren Elemente
+- application.css: Dropdown-Komponente kompatibel mit FA6 gemacht, wo Inline-SVG’s anstatt die `.fa`-Klassen verwendet werden.
+
 ## [2.0.17] - 2022-06-01
 
 ### Added
