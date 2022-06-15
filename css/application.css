@@ -1582,13 +1582,13 @@ ul.gallery-magnific img {
 .c-dropdown__btn:focus:not(:focus-visible) {
 	outline: none;
 }
-.c-dropdown__btn .fa {
+.c-dropdown__btn svg {
 	flex: none;
 	margin-left: 0.25em;
 	transition: transform .2s;
 	will-change: transform;
 }
-.c-dropdown__btn[aria-expanded="true"] .fa {
+.c-dropdown__btn[aria-expanded="true"] svg {
 	transform: scaleY(-1);
 }
 
