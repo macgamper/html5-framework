@@ -38,7 +38,7 @@ $(document).ready(function(){
         // loop through menu by tab
         $(selectors.navContainer + ', ' + selectors.navButton).keydown(function(e) {
             // get last link in Menu
-            const lastLinkInList = $(selectors.navList).find('li:last > *:last-child')[0];
+            const lastLinkInList = $(selectors.navContainer).find('button, a, input:not([type="hidden"]), select, textarea, [tabindex]:not([tabindex="-1"])').last()[0];
             // close menu with escape and focus button
             if (e.key === 'Escape') {
                 toggleMenu(selectors.navContainer, selectors.navList, selectors.navButton, true);
