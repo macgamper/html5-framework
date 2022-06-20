@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.19] - 2022-06-20
+
+### Added
+- print.css: Seitengrösse in der `@page`-Regel ergänzt, Verbesserungen für Bildergalerien und Cookie-Law.
+
 ## [2.0.18] - 2022-06-15
 
 ### Changed
