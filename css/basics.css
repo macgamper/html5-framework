@@ -186,10 +186,6 @@ summary {
 	summary + * {
 		margin-top: 1.5em;
 	}
-	summary:focus:not(:focus-visible) {
-		outline: none;
-		box-shadow: none;
-	}
 
 }
 
@@ -601,6 +597,7 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 [type=month]:focus,
 [type=number]:focus,
 [type=password]:focus,
+[type=range]:focus,
 [type=search]:focus,
 [type=tel]:focus,
 [type=text]:focus,
@@ -616,6 +613,11 @@ summary:focus {
 	outline: 3px solid transparent;
 	border-color: #000;
 	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+}
+summary:focus:not(:focus-visible),
+[type=range]:focus:not(:focus-visible) {
+	outline: none;
+	box-shadow: none;
 }
 [disabled], [readonly] {
 	border-style: dotted;

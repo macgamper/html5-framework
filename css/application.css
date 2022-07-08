@@ -132,6 +132,7 @@
 .form-builder [type=month],
 .form-builder [type=number],
 .form-builder [type=password],
+.form-builder [type=range],
 .form-builder [type=search],
 .form-builder [type=tel],
 .form-builder [type=text],
@@ -191,7 +192,7 @@
 	font-style: normal;
 }
 .form-builder .required > label.error {
-	font-weight: normal;
+    font-weight: normal;
 }
 .form-builder input.error,
 .form-builder label.error,
@@ -293,7 +294,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-builder .form-builder-tac input[type=checkbox] {
 	float: none;
-	width: auto;
 	position: absolute;
 	left: 0;
 	top: 0.3em;
@@ -344,6 +344,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder [type=month],
 	.form-builder [type=number],
 	.form-builder [type=password],
+	.form-builder [type=range],
 	.form-builder [type=search],
 	.form-builder [type=tel],
 	.form-builder [type=text],
@@ -1204,6 +1205,22 @@ ul.gallery-magnific img {
 }
 .js-accordion-content {
 	padding: 0.75em 0;
+}
+
+/* =FAQ
+--------------------------------------------------------------- */
+.faq__topic {
+	margin-bottom: 0.75em;
+}
+.faq__main {
+    margin: 0;
+    padding: 1em 0 0 1.5em
+}
+.faq__content > * {
+    margin-bottom: .5em
+}
+.faq__content > *:last-child {
+    margin-bottom: 0;
 }
 
 /* =blog (news in blogform)

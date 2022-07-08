@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.20] - 2022-07-08
+
+### Added
+- print.css: Diverse kleine Verbesserungen in der Printdarstellung.
+- basics.css: Input `[type=range]` aufgenommen.
+- application.css: Input `[type=range]` und Basisformatierungen für das FAQ-Modul aufgenommen.
+
 ## [2.0.19] - 2022-06-20
 
 ### Added
