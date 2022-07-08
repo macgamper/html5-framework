@@ -93,7 +93,14 @@
 --------------------------------------------------------------- */
 .form-builder .clearfix,
 .form-builder .cf {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
 	margin-bottom: .75em;
+}
+.form-builder .clearfix::after,
+.form-builder .cf::after {
+	content: none;
 }
 .form-builder .form-builder-container {
 	margin-bottom: 1.5em;
@@ -107,9 +114,8 @@
 .form-builder .cf > label,
 .form-builder .form-option-lst-title {
 	display: block;
-	float: left;
+	margin-bottom: 0;
 	width: 50%;
-	padding-top: .2em;
 	padding-right: 2em;
 }
 .form-builder label > em,
@@ -141,17 +147,15 @@
 .form-builder [type=week],
 .form-builder textarea,
 .form-builder select {
-	float: right;
 	width: 50%;
 }
 .form-builder input[type=submit],
 .form-builder button {
-	float: none;
 	width: auto;
 }
 .form-builder [type=radio],
 .form-builder [type=checkbox] {
-	margin-right: 0.25em;
+	margin-right: 0.75em;
 }
 .form-builder .form-hint,
 .form-builder .form-hint-complex__rules,
@@ -160,16 +164,14 @@
 .form-builder .password-rules {
 	clear: both;
 	display: block;
-	float: right;
 	width: 50%;
-	margin: .5em 0 0 0;
+	margin: .75em 0 0 auto;
 	color: #585858;
 }
 .form-builder .form-hint-complex__rules {
 	margin-top: 0;
 }
 .form-builder .form-hint-complex--fullwidth .form-hint-complex__rules {
-	float: none;
 	width: 100%;
 }
 .form-builder label.error + label.error {
@@ -177,10 +179,9 @@
 	padding-top: 0;
 }
 .form-builder .form-option-lst li + li {
-    margin-top: 0.25em;
+	margin-top: 0.5em;
 }
 .form-builder .form-option-lst .form-hint {
-	float: none;
 	width: auto;
 }
 .form-builder .required > label,
@@ -192,7 +193,7 @@
 	font-style: normal;
 }
 .form-builder .required > label.error {
-    font-weight: normal;
+	font-weight: normal;
 }
 .form-builder input.error,
 .form-builder label.error,
@@ -206,18 +207,24 @@
 .form-builder .form-sizer-wrapper,
 .form-builder .accessibility-date {
 	width: 50%;
-	float: right;
 }
 .form-builder .form-option-lst > ul {
 	margin-bottom: 0;
 }
-.form-builder .form-option-lst li label {
-	display: block;
+.form-builder .form-option-lst li label,
+.form-builder .form-builder-tac label {
+	display: flex;
+	width: 100%;
 	padding-right: 0;
-	padding-left: 1.5em;
+	font-weight: normal;
 }
-.form-builder .form-option-lst li label > input {
-	margin-left: -1.5em;
+.form-builder .form-builder-tac label {
+	text-align: left;
+}
+.form-builder .form-option-lst li label > input,
+.form-builder .form-builder-tac label > input {
+	flex: none;
+	top: 0.18em;
 }
 div:not([class*="form-option-lst-show-title"]) label.error {
 	float: none;
@@ -230,9 +237,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: inline-block;
 	margin: 0 1.5em 0 0;
 }
+.form-builder .form-sizer-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
 .form-builder .form-sizer label {
 	white-space: nowrap;
-	float: none;
 	width: 100%;
 	padding-right: 0;
 	overflow: hidden;
@@ -240,11 +250,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-overflow: ellipsis;
 }
 .form-builder .form-sizer input {
-	float: none;
 	width: 100%;
 }
 .form-builder .form-sizer {
-	float: left;
 	margin-bottom: 0;
 }
 .form-builder .form-sizer-25,
@@ -260,9 +268,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-zip-component .form-sizer:last-child {
 	width: 73%;
 }
-.form-sizer + .form-sizer {
-	float: right;
-}
 
 /* =accessibility-date select
 --------------------------------------------------------------- */
@@ -277,26 +282,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-builder .accessibility-date > select + select {
 	margin-left: 0.75em;
-}
-
-/* =form-builder terms & conditions-component
---------------------------------------------------------------- */
-.form-builder .form-builder-tac {
-	position: relative;
-}
-.form-builder .form-builder-tac label {
-	float: none;
-	width: 100%;
-	padding-top: 0;
-	padding-right: 0;
-	padding-left: 1.5em;
-	font-weight: normal;
-}
-.form-builder .form-builder-tac input[type=checkbox] {
-	float: none;
-	position: absolute;
-	left: 0;
-	top: 0.3em;
 }
 
 /* =form-builder stacked: Label sits on top of input
@@ -333,6 +318,10 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
 
+	.form-builder .clearfix,
+	.form-builder .cf {
+		margin-bottom: 1.5em;
+	}
 	.form-builder label,
 	.form-builder .clearfix > label,
 	.form-builder .cf > label,
@@ -362,15 +351,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .password-strength,
 	.form-builder .password-rules,
 	.form-builder .accessibility-date {
-		display: block;
-		float: none;
 		width: 100%;
 	}
 	.form-builder .accessibility-date {
 		display: flex;
 	}
 	.form-builder .clearfix > label,
-	.form-builder .cf > label {
+	.form-builder .cf > label,
+	.form-builder .form-option-lst-title {
 		padding-right: 0;
 		padding-bottom: 0.2em;
 	}
@@ -1213,14 +1201,14 @@ ul.gallery-magnific img {
 	margin-bottom: 0.75em;
 }
 .faq__main {
-    margin: 0;
-    padding: 1em 0 0 1.5em
+	margin: 0;
+	padding: 1em 0 0 1.5em
 }
 .faq__content > * {
-    margin-bottom: .5em
+	margin-bottom: .5em
 }
 .faq__content > *:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 /* =blog (news in blogform)
