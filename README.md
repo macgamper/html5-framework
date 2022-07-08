@@ -8,6 +8,9 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 - basics.css: Input `[type=range]` aufgenommen.
 - application.css: Input `[type=range]` und Basisformatierungen für das FAQ-Modul aufgenommen.
 
+### Changed
+- application.css: Form-Builder: Layout basiert neu auf Flex anstatt Floats.
+
 ## [2.0.19] - 2022-06-20
 
 ### Added
