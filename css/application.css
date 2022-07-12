@@ -98,11 +98,12 @@
 	align-items: baseline;
 	margin-bottom: .75em;
 }
-.form-builder .clearfix::after,
+.form-builder .clearfix:not(.form-builder-container)::after,
 .form-builder .cf::after {
 	content: none;
 }
 .form-builder .form-builder-container {
+	display: block;
 	margin-bottom: 1.5em;
 }
 .form-builder fieldset > *:last-child,
@@ -227,7 +228,6 @@
 	top: 0.18em;
 }
 div:not([class*="form-option-lst-show-title"]) label.error {
-	float: none;
 	width: 100%;
 }
 .form-builder .form-builder-btn {
@@ -288,7 +288,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 --------------------------------------------------------------- */
 .form-builder .clearfix.stacked > * {
 	display: block;
-	float: none;
 	width: 100%;
 	padding-right: 0;
 }
@@ -402,7 +401,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	border-bottom-right-radius: 0;
 }
 .nice-number input {
-	float: none;
 	border-radius: 0;
 }
 .nice-number .btn--increase {

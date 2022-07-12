@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.21] - 2022-07-12
+
+### Changed
+- application.css: Form-Builder: Fix für `form-builder-container` (Editorinhalte): Clearfix muss weiterhin funktionieren, kein Flex-Layout.
+
 ## [2.0.20] - 2022-07-08
 
 ### Added
