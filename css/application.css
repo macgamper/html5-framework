@@ -98,11 +98,11 @@
 	align-items: baseline;
 	margin-bottom: .75em;
 }
-.form-builder .clearfix:not(.form-builder-container)::after,
+.form-builder .clearfix:not(.form-builder-container--txt)::after,
 .form-builder .cf::after {
 	content: none;
 }
-.form-builder .form-builder-container {
+.form-builder .form-builder-container--txt {
 	display: block;
 	margin-bottom: 1.5em;
 }
