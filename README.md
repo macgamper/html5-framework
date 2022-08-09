@@ -5,9 +5,12 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ### Added
 - default.hml: Input `[type=range]` ergänzt im Musterformular.
+- application.css/basics.css: Form-Builder: Fix für Anzeige der Passwortstärke nachgetragen.
+- application.css: Form-Builder: Checkbox-Toggle (Switch-Button) ergänzt.
 
 ### Changed
 - application.css: Form-Builder: Fix für Anzeige der Passwortstärke nachgetragen.
+- application.css: Form-Builder: Clearfix-Alternative `.form-builder__item` ergänzt.
 - application.css: Input `[type=range]` vertikal zentriert.
 
 ## [2.0.21] - 2022-07-12

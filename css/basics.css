@@ -609,7 +609,8 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 select:focus,
 textarea:focus,
 button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus,
-summary:focus {
+summary:focus,
+.form-builder__item--toggle [type="checkbox"]:focus ~ .form-builder__toggle::before {
 	outline: 3px solid transparent;
 	border-color: #000;
 	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);

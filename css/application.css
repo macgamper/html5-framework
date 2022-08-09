@@ -115,6 +115,7 @@
 .form-builder .form-builder-container > *:last-child {
 	margin-bottom: 0;
 }
+.form-builder .form-builder__item > label,
 .form-builder .clearfix > label,
 .form-builder .cf > label,
 .form-builder .form-option-lst-title {
@@ -293,11 +294,13 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =form-builder stacked: Label sits on top of input
 --------------------------------------------------------------- */
+.form-builder .form-builder__item.stacked > *,
 .form-builder .clearfix.stacked > * {
 	display: block;
 	width: 100%;
 	padding-right: 0;
 }
+.form-builder .form-builder__item.stacked > label
 .form-builder .clearfix.stacked > label {
 	padding-top: 0;
 	margin-bottom: 0.25em;
@@ -305,6 +308,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =form-builder 30% label / 70% input
 --------------------------------------------------------------- */
+.form-builder-30 .form-builder__item > label,
 .form-builder-30 .clearfix > label,
 .form-builder-30 .cf > label,
 .form-builder-30 .form-option-lst-title {
@@ -324,11 +328,13 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
 
+	.form-builder .form-builder__item,
 	.form-builder .clearfix,
 	.form-builder .cf {
 		margin-bottom: 1.5em;
 	}
 	.form-builder label,
+	.form-builder .form-builder__item > label,
 	.form-builder .clearfix > label,
 	.form-builder .cf > label,
 	.form-builder [type=date],
@@ -362,6 +368,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .accessibility-date {
 		display: flex;
 	}
+	.form-builder .form-builder__item > label,
 	.form-builder .clearfix > label,
 	.form-builder .cf > label,
 	.form-builder .form-option-lst-title {
@@ -413,6 +420,65 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .nice-number .btn--increase {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+}
+
+/* =checkbox toggle
+--------------------------------------------------------------- */
+.form-builder .form-builder__item--toggle {
+	--toggle-off: lightgrey;
+	--toggle-on: green;
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+}
+.form-builder .form-builder__item--toggle [type="checkbox"] {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 1;
+	width: 3.5em;
+	height: 100%;
+	cursor: pointer;
+	background-color: transparent;
+	opacity: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.form-builder .form-builder__item--toggle .form-builder__toggle {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.form-builder .form-builder__item--toggle .form-builder__toggle::before,
+.form-builder .form-builder__item--toggle .form-builder__toggle::after {
+	content: "";
+	border-radius: 3em !important;
+	will-change: transition;
+}
+.form-builder .form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::before{
+	display: block;
+	width: 3.5em;
+	height: 2em;
+	background-color: var(--toggle-off);
+	transition: all 0.2s;
+}
+.form-builder .form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::after {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	display: block;
+	width: calc(2em - 4px);
+	height: calc(2em - 4px);
+	visibility: visible;
+	background-color: #fff;
+	transition: left 0.2s;
+	box-shadow: var(--shadow-sm);
+}
+.form-builder .form-builder__item--toggle [type="checkbox"]:checked ~ .form-builder__toggle::before {
+	background-color: var(--toggle-on);
+}
+.form-builder .form-builder__item--toggle [type="checkbox"]:checked ~ .form-builder__toggle::after {
+	left: calc(100% - 2em + 2px)
 }
 
 /* =flex-search
