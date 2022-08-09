@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.22] - 2022-08-09
+
+### Added
+- default.hml: Input `[type=range]` ergänzt im Musterformular.
+
+### Changed
+- application.css: Form-Builder: Fix für Anzeige der Passwortstärke nachgetragen.
+- application.css: Input `[type=range]` vertikal zentriert.
+
 ## [2.0.21] - 2022-07-12
 
 ### Changed

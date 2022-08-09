@@ -91,6 +91,7 @@
 
 /* =form-builder
 --------------------------------------------------------------- */
+.form-builder .form-builder__item,
 .form-builder .clearfix,
 .form-builder .cf {
 	display: flex;
@@ -101,6 +102,9 @@
 .form-builder .clearfix:not(.form-builder-container--txt)::after,
 .form-builder .cf::after {
 	content: none;
+}
+.form-builder .form-builder__item--pwstrength {
+    display: block;
 }
 .form-builder .form-builder-container--txt {
 	display: block;
@@ -149,6 +153,9 @@
 .form-builder textarea,
 .form-builder select {
 	width: 50%;
+}
+.form-builder [type=range] {
+	align-self: center;
 }
 .form-builder input[type=submit],
 .form-builder button {
