@@ -910,12 +910,16 @@ nav li::before {
 }
 details,
 .box {
-	display: flow-root;
 	clear: both;
 	border: 1px solid #666;
 	padding: 1.5em;
 	background-color: #f6f4f3;
 }
+details:not(:empty):not([hidden]),
+.box:not(:empty):not([hidden]) {
+	display: flow-root;
+}
+
 .box--warning,
 .cookie-alert {
 	border-color: #faebcc;

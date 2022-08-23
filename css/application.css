@@ -452,7 +452,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-builder__item--toggle .form-builder__toggle::before,
 .form-builder .form-builder__item--toggle .form-builder__toggle::after {
 	content: "";
-	border-radius: 3em !important;
+	border-radius: 100vw;
 	will-change: transition;
 }
 .form-builder .form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::before{
@@ -514,8 +514,26 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =searchresults
 --------------------------------------------------------------- */
+.search-result-title--assets a {
+	display: flex;
+	align-items: baseline;
+	width: 100%;
+	text-decoration: none;
+}
+.search-result-title--assets a > * {
+	flex: 1 1 auto;
+}
+.search-result-title--assets a::before {
+	flex: none;
+}
+.search-result-title--assets .asset-title {
+	text-decoration: underline;
+}
+.search-result-title--assets a,
 .search-result-desc {
+	overflow: hidden;
 	overflow-wrap: break-word; /* umbricht auch PDF-Inhalte  */
+	hyphens: auto;
 }
 
 /* =calendar (events, reservations)

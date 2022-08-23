@@ -1,10 +1,25 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.23] - 2022-08-23
+
+### Added
+- application.css: Für die Crawler-Suchresultate wurden Styles ergänzt, die primär die Dokumente-Resultate besser darstellen.
+
+### Changed
+- basics.css: Fehler korrigiert, der das ausgeblendete, zumeist leere Element `.box` (zb. für Eingabe-Feedback im Einsatz) durch `display: flow-root;` standardmässig wieder eingeblendet hatte. Dies sollte nun nur noch passieren, wenn die Boxen nicht leer und nicht ausgeblendet sind:
+
+```css
+details:not(:empty):not([hidden]),
+.box:not(:empty):not([hidden]) {
+	display: flow-root;
+}
+```
+
 ## [2.0.22] - 2022-08-09
 
 ### Added
-- default.hml: Input `[type=range]` ergänzt im Musterformular.
+- default.hml: Input `[type=range]` ergänzt im Musterformular. Checkbox-Toggle (Switch-Button) ergänzt.
 - application.css/basics.css: Form-Builder: Fix für Anzeige der Passwortstärke nachgetragen.
 - application.css: Form-Builder: Checkbox-Toggle (Switch-Button) ergänzt.
 
