@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.24] - 2022-10-04
+
+### Added
+- basics.css: Icon-Support für geschützte Dateien integriert
+
 ## [2.0.23] - 2022-08-23
 
 ### Added
