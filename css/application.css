@@ -536,6 +536,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	hyphens: auto;
 }
 
+/* =events: anmeldungen
+--------------------------------------------------------------- */
+.btn-group-grid, .event-participant-buttongroup {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
 /* =calendar (events, reservations)
 --------------------------------------------------------------- */
 .calendar {

@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.25] - 2022-10-20
+
+### Added
+- application.css: Klasse `.btn-group-grid` für Button-Gruppen erstellt, die Button-Childelements nebeneinander anordnet und der Abstand regelt.
+
 ## [2.0.24] - 2022-10-04
 
 ### Added
