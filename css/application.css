@@ -103,7 +103,8 @@
 .form-builder .cf::after {
 	content: none;
 }
-.form-builder .form-builder__item--pwstrength {
+.form-builder .form-builder__item--pwstrength,
+.form-builder .form-builder-matrix {
     display: block;
 }
 .form-builder .form-builder-container--txt {

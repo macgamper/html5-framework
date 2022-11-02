@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.26] - 2022-11-02
+
+### Added
+- application.css: Verbesserung in der Darstellung der Matrix im Form-Builder.
+
+### Changed
+- default.html: jQuery aktualisiert auf 3.6.1.
+
 ## [2.0.25] - 2022-10-20
 
 ### Added
