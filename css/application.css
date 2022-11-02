@@ -130,7 +130,7 @@
 	font-style: normal;
 }
 .form-builder legend.form-option-lst-title,
-.form-builder .form-builder-matrix fieldset caption {
+.form-builder fieldset .form-builder-matrix caption {
 	font-size: 1em;
 }
 .form-builder legend.form-option-lst-title {
