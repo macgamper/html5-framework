@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.3] - 2022-11-10
+
+### Changed
+- screen.css: FontAwesome aktualisiert auf 6.2.0.
+
 ## [2.0.26] - 2022-11-02
 
 ### Added
