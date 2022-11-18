@@ -184,7 +184,8 @@
 .form-builder .form-hint-complex__rules {
 	margin-top: 0;
 }
-.form-builder .form-hint-complex--fullwidth .form-hint-complex__rules {
+.form-builder .form-hint-complex--fullwidth .form-hint-complex__rules,
+.form-builder .clearfix > .editor  {
 	width: 100%;
 }
 .form-builder label.error + label.error {

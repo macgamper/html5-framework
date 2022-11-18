@@ -135,6 +135,10 @@ label.error,
 .tag {
 	font-size: 0.875em;
 }
+strong, b,
+.strong, .lead {
+	font-weight: bold;
+}
 iframe {
 	display: block;
 	border: 0;

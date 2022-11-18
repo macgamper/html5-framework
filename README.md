@@ -1,6 +1,22 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.31] - 2022-11-18
+
+### Added
+- basics.ss: Deklaration für fette Texte ergänzt.
+
+```css
+strong, b,
+.strong, .lead {
+	font-weight: bold;
+}
+```
+
+### Changed
+- print.css: Pageturner `.mod-pageturner ` wird beim Druck ausgeblendet.
+- application.css: Darstellung FE-Editor gefixt, der nicht mehr die ganze Breite ausgenutzt hatte bei einem umgebenden `display: flex`.
+
 ## [2.0.3] - 2022-11-10
 
 ### Changed

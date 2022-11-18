@@ -18,7 +18,7 @@ body {
 nav, form, aside, header,
 [hidden],
 .accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .visuallyhidden, .print-hidden, .printhidden, .screenvisible, .breadcrumb,
-.region, .country-name, .url, .none, .slidebars-menu, .mod-nav, .travelpass-cal-wrapper {
+.region, .country-name, .url, .none, .slidebars-menu, .mod-nav, .travelpass-cal-wrapper, .mod-pageturner {
 	display: none;
 }
 
