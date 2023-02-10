@@ -1,10 +1,24 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.32] - 2023-02-10
+
+### Added
+- default.html: Listen, auf denen `.reset` und damit auch `list-style: none` angewendet wird, werden mit VoiceOver in Safari nicht mehr als solche vorgelesen [Quelle](https://web.dev/website-navigation/#announce-the-number-of-items). Dem soll das ARIA-Attribut `role="list"` auf entsprechenden Listenobjekten – primär in Navigationen – entgegenwirken. In den aktuellen Handelbars-Files für Navigationen (menu.hbs und menu_entire_ajax.hbs) wurde das ergänzt.
+
+### Changed
+- basics.css / print.css: Schreibfehler beim generischer Font `monospace` korrigiert und entsprechende Klasse `.monospace` ergänzt.
+- application.css: Abstand oberhalb des optionalen `.mod-entry-desc` ergänzt und beim `.mod-title` entfernt.
+- application.css: Z-Index `.cookie-alert` erhöht.
+
+### Removed
+
+- basics.css: Durch das Ergänzen von `role="list"` kann auf den unschönen, in 1.8.1 eingeführten CSS-Workaround verzichtet werden.
+
 ## [2.0.31] - 2022-11-18
 
 ### Added
-- basics.ss: Deklaration für fette Texte ergänzt.
+- basics.ss: Deklaration für fette Texte ergänzt. Damit können auch die in Safari vielfach problematischen Fettschriften einfacher auf alternative Schnitte umgestellt werden.
 
 ```css
 strong, b,

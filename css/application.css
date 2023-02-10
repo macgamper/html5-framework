@@ -25,13 +25,13 @@
 	font-size: 0.875em; /* 14/16 */
 }
 .mod-entry-title {
-	margin-bottom: 0.5em;
+	margin-bottom: 0;
 }
 .mod-entry-title a {
 	display: block;
 }
 .mod-entry-desc {
-	
+	margin-top: 0.75em;
 }
 .mod-entry-lead {
 	font-weight: bold;
@@ -1377,7 +1377,7 @@ ul.gallery-magnific img {
 --------------------------------------------------------------- */
 .cookie-alert {
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	bottom: 0;
 	left: 0;
 	width: 100%;

@@ -154,10 +154,11 @@ sup {
     top: -0.5em;
     }
 
-tt, code, kbd, samp, pre {
+tt, code, kbd, samp, pre,
+.monospace {
 	display: inline-block;
 	padding: 3px 5px;
-	font-family: "Courier New", Courier, mono;
+	font-family: "Courier New", Courier, monospace;
 	background-color: #ededed;
 	border-radius: 2px;
 }

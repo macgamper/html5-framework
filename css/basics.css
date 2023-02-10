@@ -116,8 +116,9 @@ blockquote {
 }
 address {}
 cite {}
-tt, code, kbd, samp, pre {
-	font-family: "Courier New", Courier, mono;
+tt, code, kbd, samp, pre,
+.monospace {
+	font-family: "Courier New", Courier, monospace;
 }
 kbd {
 	border-style: solid;
@@ -904,10 +905,6 @@ nav ul li {
 }
 nav ul {
 	margin-bottom: 0;
-}
-nav li::before {
-	content: "\200B"; /* fixes VoiceOver Issue */
-	position: absolute;
 }
 .nobr {
 	white-space: nowrap;
