@@ -274,8 +274,12 @@
 								<input type="number" id="f1-4" min="1" max="100" value="" /><span class="form-hint">Muss zwischen 1 und 100 liegen.</span>
 							</p>
 							<p class="clearfix">
-								<label for="f1-5">Inaktiv</label>
-								<input type="text" id="f1-5" value="nicht verf&uuml;gbar" disabled />
+								<label for="f1-5">Bild hochladen</label>
+								<input type="file" id="f1-5" accept="image/*">
+							</p>
+							<p class="clearfix">
+								<label for="f1-6">Inaktiv</label>
+								<input type="text" id="f1-6" value="nicht verf&uuml;gbar" disabled />
 							</p>
 							<div class="clearfix form-option-lst-show-title">
 								<p class="form-option-lst-title">Radio input</p>
@@ -317,8 +321,12 @@
 							<p class="clearfix"><label for="f6">Textarea</label><textarea id="f6" cols="30" rows="5" ></textarea></p>
 							<div class="form-builder__item form-builder__item--toggle">
 								<label for="feactivate2fa">Toggle-Swich-Button</label>
-								<input type="checkbox" id="feactivate2fa" name="feactivate2fa" value="1">
-								<span class="form-builder__toggle" aria-hidden="true"></span>
+								<div class="form-builder__toggle-wrapper">
+									<input type="checkbox" id="feactivate2fa" name="feactivate2fa" value="1">
+									<span class="form-builder__toggle" aria-hidden="true"></span>
+									<span class="form-builder__toggle-off" aria-hidden="true"></span>
+									<span class="form-builder__toggle-on" aria-hidden="true"></span>
+								</div>
 							</div>
 							<div class="form-builder-btn form-builder-btn-group">
 								<p class="form-builder-submit">

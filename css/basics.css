@@ -987,7 +987,7 @@ th > *:last-child, td > *:last-child,
 }
 .btn[type="reset"],
 .btn--secondary {
-	background-color: grey;
+	background-color: #757575;
 }
 .btn--invis,
 .btn--ghost {

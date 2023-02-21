@@ -1,6 +1,16 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.33] - 2023-02-21
+
+### Added
+- default.html: Checkbox-Switch-Button musste wegen Mobile-Problemen in einen zusätzlichen Container verschoben werden. In diesem Zuge wurden zusätzliche Elemente ergänze, die für bessere visuelle Accessibility sorgen, indem sie dem Button neben dem Farbwechsel auch entsprechende Icons zuweisen.
+- application.css: Das Styling der oben genannten Switch-Button-Icons wurde ergänzt. Zudem ist der Switch mit Custom-Properties nun einfacher anpassbar.
+- application.css: Formular-Buttons in der Gruppe ` .form-builder-btn-group` werden nun via Flex gelayoutet.
+
+### Changed
+- basics.css: Die graue Standardfarbe von Reset- oder Secondary-Buttons erreicht nun das vorgeschriebene Kontrastverhältnis von > 1:4.5.
+
 ## [2.0.32] - 2023-02-10
 
 ### Added
