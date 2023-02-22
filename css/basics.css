@@ -502,6 +502,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 	outline-offset: 0;
 	border: 1px solid #666;
 	padding: 0.25em 0.5em;
+	color: inherit;
 	background-color: #fff;
 	border-radius: 0.125em;
 	transition: box-shadow 0.2s;
