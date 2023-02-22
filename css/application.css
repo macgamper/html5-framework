@@ -431,11 +431,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =checkbox toggle
 --------------------------------------------------------------- */
-.form-builder .form-builder__item--toggle {
+.form-builder__item--toggle {
 	--toggle-off: lightgrey;
 	--toggle-on: green;
 	--toggle-width: 3.5em;
 	--toggle-height: 2em;
+	--toggle-radius: 4em;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 0.2em 0;
@@ -443,10 +444,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder__toggle-wrapper {
 	position: relative;
 }
-.form-builder .form-builder__item--toggle [type="checkbox"] {
+.form-builder__item--toggle [type="checkbox"] {
 	position: absolute;
-	top: 0;
-	left: 0;
+	inset: 0;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -456,30 +456,33 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	opacity: 0;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-.form-builder .form-builder__item--toggle [type="checkbox"]::before,
-.form-builder .form-builder__item--toggle [type="checkbox"]::after {
+.form-builder__item--toggle [type="checkbox"]::before,
+.form-builder__item--toggle [type="checkbox"]::after {
 	content: none;
 }
-.form-builder .form-builder__item--toggle .form-builder__toggle {
+.form-builder__item--toggle .form-builder__toggle {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	cursor: pointer;
 }
-.form-builder .form-builder__item--toggle .form-builder__toggle::before,
-.form-builder .form-builder__item--toggle .form-builder__toggle::after {
+.form-builder__item--toggle .form-builder__toggle::before,
+.form-builder__item--toggle .form-builder__toggle::after {
 	content: "";
-	border-radius: 100vw;
+	border-radius: var(--toggle-radius);
 	will-change: transition;
 }
-.form-builder .form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::before {
+.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::before {
 	display: block;
 	width: var(--toggle-width);
 	height: var(--toggle-height);
 	background-color: var(--toggle-off);
-	transition: all 0.2s;
+	transition: background-color 0.2s;
 }
-.form-builder .form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::after {
+.form-builder__item--toggle [type="checkbox"]:checked ~ .form-builder__toggle::before {
+	background-color: var(--toggle-on);
+}
+.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::after {
 	position: absolute;
 	top: 2px;
 	left: 2px;
@@ -488,47 +491,37 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	height: calc(var(--toggle-height) - 4px);
 	visibility: visible;
 	background-color: #fff;
-	transition: left 0.2s;
 	box-shadow: var(--shadow-sm);
+	transition: left 0.2s;
 }
-.form-builder .form-builder__item--toggle [type="checkbox"]:checked ~ .form-builder__toggle::before {
-	background-color: var(--toggle-on);
-}
-.form-builder .form-builder__item--toggle [type="checkbox"]:checked ~ .form-builder__toggle::after {
+.form-builder__item--toggle [type="checkbox"]:checked ~ .form-builder__toggle::after {
 	left: calc(100% - var(--toggle-height) + 2px);
 }
 
 /* visible on/off-marker for  a11y */
 .form-builder__item--toggle .form-builder__toggle-off,
 .form-builder__item--toggle .form-builder__toggle-on {
+	--toggle-icon-border-width: 2px;
 	position: absolute;
 	inset: 0;
-	display: inline-block;
-	vertical-align: middle;
-	cursor: pointer;
 }
 .form-builder__item--toggle .form-builder__toggle-off::before,
 .form-builder__item--toggle .form-builder__toggle-on::before,
 .form-builder__item--toggle .form-builder__toggle-on::after {
 	content: "";
-}
-.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle-off::before,
-.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle-on::before,
-.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle-on::after {
 	position: absolute;
-	top: 0;
-	left: 0;
+	inset: 0;
 	display: block;
 	width: var(--toggle-height);
 	height: var(--toggle-height);
-	visibility: visible;
 	transition: left 0.2s, opacity 0.2s;
 }
-.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle-off::before {
+/* checkmark off; transparent by default */
+.form-builder__item--toggle .form-builder__toggle-off::before {
 	width: calc(var(--toggle-height) / 2);
 	height: calc(var(--toggle-height) / 2);
-	border: 2px solid var(--toggle-off-icon-color, #757575);
-	border-radius: 100vw;
+	border: var(--toggle-icon-border-width) solid var(--toggle-off-icon-color, transparent);
+	border-radius: var(--toggle-radius);
 	transform: translate(50%, 50%);
 	opacity: 1;
 }
@@ -536,11 +529,11 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	left: calc(100% - var(--toggle-height));
 	opacity: 0;
 }
-
-.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle-on::before,
-.form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle-on::after {
+/* checkmark active */
+.form-builder__item--toggle .form-builder__toggle-on::before,
+.form-builder__item--toggle .form-builder__toggle-on::after {
 	border-color: var(--toggle-on-icon-color,  var(--toggle-on));
-	border-width: 2px;
+	border-width: var(--toggle-icon-border-width);
 	border-top: 0;
 	border-left: 0;
 	height: calc(var(--toggle-height) / 2);
@@ -548,10 +541,10 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	transform: rotate(45deg) translateY(-30%) translateX(160%);
 	opacity: 0;
 }
-.form-builder__item--toggle [type=checkbox] ~ .form-builder__toggle-on::before {
+.form-builder__item--toggle .form-builder__toggle-on::before {
 	border-right-style: solid;
 }
-.form-builder__item--toggle [type=checkbox] ~ .form-builder__toggle-on::after {
+.form-builder__item--toggle .form-builder__toggle-on::after {
 	border-bottom-style: solid;
 }
 .form-builder__item--toggle [type=checkbox]:checked ~ .form-builder__toggle-on::before,
