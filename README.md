@@ -5,7 +5,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ### Changed
 - basics.css: Select-Menü-Texte wurden in iOS mit der Systemfarbe eingefärbt. Das wird nun mit `color: inherit;` verhindert.
-- application.css: Code-Cleanup bei den Switch-Button-Icons, zusätzliche Custom Properties für Icon-Stärke und Bordet-Radius.
+- application.css: Code-Cleanup bei den Switch-Button-Icons, zusätzliche Custom Properties für Icon-Stärke und Border-Radius.
 
 ## [2.0.33] - 2023-02-21
 

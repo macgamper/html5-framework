@@ -431,7 +431,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =checkbox toggle
 --------------------------------------------------------------- */
-.form-builder__item--toggle {
+.form-builder .form-builder__item--toggle {
 	--toggle-off: lightgrey;
 	--toggle-on: green;
 	--toggle-width: 3.5em;
