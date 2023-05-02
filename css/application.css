@@ -43,15 +43,12 @@
 /* =global module-navigation
 --------------------------------------------------------------- */
 .mod-nav {
-	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25em 1em;
 	margin: .5em 0 1.5em 0;
 }
-.mod-nav li {
-	display: inline-block;
-	margin-right: 1em !important;
-}
 .mod-nav a {
-	font-size: 1em;
 	color: #273941;
 	text-decoration: none;
 }
@@ -250,10 +247,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
+	margin-top: 1.5em;
 }
-.form-builder .form-builder-btn-group p {
-	margin: 0;
-}
+.form-builder .form-builder-btn-group p,
 .form-builder .form-builder-btn-group button + button {
 	margin: 0;
 }
@@ -339,7 +335,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
-
 	button + button[type=reset] {
 		margin-top: 0.7em;
 		margin-left: 0;

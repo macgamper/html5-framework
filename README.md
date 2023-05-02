@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.35] - 2023-05-02
+
+### Changed
+- default.html: Update jQuery auf 3.6.4.
+- screen.css: Update FontAwesome Subset auf 6.4.0.
+- basics.css: Fokus-Klassen von Buttons haben nun keine eigene Hintergrundfarbe mehr, sondern dunklen die bestehende Buttonfarbe um 20% ab.
+- application.css: `.mod-nav` ist neu ein Flex-Objekt, wodurch alte Deklarationen entfernt werden konnten.
+
 ## [2.0.34] - 2023-02-22
 
 ### Changed
