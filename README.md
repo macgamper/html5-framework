@@ -7,7 +7,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 - basics.css: Diverse Blockelemente wie Bilder, Boxen, Deails/Summary, Videos, Tabellen oder Zitatblöcke bekommen nun die doppelten vertikalen Abstände, damit auch der Inhalt dem Weissraumbedarf moderner Layouts gerechter wird. Hier sind sicher noch weitere Anpassungen – insbesondere für Ausnahmen – nötig.
 - basics.css: Für alle Überschriften wurde `text-wrap: balance;` integriert.
 - basics.css: iFrames bekommen standardmässig ein `aspect-ratio: 16 / 9;`. Bei Google-Maps-URL’s von `1 / 1`. Zusätzliche URL’s und Seitenverhältnisse können ergänzt werden – auch via Inline-CSS. Beispielsweise `style="--aspect-ratio: 3 / 2"`.
-- basics.css: Im `refers-reduced-motion` wurde die Eigenschaft `view-transition-name` der neuen *View Transitions API* ergänzt.
+- basics.css: Im `prefers-reduced-motion` wurde die Eigenschaft `view-transition-name` der neuen *View Transitions API* ergänzt.
 - application.css: Float-Layout aus der *Magnific-Gallery* entfernt. Diese basiert damit nun ausschliesslich auf CSS-Grid.
 
 ## [2.0.35] - 2023-05-02
