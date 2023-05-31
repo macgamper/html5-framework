@@ -4,6 +4,10 @@
 	--shadow-md: 0 0.9px 1.5px rgba(0, 0, 0, 0.03), 0 3.1px 5.5px rgba(0, 0, 0, 0.08), 0 14px 25px rgba(0, 0, 0, 0.12);
 	--shadow-lg: 0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014), 0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038), 0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085), 0 30px 42px -1px rgba(0, 0, 0, 0.15);
 	--shadow-xl: 0 1.5px 2.1px -6px rgba(0, 0, 0, 0.012), 0 3.6px 5.2px -6px rgba(0, 0, 0, 0.035), 0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07), 0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117), 0 46px 60px -6px rgba(0, 0, 0, 0.2);
+
+
+	--clr-neutral-100: hsl(0deg 0% 100%);
+	--clr-neutral-900: hsl(0deg 0% 0%);
 }
 *,
 *::before,
@@ -26,14 +30,17 @@ h1, h2, h3, h4, h5, h6, caption,
 	margin: 0 0 0.75em;
 	line-height: 1.2;
 	font-weight: bold;
+	text-wrap: balance;
 }
 h1, .h1 {
 	font-size: 2em;
 }
 h2, caption, .h2 {
+	margin-top: 3em;
 	font-size: 1.33em;
 }
 h3, .h3 {
+	margin-top: 1.5em;
 	font-size: 1.17em;
 }
 h4, .h4 {
@@ -44,12 +51,21 @@ h5, .h5 {
 	font-size: 1em;
 }
 h6, .h6 {
-	margin: 0 0 0.2em;
+	margin: 0 0 0.3em;
 	font-size: 1em;
 }
-p, ul, ol, dl, blockquote, pre, fieldset, figure, address, table, details, iframe, video, audio,
-.p, .box, .table-responsive, .media-responsive, .flex-search, .mb, .mod-wrapper, .accordion, [data-oembed-url], [class*="col-"] {
+p, ul, ol, dl, pre, fieldset, figure, address, 
+.p, .flex-search, .mb, .mod-wrapper, [data-oembed-url], [class*="col-"] {
 	margin: 0 0 1.5em;
+}
+audio, blockquote, details, figure, iframe, table, video,
+.accordion, .box, .img-default, .mb-2x, .media-responsive, .table-responsive {
+	margin: 3em 0;
+}
+figure > .img-default,
+.media-responsive > iframe,
+.table-responsive > table {
+	margin: 0;
 }
 p {}
 .p {
@@ -106,7 +122,10 @@ img, embed, object, video {
 video, audio {
 	display: block;
 }
-figure {}
+figure,
+.img-default {
+	margin: 3em 0;
+}
 figcaption {
 	margin-top: 0.75em;
 }
@@ -141,10 +160,17 @@ strong, b,
 	font-weight: bold;
 }
 iframe {
+	aspect-ratio: var(--aspect-ratio, 16 / 9);
 	display: block;
+	margin: 3em 0;
 	border: 0;
 	padding: 0;
 	width: 100%;
+	height: auto;
+}
+iframe[src^="https://www.google.com/maps"],
+iframe[src^="https://www.google.ch/maps"] {
+	--aspect-ratio: 1 / 1;
 }
 
 summary {
@@ -645,6 +671,7 @@ table {
 	border-spacing: 0;
 }
 caption {
+	margin-top: 0;
 	text-align: left;
 }
 table th,
@@ -1019,6 +1046,7 @@ th > *:last-child, td > *:last-child,
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.001ms !important;
 		scroll-behavior: auto !important;
+		view-transition-name: none !important;
 	}
 }
 
@@ -1096,6 +1124,7 @@ th > *:last-child, td > *:last-child,
 	clear: both;
 }
 .editor img.cke_iframe {
+	aspect-ratio: 16 / 9;
 	width: 100% !important;
-	height: 100% !important;
+	height: auto !important;
 }

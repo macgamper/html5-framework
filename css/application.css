@@ -807,42 +807,18 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =magnific gallery
 --------------------------------------------------------------- */
 ul.gallery-magnific {
-	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5em;
+	gap: 1.5em;
+	overflow: visible;
 }
-ul.gallery-magnific li {
-	float: left;
-	max-width: 30.769230769231%; /* 200/650 */
-	margin: 3.846153846154%; /* 25/650 */
-	margin-top: 0;
-	margin-right: 0;
-}
-ul.gallery-magnific li:nth-child(3n+1) {
-	clear: left;
-	margin-left: 0;
-}
-
-@supports (display: grid) {
-	ul.gallery-magnific {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 1.5em;
-		gap: 1.5em;
-		overflow: visible;
-	}
-	ul.gallery-magnific li,
-	ul.gallery-magnific li:nth-child(1n+1) {
-		float: none;
-		max-width: none;
-		margin: 0;
-	}
-}
-
 ul.gallery-magnific a {
 	display: block;
 	text-decoration: none;
 }
 ul.gallery-magnific figure {
-	margin-bottom: 0;
+	margin: 0;
 }
 ul.gallery-magnific figcaption {
 	padding: 0 0.5em 0.5em 0.5em;
@@ -858,26 +834,8 @@ ul.gallery-magnific img {
 
 @media only screen and (max-width: 48em) { /* 768/16 */
 
-	ul.gallery-magnific li,
-	ul.gallery-magnific li:nth-child(3n+1) {
-		clear: none;
-		max-width: 46.153846153846%; /* 300/650 */
-		margin-left: 3.846153846154%; /* 25/650 */
-	}
-	ul.gallery-magnific li:nth-child(2n+1) {
-		clear: left;
-		margin-left: 0;
-	}
-
-	@supports (display: grid) {
-		ul.gallery-magnific {
-			grid-template-columns: 1fr 1fr;
-		}
-		ul.gallery-magnific li,
-		ul.gallery-magnific li:nth-child(1n+1) {
-			max-width: none;
-			margin: 0;
-		}
+	ul.gallery-magnific {
+		grid-template-columns: 1fr 1fr;
 	}
 
 }
