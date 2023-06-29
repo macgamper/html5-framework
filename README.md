@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.37] - 2023-06-29
+
+### Changed
+- default.html: Update auf jQuery 3.7.0
+- default.html: Details/Summary mit zusätzlichem Inhalts-Container `.details-content` gemäss Comet.
+- basics.css: Weniger Code und Spezifität durch Zusammenfassungen mit `:is()`-Selektoren, besonders bei Tabellen.
+- application.css: Spalten-Verhalten der Magnific-Gallery mit Variabel `--_column-count` steuern.
+
+### Removed
+- application.css: Float-Layout aus der *Magnific-Gallery* entfernt. Diese basiert damit nun ausschliesslich auf CSS-Grid.
+
 ## [2.0.36] - 2023-05-31
 
 ### Added

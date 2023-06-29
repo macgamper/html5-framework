@@ -674,13 +674,13 @@ caption {
 	margin-top: 0;
 	text-align: left;
 }
-table th,
-table td {
+th,
+td {
 	vertical-align: top;
 	border-bottom: 1px solid #f2f2f2;
 	padding: 0.5em 1em;
 }
-table th {
+th {
 	text-align: left;
 	font-weight: bold;
 }
@@ -693,26 +693,22 @@ table:not(.calendar) thead th {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
-table tbody th,
-table tfoot th {
+:is(tbody, tfoot) th {
 	border-right: 1px solid #f2f2f2;
 }
-table tr:first-child th,
-table tr:first-child td {
+tr:first-child :is(th, td) {
 	border-top: 1px solid #f2f2f2;
 }
-table:not(.calendar) thead tr:first-child th,
-table:not(.calendar) thead tr:first-child td {
+table:not(.calendar) thead tr:first-child :is(th, td) {
 	border-top: 0;
 }
 table:not(.calendar) thead ~ tbody tr:last-child {
 	border-bottom: 2px solid #f2f2f2;
 }
-table tfoot tr:first-child td {
+tfoot tr:first-child td {
 	border-top: 2px solid #f2f2f2;
 }
-table tfoot tr:last-child th,
-table tfoot tr:last-child td {
+tfoot tr:last-child :is(th, td) {
 	border-top: 2px solid #f2f2f2;
 	border-bottom: 6px double #f2f2f2;
 	font-weight: bold;
@@ -736,12 +732,10 @@ th[align="right"], th.right, td.right,
 	float: none;
 	text-align: right;
 }
-table.no-pad th:first-child,
-table.no-pad td:first-child {
+table.no-pad :is(th, td):first-child {
 	padding-left: 0;
 }
-table.no-pad th:last-child,
-table.no-pad td:last-child {
+table.no-pad :is(th, td):last-child {
 	padding-right: 0;
 }
 
@@ -751,20 +745,17 @@ table.zebra tbody tr:nth-child(even),
 ul.zebra > li:nth-child(even) {
 	background-color: rgba(0,0,0,0.05);
 }
-table.hover tbody tr:hover,
-table.hover tfoot tr:hover,
+table.hover :is(tbody, tfoot) tr:hover,,
 ul.hover > li:hover {
 	background-color: rgba(0,0,0,0.05);
 }
 
 /*=grid-tables
 --------------------------------------------------------------- */
-table.grid th,
-table.grid td {
+table.grid :is(th, td) {
 	border-left: 1px solid #f2f2f2;
 }
-table.grid th:last-child,
-table.grid td:last-child {
+table.grid :is(th, td):last-child {
 	border-right: 1px solid #f2f2f2;
 }
 
@@ -802,9 +793,7 @@ table.reset thead ~ tbody tr:last-child {
 	height: 0;
 	overflow: hidden;
 }
-.media-responsive iframe,
-.media-responsive object,
-.media-responsive embed,
+.media-responsive :is(iframe, object, embed),
 .editor .media-responsive img.cke_iframe {
 	position: absolute;
 	top: 0;

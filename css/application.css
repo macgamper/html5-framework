@@ -807,8 +807,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =magnific gallery
 --------------------------------------------------------------- */
 ul.gallery-magnific {
+	--_column-count: 3;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(var(--_column-count), 1fr);
 	grid-gap: 1.5em;
 	gap: 1.5em;
 	overflow: visible;
@@ -835,7 +836,7 @@ ul.gallery-magnific img {
 @media only screen and (max-width: 48em) { /* 768/16 */
 
 	ul.gallery-magnific {
-		grid-template-columns: 1fr 1fr;
+		--_column-count: 2;
 	}
 
 }
@@ -1192,7 +1193,6 @@ ul.gallery-magnific img {
 .mod-index-toc li {
 	display: table-cell;
 	text-align: center;
-	display: table-cell;
 	white-space: nowrap;
 }
 .mod-index-toc a {
@@ -1222,9 +1222,7 @@ ul.gallery-magnific img {
 		width: 20%;
 		height: 100%;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+100&0+0,1+100 */
-		background-image: -moz-linear-gradient(left,  rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%); /* FF3.6-15 */
-		background-image: -webkit-linear-gradient(left,  rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%); /* Chrome10-25,Safari5.1-6 */
-		background-image: linear-gradient(to right,  rgba(240,240,240,0) 0%, rgba(240,240,240,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-image: linear-gradient(to right,  transparent, rgba(240,240,240,1) 100%);
 	}
 	.mod-index-toc ul {
 		display: block;
