@@ -3,6 +3,15 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ## [2.0.38] - 2023-09-26
 
+### Added
+- application.css: eGov-Personenlisten mit A–Z-Index bekommen nun einheitliche Spaltenbreiten über die einzelnen Tabellen hinweg.
+
+```css
+.mod-egov-contact .mod-index-box th:is(.contact-name, .contact-department, .contact-contact) {
+	width: 33.333333333333333%;
+}
+```
+
 ### Changed
 - default.html: Update auf jQuery 3.7.1, `.row` auf `.grid` umgestellt.
 - basics.css: Die Spalten-Grundlagen von Float- auf Grid-Layout umgestellt. Die `.row` Klasse wird nun durch `.grid` abgelöst. Variablen *Spaltenanzahl* und *Spaltenabstand* für flexibleren Einsatz eingeführt.

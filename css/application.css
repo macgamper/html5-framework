@@ -1264,6 +1264,12 @@ ul.gallery-magnific img {
 	padding-bottom: 1em;
 }
 
+/* =mod-egov
+--------------------------------------------------------------- */
+.mod-egov-contact .mod-index-box th:is(.contact-name, .contact-department, .contact-contact) {
+	width: 33.333333333333333%;
+}
+
 /* =collections
 --------------------------------------------------------------- */
 .collection-lst {
