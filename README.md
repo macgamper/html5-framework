@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.38] - 2023-09-26
+
+### Changed
+- default.html: Update auf jQuery 3.7.1, `.row` auf `.grid` umgestellt.
+- basics.css: Die Spalten-Grundlagen von Float- auf Grid-Layout umgestellt. Die `.row` Klasse wird nun durch `.grid` abgelöst. Variablen *Spaltenanzahl* und *Spaltenabstand* für flexibleren Einsatz eingeführt.
+
+### Removed
+- application.css: Webkit-Prefixes bei Animationen entfernt.
+
 ## [2.0.37] - 2023-06-29
 
 ### Added
