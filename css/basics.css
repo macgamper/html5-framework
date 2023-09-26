@@ -55,12 +55,15 @@ h6, .h6 {
 	font-size: 1em;
 }
 p, ul, ol, dl, pre, fieldset, figure, address, 
-.p, .flex-search, .mb, .mod-wrapper, [data-oembed-url], [class*="col-"] {
+.p, .flex-search, .mb, .mod-wrapper, [data-oembed-url], .row, .grid {
 	margin: 0 0 1.5em;
 }
 audio, blockquote, details, figure, iframe, table, video,
 .accordion, .box, .img-default, .mb-2x, .media-responsive, .table-responsive {
 	margin: 3em 0;
+}
+* > *:is(:first-child) {
+	margin-top: 0;
 }
 figure > .img-default,
 .media-responsive > iframe,
@@ -745,7 +748,7 @@ table.zebra tbody tr:nth-child(even),
 ul.zebra > li:nth-child(even) {
 	background-color: rgba(0,0,0,0.05);
 }
-table.hover :is(tbody, tfoot) tr:hover,,
+table.hover :is(tbody, tfoot) tr:hover,
 ul.hover > li:hover {
 	background-color: rgba(0,0,0,0.05);
 }
@@ -861,7 +864,6 @@ pre::-webkit-scrollbar-thumb:hover,
 .clear	{clear: both;}
 .clearfix::after,
 .cf::after,
-.row::after,
 .js-accordion-content::after {
 	content: "";
 	display: table;
@@ -965,6 +967,7 @@ fieldset > *:last-child,
 th > *:last-child, td > *:last-child,
 .box > *:last-child,
 .row > [class*="col-"] > *:last-child,
+.grid > [class*="col-"] > *:last-child,
 .lc-reset > *:last-child,
 .katabox > *:last-child,
 .js-accordion-content > *:last-child,
@@ -1041,54 +1044,117 @@ th > *:last-child, td > *:last-child,
 
 /* =grid
 --------------------------------------------------------------- */
-.row {
-	clear: both;
+.grid {
+	--_column-count: 1;
+	--_column-gap: 1.875em; /* 30/16 */
+	--_row-gap: 1.5em;
+	display: grid;
+	grid-template-columns: repeat(var(--_column-count), 1fr);
+	column-gap: var(--_column-gap);
+	row-gap: var(--_row-gap);
 }
-[class*="col-"] {
-	position: relative;
-	float: left;
-	margin-left: 2.1276595745%; /* 30/1410 */
-	min-height: 1px;
-}
-[class*="col-"]:first-child {
-	margin-left: 0;
-}
-.col-1 {
-	width: 6.3829787234%; /* 90/1410 */
-}
-.col-2 {
-	width: 14.8936170213%; /* 210/1410 */
-}
-.col-3 {
-	width: 23.4042553191%; /* 330/1410 */
-}
-.col-4 {
-	width: 31.914893617%; /* 450/1410 */
-}
-.col-5 {
-	width: 40.4255319149%; /* 570/1410 */
-}
-.col-6,
-.col-half {
-	width: 48.9361702128%; /* 690/1410 */
-}
-.col-7 {
-	width: 57.4468085106%; /* 810/1410 */
-}
-.col-8 {
-	width: 65.9574468085%; /* 930/1410 */
-}
-.col-9 {
-	width: 74.4680851064%; /* 1050/1410 */
-}
-.col-10 {
-	width: 82.9787234043%; /* 1170/1410 */
-}
-.col-11 {
-	width: 91.4893617021%; /* 1290/1410 */
-}
-.col-12 {
-	width: 100%;
+
+@media (min-width: 32.5em) { /* 520/16 */
+	.grid {
+		--_column-count: 12;
+	}
+	.grid--auto {
+		--_column-min-width: 400px;
+		grid-template-columns: repeat(auto-fit, minmax(min(var(--_column-min-width), 100%), 1fr));
+	}
+	.grid--dense {
+		grid-auto-flow: dense;
+	}
+	.grid--no-gap {
+		gap: 0;
+	}
+
+	.col-1 {
+		grid-column: auto / span 1;
+	}
+	.col-2 {
+		grid-column: span 2;
+	}
+	.col-3 {
+		grid-column: auto / span 3;
+	}
+	.col-4 {
+		grid-column: auto / span 4;
+	}
+	.col-5 {
+		grid-column: auto / span 5;
+	}
+	.col-6,
+	.col-half {
+		grid-column: auto / span 6;
+	}
+	.col-7 {
+		grid-column: auto / span 7;
+	}
+	.col-8 {
+		grid-column: auto / span 8;
+	}
+	.col-9 {
+		grid-column: auto / span 9;
+	}
+	.col-10 {
+		grid-column: auto / span 10;
+	}
+	.col-11 {
+		grid-column: auto / span 11;
+	}
+	.col-12 {
+		grid-column: auto / span 12;
+	}
+
+	[class*="col-start-"] {
+		grid-row-start: 1;
+	}
+	.col-start-1 {
+		grid-column-start: 1;
+	}
+	.col-start-2 {
+		grid-column-start: 2;
+	}
+	.col-start-3 {
+		grid-column-start: 3;
+	}
+	.col-start-4,
+	.col-start-fourth {
+		grid-column-start: 4;
+	}
+	.col-start-5,
+	.col-start-third {
+		grid-column-start: 5;
+	}
+	.col-start-6 {
+		grid-column-start: 6;
+	}
+	.col-start-7,
+	.col-start-half {
+		grid-column-start: 7;
+	}
+	.col-start-8 {
+		grid-column-start: 8;
+	}
+	.col-start-9,
+	.col-start-two-third {
+		grid-column-start: 9;
+	}
+	.col-start-10,
+	.col-start-three-fourths {
+		grid-column-start: 10;
+	}
+	.col-start-11 {
+		grid-column-start: 11;
+	}
+	.col-start-12 {
+		grid-column-start: 12;
+	}
+
+	.col-fullwith {
+		grid-column: 1 / -1;
+	}
 }
 
 /* =editor styles (backend)

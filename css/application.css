@@ -1327,9 +1327,6 @@ ul.gallery-magnific img {
 .faq__content > * {
 	margin-bottom: .5em
 }
-.faq__content > *:last-child {
-	margin-bottom: 0;
-}
 
 /* =blog (news in blogform)
 --------------------------------------------------------------- */
@@ -1651,17 +1648,7 @@ ul.gallery-magnific img {
 	transform: rotate(90deg) scale(1.5);
 }
 .govis-menu-node-controller.loading .icon {
-	-webkit-animation: fa-spin 1s infinite steps(8);
-			animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(359deg);
-	}
+	animation: fa-spin 1s infinite steps(8);
 }
 
 @keyframes fa-spin {
