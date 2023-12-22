@@ -62,7 +62,7 @@ audio, blockquote, details, figure, iframe, table, video,
 .accordion, .box, .img-default, .mb-2x, .media-responsive, .table-responsive {
 	margin: 3em 0;
 }
-* > *:where(:first-child):not(summary) {
+* > *:is(:first-child):not(summary) {
 	margin-top: 0;
 }
 figure > .img-default,
@@ -182,7 +182,7 @@ summary {
 	cursor: pointer;
 	margin: -1.5em;
 	padding: 1.5em;
-	overf2low: hidden;
+	overflow: hidden;
 	font-weight: bold;
 }
 summary::-webkit-details-marker,

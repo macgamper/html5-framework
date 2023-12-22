@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.39] - 2023-12-22
+
+### Changed
+- basics.css: Abstand `details` / `summary` gefixt. FB-Icon mit den anderen Social-Media-Icons harmonisiert (Square-Icon). `table.grid` ist neu `.tbl-grid` um Einflüsse der Grid-Layoutklasse zu verhindern. Weitere kleine Bugfixes.
+- application.css: Tabelle der Vereinsliste nach Kategorien bekommen Spaltenbreiten, um sie untereinander auszurichten, wenn genügend Platz da ist.
+
+### Removed
+- basics.css: `details` / `summary` Fallback für IE11/Edge ≤ 18 entfernt.
+
 ## [2.0.38] - 2023-09-26
 
 ### Added
