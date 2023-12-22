@@ -62,7 +62,7 @@ audio, blockquote, details, figure, iframe, table, video,
 .accordion, .box, .img-default, .mb-2x, .media-responsive, .table-responsive {
 	margin: 3em 0;
 }
-* > *:is(:first-child) {
+* > *:where(:first-child):not(summary) {
 	margin-top: 0;
 }
 figure > .img-default,
@@ -177,50 +177,42 @@ iframe[src^="https://www.google.ch/maps"] {
 }
 
 summary {
-	list-style: none;
+	display: flex;
+	align-items: baseline;
+	cursor: pointer;
+	margin: -1.5em;
+	padding: 1.5em;
+	overf2low: hidden;
 	font-weight: bold;
 }
-
-@supports not (-ms-ime-align: auto) { /* no ie11 & legacy edge ≤18 */
-
-	summary {
-		display: flex;
-		align-items: baseline;
-		cursor: pointer;
-		margin: -1.5em;
-		padding: 1.5em;
-		overflow: hidden;
-	}
-	summary::-webkit-details-marker,
-	summary::marker {
-		display: none;
-	}
-	summary::before {
-		content: "";
-		position: relative;
-		flex: 0 0 auto;
-		top: 0.2em;
-		width: 1em;
-		height: 1em;
-		margin-right: 0.5em;
-		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: .75em .86em;
-		transform: rotate(-90deg);
-		transition: transform .2s;
-	}
-	details[open] summary::before {
-		transform: rotate(0);
-	}
-	summary > * {
-		display: inline;
-		margin-bottom: 0;
-	}
-	summary + * {
-		margin-top: 1.5em;
-	}
-
+summary::-webkit-details-marker,
+summary::marker {
+	display: none;
+}
+summary::before {
+	content: "";
+	position: relative;
+	flex: 0 0 auto;
+	top: 0.2em;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: .75em .86em;
+	transform: rotate(-90deg);
+	transition: transform .2s;
+}
+details[open] summary::before {
+	transform: rotate(0);
+}
+summary > * {
+	display: inline;
+	margin-bottom: 0;
+}
+summary + * {
+	margin-top: 1.5em;
 }
 
 .optimale-zeilenlaenge {
@@ -317,6 +309,7 @@ a img {
 [href^="https://maps.google.com/"]::before,
 [href^="http://maps.google.com/"]::before,
 [href^="https://goo.gl/maps/"]::before,
+[href^="https://maps.app.goo.gl/"]::before,
 .download-icn::before,
 .facebook-icn::before,
 .instagram-icn::before,
@@ -390,7 +383,8 @@ a img {
 [href^="http://www.google.com/maps/"]::before,
 [href^="https://maps.google.com/"]::before,
 [href^="http://maps.google.com/"]::before,
-[href^="https://goo.gl/maps/"]::before {
+[href^="https://goo.gl/maps/"]::before,
+[href^="https://maps.app.goo.gl/"]::before {
 	content: "\f3c5";
 }
 [href$=".jpg" i]::before, [href*=".jpg?" i]::before, [href*=".jpg/" i]::before,
@@ -414,7 +408,7 @@ a img {
 	content: "\f019";
 }
 .facebook-icn::before {
-	content: "\f230";
+	content: "\f082";
 }
 .instagram-icn::before {
 	content: "\f16d";
@@ -755,10 +749,10 @@ ul.hover > li:hover {
 
 /*=grid-tables
 --------------------------------------------------------------- */
-table.grid :is(th, td) {
+.tbl-grid :is(th, td) {
 	border-left: 1px solid #f2f2f2;
 }
-table.grid :is(th, td):last-child {
+.tbl-grid :is(th, td):last-child {
 	border-right: 1px solid #f2f2f2;
 }
 
@@ -972,7 +966,8 @@ th > *:last-child, td > *:last-child,
 .katabox > *:last-child,
 .js-accordion-content > *:last-child,
 .faq__content > *:last-child,
-.nmb-lastchild > *:last-child {
+.nmb-lastchild > *:last-child,
+.mod-entry__content > *:last-child {
 	margin-bottom: 0;
 }
 

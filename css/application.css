@@ -1413,6 +1413,12 @@ ul.gallery-magnific img {
 	margin-left: 1em;
 }
 
+/* =Vereine
+--------------------------------------------------------------- */
+.mod-association .association-category .association-name {
+	width: 50%;
+}
+
 /* =KataBox
 --------------------------------------------------------------- */
 .katabox {
