@@ -284,6 +284,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-zip-component .form-sizer:last-child {
 	width: 73%;
 }
+.form-builder .js-simple-uploader-dropzone {
+	margin-top: .75em;
+	height: auto;
+	padding: 1.5em;
+	border-radius: .25em;
+}
 
 /* =accessibility-date select
 --------------------------------------------------------------- */
@@ -1244,7 +1250,6 @@ ul.gallery-magnific img {
 	margin-bottom: 1.5em;
 }
 .mod-index-pages > div > h2 {
-	position: -webkit-sticky;
 	position: sticky;
 	z-index: 1;
 	top: 0;

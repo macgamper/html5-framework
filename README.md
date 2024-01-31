@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.40] - 2024-01-31
+
+### Added
+- application.css: Styling von des Upload-Panels `.form-builder .js-simple-uploader-dropzone` ergänzt.
+
+### Removed
+- application.css: Webkit-Prefixes von `position: -webkit-sticky;` entfernt.
+
 ## [2.0.39] - 2023-12-22
 
 ### Changed
