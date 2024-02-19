@@ -88,6 +88,10 @@
 
 /* =form-builder
 --------------------------------------------------------------- */
+.form-builder {
+	--_form-clr-hint: #585858;
+	--_form-clr-error: #cc0000;
+}
 .form-builder .form-builder__item,
 .form-builder .clearfix,
 .form-builder .cf {
@@ -176,7 +180,7 @@
 	display: block;
 	width: 50%;
 	margin: .75em 0 0 auto;
-	color: #585858;
+	color: var(--_form-clr-hint);
 }
 .form-builder .form-hint-complex__rules {
 	margin-top: 0;
@@ -209,7 +213,7 @@
 .form-builder input.error,
 .form-builder label.error,
 .form-builder .accessibility-date select.invalid {
-	color: red;
+	color: var(--_form-clr-error);
 }
 .form-builder label.error {
 	padding-right: 0;

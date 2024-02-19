@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.0.41] - 2024-01-19
+
+### Changed
+- application.css: Farbkontraste von Form-Fehlermeldungen verbessert zusammen mit den Form-Hints zur einfacheren Anpassung in Variablen ausgelagert.
+
 ## [2.0.40] - 2024-01-31
 
 ### Added
