@@ -1,6 +1,25 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.1] - 2024-03-07
+
+### Changed
+- screen.css: FontAwesome Update auf 6.5.1
+- basics.css / application.css: Global wurden alle Schriftgrössen durch Variablen nach dem Schema `--fontsize-400` ersetzt. 
+- basics.css / application.css: Für Farbdefinitionen wurden ebenfalls Variablen ergänzt. Kundenspezifische CD-Farben werden nach dem Schema `--clr-primary`, `--clr-secondary` … ergänzt. Abstufungen davon können mit den Suffixes `-dark` und `-bright` ergänzt werden, also `--clr-secondary-dark`.\
+	Weiss `--clr-neutral-100 ` und Schwarz `--clr-neutral-900 ` sind dabei die Fixwerte einer neutralen Skala. Abstufungen dazwischen werden je nach Bedarf ergänzt.
+	An vielen Orten sind nach wie vor noch Inline-Farbwerte definiert, die vorerst noch so bleiben. Ersetzt wurden lediglich die reinen schwarz/weiss-Werte.
+- basics.css: Eine `accent-color` wurde definiert. Im Standard ist dies die Primärfarbe `--clr-primary`.
+- basics.css: Für Border-Radius gibt es ebenfalls eine Variable `--radius-sm` (derzeit Buttons, Form-Inputs).
+- application.css: Lokal gescopte Component-Variablen haben nun  konsequent einen Underscore vorangestellt; zb. `--_toggle-width: 3.5em;`.
+- basics.css: Der Standard-Fontstack basiert nun auf Systemschriften:
+
+```css
+body {
+	font: var(--fontsize-400)/1.5 system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+```
+	
 ## [2.0.41] - 2024-02-19
 
 ### Changed
