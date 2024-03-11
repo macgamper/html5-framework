@@ -4,7 +4,7 @@
 	outline: 2px solid black;
 	width: 90%;
 	max-width: 1410px;
-	margin: 0 auto;
+	margin-inline: auto;
 }
 	
 /* =header

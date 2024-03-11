@@ -62,14 +62,14 @@
 	}
 
 	.table-responsive {
-		border-right: 1px solid #dcdfde;
-		border-bottom: 0;
+		border-inline-end: 1px solid #dcdfde;
+		border-block-end: 0;
 	}
 
 	[class*="col-"] {
 		float: none;
 		width: 100%;
-		margin-left: 0;
+		margin-inline-start: 0;
 	}
 
 }

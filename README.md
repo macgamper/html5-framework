@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2] - 2024-03-11
+
+### Changed
+- basics.css / layout.css / application.css / responsive-css: Umstellung auf [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values). Es gibt noch einige Stellen (zb. Icon-Ausrichtungen), die zu bereinigen sind.
+
 ## [2.1] - 2024-03-07
 
 ### Changed
