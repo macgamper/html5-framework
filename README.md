@@ -1,6 +1,20 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.1] - 2024-03-15
+
+### Added
+- basics.css / application.css: CSS logical properties bei `float`’s ergänzt. Wegen durchwachsenem Browsersupport wurden die physischen Werte aber ebenfalls noch belassen. Entsprechende Klassen wurden wo sinnvoll ebenfalls ergänzt.
+
+```css
+.alignleft, .align-inline-start {
+	float: left;
+	float: inline-start; /* not best support yet  */
+	margin-block-start: 0;
+	margin-inline-start: 0;
+}
+```
+
 ## [2.2] - 2024-03-11
 
 ### Changed

@@ -63,6 +63,7 @@
 
 .login-pw-reset {
 	float: right;
+	float: inline-end; /* not best support yet */
 }
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
@@ -748,6 +749,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar-legend span {
 	display: block;
 	float: left;
+	float: inline-start; /* not best support yet */
 	width: 1.4em;
 	height: 1.4em;
 	margin-inline-end: .5em;
@@ -799,6 +801,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .travelpass-order-wrapper {
 	width: 48.181818181818%;
 	float: left;
+	float: inline-start; /* not best support yet */
 }
 .travelpass-order-wrapper {
 	margin-inline-start: 3.636363636364%; /* 20 / 550 */
@@ -943,10 +946,12 @@ ul.gallery-magnific img {
 }
 .infobox > div {
 	float: left;
+	float: inline-start; /* not best support yet */
 	width: 50%;
 }
 .infobox > div + div {
 	float: right;
+	float: inline-end; /* not best support yet */
 }
 .infobox > div:first-of-type {
 	padding-inline-end: 1em;
@@ -1291,6 +1296,7 @@ ul.gallery-magnific img {
 .collection-item {
 	display: block;
 	float: left;
+	float: inline-start; /* not best support yet */
 }
 .collection-item::after {
 	content: '\00A0\00A0/\00A0\00A0';
@@ -1569,6 +1575,7 @@ ul.gallery-magnific img {
 }
 .mobilenav-box .levelup span {
 	float: left;
+	float: inline-start; /* not best support yet */
 	position: static;
 	right: inherit;
 }
@@ -1693,10 +1700,6 @@ ul.gallery-magnific img {
 	z-index: 10;
 	display: flex;
 	align-items: center;
-	border: 0;
-	cursor: pointer;
-	border-radius: 0;
-	background-color: transparent;
 }
 .c-dropdown__btn:is(:hover, :focus, [aria-expanded="true"]) {
 	color: var(--clr-neutral-900);
