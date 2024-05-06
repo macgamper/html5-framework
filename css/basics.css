@@ -1175,12 +1175,12 @@ th > *:last-child, td > *:last-child,
 
 /* =editor styles (backend)
 --------------------------------------------------------------- */
-.editor .element {
+.editor .accordion {
 	position: relative;
 	border: 1px dotted red;
 }
-.editor .element::before {
-	content: 'Container';
+.editor .accordion::before {
+	content: 'Akkordeon';
 	position: absolute;
 	inset-block-start: 0;
 	inset-inline-end: 0;

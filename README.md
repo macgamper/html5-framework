@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.2] - 2024-05-06
+
+### Added
+- default.html: Beim der Switch-Checkbox `role="switch"` ergänzt.
+- basics.css: Die Hilfsformatierungen für den Akkordeon-Container im Editor `.editor .accordion` wurden fix integriert, damit die jeweils nicht vergessen gehen.
+
+### Removed
+- application.css: Form-Wizzard neu ohne `.btn + .btn ` – Abstände werden nun über die `gap` Eigenschaft gelöst.
+
 ## [2.2.1] - 2024-03-15
 
 ### Added
