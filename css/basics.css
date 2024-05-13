@@ -1,3 +1,5 @@
+/* MARK: =custom properties
+--------------------------------------------------------------- */
 :root {
 	--shadow-xs: 0 0.1px 0.3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
 	--shadow-sm: 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
@@ -22,6 +24,9 @@
 
 	accent-color: var(--clr-primary);
 }
+
+/* MARK: =basics
+--------------------------------------------------------------- */
 *,
 *::before,
 *::after,
@@ -230,7 +235,7 @@ summary + * {
 	color: #ee0000; /* Zeichen von 45-75 werden rot hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
 }
 
-/* =links
+/* MARK: =links
 --------------------------------------------------------------- */
 a, a:link {
 	
@@ -269,7 +274,7 @@ a img {
 	color: var(--clr-neutral-100);
 }
 
-/* =doc-anchors font-awesome
+/* MARK: =doc-anchors font-awesome
 --------------------------------------------------------------- */
 [href^="https:"]::after, [href^="http:"]::after,
 .show-icon[href^="/"]::after, .document-lst::after,
@@ -487,7 +492,7 @@ a.link-expanded__child::after {
 	inset: 0;
 }
 
-/* =forms
+/* MARK: =forms
 --------------------------------------------------------------- */
 fieldset {
 	clear: both;
@@ -671,7 +676,7 @@ button + button[type=reset] {
 	margin-inline-start: 1em;
 }
 
-/* =tables
+/* MARK: =tables
 --------------------------------------------------------------- */
 table {
 	width: 100%;
@@ -751,7 +756,7 @@ table.no-pad :is(th, td):last-child {
 	padding-inline-end: 0;
 }
 
-/*=zebras & hover
+/* =zebras & hover
 --------------------------------------------------------------- */
 table.zebra tbody tr:nth-child(even),
 ul.zebra > li:nth-child(even) {
@@ -762,7 +767,7 @@ ul.hover > li:hover {
 	background-color: rgba(0,0,0,0.05);
 }
 
-/*=grid-tables
+/* =grid-tables
 --------------------------------------------------------------- */
 .tbl-grid :is(th, td) {
 	border-inline-start: 1px solid #f2f2f2;
@@ -771,7 +776,7 @@ ul.hover > li:hover {
 	border-inline-end: 1px solid #f2f2f2;
 }
 
-/*=presentation (layout-tables). don't forget role="presentation"
+/* =presentation (layout-tables). don't forget role="presentation"
 --------------------------------------------------------------- */
 table.presentation,
 table.presentation th,
@@ -814,7 +819,7 @@ table.reset thead ~ tbody tr:last-child {
 	height: 100%;
 }
 
-/*=scrollbars
+/* =scrollbars
 --------------------------------------------------------------- */
 pre,
 .table-responsive, .visible-scrollbar {
@@ -840,7 +845,7 @@ pre::-webkit-scrollbar-thumb:hover,
 	background-color: var(--clr-neutral-900, #000);
 }
 
-/* =helper/utility classes
+/* MARK: =utility
 --------------------------------------------------------------- */
 .none, .screenhidden, .printvisible {
 	display: none;
@@ -994,7 +999,7 @@ th > *:last-child, td > *:last-child,
 	margin-block-end: 0;
 }
 
-/* =buttons
+/* MARK: =buttons
 --------------------------------------------------------------- */
 .btn, .btn:link, .btn:visited {
 	display: inline-block;
@@ -1058,7 +1063,7 @@ th > *:last-child, td > *:last-child,
 	}
 }
 
-/* =grid
+/* MARK: =grid
 --------------------------------------------------------------- */
 .grid {
 	--_column-count: 1;
@@ -1173,7 +1178,7 @@ th > *:last-child, td > *:last-child,
 	}
 }
 
-/* =editor styles (backend)
+/* MARK: =editor (backend)
 --------------------------------------------------------------- */
 .editor .accordion {
 	position: relative;

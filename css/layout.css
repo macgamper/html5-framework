@@ -1,4 +1,4 @@
-/* =global
+/* MARK: =global
 --------------------------------------------------------------- */
 .wrapper {
 	outline: 2px solid black;
@@ -7,19 +7,19 @@
 	margin-inline: auto;
 }
 	
-/* =header
+/* MARK: =header
 --------------------------------------------------------------- */
 .header {
 	background-color: #9cf; /* blue */
 }
 
-/* =mainnav
+/* MARK: =mainnav
 --------------------------------------------------------------- */
 .mainnav {
 	background-color: #f99; /* red */
 }
 
-/* =content
+/* MARK: =content
 --------------------------------------------------------------- */
 .content {
 	background-color: #ededed; /* grey */
@@ -32,21 +32,21 @@
 	background-color: #9f9; /* green */
 }
 
-/* =subnav
+/* MARK: =subnav
 --------------------------------------------------------------- */
 .subnav {
 	width: 20%;
 	background-color: #f99; /* red */
 }
 
-/* =sidebar
+/* MARK: =sidebar
 --------------------------------------------------------------- */
 .sidebar {
 	width: 20%;
 	background-color: #ff6; /* yellow */
 }
 
-/* =footer
+/* MARK: =footer
 --------------------------------------------------------------- */
 .footer {
 	background-color: #c9f; /* violet */

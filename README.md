@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.3] - 2024-05-13
+
+### Added
+- basics.css / layout.css / responsive.css: In den Section-Kommentaren `MARK:` ergänzt, damit diese in der Minimap hervorgehoben werden.
+
 ## [2.2.2] - 2024-05-06
 
 ### Added
