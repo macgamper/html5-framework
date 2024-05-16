@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.4] - 2024-05-16
+
+### Fixed
+- basics.css: Ungültige Werte bei den Logical Properties von `h5`/`h6` korrigiert.
+
 ## [2.2.3] - 2024-05-13
 
 ### Added

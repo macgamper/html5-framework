@@ -63,11 +63,11 @@ h4, .h4 {
 	font-size: var(--fontsize-600);
 }
 h5, .h5 {
-	margin-block-end: 0 0 0.4em;
+	margin-block-end: 0.4em;
 	font-size: var(--fontsize-400);
 }
 h6, .h6 {
-	margin-block-end: 0 0 0.3em;
+	margin-block-end: 0.3em;
 	font-size: var(--fontsize-400);
 }
 p, ul, ol, dl, pre, fieldset, figure, address, 
