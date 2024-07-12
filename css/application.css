@@ -1745,8 +1745,7 @@ ul.gallery-magnific img {
 	text-decoration: none;
 	border-radius: 3px;
 }
-.c-dropdown__link:hover,
-.c-dropdown__link:focus {
+.c-dropdown__link:is(:hover, :focus) {
 	background-color: var(--clr-neutral-100);
 }
 

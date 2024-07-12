@@ -1,6 +1,26 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.6] - 2024-07-12
+
+### Added
+- basics.css: Basis-Styling für Dialog Popover API.
+
+### Changed
+- basics.css: Rahmenfarbe von Tabellen neu über eine zentrale Variable anpassbar.
+
+## [2.2.5] - 2024-05-29
+
+### Added
+- basics.css: Für Googles reCAPTCHA-Badges, die via iFrame in die Seite geschrieben werden, war ein iFrame-Fix nötig.
+
+```css
+.grecaptcha-logo iframe { /* Google reCAPTCHA-Badge */
+	aspect-ratio: auto;
+	margin: 0;
+}
+```
+
 ## [2.2.4] - 2024-05-16
 
 ### Fixed

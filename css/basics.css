@@ -191,6 +191,10 @@ iframe[src^="https://www.google.com/maps"],
 iframe[src^="https://www.google.ch/maps"] {
 	--aspect-ratio: 1 / 1;
 }
+.grecaptcha-logo iframe { /* Google reCAPTCHA-Badge */
+	aspect-ratio: auto;
+	margin: 0;
+}
 
 summary {
 	display: flex;
@@ -229,6 +233,21 @@ summary > * {
 }
 summary + * {
 	margin-block-start: 1.5em;
+}
+
+button[popovertarget] {
+	border: 0;
+	padding: 0;
+}
+dialog, 
+[popover] {
+	border: 0;
+	padding: 1.5em;
+	border-radius: .25em;
+	box-shadow: var(--shadow-md);
+}
+:is(dialog, [popover])::backdrop {
+	background-color: rgba(0,0,0,.4);
 }
 
 .optimale-zeilenlaenge {
@@ -679,6 +698,7 @@ button + button[type=reset] {
 /* MARK: =tables
 --------------------------------------------------------------- */
 table {
+	--_tbl-border-color: var(--clr-neutral-900);
 	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -694,7 +714,9 @@ caption {
 th,
 td {
 	vertical-align: top;
-	border-block-end: 1px solid #f2f2f2;
+	border-color: var(--_tbl-border-color);
+	border-block-end-width: 1px;
+	border-block-end-style: solid;
 	padding: 0.5em 1em;
 }
 th {
@@ -711,23 +733,27 @@ table:not(.calendar) thead th {
 	letter-spacing: 0.1em;
 }
 :is(tbody, tfoot) th {
-	border-inline-end: 1px solid #f2f2f2;
+	border-inline-end-width: 1px;
+	border-inline-end-style: solid;
 }
 tr:first-child :is(th, td) {
-	border-block-start: 1px solid #f2f2f2;
+	border-block-start-width: 1px;
+	border-block-start-style: solid;
 }
 table:not(.calendar) thead tr:first-child :is(th, td) {
 	border-block-start: 0;
 }
-table:not(.calendar) thead ~ tbody tr:last-child {
-	border-block-end: 2px solid #f2f2f2;
+table:not(.calendar) thead ~ tbody tr:last-child :is(th, td) {
+	border-block-end-width: 2px;
+	border-block-end-style: solid;
 }
 tfoot tr:first-child td {
-	border-block-start: 2px solid #f2f2f2;
+	border-block-start-width: 2px;
 }
 tfoot tr:last-child :is(th, td) {
-	border-block-start: 2px solid #f2f2f2;
-	border-block-end: 6px double #f2f2f2;
+	border-block-start-width: 2px;
+	border-block-end-width: 6px;
+	border-block-end-style: double;
 	font-weight: bold;
 }
 table.auto {
@@ -770,10 +796,10 @@ ul.hover > li:hover {
 /* =grid-tables
 --------------------------------------------------------------- */
 .tbl-grid :is(th, td) {
-	border-inline-start: 1px solid #f2f2f2;
+	border-inline-start: 1px solid var(--_tbl-border-color);
 }
 .tbl-grid :is(th, td):last-child {
-	border-inline-end: 1px solid #f2f2f2;
+	border-inline-end: 1px solid var(--_tbl-border-color);
 }
 
 /* =presentation (layout-tables). don't forget role="presentation"
