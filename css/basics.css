@@ -705,11 +705,10 @@ table {
 }
 caption {
 	margin-block-start: 0;
-	text-align: left;
 	font-weight: bold;
 }
-[dir="rtl"] caption {
-	text-align: right;
+caption, th {
+	text-align: start;
 }
 th,
 td {
@@ -720,7 +719,6 @@ td {
 	padding: 0.5em 1em;
 }
 th {
-	text-align: left;
 	font-weight: bold;
 }
 table:not(.calendar) thead th {
@@ -763,17 +761,17 @@ table.fixed,
 .tbl-fixed {
 	table-layout: fixed;
 }
-th[align="left"], th.left, td.left {
+th[align="left"], :is(th, td).left {
 	float: none;
-	text-align: left;
+	text-align: start;
 }
-th[align="center"], th.center, td.center {
+th[align="center"], :is(th, td).center {
 	text-align: center;
 }
-th[align="right"], th.right, td.right,
+th[align="right"], :is(th, td).right,
 .tbl-no {
 	float: none;
-	text-align: right;
+	text-align: end;
 }
 table.no-pad :is(th, td):first-child {
 	padding-inline-start: 0;

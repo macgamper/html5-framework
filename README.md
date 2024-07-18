@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.7] - 2024-07-18
+
+### Changed
+- basics.css: Textausrichtung in Tabellen neu mit Logical Properties.
+
 ## [2.2.6] - 2024-07-12
 
 ### Added
