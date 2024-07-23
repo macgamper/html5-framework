@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.8] - 2024-07-23
+
+### Changed
+- default.html: Pfad des helper.js umgestellt auf comet11.
+
 ## [2.2.7] - 2024-07-18
 
 ### Changed
