@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.2.9] - 2024-08-06
+
+### Changed
+- basic.css: Kleine Verbesserungen bei Spezifität, Custom Properties und vereinfachten Selektoren.
+- application.css: Gallery-Variablen haben mit eigenem Namespace, um nicht mit den Grid-Variablen verwechselt zu werden. Aspect-Ratio für die Gallery-Bilder. Weniger Spezifität.
+
 ## [2.2.8] - 2024-07-23
 
 ### Changed

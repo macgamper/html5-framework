@@ -21,6 +21,8 @@
 	--fontsize-900: 3.6rem;
 
 	--radius-sm: .1875em;
+	--radius-md: .25em;
+	--radius-xl: 100vw;
 
 	accent-color: var(--clr-primary);
 }
@@ -78,7 +80,7 @@ audio, blockquote, details, figure, iframe, table, video,
 .accordion, .box, .img-default, .mb-2x, .media-responsive, .table-responsive {
 	margin: 3em 0;
 }
-* > *:is(:first-child):not(summary) {
+* > *:where(:first-child):not(summary) {
 	margin-block-start: 0;
 }
 figure > .img-default,
@@ -243,7 +245,7 @@ dialog,
 [popover] {
 	border: 0;
 	padding: 1.5em;
-	border-radius: .25em;
+	border-radius: var(--radius-md);
 	box-shadow: var(--shadow-md);
 }
 :is(dialog, [popover])::backdrop {
@@ -556,6 +558,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 	outline-offset: 0;
 	border: 1px solid #666;
 	padding: 0.25em 0.5em;
+	line-height: inherit;
 	color: inherit;
 	background-color: var(--clr-neutral-100);
 	border-radius: var(--radius-sm);
@@ -586,8 +589,8 @@ button, [type="button"], [type="reset"], [type="submit"] {
 [type=checkbox]::after {
 	content: "";
 	position: absolute;
-	margin: auto;
 	inset: 0;
+	margin: auto;
 	overflow: hidden;
 }
 [type=radio]::before {
@@ -597,7 +600,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 [type=radio]:checked::before {
 	border: 5px solid transparent;
-	border-radius: 100%;
+	border-radius: inherit;
 	outline-offset: -6px;
 	background-color: var(--clr-primary, #000);
 }
@@ -625,6 +628,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 textarea {
 	min-height: 5em;
 	resize: vertical;
+	field-sizing: content;
 }
 select:not([multiple]) {
 	display: block;
@@ -1009,6 +1013,7 @@ details:not(:empty):not([hidden]),
 
 blockquote > *:last-child,
 details > *:last-child, summary ~ div > *:last-child,
+dialog > *:last-child, [popover] > *:last-child,
 fieldset > *:last-child,
 th > *:last-child, td > *:last-child,
 .box > *:last-child,
@@ -1025,7 +1030,7 @@ th > *:last-child, td > *:last-child,
 
 /* MARK: =buttons
 --------------------------------------------------------------- */
-.btn, .btn:link, .btn:visited {
+.btn, .btn:any-link {
 	display: inline-block;
 	border: 0;
 	padding: .5em 1em;
@@ -1051,7 +1056,7 @@ th > *:last-child, td > *:last-child,
   	padding: .1em .5em;
 }
 .btn[type="reset"],
-.btn--secondary {
+.btn--secondary, .btn--secondary:any-link {
 	background-color: #757575;
 }
 .btn--invis, .btn--ghost {

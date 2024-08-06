@@ -827,39 +827,40 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =magnific gallery
 --------------------------------------------------------------- */
-ul.gallery-magnific {
-	--_column-count: 3;
+.gallery-magnific {
+	--_gallery-count: 3;
+	--_gallery-gap: 1.5em;
 	display: grid;
-	grid-template-columns: repeat(var(--_column-count), 1fr);
-	grid-gap: 1.5em;
-	gap: 1.5em;
+	grid-template-columns: repeat(var(--_gallery-count), 1fr);
+	gap: var(--_gallery-gap);
 	overflow: visible;
 }
-ul.gallery-magnific a {
+.gallery-magnific a {
 	display: block;
 	text-decoration: none;
 }
-ul.gallery-magnific figure {
+.gallery-magnific figure {
 	margin: 0;
 }
-ul.gallery-magnific figcaption {
+.gallery-magnific figcaption {
 	padding: 0 0.5em 0.5em 0.5em;
 	text-align: center;
 }
-ul.gallery-magnific img {
+.gallery-magnific img {
 	display: block;
 	margin: 0 auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
 }
 .mfp-content figcaption {
 	margin-block-start: 0;
 }
 
 @media only screen and (max-width: 48em) { /* 768/16 */
-
-	ul.gallery-magnific {
-		--_column-count: 2;
+	.gallery-magnific {
+		--_gallery-count: 2;
+		--_gallery-gap: 3vw;
 	}
-
 }
 
 /* =breadcrumb
