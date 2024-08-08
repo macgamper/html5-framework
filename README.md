@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3] - 2024-08-08
+
+### Added
+- application.css: Basis-Styling für das neue Bürgerkonto-Menü-Modul ergänzt.
+
+### Changed
+- application.css: Fix für Sticky-Index, wo in A-Z-Kontaktlisten die Inhalte der Tabellen überlagert wurden.
+
 ## [2.2.9] - 2024-08-06
 
 ### Changed
