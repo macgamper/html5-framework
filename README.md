@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3] - 2024-08-12
+
+### Added
+- basics.css: Styling für via `name`-Attribut gruppierte, aufeinanderfolgende Details-Elemente ergänzt.
+- application.css: Basis-Styling für das neue Bürgerkonto-Menü-Modul ergänzt.
+
+### Changed
+- application.css: Akkordeon-Styling auf neue Klassen und funktionierend mit Grid angepasst.
+
 ## [2.3] - 2024-08-08
 
 ### Added

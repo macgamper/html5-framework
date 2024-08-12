@@ -211,6 +211,10 @@ summary::-webkit-details-marker,
 summary::marker {
 	display: none;
 }
+summary:focus-visible {
+	position: relative;
+	z-index: 1;
+}
 summary::before {
 	content: "";
 	position: relative;
@@ -235,6 +239,14 @@ summary > * {
 }
 summary + * {
 	margin-block-start: 1.5em;
+}
+
+details[name]:has(+ details[name]) {
+	margin-block-end: 0;
+}
+details[name]:has(+ details[name]) + details[name] {
+	margin-block-start: 0;
+	border-block-start: 0;
 }
 
 button[popovertarget] {
