@@ -1,15 +1,15 @@
 {
-  "name": "browsersync-starterpack",
-  "version": "0.0.2",
-  "description": "simple browsersync starterpack with html and css filewatcher",
+  "name": "browsersync",
+  "version": "1.0.0",
+  "description": "simple browsersync starterpack with html, js and css filewatcher",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "andreas santarsieri  <santarsieri@gmail.com>",
+  "author": "kaspar guggenbühl",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2"
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0"
   }
 }
