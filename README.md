@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.1] - 2024-09-04
+
+### Changed
+- package.json: Aktualisierte Konfiguration.
+- basics.css: Tabelle mit `.reset` vom Basis-Tabellenstyling ausgeschlossen.
+- application.css: Korrekturen Akkordeon-Styling.
+
 ## [2.3] - 2024-08-12
 
 ### Added

@@ -1316,8 +1316,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	--_accordion-duration: .5s;
 	--_accordion-transition: ease;
 	--_accordion-padding-block: 1.5em;
-	--_accordion-padding-inline: 1.5em;
-	--_accordion-padding-inline-start: 2.857142857142857em;
+	--_accordion-padding-inline: 0;
+	--_accordion-padding-inline-start: 0;
 	--_accordion-title-active: var(--clr-neutral-300);
 	border-block-end: 1px solid var(--clr-neutral-700);
 }
@@ -1327,11 +1327,11 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 		grid-template-rows var(--_accordion-duration) var(--_accordion-transition),
 		padding-block var(--_accordion-duration) var(--_accordion-transition) !important;
 	padding: 0 var(--_accordion-padding-inline) !important;
-	padding-inline-start:var(--_accordion-padding-inline-start,1.5em);
+	padding-inline-start: var(--_accordion-padding-inline-start, 1.5em);
 }
 .js-cms-accordion-panel--content[aria-hidden="false"] {
 	padding: var(--_accordion-padding-block) var(--_accordion-padding-inline) !important;
-	padding-inline-start:var(--_accordion-padding-inline-start,1.5em);
+	padding-inline-start: var(--_accordion-padding-inline-start, 1.5em);
 }
 
 .js-accordion_control {
@@ -1347,10 +1347,10 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .js-accordion_control > span {
 	flex: 1 1 auto;
 }
-.js-accordion_control::before {
+.js-accordion_control::after {
 	flex: none;
-	width: var(--_accordion-padding-inline-start,1.5em);
-	content: "\2b";
+	width: var(--_accordion-padding-inline-start, 1.5em);
+	content: "\f106";
 	display: inline-block;
 	font-family: FontAwesome;
 	font-weight: normal;
@@ -1358,6 +1358,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-align: center;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	transition: transform .2s;
 }
 .js-accordion_control:focus-visible {
 	z-index: 1;
@@ -1366,7 +1367,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-decoration: underline;
 }
 .js-accordion_control--active::before {
-	content: "\f068";
+	transform: scaleY(-1);
 }
 .js-accordion_control--active {
 	background-color: var(--_accordion-title-active);

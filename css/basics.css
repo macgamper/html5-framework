@@ -737,7 +737,7 @@ td {
 th {
 	font-weight: bold;
 }
-table:not(.calendar) thead th {
+table:not(.calendar, .reset) thead th {
 	vertical-align: bottom;
 	border-block-end-width: 2px;
 	padding: calc((1.6 / 1.2) * 0.5em) calc((1.6 / 1.2) * 1em); /* Faktor der Schriftgrösse * padding */
@@ -754,10 +754,10 @@ tr:first-child :is(th, td) {
 	border-block-start-width: 1px;
 	border-block-start-style: solid;
 }
-table:not(.calendar) thead tr:first-child :is(th, td) {
+table:not(.calendar, .reset) thead tr:first-child :is(th, td) {
 	border-block-start: 0;
 }
-table:not(.calendar) thead ~ tbody tr:last-child :is(th, td) {
+table:not(.calendar, .reset) thead ~ tbody tr:last-child :is(th, td) {
 	border-block-end-width: 2px;
 	border-block-end-style: solid;
 }
