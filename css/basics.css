@@ -1237,7 +1237,8 @@ th > *:last-child, td > *:last-child,
 	color: #fff;
 	background-color: red;
 }
-.editor .accordion > *:is(h2, h3, h4, h5, h6) {
+.editor .accordion > *:is(h2, h3, h4, h5, h6),
+.editor div.cke_widget_GovisDetail {
 	clear: both;
 }
 .editor img.cke_iframe {

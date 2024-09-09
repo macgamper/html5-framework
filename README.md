@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.2] - 2024-09-09
+
+### Changed
+- basics.css: Clearfix für Details/Summary-Widget im Editor ergänzt, das sich mit geloateten Elementen – meist Bilder – nicht vertragen hat.
+
 ## [2.3.1] - 2024-09-04
 
 ### Changed
