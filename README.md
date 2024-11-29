@@ -4,7 +4,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ## [2.3.3] - 2024-11-29
 
 ### Changed
-- basics.css: Scroll-Margins auch für die Suchtreffer-Hervorhebung mit `mark.highlight`. [Hängende Interpunktionen](https://css-tricks.com/almanac/properties/h/hanging-punctuation/) für Safari im Bereich `main :where(p, blockquote)`. Semantischer Hambuger-Zustand via `.hamburger[aria-expanded="true"]`.
+- basics.css: Animiertes Details/Summary-Element (Chrome). Scroll-Margins auch für die Suchtreffer-Hervorhebung mit `mark.highlight`. [Hängende Interpunktionen](https://css-tricks.com/almanac/properties/h/hanging-punctuation/) für Safari im Bereich `main :where(p, blockquote)`. Semantischer Hambuger-Zustand via `.hamburger[aria-expanded="true"]`.
 - print.css: Tablesorter-Icons und -Filter werden im Druck ausgeblendet.
 
 ## [2.3.2] - 2024-09-09
