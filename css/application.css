@@ -1229,8 +1229,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .mod-index-toc li:first-child a {
 	box-shadow: none;
 }
-.mod-index-toc a:hover,
-.mod-index-toc a:focus {
+.mod-index-toc a:is(:hover, :focus) {
 	color: var(--clr-neutral-900);
 }
 
@@ -1552,21 +1551,21 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	inset-block-start: 31px;
 }
 
-.hamburger--active {
+.hamburger[aria-expanded="true"] {
 	background-color: var(--clr-neutral-900);
 }
-.hamburger--active span:nth-child(1) {
+.hamburger[aria-expanded="true"] span:nth-child(1) {
 	inset-block-start: 20px;
 	width: 0%;
 	inset-inline-start: 50%;
 }
-.hamburger--active span:nth-child(2) {
+.hamburger[aria-expanded="true"] span:nth-child(2) {
 	transform: rotate(45deg);
 }
-.hamburger--active span:nth-child(3) {
+.hamburger[aria-expanded="true"] span:nth-child(3) {
 	transform: rotate(-45deg);
 }
-.hamburger--active span:nth-child(4) {
+.hamburger[aria-expanded="true"] span:nth-child(4) {
 	inset-block-start: 20px;
 	width: 0%;
 	inset-inline-start: 50%;
@@ -1579,14 +1578,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
-
 	.mainnav {
 		display: none;
 	}
 	.mobilenav {
 		display: block;
 	}
-
 }
 
 .mobilenav__container {

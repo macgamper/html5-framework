@@ -206,6 +206,20 @@ table.auto {
 .tbl-no {
 	text-align: right;
 }
+:is(th, td) > *:last-child {
+    margin-bottom: 0;
+}
+
+/* =tablesorter
+--------------------------------------------------------------- */
+.tablesorter-filter-row {
+	display: none;
+}
+.tablesorter-default .header::after,
+.tablesorter-default .tablesorter-header::after,
+.tablesorter-default .tablesorter-processing::after {
+    content: none !important;
+}
 
 /* =global module-lists
 --------------------------------------------------------------- */
