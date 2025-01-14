@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.4] - 2025-01-14
+
+### Changed
+- basics.css: «Reduzierte Bewegung» (A11Y) berücksichtigt nun auch das neu animierte Details/Summary-Element.
+- print.css: Verbesserte Darstellung des Details/Summary-Elements.
+
 ## [2.3.3] - 2024-11-29
 
 ### Changed
