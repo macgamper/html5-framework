@@ -44,6 +44,7 @@ html {
 }
 body {
 	font: var(--fontsize-400)/1.5 system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size-adjust: from-font;
 	position: relative;
 }
 h1, h2, h3, h4, h5, h6, caption,

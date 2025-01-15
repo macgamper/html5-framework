@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.5] - 2025-01-15
+
+### Changed
+- default.html: Zusätzliche Elemente für Tests aufgenommen: `<mark>` (Hervorhebung von Suchbegriffen), `<code>` (Inline-Code), `kbd` (Keyboard-Eingaben), `.lead` (Lead-Absatztext, zb. für Newsmeldungen).
+- basics.css: `font-size-adjust: from-font;` ergänzt zur Angleichung der Schriftgrössen (zb. bei Inline-Elementen mit anderer Schriftart oder Fallback-Fonts).
+
 ## [2.3.4] - 2025-01-14
 
 ### Changed
