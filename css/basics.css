@@ -281,10 +281,6 @@ dialog,
 	background-color: rgba(0,0,0,.4);
 }
 
-.optimale-zeilenlaenge {
-	color: #ee0000; /* Zeichen von 45-75 werden rot hervorgehoben. Kann in Produktivumgebung gelöscht werden. */
-}
-
 /* MARK: =links
 --------------------------------------------------------------- */
 a, a:link {
