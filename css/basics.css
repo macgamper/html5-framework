@@ -186,6 +186,10 @@ strong, b,
 .strong, .lead {
 	font-weight: bold;
 }
+mark {
+	padding-inline: .15em;
+	border-radius: var(--radius-sm);
+}
 iframe {
 	aspect-ratio: var(--aspect-ratio, 16 / 9);
 	display: block;

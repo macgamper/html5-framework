@@ -340,6 +340,6 @@ fieldset > *:last-child,
 
 /* =cookie
 --------------------------------------------------------------- */
-.cookie-alert {
+.cookie-alert, #cc-root-wrapper {
 	display: none !important;
 }

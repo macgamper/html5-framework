@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.6] - 2025-02-11
+
+### Added
+- basics.css: Basis-Styling für `mark` ergänzt.
+- print.css: Ausblenden von Cookie-Consent-Elementen optimiert.
+
+### Changed
+- application.css: Tag-Klasse `.tag` optimiert. Einzüge harmonisiert.
+
 ## [2.3.5] - 2025-01-15
 
 ### Added
