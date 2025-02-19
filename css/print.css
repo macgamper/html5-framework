@@ -209,9 +209,6 @@ table.auto {
 .tbl-no {
 	text-align: right;
 }
-:is(th, td) > *:last-child {
-    margin-bottom: 0;
-}
 
 /* =tablesorter
 --------------------------------------------------------------- */
@@ -233,10 +230,6 @@ table.auto {
 .mod-entry:first-child {
 	border-top: 0;
 	padding-top: 0;
-}
-.mod-entry > *:last-child,
-.mod-entry a > *:last-child {
-	margin-bottom: 0;
 }
 .mod-entry-meta {
 	margin-bottom: 0.5em;
@@ -305,10 +298,25 @@ details,
 	border: 1px solid #000;
 	padding: 1.5em;
 }
+
+blockquote > *:last-child,
+details > *:last-child, summary ~ div > *:last-child,
+dialog > *:last-child, [popover] > *:last-child,
 fieldset > *:last-child,
+th > *:last-child, td > *:last-child,
 .box > *:last-child,
-.details-content > *:last-child {
-	margin-bottom: 0;
+.details-content > *:last-child
+.faq__content > *:last-child,
+.grid > [class*="col-"] > *:last-child,
+.js-accordion-content > *:last-child,
+.katabox > *:last-child,
+.lc-reset > *:last-child,
+.mod-entry > *:last-child,
+.mod-entry a > *:last-child,
+.mod-entry__content > *:last-child,
+.nmb-lastchild > *:last-child,
+.row > [class*="col-"] > *:last-child {
+	margin-block-end: 0;
 }
 
 /* =magnific gallery

@@ -1046,14 +1046,14 @@ dialog > *:last-child, [popover] > *:last-child,
 fieldset > *:last-child,
 th > *:last-child, td > *:last-child,
 .box > *:last-child,
-.row > [class*="col-"] > *:last-child,
-.grid > [class*="col-"] > *:last-child,
-.lc-reset > *:last-child,
-.katabox > *:last-child,
-.js-accordion-content > *:last-child,
 .faq__content > *:last-child,
+.grid > [class*="col-"] > *:last-child,
+.js-accordion-content > *:last-child,
+.katabox > *:last-child,
+.lc-reset > *:last-child,
+.mod-entry__content > *:last-child,
 .nmb-lastchild > *:last-child,
-.mod-entry__content > *:last-child {
+.row > [class*="col-"] > *:last-child {
 	margin-block-end: 0;
 }
 

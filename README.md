@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.7] - 2025-02-19
+
+### Changed
+- basics.css: `> *:last-child ` Selektoren alphabetisch gelistet.
+- print.css: `> *:last-child ` Selektoren konsolidiert und fehlende ergänzt.
+
 ## [2.3.6] - 2025-02-11
 
 ### Added
