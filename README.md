@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.8] - 2025-03-11
+
+### Changed
+- default.html: `blockquote` mit mehr Inhalt (mehrzeilig).
+- basics.css: Verbessertes Grundstyling für `blockquote`-Elemente.
+- basics.css: Aufeinanderfolgende `details`-Elemente haben nun einen kleineren Abstand zueinander.
+
 ## [2.3.7] - 2025-02-19
 
 ### Changed

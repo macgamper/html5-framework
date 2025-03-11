@@ -52,8 +52,7 @@
 	color: #273941;
 	text-decoration: none;
 }
-.mod-nav a:hover,
-.mod-nav a:focus,
+.mod-nav a:is(:hover, :focus),
 .mod-nav .active a {
 	color: var(--clr-neutral-900);
 }

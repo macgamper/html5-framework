@@ -157,11 +157,18 @@ figcaption {
 	margin-block-start: 0.75em;
 }
 blockquote {
-	padding: 0 1.5em;
+	border-inline-start: 2px solid var(--clr-neutral-900);
+	padding-inline: 1.5em;
+	font-size: var(--fontsize-700);
 	font-style: italic;
+	text-wrap: balance;
+	quotes: "«" "»" "‹" "›";
+}
+blockquote p:has(cite) {
+    text-align: right;
+    font-size: var(--fontsize-400);
 }
 address {}
-cite {}
 tt, code, kbd, samp, pre,
 .monospace {
 	font-family: "Courier New", Courier, monospace;
@@ -259,6 +266,13 @@ summary > * {
 	margin-block-end: 0;
 }
 summary + * {
+	margin-block-start: 1.5em;
+}
+
+details:has(+ details) {
+	margin-block-end: 1.5em;
+}
+details + details {
 	margin-block-start: 1.5em;
 }
 
