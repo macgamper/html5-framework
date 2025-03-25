@@ -1310,7 +1310,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* MARK: =accordion
 --------------------------------------------------------------- */
-.js-cms-accordion-component  {
+.js-cms-accordion-component,
 .js-accordion  {
 	--_accordion-duration: .5s;
 	--_accordion-transition: ease;
