@@ -642,7 +642,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 [type=radio]:checked::before {
-	border: 5px solid transparent;
+	border: 0.3125em solid transparent;
 	border-radius: inherit;
 	outline-offset: -6px;
 	background-color: var(--clr-primary, #000);
@@ -724,7 +724,7 @@ summary:focus,
 .form-builder__item--toggle [type="checkbox"]:focus ~ .form-builder__toggle::before {
 	outline: 3px solid transparent;
 	border-color: var(--clr-neutral-900);
-	box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+	box-shadow: 0 0 0 0.3125em rgba(21, 156, 228, 0.4);
 }
 summary:focus:not(:focus-visible),
 [type=range]:focus:not(:focus-visible) {

@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.3.9] - 2025-03-27
+
+### Changed
+- basics.css: Aktive Radios [type=radio]:checked` (Kreisauswahl) und Formfelder-Fokusrahmen skalieren nun abhängig von der Schriftgrösse mit.
+
 ## [2.3.8] - 2025-03-11
 
 ### Changed
