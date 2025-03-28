@@ -669,8 +669,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 textarea {
-	min-height: 5em;
 	resize: vertical;
+}
+textarea:not([rows]) {
+	min-height: calc(3lh + .5em + 2px); /* lh + pad + border */
 	field-sizing: content;
 }
 select:not([multiple]) {
