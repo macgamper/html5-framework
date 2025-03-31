@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4] - 2025-03-31
+
+### Added
+- application.css: Zusätzliche Styles für Tags (mit/ohne Links).
+
 ## [2.3.9] - 2025-03-28
 
 ### Changed
