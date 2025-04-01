@@ -288,11 +288,39 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-zip-component .form-sizer:last-child {
 	width: 73%;
 }
-.form-builder .js-simple-uploader-dropzone {
+
+/* Uploader */
+.form-builder .form-fileupload-group {
+	margin-block-end: 1.5em;
+}
+.form-builder .form-fileupload-group > .clearfix {
+	margin-block-end: 0;
+}
+.form-builder .form-fileupload-group :is(.form-hint-complex, .js-simple-uploader-wrapper) {
 	margin-block-start: .75em;
+}
+.form-builder .form-hint-complex__title {
+	margin-block-end: .75em;
+}
+.form-builder .form-hint-complex__rules li + li {
+	margin-block-start: 0;
+}
+.form-builder .form-fileupload-group:has(.js-simple-uploader-dropzone) :is(.form-hint, .form-hint-complex__rules) {
+	width: 100%;
+}
+.form-builder .js-simple-uploader-dropzone {
 	height: auto;
+	max-height: none;
+	margin-block-start: .75em;
 	padding: 1.5em;
-	border-radius: .25em;
+	color: var(--_form-clr-hint);
+	background-color: var(--clr-neutral-200);
+	border-radius: var(--radius-sm, .25em);
+	transition: all .2s;
+}
+.form-builder .js-simple-uploader-dropzone-active {
+	color: var(--clr-neutral-900, #000);
+	box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.2);
 }
 
 /* =accessibility-date select

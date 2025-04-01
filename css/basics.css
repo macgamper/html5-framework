@@ -185,7 +185,7 @@ small, .small,
 label.error,
 .asset-meta,
 .cookie-alert,
-.form-hint, .form-hint-complex,
+.form-hint, .form-hint-complex, .js-simple-uploader-dropzone,
 .tag {
 	font-size: var(--fontsize-300);
 }

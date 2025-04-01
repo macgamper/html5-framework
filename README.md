@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.1] - 2025-04-01
+
+### Added
+- application.css: Formular-Styles für File-Upload verbessert.
+- basics.css: Formular-Styles für File-Upload verbessert.
+
 ## [2.4] - 2025-03-31
 
 ### Added
