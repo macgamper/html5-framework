@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.2] - 2025-04-07
+
+### Added
+- default.html: Die Suche wurde in das `<search>`-Element gepackt, vorläufig noch ergänzt durch `role="search"`.
+
 ## [2.4.1] - 2025-04-01
 
 ### Added
