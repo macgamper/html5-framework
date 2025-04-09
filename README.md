@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.3] - 2025-04-09
+
+### Added
+- basics.css: Der meist auf der Datenschutzseite zu integrierende Button für die Cookie-Consent-Settings hat eine Klasse `.cookie-consent-settings` bekommen. In Kombination mit einem Template mit deaktiviertem Cookie Consent (= `html.js-cc-disable`), wird dort der Button ausgeblendet.
+
 ## [2.4.2] - 2025-04-07
 
 ### Added

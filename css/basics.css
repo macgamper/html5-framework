@@ -920,7 +920,8 @@ pre::-webkit-scrollbar-thumb:hover,
 
 /* MARK: =utility
 --------------------------------------------------------------- */
-.none, .screenhidden, .printvisible {
+.none, .screenhidden, .printvisible,
+.js-cc-disable .cookie-consent-settings {
 	display: none;
 }
 .block,
