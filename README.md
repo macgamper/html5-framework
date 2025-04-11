@@ -1,6 +1,19 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.4] - 2025-04-11
+
+### Added
+- basics.css: Die `.sticky`-Klasse wurde erweitert. Optional kann neu mit dem Modifier `.sticky--container` und dem Kindelement `.sticky__child` ein Progressive Enhancement mit *State queries* gemacht werden. Damit kann der Sticky-Status mit nativem CSS angesprochen werden.
+
+```html
+<div class="sticky sticky--container">
+	<div class="sticky__child">
+		<p>Inhalt</p>
+	</div>
+</div>
+```
+
 ## [2.4.3] - 2025-04-09
 
 ### Added

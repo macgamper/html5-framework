@@ -963,11 +963,6 @@ pre::-webkit-scrollbar-thumb:hover,
 	display: table;
 	clear: both;
 }
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	inset-block-start: 0;
-}
 .alignleft, .align-inline-start,
 .alignright, .align-inline-end,
 .aligncenter {
@@ -1072,6 +1067,35 @@ th > *:last-child, td > *:last-child,
 .nmb-lastchild > *:last-child,
 .row > [class*="col-"] > *:last-child {
 	margin-block-end: 0;
+}
+
+/* MARK: =Sticky 2.0
+--------------------------------------------------------------- */
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	inset-block-start: 0;
+}
+.sticky--container {}
+.sticky__child {
+    border-block-end: 1px solid var(--clr-neutral-200, #000);
+    padding: min(3vw, 1em);
+    background-color: var(--clr-neutral-100, #fff);
+}
+
+@supports (container-type: scroll-state) {
+    .sticky--container {
+        container-type: scroll-state;
+    }
+    .sticky__child {
+        transition: box-shadow 0.2s ease-out;
+
+        @container scroll-state(stuck: top) {
+            background-color: color-mix(in srgb, var(--clr-neutral-100, #fff) 100%, transparent 30%);
+            box-shadow: var(--shadow-md);
+            backdrop-filter: blur(10px);
+        }
+    }
 }
 
 /* MARK: =buttons
