@@ -11,7 +11,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 	- TikTok
 	- X (neues Standard-Icon, die alten Twitter-Icons sind noch vorhanden)
 	
-	Bei allen unterstützen Icons sind jeweils sämtliche Varianten vorhanden, beispielsweise die normale und die quadratische Variante. Dafür muss lediglich korrekte Unicode im Pseudo-Element eingesetzt werden.
+	Bei allen unterstützen Icons sind jeweils sämtliche verfügbaren Varianten vorhanden; beispielsweise die normale und die quadratische Variante. Dafür muss lediglich korrekte Unicode im Pseudo-Element eingesetzt werden.
 
 ## [2.4.4] - 2025-04-11
 
