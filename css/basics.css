@@ -390,13 +390,17 @@ a img {
 [href^="https://goo.gl/maps/"]::before,
 [href^="https://maps.app.goo.gl/"]::before,
 .download-icn::before,
+.bluesky-icn::before,
 .facebook-icn::before,
 .instagram-icn::before,
 .linkedin-icn::before,
-.twitter-icn::before,
+.mastodon-icn::before,
+.threads-icn::before,
+.tiktok-icn::before,
 .whatsapp-icn::before,
+.x-icn::before, .twitter-icn::before,
 .xing-icn::before,
-.youtube-icn::before {
+.youtube-icn::before  {
 	display: inline-block;
 	padding-inline-end: .25em;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -405,13 +409,17 @@ a img {
 	-moz-osx-font-smoothing: grayscale;
 	transform: translate(0, 0);
 }
+.bluesky-icn::before,
 .facebook-icn::before,
 .instagram-icn::before,
 .linkedin-icn::before,
-.twitter-icn::before,
+.mastodon-icn::before,
+.threads-icn::before,
+.tiktok-icn::before,
 .whatsapp-icn::before,
+.x-icn::before, .twitter-icn::before,
 .xing-icn::before,
-.youtube-icn::before {
+.youtube-icn::before  {
 	font-family: "FontAwesome Brands";
 }
 [href$=".doc" i]::before, [href*=".doc?" i]::before, [href*=".doc/" i]::before,
@@ -486,6 +494,9 @@ a img {
 .download-icn::before {
 	content: "\f019";
 }
+.bluesky-icn::before {
+	content: "\e6a3";
+}
 .facebook-icn::before {
 	content: "\f082";
 }
@@ -495,11 +506,20 @@ a img {
 .linkedin-icn::before {
 	content: "\f08c";
 }
-.twitter-icn::before {
-	content: "\f081";
+.mastodon-icn::before {
+	content: "\f4f6";
+}
+.threads-icn::before {
+	content: "\e619";
+}
+.tiktok-icn::before {
+	content: "\e07b";
 }
 .whatsapp-icn::before {
-	content: "\f232";
+	content: "\e07b";
+}
+.x-icn::before, .twitter-icn::before {
+	content: "\e61a";
 }
 .xing-icn::before {
 	content: "\f169";

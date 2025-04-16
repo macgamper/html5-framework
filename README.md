@@ -1,6 +1,18 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.5] - 2025-04-16
+
+### Added
+- basics.css: Aktualisierte SM-Icons unseres eigenen Icons-Subsets «FontAwesome Brands» (6.7.2) mit diesen Neuzugängen:
+	- Bluesky
+	- Mastodon
+	- Threads
+	- TikTok
+	- X (neues Standard-Icon, die alten Twitter-Icons sind noch vorhanden)
+	
+	Bei allen unterstützen Icons sind jeweils sämtliche Varianten vorhanden, beispielsweise die normale und die quadratische Variante. Dafür muss lediglich korrekte Unicode im Pseudo-Element eingesetzt werden.
+
 ## [2.4.4] - 2025-04-11
 
 ### Added
