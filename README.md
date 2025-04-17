@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.6] - 2025-04-17
+
+### Changed
+- application.css: Hamburger neu mit relativen Massen definiert und damit flexibler skalier- und adaptierbar.
+
 ## [2.4.5] - 2025-04-16
 
 ### Added

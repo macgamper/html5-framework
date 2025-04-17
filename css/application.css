@@ -1541,27 +1541,33 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =hamburger
 --------------------------------------------------------------- */
 .hamburger {
+	--_hamburger-size: 3.4375em; /* 55/16 */
+	--_hamburger-block-size: var(--_hamburger-size); /* eigene Höhe falls gewünscht */
+	--_hamburger-padding: .625em; /* 10/16 */
+	--_hamburger-padding-block: calc(var(--_hamburger-padding) * 1.5); /* Faktor definiert die Linien-Abstände  */
+	--_hamburger-padding-inline: var(--_hamburger-padding);
+	--_hamburger-stroke-width: 2px;
 	display: block;
 	position: relative;
 	z-index: 4;
-	flex: 0 0 auto;
+	flex: none;
+	inline-size: var(--_hamburger-size);
+	block-size: var(--_hamburger-block-size);
 	margin: 0;
-	width: 55px;
-	height: 45px;
 	border: 0;
+	padding: 0;
 	text-indent: -9999px;
-	border-radius: 3px;
+	border-radius: var(--radius-sm);
 	cursor: pointer;
 	background-color: var(--clr-primary);
 	transition: background-color .5s;
 }
 .hamburger span {
-	content: '';
 	display: block;
 	position: absolute;
-	inset-inline-start: 10px;
-	height: 3px;
-	width: 35px;
+	inset-inline-start: var(--_hamburger-padding-inline);
+	inline-size: calc(100% - 2 * var(--_hamburger-padding-inline));
+	block-size: var(--_hamburger-stroke-width);
 	background-color: var(--clr-neutral-100);
 	border-radius: 2px;
 	opacity: 1;
@@ -1569,34 +1575,30 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	transition: .25s ease-in-out;
 }
 .hamburger span:nth-child(1) {
-	inset-block-start: 11px;
+	inset-block-start: var(--_hamburger-padding-block);
 }
 .hamburger span:nth-child(2),
 .hamburger span:nth-child(3) {
-	inset-block-start: 21px;
+	inset-block-start: calc(50% - (var(--_hamburger-stroke-width) / 2));
 }
 .hamburger span:nth-child(4) {
-	inset-block-start: 31px;
+	inset-block-start: calc((100% - var(--_hamburger-padding-block)) - var(--_hamburger-stroke-width));
 }
 
 .hamburger[aria-expanded="true"] {
 	background-color: var(--clr-neutral-900);
 }
-.hamburger[aria-expanded="true"] span:nth-child(1) {
-	inset-block-start: 20px;
-	width: 0%;
+.hamburger[aria-expanded="true"] :is(span:nth-child(1), span:nth-child(4)) {
+	inset-block-start: 50%;
 	inset-inline-start: 50%;
+	inline-size: 0%;
+	opacity: 0;
 }
 .hamburger[aria-expanded="true"] span:nth-child(2) {
 	transform: rotate(45deg);
 }
 .hamburger[aria-expanded="true"] span:nth-child(3) {
 	transform: rotate(-45deg);
-}
-.hamburger[aria-expanded="true"] span:nth-child(4) {
-	inset-block-start: 20px;
-	width: 0%;
-	inset-inline-start: 50%;
 }
 
 /* =Mobilenav AJAX
