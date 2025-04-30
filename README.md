@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.7] - 2025-04-30
+
+### Changed
+- default.html: Dialog und Popover-Elemente können nun mit eigenen Buttons aufgerufen werden.
+- basics.css: Animiertes Ein-/Ausblenden von Dialog und Popover ergänzt.
+- application.css: `.btn-group` ergänzt, das mehrere Button auch ausserhalb des Form-Builders responsiv ausrichtet.
+
 ## [2.4.6] - 2025-04-17
 
 ### Changed
