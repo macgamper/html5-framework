@@ -247,14 +247,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-builder-btn {
 	margin-block-end: 2.4em;
 }
-.form-builder .form-builder-btn-group {
+.form-builder .form-builder-btn-group,
+.btn-group {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
 	margin-block-start: 1.5em;
 }
-.form-builder .form-builder-btn-group p,
-.form-builder .form-builder-btn-group button + button {
+:is(.form-builder .form-builder-btn-group, .btn-group) :is(p, button + button) {
 	margin: 0;
 }
 .form-builder .form-sizer-wrapper {
