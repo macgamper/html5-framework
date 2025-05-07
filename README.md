@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.8] - 2025-05-07
+
+### Changed
+- default.html: Dialog-Aktionen mit Inline-JS gelöst.
+- application.css: Basis-Styling für Dialog-Innenstruktur ergänzt.
+
 ## [2.4.7] - 2025-04-30
 
 ### Changed

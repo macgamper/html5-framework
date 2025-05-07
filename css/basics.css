@@ -46,12 +46,12 @@ body {
 	font: var(--fontsize-400)/1.5 system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size-adjust: from-font;
 	position: relative;
+	text-wrap: pretty;
 }
 h1, h2, h3, h4, h5, h6, caption,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin: 0 0 0.75em;
 	line-height: 1.2;
-	text-wrap: pretty;
 }
 h1, .h1 {
 	font-size: var(--fontsize-900);
@@ -60,6 +60,7 @@ h2, caption, .h2 {
 	margin-block-start: 3em;
 	font-size: var(--fontsize-800);
 }
+
 h3, .h3 {
 	margin-block-start: 1.5em;
 	font-size: var(--fontsize-700);

@@ -257,13 +257,16 @@
 					<h6>Das ist ein kleiner Titel H6</h6>
 					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis <code>:has(.class)</code> nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
 
-					<p class="btn-group"><button type="button" class="btn" id="js-dialog-show">Dialog öffnen</button> <button type="button" class="btn" popovertarget="tip">Popover öffnen</button></p>
+					<p class="btn-group">
+						<button class="btn btn--primary" type="button" onclick="jsDialog.showModal()">Dialog öffnen</button>
+						<button class="btn btn--secondary" type="button" popovertarget="tip">Popover öffnen</button>
+					</p>
 					<p id="tip" popover>tip</p>
 					
-					<dialog class="dialog" id="js-dialog" aria-labelledby="dialog__title">
+					<dialog class="dialog" id="jsDialog" aria-labelledby="dialog__title">
 						<div class="dialog__header">
 							<h2 class="dialog__title" id="dialog__title">Dialog-Titel</h2>
-							<button class="dialog__close" id="js-dialog-close">
+							<button class="dialog__close" onclick="this.closest('dialog').close()">
 								<i class="fa fa-times fa-fw" aria-hidden="true"></i>
 								<span class="visuallyhidden">Fenster schliessen</span>
 							</button>
@@ -272,21 +275,7 @@
 							<p>Hier kommt der Inhalt.</p>
 						</div>
 					</dialog>
-					<script>
-					    document.getElementById("js-dialog-close");
-					    document.addEventListener("DOMContentLoaded", function(){ 
-					        const cardDialog = document.getElementById("js-dialog");
 
-
-					        document.getElementById("js-dialog-show").addEventListener("click", () => {
-					            cardDialog.showModal();
-					        });
-					        document.getElementById("js-dialog-close").addEventListener("click", () => {
-					            cardDialog.close();
-					        });
-
-					    }, false);
-					</script>
 
 					<address>John Doe, j.doe@gmail.com</address>
 
