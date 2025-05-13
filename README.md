@@ -1,15 +1,23 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.4.9] - 2025-05-13
+
+### Added
+- basics.css: Fix für springende Elemente (Margin in Kombination mit der roten Einfügemarke) im WYSIWYG-Editor ergänzt.
+
 ## [2.4.8] - 2025-05-07
+
+### Added
+
+- application.css: Basis-Styling für Dialog-Innenstruktur ergänzt.
 
 ### Changed
 - default.html: Dialog-Aktionen mit Inline-JS gelöst.
-- application.css: Basis-Styling für Dialog-Innenstruktur ergänzt.
 
 ## [2.4.7] - 2025-04-30
 
-### Changed
+### Added
 - default.html: Dialog und Popover-Elemente können nun mit eigenen Buttons aufgerufen werden.
 - basics.css: Animiertes Ein-/Ausblenden von Dialog und Popover ergänzt.
 - application.css: `.btn-group` ergänzt, das mehrere Button auch ausserhalb des Form-Builders responsiv ausrichtet.

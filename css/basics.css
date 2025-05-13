@@ -350,7 +350,7 @@ a img {
 
 /* =skiplinks
 --------------------------------------------------------------- */
-.skiplinks__link {
+.skiplinks__link:any-link {
 	position: absolute;
 	inset-block-start: -9999px;
 	inset-inline-start: 1.5em;
@@ -362,7 +362,6 @@ a img {
 }
 .skiplinks__link:is(:focus, :active) {
 	inset-block-start: 1.5em;
-	color: var(--clr-neutral-100);
 }
 
 /* MARK: =doc-anchors font-awesome
@@ -1345,6 +1344,9 @@ th > *:last-child, td > *:last-child,
 .editor .accordion > *:is(h2, h3, h4, h5, h6),
 .editor div.cke_widget_GovisDetail {
 	clear: both;
+}
+.editor span:first-child + h2 { /* springende Elemente im Editor verhindern */
+	margin-block-start: 0;
 }
 .editor img.cke_iframe {
 	aspect-ratio: 16 / 9;
