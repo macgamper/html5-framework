@@ -5,6 +5,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ### Added
 - basics.css: Fix für springende Elemente (Margin in Kombination mit der roten Einfügemarke) im WYSIWYG-Editor ergänzt.
+- application.css: Für ein einheitliches und besser sichtbares Fokus-Handling in der Mobilnavigation `.mobilenav__container` den Fokus-Ring auf die UA-Styles zurückgesetzt.
 
 ## [2.4.8] - 2025-05-07
 

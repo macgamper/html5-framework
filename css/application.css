@@ -1626,6 +1626,13 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	background-color: #333;
 	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
 }
+.mobilenav__container :is(input, button):focus {
+	box-shadow: none;
+}
+.mobilenav__container :is(a, input, button):focus-visible {
+	outline: revert;
+	z-index: 1;
+}
 .mobilenav__bg {
 	display: none;
 	position: fixed;
