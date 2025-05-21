@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5] - 2025-05-21
+
+### Changed
+- default.html: `tabindex="-1" ` auf dem Reset-Button entfernt.
+- basics.css: Select-Icons in Light/Dark-Variante als Custom Properties definiert für einfachere Darkmode-Adaption.
+- basics.css: Focus-Status der Form-Elemente greift nur noch innerhalb `.form-builder` Ausgaben. Damit ist ausserhalb ein einheitliches Focus-Handling möglich, beispielsweise in kombinierten Link- und Button-Komponenten.
+- application.css: Form-Elemente mit `.error`-Klasse bekommen einen roten `:focus`-Status bei `border` und `box-shadow`.
+- application.css: Das Grid der Magnific-Gallery basiert nun auf einer Container Query.
+- application.css: Prefixes bei `columns` entfernt ([Can I use](https://caniuse.com/mdn-css_properties_columns)).
+- application.css: Weitere Eigenschaften (primär `width` / `height`) auf Logical Properties umgestellt.
+
 ## [2.4.9] - 2025-05-13
 
 ### Added

@@ -123,7 +123,7 @@
 .form-builder .form-option-lst-title {
 	display: block;
 	margin-block-end: 0;
-	width: 50%;
+	inline-size: 50%;
 	padding-inline-end: 2em;
 }
 .form-builder label > em,
@@ -158,14 +158,14 @@
 .form-builder [type=week],
 .form-builder textarea,
 .form-builder select {
-	width: 50%;
+	inline-size: 50%;
 }
 .form-builder [type=range] {
 	align-self: center;
 }
 .form-builder input[type=submit],
 .form-builder button {
-	width: auto;
+	inline-size: auto;
 }
 .form-builder [type=radio],
 .form-builder [type=checkbox] {
@@ -178,7 +178,7 @@
 .form-builder .password-rules {
 	clear: both;
 	display: block;
-	width: 50%;
+	inline-size: 50%;
 	margin: .75em 0 0 auto;
 	color: var(--_form-clr-hint);
 }
@@ -187,7 +187,7 @@
 }
 .form-builder .form-hint-complex--fullwidth .form-hint-complex__rules,
 .form-builder .clearfix > .editor  {
-	width: 100%;
+	inline-size: 100%;
 }
 .form-builder label.error + label.error {
 	margin-block-start: 0;
@@ -197,7 +197,7 @@
 	margin-block-start: 0.5em;
 }
 .form-builder .form-option-lst .form-hint {
-	width: auto;
+	inline-size: auto;
 }
 .form-builder .required > label,
 .form-builder .required .form-option-lst-title,
@@ -210,10 +210,15 @@
 .form-builder .required > label.error {
 	font-weight: normal;
 }
-.form-builder input.error,
 .form-builder label.error,
 .form-builder .accessibility-date select.invalid {
 	color: var(--_form-clr-error);
+}
+.form-builder input.error {
+	border-color: var(--_form-clr-error);
+}
+.form-builder input.error:focus {
+	box-shadow: 0 0 0 5px color-mix(in oklab, var(--_form-clr-error), transparent 60%);
 }
 .form-builder label.error {
 	padding-inline-end: 0;
@@ -221,7 +226,7 @@
 .form-builder .form-option-lst-show-title .form-option-lst,
 .form-builder .form-sizer-wrapper,
 .form-builder .accessibility-date {
-	width: 50%;
+	inline-size: 50%;
 }
 .form-builder .form-option-lst > ul {
 	margin-block-end: 0;
@@ -229,7 +234,7 @@
 .form-builder .form-option-lst li label,
 .form-builder .form-builder-tac label {
 	display: flex;
-	width: 100%;
+	inline-size: 100%;
 	padding-inline-end: 0;
 	font-weight: normal;
 }
@@ -242,7 +247,7 @@
 	inset-block-start: 0.18em;
 }
 div:not([class*="form-option-lst-show-title"]) label.error {
-	width: 100%;
+	inline-size: 100%;
 }
 .form-builder .form-builder-btn {
 	margin-block-end: 2.4em;
@@ -263,14 +268,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-builder .form-sizer label {
 	white-space: nowrap;
-	width: 100%;
+	inline-size: 100%;
 	padding-inline-end: 0;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
 .form-builder .form-sizer input {
-	width: 100%;
+	inline-size: 100%;
 }
 .form-builder .form-sizer {
 	margin-block-end: 0;
@@ -278,15 +283,15 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-sizer-25,
 .form-builder .form-street-component .form-sizer:last-child,
 .form-builder .form-zip-component .form-sizer:first-child {
-	width: 23%;
+	inline-size: 23%;
 }
 .form-builder .form-sizer-50 {
-	width: 48%;
+	inline-size: 48%;
 }
 .form-builder .form-sizer-75,
 .form-builder .form-street-component .form-sizer:first-child,
 .form-builder .form-zip-component .form-sizer:last-child {
-	width: 73%;
+	inline-size: 73%;
 }
 
 /* Uploader */
@@ -306,10 +311,10 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	margin-block-start: 0;
 }
 .form-builder .form-fileupload-group:has(.js-simple-uploader-dropzone) :is(.form-hint, .form-hint-complex__rules) {
-	width: 100%;
+	inline-size: 100%;
 }
 .form-builder .js-simple-uploader-dropzone {
-	height: auto;
+	block-size: auto;
 	max-height: none;
 	margin-block-start: .75em;
 	padding: 1.5em;
@@ -331,7 +336,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-builder .accessibility-date > select {
 	flex: 1 1 auto;
-	width: auto;
+	inline-size: auto;
 	min-width: 0;
 }
 .form-builder .accessibility-date > select + select {
@@ -343,7 +348,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder .form-builder__item.stacked > *,
 .form-builder .clearfix.stacked > * {
 	display: block;
-	width: 100%;
+	inline-size: 100%;
 	padding-inline-end: 0;
 }
 .form-builder .form-builder__item.stacked > label
@@ -358,7 +363,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder-30 .clearfix > label,
 .form-builder-30 .cf > label,
 .form-builder-30 .form-option-lst-title {
-	width: 30%;
+	inline-size: 30%;
 }
 .form-builder-30 input,
 .form-builder-30 textarea,
@@ -369,7 +374,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder-30 .form-option-lst-show-title .form-option-lst,
 .form-builder-30 .form-sizer-wrapper,
 .form-builder-30 .accessibility-date {
-	width: 70%;
+	inline-size: 70%;
 }
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
@@ -412,7 +417,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .password-strength,
 	.form-builder .password-rules,
 	.form-builder .accessibility-date {
-		width: 100%;
+		inline-size: 100%;
 	}
 	.form-builder .accessibility-date {
 		display: flex;
@@ -426,13 +431,14 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	}
 	.form-builder [type=submit],
 	.form-builder button {
-		width: 100%;
+		inline-size: 100%;
 	}
-	.form-builder.flex-search button {
-		width: auto;
+	.form-builder.flex-search button,
+	.form-builder button.form-to-wizard-next {
+		inline-size: auto;
 	}
 	.form-builder .form-builder-btn-group p {
-		width: 100%;
+		inline-size: 100%;
 	}
 }
 
@@ -450,6 +456,9 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-to-wizard-current ~ li {
 	color: grey;
+}
+.form-to-wizard-steps li:not(.form-to-wizard-current, .form-to-wizard-current ~ li) {
+	cursor: pointer;
 }
 
 /* =form-builder nice-number
@@ -485,8 +494,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset: 0;
 	z-index: 1;
-	width: 100%;
-	height: 100%;
+	inline-size: 100%;
+	block-size: 100%;
 	margin-inline-end: 0;
 	cursor: pointer;
 	background-color: transparent;
@@ -511,8 +520,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-builder__item--toggle [type="checkbox"] ~ .form-builder__toggle::before {
 	display: block;
-	width: var(--_toggle-width);
-	height: var(--_toggle-height);
+	inline-size: var(--_toggle-width);
+	block-size: var(--_toggle-height);
 	background-color: var(--_toggle-off);
 	transition: background-color 0.2s;
 }
@@ -524,8 +533,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	inset-block-start: 2px;
 	inset-inline-start: 2px;
 	display: block;
-	width: calc(var(--_toggle-height) - 4px);
-	height: calc(var(--_toggle-height) - 4px);
+	inline-size: calc(var(--_toggle-height) - 4px);
+	block-size: calc(var(--_toggle-height) - 4px);
 	visibility: visible;
 	background-color: #fff;
 	box-shadow: var(--shadow-sm);
@@ -549,15 +558,15 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset: 0;
 	display: block;
-	width: var(--_toggle-height);
-	height: var(--_toggle-height);
+	inline-size: var(--_toggle-height);
+	block-size: var(--_toggle-height);
 	transition: inset-inline-start 0.2s, opacity 0.2s;
 }
 /* checkmark off; transparent by default */
 .form-builder__item--toggle .form-builder__toggle-off::before {
 	--_toggle-off-icon-color: transparent;
-	width: calc(var(--_toggle-height) / 2);
-	height: calc(var(--_toggle-height) / 2);
+	inline-size: calc(var(--_toggle-height) / 2);
+	block-size: calc(var(--_toggle-height) / 2);
 	border: var(--_toggle-icon-border-width) solid var(--_toggle-off-icon-color, transparent);
 	border-radius: var(--_toggle-radius);
 	transform: translate(50%, 50%);
@@ -577,8 +586,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	border-width: var(--_toggle-icon-border-width);
 	border-block-start: 0;
 	border-inline-start: 0;
-	height: calc(var(--_toggle-height) / 2);
-	width: calc(var(--_toggle-height) / 4);
+	block-size: calc(var(--_toggle-height) / 2);
+	inline-size: calc(var(--_toggle-height) / 4);
 	transform: rotate(45deg) translateY(-30%) translateX(160%);
 	opacity: 0;
 }
@@ -605,7 +614,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .form-builder.flex-search > label,
 .form-builder .flex-search > label {
-	width: auto;
+	inline-size: auto;
 	margin-inline-end: 1em;
 	padding-inline-end: 0 ;
 }
@@ -630,7 +639,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .search-result-title--assets a {
 	display: flex;
 	align-items: baseline;
-	width: 100%;
+	inline-size: 100%;
 	text-decoration: none;
 }
 .search-result-title--assets a > * {
@@ -660,19 +669,17 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =calendar (events, reservations)
 --------------------------------------------------------------- */
 .calendar {
-	width: 50%;
+	inline-size: 50%;
 	line-height: 2;
 	border-block-start: 1px solid #ccc;
 }
 .calendar,
-.calendar th,
-.calendar td {
+.calendar :is(th, td) {
 	color: var(--clr-neutral-900);
 	font-weight: inherit;
 }
-.calendar th,
-.calendar td {
-	width: 14.28571428571429%;
+.calendar :is(th, td) {
+	inline-size: 14.28571428571429%;
 	border: 1px solid #ccc;
 	padding: 0;
 	text-align: center;
@@ -695,8 +702,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar tbody a {
 	transition: box-shadow .3s ease;
 }
-.calendar tbody a:hover,
-.calendar tbody a:focus {
+.calendar tbody a:is(:hover, :focus) {
 	box-shadow: inset 0 0 0 100px rgba(0,0,0,.25);
 }
 .cal-year a {
@@ -706,7 +712,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 @media only screen and (max-width: 37.5em) { /* 600/16 */
 
 	.calendar {
-		width: 100%;
+		inline-size: 100%;
 	}
 
 }
@@ -723,8 +729,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cal-noentry a {
 	color: #707070;
 }
-.cal-noentry a:hover,
-.cal-noentry a:focus {
+.cal-noentry a:is(:hover, :focus) {
 	color: var(--clr-neutral-900);
 }
 
@@ -764,25 +769,21 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .calendar-legend {
 	margin-block-end: 1.5em;
 	font-size: var(--fontsize-400);
-	-webkit-column-gap: 1em;
-	   -moz-column-gap: 1em;
-			column-gap: 1em;
-	-webkit-columns: 2 10em;
-	   -moz-columns: 2 10em;
-			columns: 2 10em; /* max. columns, max width */
+	column-gap: 1em;
+	columns: 2 10em; /* max. columns, max width */
 }
 .calendar-legend li {
 	display: inline-flex;
 	align-items: center;
-	width: 100%;
+	inline-size: 100%;
 	margin-block-end: 0.25em;
 }
 .calendar-legend span {
 	display: block;
 	float: left;
 	float: inline-start; /* not best support yet */
-	width: 1.4em;
-	height: 1.4em;
+	inline-size: 1.4em;
+	block-size: 1.4em;
 	margin-inline-end: .5em;
 	border: 1px solid #ccc;
 }
@@ -819,18 +820,18 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cal-available a:link,
 .cal-almostsoldout a:link,
 .cal-full a:link {
-	color: #fff;
+	color: var(--clr-neutral-100);
 	text-shadow: 0 1px 0 var(--clr-neutral-900);
 }
 
 /* =travelpass
 --------------------------------------------------------------- */
 .travelpass .calendar {
-	width: 100%;
+	inline-size: 100%;
 }
 .travelpass-cal-wrapper,
 .travelpass-order-wrapper {
-	width: 48.181818181818%;
+	inline-size: 48.181818181818%;
 	float: left;
 	float: inline-start; /* not best support yet */
 }
@@ -842,21 +843,23 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 
 @media only screen and (max-width: 48em) { /* 768/16 */
-
 	.travelpass-cal-wrapper,
 	.travelpass-order-wrapper {
 		float: none;
-		width: 100%;
+		inline-size: 100%;
 		margin-inline-start: 0;
 	}
-
 }
 
 /* =magnific gallery
 --------------------------------------------------------------- */
+.mod-dam--gallery,
+.report__files {
+	container: mod-gallery / inline-size;
+}
 .gallery-magnific {
 	--_gallery-count: 3;
-	--_gallery-gap: 1.5em;
+	--_gallery-gap: min(3vw, 1.5em);
 	display: grid;
 	grid-template-columns: repeat(var(--_gallery-count), 1fr);
 	gap: var(--_gallery-gap);
@@ -877,16 +880,21 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: block;
 	margin: 0 auto;
 	aspect-ratio: 4 / 3;
+	inline-size: 100%;
+	block-size: 100%;
 	object-fit: cover;
+}
+.gallery-magnific--contain img {
+	object-fit: contain;
+	background-color: var(--clr-neutral-200);
 }
 .mfp-content figcaption {
 	margin-block-start: 0;
 }
 
-@media only screen and (max-width: 48em) { /* 768/16 */
+@container mod-gallery (max-width: 32.5em) { /* 520/16 */
 	.gallery-magnific {
 		--_gallery-count: 2;
-		--_gallery-gap: 3vw;
 	}
 }
 
@@ -902,15 +910,15 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset-block-start: 0;
 	inset-inline-end: 0;
-	width: 20%;
-	height: 100%;
+	inline-size: 20%;
+	block-size: 100%;
 	pointer-events: none;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
 	background-image: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .breadcrumb__lst {
 	display: flex;
-	width: 100%;
+	inline-size: 100%;
 	margin: 0;
 	padding: 0.5em 0;
 	overflow-y: hidden;
@@ -938,7 +946,6 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	font-family: FontAwesome;
 }
 
-
 /* breadcrumb dropdown */
 .breadcrumb__dropdown {
 	display: none;
@@ -959,10 +966,10 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .os-category-title {}
 .os-tbl-caption {}
 .os-article {
-	width: 85%;
+	inline-size: 85%;
 }
 .os-price {
-	width: 15%;
+	inline-size: 15%;
   	text-align: right;
 }
 .os-price-detail {
@@ -979,7 +986,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .infobox > div {
 	float: left;
 	float: inline-start; /* not best support yet */
-	width: 50%;
+	inline-size: 50%;
 }
 .infobox > div + div {
 	float: right;
@@ -1000,7 +1007,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	padding: 0.25em 0.5em;
 }
 .sales-basket-article {
-	width: 100%;
+	inline-size: 100%;
 }
 .sales-basket-tbl {
 	font-size: var(--fontsize-400);
@@ -1009,7 +1016,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	white-space: nowrap;
 }
 .sales-updatequantity {
-	width: 3em;
+	inline-size: 3em;
 }
 
 .sales-subtotal,
@@ -1035,7 +1042,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .cart-checkout__lst {
 	display: flex;
-	width: 100%;
+	inline-size: 100%;
 	box-shadow: inset 0 1px 0 #ccc,
 				inset 0 -1px 0 #ccc;
 }
@@ -1055,19 +1062,20 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: relative;
 	font-weight: bold;
 }
-.cart-checkout__item--active::after, .cart-checkout__item--active::before {
+.cart-checkout__item--active::after, 
+.cart-checkout__item--active::before {
 	inset-block-end: 0;
 	inset-inline-start: 50%;
 	border: solid transparent;
 	content: "";
-	height: 0;
-	width: 0;
+	block-size: 0;
+	inline-size: 0;
 	position: absolute;
 	pointer-events: none;
 }
 .cart-checkout__item--active::after {
 	border-color: rgba(255, 255, 255, 0);
-	border-bottom-color: #ffffff;
+	border-bottom-color: #fff;
 	border-width: 10px;
 	margin-inline-start: -10px;
 }
@@ -1085,8 +1093,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 1.5em;
-	height: 1.5em;
+	inline-size: 1.5em;
+	block-size: 1.5em;
 	color: #fff;
 	background-color: #706f6f;
 	border-radius: 3em;
@@ -1100,8 +1108,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .cart-checkout__item--completed .checkout__step-number {
 	position: absolute;
-	width: 1px;
-	height: 1px;
+	inline-size: 1px;
+	block-size: 1px;
 	margin: -1px;
 	border: 0;
 	padding: 0;
@@ -1153,23 +1161,23 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: block;
 	position: absolute;
 	z-index: 1;
-	width: 100%;
-	height: 100%;
+	inline-size: 100%;
+	block-size: 100%;
 	border: 1px solid #d9d9d9;
-	border-radius: 3px;
+	border-radius: var(--radius-sm);
 	box-shadow: 0 0 10px rgba(0,0,0,0);
 	cursor: pointer;
 }
 .cc-lst .cc-lst-img {
 	flex: 0 0 auto;
-	min-width: 50px;
-	max-width: 80px;
+	min-inline-size: 50px;
+	max-inline-size: 80px;
 	margin: 5px;
 	filter: grayscale(100%);
-	}
+}
 .cc-lst .cc-lst-img > img {
 	display: block;
-	width: 100%; /* for IE */
+	inline-size: 100%; /* for IE */
 }
 .cc-lst .cc-lst-txt {
 	display: block;
@@ -1181,8 +1189,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	display: inline;
 	inset-inline-start: -1000px;
-	width: 0;
-	height: 0;
+	inline-size: 0;
+	block-size: 0;
 	overflow: hidden;
 }
 .cc-lst input[type="radio"]:checked ~ label {
@@ -1202,7 +1210,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	white-space: nowrap;
 }
 .col-subscription-title {
-	width: 100%;
+	inline-size: 100%;
 }
 .col-subscription-html,
 .col-subscription-plain,
@@ -1238,7 +1246,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .mod-index-toc ul {
 	display: table;
 	table-layout: fixed;
-	width: 100%;
+	inline-size: 100%;
 	margin: 0;
 }
 .mod-index-toc li {
@@ -1268,15 +1276,15 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 		content: '';
 		position: absolute;
 		inset-block-start: 0;
-		right: 0;
-		width: 20%;
-		height: 100%;
+		inset-inline-end: 0;
+		inline-size: 20%;
+		block-size: 100%;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+100&0+0,1+100 */
 		background-image: linear-gradient(to right,  transparent, rgba(240,240,240,1) 100%);
 	}
 	.mod-index-toc ul {
 		display: block;
-		width: auto;
+		inline-size: auto;
 		margin: 0;
 		overflow-x: auto;
 		overflow-y: hidden;
@@ -1316,7 +1324,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =mod-egov
 --------------------------------------------------------------- */
 .mod-egov-contact .mod-index-box th:is(.contact-name, .contact-department, .contact-contact) {
-	width: 33.333333333333333%;
+	inline-size: 33.333333333333333%;
 }
 
 /* =collections
@@ -1376,7 +1384,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .js-accordion_control::after {
 	flex: none;
-	width: var(--_accordion-padding-inline-start, 1.5em);
+	inline-size: var(--_accordion-padding-inline-start, 1.5em);
 	content: "\f106";
 	display: inline-block;
 	font-family: FontAwesome;
@@ -1436,7 +1444,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .mod-blog .mod-entry img.alignright {
 	margin: 0 0 3.448275862069% 3.448275862069%;
-	max-width: 48.275862068966%; /* 280/580 */
+	max-inline-size: 48.275862068966%; /* 280/580 */
 }
 
 .news-stats {
@@ -1489,7 +1497,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	z-index: 100;
 	inset-block-end: 0;
 	inset-inline-start: 0;
-	width: 100%;
+	inline-size: 100%;
 	border-top-style: solid;
 	border-top-width: 1px;
 	padding: 1em 0;
@@ -1504,7 +1512,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =Vereine
 --------------------------------------------------------------- */
 .mod-association .association-category .association-name {
-	width: 50%;
+	inline-size: 50%;
 }
 
 /* =KataBox
@@ -1520,8 +1528,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset-block-start: 0;
 	inset-inline-start: 0;
-	width: 100%;
-	height: 10px;
+	inline-size: 100%;
+	block-size: 10px;
 	background: repeating-linear-gradient(
 		45deg,
 		#FFEB3B,
@@ -1621,7 +1629,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset-inline-start: 0;
 	z-index: 100;
-	width: 100%;
+	inline-size: 100%;
 	padding: 0 0 1.5em 0;
 	background-color: #333;
 	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
@@ -1638,13 +1646,13 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: fixed;
 	z-index: 3;
 	inset: 0;
-	height: 100%;
-	width: 100%;
+	block-size: 100%;
+	inline-size: 100%;
 	margin: 0;
 	background-color: rgba(0,0,0,0.2);
 }
 .mobilenav-box {
-	width: 100%;
+	inline-size: 100%;
 }
 .mobilenav-box .level-nav {
 	margin: 0;
@@ -1664,7 +1672,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .govis-menu-node-item.title,
 .govis-menu-node-item > a {
 	position: relative;
-	width: 100%;
+	inline-size: 100%;
 	overflow: hidden;
 	position: relative;
 	margin: 0;
@@ -1725,8 +1733,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset-block-start: 0;
 	inset-inline-end: 0;
-	width: calc(3% + 54px);
-	height: 100%;
+	inline-size: calc(3% + 54px);
+	block-size: 100%;
 	border: 0;
 	border-block-start: 1px solid transparent;
 	cursor: pointer;
@@ -1737,8 +1745,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .govis-menu-node-controller .icon {
 	display: inline-block;
-	width: 1em;
-	height: 1em;
+	inline-size: 1em;
+	block-size: 1em;
 	stroke-width: 0;
 	stroke: currentColor;
 	fill: currentColor;
@@ -1804,7 +1812,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: absolute;
 	inset-block-start: 100%;
 	z-index: 5;
-	width: 100%;
+	inline-size: 100%;
 	padding: .25em;
 	background-color: #f6f4f3;
 	border-radius: 0 0 3px 3px;
@@ -1824,7 +1832,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 /* =Bürgerkonto
 --------------------------------------------------------------- */
 .m-citizensaccount__dropdown {
-	width: 250px;
+	inline-size: 250px;
 	padding-block: 1em;
 	padding-inline: 0;
 	font-size: 0.85em;
@@ -1910,7 +1918,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 .card__category {
 	display: inline-block;
-	width: 100%;
+	inline-size: 100%;
 	margin-block-end: .5em;
 }
 

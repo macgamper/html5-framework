@@ -722,6 +722,9 @@ textarea:not([rows]) {
 	field-sizing: content;
 }
 select:not([multiple]) {
+	/* Icon: FontAwesome .fa-regular.fa-angle-down */
+	--_dropdown-angle-light: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNMjQxIDM2OWMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMNDcgMjA5Yy05LjQtOS40LTkuNC0yNC42IDAtMzMuOXMyNC42LTkuNCAzMy45IDBsMTQzIDE0M0wzNjcgMTc1YzkuNC05LjQgMjQuNi05LjQgMzMuOSAwczkuNCAyNC42IDAgMzMuOUwyNDEgMzY5eiIvPjwvc3ZnPg==');
+	--_dropdown-angle-dark: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMjQxIDM2OWMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMNDcgMjA5Yy05LjQtOS40LTkuNC0yNC42IDAtMzMuOXMyNC42LTkuNCAzMy45IDBsMTQzIDE0M0wzNjcgMTc1YzkuNC05LjQgMjQuNi05LjQgMzMuOSAwczkuNCAyNC42IDAgMzMuOUwyNDEgMzY5eiIvPjwvc3ZnPg==');
 	display: block;
 	padding-inline-end: 1.5em;
 	width: 100%;
@@ -730,7 +733,7 @@ select:not([multiple]) {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik00NDEuOSAxNjcuM2wtMTkuOC0xOS44Yy00LjctNC43LTEyLjMtNC43LTE3IDBMMjI0IDMyOC4yIDQyLjkgMTQ3LjVjLTQuNy00LjctMTIuMy00LjctMTcgMEw2LjEgMTY3LjNjLTQuNyA0LjctNC43IDEyLjMgMCAxN2wyMDkuNCAyMDkuNGM0LjcgNC43IDEyLjMgNC43IDE3IDBsMjA5LjQtMjA5LjRjNC43LTQuNyA0LjctMTIuMyAwLTE3eiI+PC9wYXRoPjwvc3ZnPg==');
+	background-image: var(--_dropdown-angle-light);
 	background-repeat: no-repeat;
 	background-position: right .75em top 50%;
 	background-size: .75em .86em;
@@ -748,27 +751,7 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 [type=search]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-[type=date]:focus,
-[type=datetime]:focus,
-[type=datetime-local]:focus,
-[type=email]:focus,
-[type=file]:focus,
-[type=month]:focus,
-[type=number]:focus,
-[type=password]:focus,
-[type=range]:focus,
-[type=search]:focus,
-[type=tel]:focus,
-[type=text]:focus,
-[type=time]:focus,
-[type=url]:focus,
-[type=week]:focus,
-[type=checkbox]:focus,
-[type=radio]:focus,
-select:focus,
-textarea:focus,
-button:focus, [type="button"]:focus, [type="reset"]:focus, [type="submit"]:focus,
-summary:focus,
+:where(.form-builder) :is(button, select, summary, textarea, [type=button], [type=checkbox], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=file], [type=month], [type=number], [type=password], [type=radio], [type=range], [type=reset], [type=search], [type=submit], [type=tel], [type=text], [type=time], [type=url], [type=week]):focus,
 .form-builder__item--toggle [type="checkbox"]:focus ~ .form-builder__toggle::before {
 	outline: 3px solid transparent;
 	border-color: var(--clr-neutral-900);
