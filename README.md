@@ -1,6 +1,13 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.1] - 2025-06-04
+
+### Changed
+- basics.css: Mehr Logical Properties.
+- layout.css: Mehr Logical Properties.
+- application.css: Mehr Logical Properties.
+
 ## [2.5] - 2025-05-21
 
 ### Changed

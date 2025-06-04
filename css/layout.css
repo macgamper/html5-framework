@@ -2,8 +2,8 @@
 --------------------------------------------------------------- */
 .wrapper {
 	outline: 2px solid black;
-	width: 90%;
-	max-width: 1410px;
+	inline-size: 90%;
+	max-inline-size: 1410px;
 	margin-inline: auto;
 }
 	
@@ -28,21 +28,21 @@
 	display: flex;
 }
 .main {
-	width: 60%;
+	inline-size: 60%;
 	background-color: #9f9; /* green */
 }
 
 /* MARK: =subnav
 --------------------------------------------------------------- */
 .subnav {
-	width: 20%;
+	inline-size: 20%;
 	background-color: #f99; /* red */
 }
 
 /* MARK: =sidebar
 --------------------------------------------------------------- */
 .sidebar {
-	width: 20%;
+	inline-size: 20%;
 	background-color: #ff6; /* yellow */
 }
 
