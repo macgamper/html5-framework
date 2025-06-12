@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.2] - 2025-06-12
+
+### Changed
+- basics.css: Möglichkeit beim Element `summary` das Icon bei Bedarf umzufärben (zb. für Darkmode). Standardmässig übernimmt es die Farbe des Textes.
+- print.css: `.readspeaker` wird ausgeblendet, Überschriften in `summary` drängen das Icon nicht mehr auf eine neue Zeile.
+
 ## [2.5.1] - 2025-06-04
 
 ### Changed

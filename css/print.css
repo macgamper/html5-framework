@@ -18,7 +18,7 @@ body {
 nav, form, aside, header,
 [hidden],
 .accesskeys, .header, .mainnav, .subnav, .sidebar, .footer, .services, .backlink, .invis, .sr, .sr-only, .visuallyhidden, .print-hidden, .printhidden, .screenvisible, .breadcrumb,
-.region, .country-name, .url, .none, .slidebars-menu, .mod-nav, .travelpass-cal-wrapper, .mod-pageturner {
+.region, .country-name, .url, .none, .slidebars-menu, .mod-nav, .travelpass-cal-wrapper, .mod-pageturner, .readspeaker {
 	display: none;
 }
 
@@ -90,6 +90,9 @@ ul ol li, ol ul li  {
 ul, ol, dl, li, figure {
 	page-break-inside: avoid;
 }
+dt {
+	font-weight: bold;
+}
 .sitemap,
 .mod-lst {
 	page-break-inside: auto;
@@ -126,7 +129,7 @@ small, .small,
 .form-hint,
 label.error,
 .asset-meta {
-	font-size: 10pt;
+	font-size: 8pt;
 }
 iframe {
 	display: block;
@@ -149,10 +152,10 @@ sup {
 }
 sub {
 	bottom: -0.25em;
-	}
+}
 sup {
 	top: -0.5em;
-	}
+}
 
 tt, code, kbd, samp, pre,
 .monospace {
@@ -168,6 +171,9 @@ summary {
 }
 details[open] summary {
 	margin-bottom: 0.75em;
+}
+summary > :is(h1, h2, h3, h4, h5, h6) {
+	display: inline-block;
 }
 
 /* =tables
