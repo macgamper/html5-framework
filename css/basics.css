@@ -1332,8 +1332,11 @@ th > *:last-child, td > *:last-child,
 .editor div.cke_widget_GovisDetail {
 	clear: both;
 }
-.editor span:first-child + h2 { /* springende Elemente im Editor verhindern */
+.editor span:first-child + :is(h2, h3, h4, h5, h6, table)  { /* springende Elemente im Editor verhindern */
 	margin-block-start: 0;
+}
+.editor :is(.alignleft, .align-inline-start, .alignright, .align-inline-end, .aligncenter) > figure {
+	margin-block: 0;
 }
 .editor img.cke_iframe {
 	aspect-ratio: 16 / 9;

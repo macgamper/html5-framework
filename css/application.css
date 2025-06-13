@@ -1,5 +1,8 @@
 /* =global module-lists
 --------------------------------------------------------------- */
+.mod-wrapper {
+	clear: both;
+}
 .mod-category {
 
 }
@@ -66,7 +69,6 @@
 }
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
-
 	.login-pw-reset {
 		float: none;
 		margin-block-start: 0.75em;

@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.3] - 2025-06-13
+
+### Changed
+- basics.css: Fix, damit ausgerichtete Bilder im Editor keinen zusätzlichen `margin` bekommen. Zudem wurde auch der bestehende Fix bezüglich der Editor-Einfügemarke um weitere Elemente ergänzt.
+- application.css: Der `.mod-wrapper` bekommt standardmässig  `clear: both`, um Kollisionen mit vorgängig ausgerichteten Bildern zu vermeiden.
+
 ## [2.5.2] - 2025-06-12
 
 ### Changed
