@@ -1,6 +1,17 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.4] - 2025-07-30
+
+### Added
+- basics.css: Fix in der Editor-Ansicht von `details` / `summary`, wo der blaue Fokusrahmen im Inhalt teilweise verdeckt wurde.
+
+```css
+.editor details::details-content {
+	overflow: visible;
+}
+```
+
 ## [2.5.3] - 2025-06-13
 
 ### Changed

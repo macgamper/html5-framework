@@ -81,7 +81,7 @@ p, ul, ol, dl, pre, fieldset, figure, address,
 	margin: 0 0 1.5em;
 }
 audio, blockquote, details, figure, iframe, table, video,
-.accordion, .box, .img-default, .mb-2x, .media-responsive, .table-responsive, .js-flip-book-embedded-wrapper {
+.accordion, .box, .mb-2x, .media-responsive, .table-responsive, .js-flip-book-embedded-wrapper {
 	margin: 3em 0;
 }
 * > *:where(:first-child):not(summary) {
@@ -150,10 +150,7 @@ img, embed, object, video {
 video, audio {
 	display: block;
 }
-figure,
-.img-default {
-	margin: 3em 0;
-}
+figure {}
 figcaption {
 	margin-block-start: 0.75em;
 }
@@ -1337,6 +1334,9 @@ th > *:last-child, td > *:last-child,
 }
 .editor :is(.alignleft, .align-inline-start, .alignright, .align-inline-end, .aligncenter) > figure {
 	margin-block: 0;
+}
+.editor details::details-content { /* Sichtbarkeit des Fokusrahmen beim Bearbeiten sicherstellen- */
+	overflow: visible;
 }
 .editor img.cke_iframe {
 	aspect-ratio: 16 / 9;
