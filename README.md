@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.5] - 2025-08-15
+
+### Changed
+- default.html: Neuer FontAwesome-Link, der neu ein FontAwesome v7-Kit lädt und damit auch Zugriff auf die neuen Icons und Icon-Packs hat. Doku: [What's Changed in v7?](https://docs.fontawesome.com/upgrade/whats-changed)
+- screen.css: Update auf unser lokales FontAwesome 6.7.2.
+
 ## [2.5.4] - 2025-07-30
 
 ### Added
