@@ -1,6 +1,18 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.6] - 2025-08-29
+
+### Added
+- application.css: Schadenmelder: lokale Variablen für die Farben der Erfassungsschritte ergänzt.
+- basics.css / application.css: Diverse UI-Farben wurden im `:root` als Variablen definiert:
+
+```css
+--clr-ui-text-subtle: #767676;
+--clr-ui-border-subtle: #666;
+--clr-ui-bg-subtle: #ececec;
+```
+
 ## [2.5.5] - 2025-08-15
 
 ### Changed

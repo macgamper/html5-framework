@@ -7,7 +7,7 @@
 
 }
 .mod-lst > .mod-entry {
-	border-block-start: 1px solid #666;
+	border-block-start: 1px solid var(--clr-ui-border-subtle, #666);
 	padding: 0.75em 0;
 }
 .mod-entry:first-child {
@@ -24,7 +24,7 @@
 .mod-entry-meta {
 	display: block;
 	margin-block-end: 0.5em;
-	color: #767676;
+	color: var(--clr-ui-text-subtle, #767676);
 	font-size: var(--fontsize-300);
 }
 .mod-entry-title {
@@ -52,12 +52,12 @@
 	margin: .5em 0 1.5em 0;
 }
 .mod-nav a {
-	color: #273941;
+	color: var(--clr-ui-text-subtle, #767676);
 	text-decoration: none;
 }
 .mod-nav a:is(:hover, :focus),
 .mod-nav .active a {
-	color: var(--clr-neutral-900);
+	color: var(--clr-neutral-900, #000);
 }
 .mod-nav .active a {
 	font-weight: bold;
@@ -538,7 +538,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	inline-size: calc(var(--_toggle-height) - 4px);
 	block-size: calc(var(--_toggle-height) - 4px);
 	visibility: visible;
-	background-color: #fff;
+	background-color: var(--clr-neutral-100, #fff);
 	box-shadow: var(--shadow-sm);
 	transition: inset-inline-start 0.2s;
 }
@@ -694,12 +694,12 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	background-color: transparent;
 }
 .calendar tbody {
-	background-color: #dcdfde;
+	background-color: var(--clr-ui-bg-subtle, #ececec);
 }
 .calendar a {
 	display: block;
 	text-decoration: none;
-	text-shadow: 0 1px 0 var(--clr-neutral-100);
+	text-shadow: 0 1px 0 var(--clr-neutral-100, #fff);
 }
 .calendar tbody a {
 	transition: box-shadow .3s ease;
@@ -732,7 +732,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	color: #707070;
 }
 .cal-noentry a:is(:hover, :focus) {
-	color: var(--clr-neutral-900);
+	color: var(--clr-neutral-900, #000);
 }
 
 .cal-disabled,
@@ -742,19 +742,19 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 
 .cal-othermonth { /* Tage ausserhalb des ausgewählten Monats */
-	background-color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-100, #fff);
 }
 
 .cal-today,
 .cal-today-legend span {  /* heute */
-	color: var(--clr-neutral-100);
-	background-color: var(--clr-neutral-900);
+	color: var(--clr-neutral-100, #fff);
+	background-color: var(--clr-neutral-900, #000);
 	box-shadow: none !important;
 }
 .cal-today a,
 .cal-today a:hover,
 .cal-today a:focus {
-	color: var(--clr-neutral-100);
+	color: var(--clr-neutral-100, #fff);
 	text-shadow: none;
 }
 
@@ -822,8 +822,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cal-available a:link,
 .cal-almostsoldout a:link,
 .cal-full a:link {
-	color: var(--clr-neutral-100);
-	text-shadow: 0 1px 0 var(--clr-neutral-900);
+	color: var(--clr-neutral-100, #fff);
+	text-shadow: 0 1px 0 var(--clr-neutral-900, #000);
 }
 
 /* =travelpass
@@ -1078,7 +1078,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .cart-checkout__item--active::after {
 	margin-inline-start: -10px;
 	border-color: rgba(255, 255, 255, 0);
-	border-block-end-color: #fff;
+	border-block-end-color: var(--clr-neutral-100, #fff);
 	border-width: 10px;
 }
 .cart-checkout__item--active::before {
@@ -1097,7 +1097,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	align-items: center;
 	inline-size: 1.5em;
 	block-size: 1.5em;
-	color: #fff;
+	color: var(--clr-neutral-100, #fff);
 	background-color: #706f6f;
 	border-radius: 3em;
 }
@@ -1259,7 +1259,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .mod-index-toc a {
 	display: block;
 	padding: 0.25em 0;
-	color: #666;
+	color: var(--clr-ui-text-subtle, #000);
 	text-decoration: none;
 	box-shadow: inset 1px 0 rgba(0, 0, 0, 0.2)
 }
@@ -1267,7 +1267,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	box-shadow: none;
 }
 .mod-index-toc a:is(:hover, :focus) {
-	color: var(--clr-neutral-900);
+	color: var(--clr-neutral-900, #000);
 }
 
 @media only screen and (max-width: 32.5em) { /* 520/16 */
@@ -1307,17 +1307,17 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	position: sticky;
 	z-index: 5;
 	inset-block-start: 0;
-	border-block-start: 1px solid #666;
+	border-block-start: 1px solid var(--clr-ui-border-subtle, #666);
 	padding: 0.25em;
-	color: var(--clr-neutral-900);
-	background-color: #ececec;
+	color: var(--clr-neutral-900, #000);
+	background-color: var(--clr-ui-bg-subtle, #ececec);
 }
 .mod-index-pages > div:target {
-	background-color: #f6f4f3;
+	background-color: var(--clr-ui-bg-subtle, #ececec);
 }
 .mod-index-pages > div:target h2 {
-	color: var(--clr-neutral-100);
-	background-color: #666;
+	color: var(--clr-neutral-100, #fff);
+	background-color: var(--clr-ui-border-subtle, #666);
 }
 .mod-index-pages > div:target ul {
 	padding-block-end: 1em;
@@ -1356,7 +1356,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	--_accordion-padding-inline: 0;
 	--_accordion-padding-inline-start: 0;
 	--_accordion-title-active: var(--clr-neutral-300);
-	border-block-end: 1px solid var(--clr-neutral-700);
+	border-block-end: 1px solid var(--clr-ui-border-subtle, #666);
 }
 
 .js-cms-accordion-panel--content {
@@ -1376,7 +1376,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	justify-content: space-between;
 	align-items: baseline;
 	margin: 0;
-	border-block-start: 1px solid var(--clr-neutral-700);
+	border-block-start: 1px solid var(--clr-ui-border-subtle, #666);
 	padding: .75em 0;
 	font-size: var(--fontsize-600);
 	cursor: pointer;
@@ -1397,17 +1397,17 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	-webkit-font-smoothing: antialiased;
 	transition: transform .2s;
 }
-.js-accordion_control:focus-visible {
-	z-index: 1;
-}
 .js-accordion_control:is(:hover,:focus-visible) > span {
 	text-decoration: underline;
 }
-.js-accordion_control--active::before {
-	transform: scaleY(-1);
+.js-accordion_control:focus-visible {
+	z-index: 1;
 }
 .js-accordion_control--active {
 	background-color: var(--_accordion-title-active);
+}
+.js-accordion_control--active::after {
+	transform: scaleY(-1);
 }
 .js-accordion_control--active + .js-cms-accordion-panel--content {
 	background-color: var(--clr-neutral-200);
@@ -1485,7 +1485,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .mod-entry-footer + ol > .mod-entry,
 .mod-entry-footer + ol > .mod-entry:first-child {
-	border-block-start: 1px solid #d9d9d9;
+	border-block-start: 1px solid var(--clr-ui-border-subtle, #666);
 }
 .mod-comments .mod-entry-footer a {
 	border-block-end: 0;
@@ -1521,7 +1521,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 --------------------------------------------------------------- */
 .katabox {
 	position: relative;
-	border: 1px solid #000;
+	border: 1px solid var(--clr-ui-border-subtle, #666);
 	padding: 2em 1.5em;
 }
 .katabox::before,
@@ -1578,7 +1578,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	inset-inline-start: var(--_hamburger-padding-inline);
 	inline-size: calc(100% - 2 * var(--_hamburger-padding-inline));
 	block-size: var(--_hamburger-stroke-width);
-	background-color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-100, #fff);
 	border-radius: 2px;
 	opacity: 1;
 	transform: rotate(0deg);
@@ -1596,7 +1596,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 
 .hamburger[aria-expanded="true"] {
-	background-color: var(--clr-neutral-900);
+	background-color: var(--clr-neutral-900, #000);
 }
 .hamburger[aria-expanded="true"] :is(span:nth-child(1), span:nth-child(4)) {
 	inset-block-start: 50%;
@@ -1680,7 +1680,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	margin: 0;
 	padding: 1em 0.75em 1em 3%;
 	list-style-type: none;
-	color: var(--clr-neutral-100);
+	color: var(--clr-neutral-100, #fff);
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	text-decoration: none;
@@ -1712,7 +1712,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	white-space: normal;
-	background-color: var(--clr-neutral-900);
+	background-color: var(--clr-neutral-900, #000);
 }
 .mobilenav-current-pagetitle a .icon {
 	margin-inline-end: .5em;
@@ -1752,7 +1752,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	stroke-width: 0;
 	stroke: currentColor;
 	fill: currentColor;
-	color: var(--clr-neutral-100);
+	color: var(--clr-neutral-100, #fff);
 	transform: rotate(0deg) scale(1.5);
 	transition: transform .2s ease;
 }
@@ -1788,8 +1788,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	align-items: center;
 }
 .c-dropdown__btn:is(:hover, :focus, [aria-expanded="true"]) {
-	color: var(--clr-neutral-900);
-	background-color: var(--clr-neutral-100);
+	color: var(--clr-neutral-900, #000);
+	background-color: var(--clr-neutral-100, #fff);
 }
 .c-dropdown__btn:focus {
 	outline: 5px auto Highlight;
@@ -1816,7 +1816,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	z-index: 5;
 	inline-size: 100%;
 	padding: .25em;
-	background-color: #f6f4f3;
+	background-color: var(--clr-ui-bg-subtle, #ececec);
 	border-radius: 0 0 3px 3px;
 	box-shadow: var(--shadow-sm);
 }
@@ -1828,7 +1828,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	border-radius: 3px;
 }
 .c-dropdown__link:is(:hover, :focus) {
-	background-color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-100, #fff);
 }
 
 /* =Bürgerkonto
@@ -1865,8 +1865,8 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	text-decoration: none;
 }
 .m-citizensaccount__menu a:is(:hover, :focus) {
-	color: #000;
-	background-color: var(--clr-neutral-100);
+	color: var(--clr-neutral-900, #000);
+	background-color: var(--clr-neutral-100, #fff);
 }
 .m-citizensaccount__logout {
 	margin-block-start: 1em;
@@ -1938,4 +1938,11 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 }
 .dialog__close svg {
 	display: block;
+}
+
+/* =Stadtmelder
+--------------------------------------------------------------- */
+.report {
+	--stepper-bullet-bg-current: var(--clr-primary);
+	--stepper-step-unfinished: var(--clr-neutral-400);
 }
