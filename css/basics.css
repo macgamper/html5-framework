@@ -184,7 +184,7 @@ kbd {
 }
 figcaption,
 small, .small,
-label.error,
+:is(label, span).error,
 .asset-meta,
 .cookie-alert,
 .form-hint, .form-hint-complex, .js-simple-uploader-dropzone,

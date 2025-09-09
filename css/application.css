@@ -170,7 +170,7 @@
 }
 .form-builder .form-hint,
 .form-builder .form-hint-complex__rules,
-.form-builder label.error,
+.form-builder :is(label, span).error,
 .form-builder .password-strength,
 .form-builder .password-rules {
 	clear: both;
@@ -186,7 +186,7 @@
 .form-builder .clearfix > .editor  {
 	inline-size: 100%;
 }
-.form-builder label.error + label.error {
+.form-builder :is(label, span).error + :is(label, span).error {
 	margin-block-start: 0;
 	padding-block-start: 0;
 }
@@ -204,10 +204,10 @@
 .form-builder .form-required-hint {
 	font-style: normal;
 }
-.form-builder .required > label.error {
+.form-builder .required > :is(label, span).error {
 	font-weight: normal;
 }
-.form-builder label.error,
+.form-builder :is(label, span).error,
 .form-builder .accessibility-date select.invalid {
 	color: var(--_form-clr-error);
 }
@@ -217,7 +217,7 @@
 .form-builder :is(input, textarea, select).error:focus {
 	box-shadow: 0 0 0 5px color-mix(in oklab, var(--_form-clr-error), transparent 60%);
 }
-.form-builder label.error {
+.form-builder :is(label, span).error {
 	padding-inline-end: 0;
 }
 .form-builder .form-option-lst-show-title .form-option-lst,
@@ -243,7 +243,7 @@
 	flex: none;
 	inset-block-start: 0.18em;
 }
-div:not([class*="form-option-lst-show-title"]) label.error {
+div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: 100%;
 }
 .form-builder .form-builder-btn {
@@ -365,7 +365,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 .form-builder-30 select,
 .form-builder-30 .form-hint,
 .form-builder-30 .form-hint-complex__rules,
-.form-builder-30 label.error,
+.form-builder-30 :is(label, span).error,
 .form-builder-30 .form-option-lst-show-title .form-option-lst,
 .form-builder-30 .form-sizer-wrapper,
 .form-builder-30 .accessibility-date {
@@ -403,7 +403,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .form-option-lst-title,
 	.form-builder .form-hint,
 	.form-builder .form-hint-complex__rules,
-	.form-builder label.error,
+	.form-builder :is(label, span).error,
 	.form-builder .form-sizer-wrapper,
 	.form-builder .password-strength,
 	.form-builder .password-rules,
@@ -653,6 +653,38 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
+}
+
+/* =events: Serientermine Frontend
+--------------------------------------------------------------- */
+.event-period-container .disabled {
+	display: none;
+}
+.event-period-row + .event-period-row,
+.btn-row--additionaldate {
+	margin-block-start: 1.5em;
+	border-block-start: 1px solid var(--clr-ui-border-subtle);
+	padding-block-start: 1.5em;
+}
+
+.event-period-container span.error {
+	color: var(--_form-clr-error);
+}
+
+
+.form-sizer-wrapper--mixed * {
+	flex: 1 1 auto;
+}
+.form-sizer-wrapper--mixed [type=radio] {
+	flex: none;
+}
+
+.form-sizer-wrapper--child {
+	flex-wrap: wrap;
+	gap: .5em 1em;
+}
+.form-sizer-wrapper--child select {
+	inline-size: min-content;
 }
 
 /* =calendar (events, reservations)

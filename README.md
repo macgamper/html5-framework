@@ -3,6 +3,9 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ## [2.5.7] - 2025-09-09
 
+### Added
+- application.css: Styles für Serientermin-Erfassungsmaske im Frontend wurden ergänzt.
+
 ### Changed
 
 - application.css: Form-Builder Container mit neuer Klasse `.co-form__section` ergänzt und mit bestehenden Klassen zusammengefasst.
