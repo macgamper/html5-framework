@@ -61,8 +61,8 @@
 		caption-side: bottom;
 	}
 
-	.table-responsive {
-		border-inline-end: 1px solid #dcdfde;
+	.table-responsive--active {
+		border-inline-end: 1px solid var(--clr-ui-border-subtle);
 		border-block-end: 0;
 	}
 

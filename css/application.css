@@ -94,9 +94,7 @@
 	--_form-clr-hint: #585858;
 	--_form-clr-error: #cc0000;
 }
-.form-builder .form-builder__item,
-.form-builder .clearfix,
-.form-builder .cf {
+.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
@@ -119,17 +117,14 @@
 .form-builder .form-builder-container > *:last-child {
 	margin-block-end: 0;
 }
-.form-builder .form-builder__item > label,
-.form-builder .clearfix > label,
-.form-builder .cf > label,
+.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) > label,
 .form-builder .form-option-lst-title {
 	display: block;
 	margin-block-end: 0;
 	inline-size: 50%;
 	padding-inline-end: 2em;
 }
-.form-builder label > em,
-.form-builder legend > em {
+.form-builder :is(label, legend) > em {
 	font-style: normal;
 }
 .form-builder legend.form-option-lst-title,
@@ -219,7 +214,7 @@
 .form-builder input.error {
 	border-color: var(--_form-clr-error);
 }
-.form-builder input.error:focus {
+.form-builder :is(input, textarea, select).error:focus {
 	box-shadow: 0 0 0 5px color-mix(in oklab, var(--_form-clr-error), transparent 60%);
 }
 .form-builder label.error {
@@ -361,9 +356,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 
 /* =form-builder 30% label / 70% input
 --------------------------------------------------------------- */
-.form-builder-30 .form-builder__item > label,
-.form-builder-30 .clearfix > label,
-.form-builder-30 .cf > label,
+.form-builder-30 :is(.co-form__section, .form-builder__item, .clearfix, .cf) > label,
 .form-builder-30 .form-option-lst-title {
 	inline-size: 30%;
 }
@@ -384,15 +377,11 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 		margin-block-start: 0.7em;
 		margin-inline-start: 0;
 	}
-	.form-builder .form-builder__item,
-	.form-builder .clearfix,
-	.form-builder .cf {
+	.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) {
 		margin-block-end: 1.5em;
 	}
 	.form-builder label,
-	.form-builder .form-builder__item > label,
-	.form-builder .clearfix > label,
-	.form-builder .cf > label,
+	.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) > label,
 	.form-builder [type=date],
 	.form-builder [type=datetime],
 	.form-builder [type=datetime-local],
@@ -424,9 +413,7 @@ div:not([class*="form-option-lst-show-title"]) label.error {
 	.form-builder .accessibility-date {
 		display: flex;
 	}
-	.form-builder .form-builder__item > label,
-	.form-builder .clearfix > label,
-	.form-builder .cf > label,
+	.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) > label,
 	.form-builder .form-option-lst-title {
 		padding-inline-end: 0;
 		padding-block-end: 0.2em;
