@@ -1,6 +1,14 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.7] - 2025-09-09
+
+### Changed
+
+- application.css: Form-Builder Container mit neuer Klasse `.co-form__section` ergänzt und mit bestehenden Klassen zusammengefasst.
+- application.css: Error-Fokus auf `textarea` und `select` erweitert.
+- responsive.css: Tabelle bekommt rechten Border nur bei allfälligem Overflow (`.table-responsive--active`).
+
 ## [2.5.6] - 2025-08-29
 
 ### Added
