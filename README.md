@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.8] - 2025-10-02
+
+### Changed
+- screen.css: FontAwesome Subset wurde auf 7.0.1 aktualisiert. Achtung, es können Darstellungsprobleme in Kombination mit `font-size-adjust: from-font;` entstehen (zu kleine Icons). Entweder auf `font-size-adjust` verzichten, oder es an betroffenen Stellen deaktivieren. 
+- application.css: Clear bei OSM-Preisen `.os-price-detail` ergänzt.
+
 ## [2.5.7] - 2025-09-09
 
 ### Added

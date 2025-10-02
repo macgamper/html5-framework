@@ -994,6 +994,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
   	text-align: end;
 }
 .os-price-detail {
+	clear: both;
 	text-align: end;
 	border-block-start: 1px solid #a1acb0;
 	border-block-end: 3px double #a1acb0;
