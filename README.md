@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.5.9] - 2025-11-10
+
+### Changed
+- basics.css: Der Abstand zwischen `legend`-Text und der umgebenden `fieldset`-Rahmenlinie lassen sich nun via Variable `--_legend-spacing: .25em;` anpassen. Dieser Wert verhindert, dass die Linie den Text berührt. 
+
 ## [2.5.8] - 2025-10-02
 
 ### Changed

@@ -623,7 +623,10 @@ fieldset.reset {
 	background-color: transparent;
 }
 legend {
+	--_legend-spacing: .25em;
 	display: table;
+	margin-inline-start: calc(var(--_legend-spacing) * -1);
+	padding-inline: var(--_legend-spacing);
 	color: inherit;
 	font-weight: bold;
 	font-size: var(--fontsize-600);
@@ -760,7 +763,7 @@ select::-ms-expand { /* Hide arrow icon in IE browsers */
 :where(.form-builder) :is(button, select, summary, textarea, [type=button], [type=checkbox], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=file], [type=month], [type=number], [type=password], [type=radio], [type=range], [type=reset], [type=search], [type=submit], [type=tel], [type=text], [type=time], [type=url], [type=week]):focus,
 .form-builder__item--toggle [type="checkbox"]:focus ~ .form-builder__toggle::before {
 	outline: 3px solid transparent;
-	border-color: var(--clr-neutral-900);
+	border-color: var(--clr-neutral-900, #000);
 	box-shadow: 0 0 0 0.3125em rgba(21, 156, 228, 0.4);
 }
 summary:focus:not(:focus-visible),
