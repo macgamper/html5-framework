@@ -1,97 +1,135 @@
-$(document).ready(function(){
-
-    // ************************************
-    // mobile-navigation
-
-    // toggles menu
-    const navToggleClass = 'hamburger--active';
-    // close menu if closeMenu === true
-    function toggleMenu(container, list, btn, closeMenu) {
-        if (closeMenu) {
-            $('html').removeClass('js-mobilenav-visible');
-            $(btn).removeClass(navToggleClass);
-            $(container).slideUp(200);
-            $(selectors.navBackground).fadeOut(200);
-        } else {
-            $('html').toggleClass('js-mobilenav-visible');
-            $(btn).toggleClass(navToggleClass);
-            $(selectors.navBackground).fadeToggle(200);
-            $(container).slideToggle(200);
-        }
-        window.helperJs.toggleAriaExpanded(btn, closeMenu);
-    }
-
-    // hamburger & mobilenav
-    const selectors = {
-        navButton : '.js-hamburger',
-        navBackground : '.js-mobilenav__bg',
-        navContainer : '.mobilenav__container',
-        navList : '.mobilenav-box > ul',
-        navSkiplink : 'a[href="#mainnav"]'
-    };
-    
-    $(selectors.navButton + ', ' + selectors.navBackground).on('click', function(e) {
-        // toggle menu
-        toggleMenu(selectors.navContainer, selectors.navList, selectors.navButton);
-
-        // close by pressing ESC
-        // loop through menu by tab
-        $(selectors.navContainer + ', ' + selectors.navButton).keydown(function(e) {
-            // get last link in Menu
-            const lastLinkInList = $(selectors.navContainer).find('button, a, input:not([type="hidden"]), select, textarea, [tabindex]:not([tabindex="-1"])').last()[0];
-            // close menu with escape and focus button
-            if (e.key === 'Escape') {
-                toggleMenu(selectors.navContainer, selectors.navList, selectors.navButton, true);
-                $(selectors.navButton).focus();
-                return false;
-            // go to button clicking tab and last link focused
-            } else if (!e.shiftKey && e.key === 'Tab') {
-                if (e.target === lastLinkInList) {
-                    e.preventDefault;
-                    $(selectors.navButton).focus();
-                    return false;
-                }
-            // go to last link when clicking shift-tab, open menu and button focused
-            } else if (e.shiftKey && e.key === 'Tab') {
-                if ($(e.target).hasClass(selectors.navButton.substring(1)) && $(selectors.navContainer).is(':visible')) {
-                    e.preventDefault;
-                    lastLinkInList.focus();
-                    return false;
+(() => {
+    globalThis.helperJs.onReady((() => {
+        const mobileNav = {
+            classes: {
+                headActive: "js-mobilenav-visible",
+                buttonActive: "hamburger--active"
+            },
+            selectors: {
+                navButton: ".js-hamburger",
+                navBackground: ".js-mobilenav__bg",
+                navContainer: ".mobilenav__container",
+                navList: ".mobilenav-box > ul",
+                navSkiplink: "a[href='#mainnav']"
+            },
+            animation: {
+                duration: 200,
+                easing: "ease",
+                fill: "backwards"
+            }
+        };
+        const noIconConf = {
+            selector: "main a img",
+            noIconClass: "no-icon"
+        };
+        const touchDropdownConf = {
+            selector: ".mainnav .folder > a",
+            clickedClass: "clicked"
+        };
+        class MobileMenu {
+            constructor(config) {
+                this.isActive = false;
+                const selectors = config.selectors;
+                this.config = config;
+                this.button = document.querySelector(selectors.navButton);
+                this.container = document.querySelector(selectors.navContainer);
+                this.background = document.querySelector(selectors.navBackground);
+                if (this.validate()) {
+                    this.init();
+                    this.setListeners();
                 }
             }
-        });
-    });
-
-    // change skiplink-href for navigation, when mobilenav is visible
-    $(selectors.navSkiplink).on('click', function(e){
-        if ($(selectors.navButton).is(':visible')){
-            e.preventDefault;
-            $(selectors.navButton).click();
-            $(selectors.navList).find('>li:first-child()>a').focus();
-            return false;
-        }
-    });
-
-    // ************************************
-    // keine icons für verlinkte bilder
-    $('main a img').closest('a').addClass('no-icon');
-
-    // responsive-container für tabellen
-    window.helperJs.responsiveTable();
-
-    // ************************************
-    // touch-friendly dropdown-menus
-    /* If mobile browser, prevent click on parent nav item from redirecting to URL */
-    if(window.helperJs.isTouchDevice()) {
-        // 1st click, add "clicked" class, preventing the location change. 2nd click will go through.
-        $('.mainnav .folder > a').click(function(event) {
-            // Perform a reset - Remove the "clicked" class on all other menu items
-            $('.mainnav .folder > a').not(this).removeClass('clicked');
-            $(this).toggleClass('clicked');
-            if ($(this).hasClass('clicked')) {
-                event.preventDefault();
+            validate() {
+                const result = this.button && this.container;
+                if (!result) console.warn([ "Not valid configuration", this ]);
+                return result;
             }
-        });
-    }
+            init() {
+                this.animate = new globalThis.helperJs.dom.AnimateElement(this.config.animation);
+                this.slider = new globalThis.helperJs.dom.SlideElement(this.animate, this.container);
+                this.toggle(true);
+            }
+            setListeners() {
+                [ this.button, this.background ].forEach((element => {
+                    element && element.addEventListener("click", (e => {
+                        e.preventDefault();
+                        this.toggle();
+                    }));
+                }));
+                new globalThis.helperJs.A11yDropdownKeyNavigation(this.button, this.container, (() => {
+                    this.toggle(true);
+                }));
+                this.skipLinkForMobileView();
+            }
+            toggle(closeMenu) {
+                const html = document.documentElement;
+                const getBackgroundFrames = () => [ {
+                    opacity: "0"
+                }, {
+                    opacity: "1"
+                } ];
+                const classes = this.config.classes;
+                if (closeMenu || this.isActive) {
+                    html.classList.remove(classes.headActive);
+                    this.button.classList.remove(classes.buttonActive);
+                    this.slider.up();
+                    this.animate.animate(this.background, true, getBackgroundFrames);
+                } else {
+                    html.classList.add(classes.headActive);
+                    this.button.classList.add(classes.buttonActive);
+                    this.animate.animate(this.background, false, getBackgroundFrames);
+                    this.slider.down();
+                }
+                this.isActive = closeMenu ? false : !this.isActive;
+                globalThis.helperJs.toggleAriaExpanded(this.button, closeMenu);
+            }
+            skipLinkForMobileView() {
+                document.querySelectorAll(this.config.selectors.navSkipLink).forEach((el => {
+                    el.addEventListener("click", (e => {
+                        if (this.isActive) {
+                            e.preventDefault();
+                            this.onSkipLinkClick();
+                            return false;
+                        }
+                    }));
+                }));
+            }
+            onSkipLinkClick() {
+                this.button.click();
+                const selector = this.config.selectors.navList;
+                const a = selector && document.querySelector(`${selector} > li:first-child > a`);
+                if (a) a.focus({
+                    preventScroll: false
+                });
+            }
+        }
 
-});
+        new MobileMenu(mobileNav);
+        setNoIconsOnLinkedImages(noIconConf);
+        globalThis.helperJs.responsiveTable();
+        initTouchDropdowns(touchDropdownConf);
+
+        function setNoIconsOnLinkedImages(_ref) {
+            let {selector, noIconClass} = _ref;
+            document.querySelectorAll(selector).forEach((img => {
+                const a = img.closest("a");
+                a && a.classList.add(noIconClass);
+            }));
+        }
+        function initTouchDropdowns(_ref2) {
+            let {selector, clickedClass} = _ref2;
+            if (globalThis.helperJs.isTouchDevice()) {
+                const getLinks = () => document.querySelectorAll(selector);
+                getLinks().forEach((link => {
+                    link.addEventListener("click", (event => {
+                        getLinks().forEach((other => {
+                            if (other !== link) other.classList.remove(clickedClass);
+                        }));
+                        link.classList.toggle(clickedClass);
+                        if (link.classList.contains(clickedClass)) event.preventDefault();
+                    }));
+                }));
+            }
+        }
+    }));
+})();
