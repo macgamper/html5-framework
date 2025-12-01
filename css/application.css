@@ -1806,6 +1806,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	z-index: 10;
 	display: flex;
 	align-items: center;
+	gap: .25em;
 }
 .c-dropdown__btn:is(:hover, :focus, [aria-expanded="true"]) {
 	color: var(--clr-neutral-900, #000);
@@ -1821,7 +1822,6 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 }
 .c-dropdown__btn svg {
 	flex: none;
-	margin-inline-start: 0.25em;
 	transition: transform .2s;
 	will-change: transform;
 }

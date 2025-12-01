@@ -1029,15 +1029,29 @@ pre::-webkit-scrollbar-thumb:hover,
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
 }
+
+.hyphens {
+	overflow-wrap: break-word;
+	word-break: break-word; /* Safari */
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	hyphenate-limit-chars: 10 4 4;
+	text-wrap: pretty;
+}
+
 .reverse {
 	display: flex;
 	flex-direction: column;
+	row-gap: .5em;
 }
 .reverse > .reverse__child,
 .reverse > .date,
 .reverse > .visuallyfirst,
 .reverse > .mod-entry-meta {
 	order: -1;
+}
+.reverse > * {
+	margin-block: 0;
 }
 
 .reset,

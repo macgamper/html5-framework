@@ -1,6 +1,16 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6] - 2025-12-01
+
+### Added
+- basics.css: Für Trennungen wurde eine eigene Helperklasse `.hyphens ` ergänzt.
+
+### Changed
+- custom.js: jQuery-Abhängigkeit entfernt. Benötigt die aktuellste Version des helper.js.
+- basics.css: Das `.reverse`-Konstrukt bekommt nun Flex-Gap und die Margins von Kindelementen werden entfernt.
+- application.css: Beim `.c-dropdown__btn` werden Abstände zu SVG-Icons neu ebenfalls mit Gap anstatt Margin geregelt.
+
 ## [2.5.9] - 2025-11-10
 
 ### Changed
