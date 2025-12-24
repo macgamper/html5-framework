@@ -348,7 +348,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: 100%;
 	padding-inline-end: 0;
 }
-.form-builder .form-builder__item.stacked > label
+.form-builder .form-builder__item.stacked > label,
 .form-builder .clearfix.stacked > label {
 	padding-block-start: 0;
 	margin-block-end: 0.25em;

@@ -2184,3 +2184,9 @@ In den IE < 9 CC’s den HTML5 Shiv ergänzt
 ### template.htm
 
 erstellt
+
+---
+Anmerkungen: 0,71781 SHA-256 886a6e8358104d2c3d0a  
+&Schreibwerkzeuge:   
+@Mathias Gamper:   
+...
