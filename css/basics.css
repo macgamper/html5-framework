@@ -288,6 +288,13 @@ details[name]:has(+ details[name]) + details[name] {
 
 /* MARK: =Dialog & Popover
 --------------------------------------------------------------- */
+dialog {
+	overscroll-behavior: contain;
+}
+dialog::backdrop {
+	overflow: hidden;
+	overscroll-behavior: contain;
+}
 dialog, [popover], ::backdrop {
 	transition-property: display, overlay, opacity, translate;
 	transition-duration: .2s;

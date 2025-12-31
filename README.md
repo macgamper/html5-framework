@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6.1] - 2025-12-32
+
+### Added
+- basics.css: Besseres Scrollverhalten bei geöffneten Dialogen (Chrome ab 144). [Infos](https://www.bram.us/2025/11/25/use-overscroll-behavior-contain-to-prevent-a-page-from-scrolling-while-a-dialog-is-open/).
+- 
 ## [2.6] - 2025-12-01
 
 ### Added
@@ -2186,7 +2191,7 @@ In den IE < 9 CC’s den HTML5 Shiv ergänzt
 erstellt
 
 ---
-Anmerkungen: 0,71781 SHA-256 886a6e8358104d2c3d0a  
+Anmerkungen: 0,72029 SHA-256 2ca8ba25c131d666a8ec  
 &Schreibwerkzeuge:   
-@Mathias Gamper:   
+@Mathias Gamper: 69 77,2 91,2 119,74 312,5  
 ...
