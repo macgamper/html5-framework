@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6.2] - 2026-02-24
+
+### Added
+- basics.css: Horizontal scrollbare Tabellen erhalten Schatten als Scroll-Indikatoren basierend auf [Ben Frain’s grossartigen Artikel](https://benfrain.com/scroll-indicators-on-tables-with-background-colours-with-animation-timeline/).
+- print.css: Tabellen-Reset ergänzt.
+
+### Removed
+- basics.css: Form-CSS für legacy Edge entfernt.
+
 ## [2.6.1] - 2025-12-32
 
 ### Added
@@ -2191,7 +2200,7 @@ In den IE < 9 CC’s den HTML5 Shiv ergänzt
 erstellt
 
 ---
-Anmerkungen: 0,72029 SHA-256 2ca8ba25c131d666a8ec  
+Anmerkungen: 0,72399 SHA-256 ab1a4b1258acb5e2de8d  
 &Schreibwerkzeuge:   
-@Mathias Gamper: 69 77,2 91,2 119,74 312,5  
+@Mathias Gamper: 68,2 77,2 86 88,2 91,2 119,87 215,25 337,39 377 404,36 447,2 461,2 489,74 682,5  
 ...

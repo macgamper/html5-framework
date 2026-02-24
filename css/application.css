@@ -1589,7 +1589,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	text-indent: -9999px;
 	border-radius: var(--radius-sm);
 	cursor: pointer;
-	background-color: var(--clr-primary);
+	background-color: var(--clr-primary, #000);
 	transition: background-color .5s;
 }
 .hamburger span {

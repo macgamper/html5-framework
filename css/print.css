@@ -216,6 +216,14 @@ table.auto {
 	text-align: right;
 }
 
+table:is(.presentation, .reset),
+table:is(.presentation, .reset) :is(th, td),
+table:is(.presentation, .reset) tr:first-child :is(th, td),
+table:is(.presentation, .reset) thead ~ tbody tr:last-child {
+	border: 0;
+	padding: 0;
+}
+
 /* =tablesorter
 --------------------------------------------------------------- */
 .tablesorter-filter-row {

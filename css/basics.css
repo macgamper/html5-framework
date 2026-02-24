@@ -581,12 +581,14 @@ a img {
 [href*=".kunde.ch"]::after,
 [href*=".backslash.ch"]::after,
 [data-email-link]::after,
-.no-icon::after, .no-icon::before,
+.no-icon::before, .no-icon::after,
+[aria-label][data-balloon-pos]::before, [aria-label][data-balloon-pos]::after,
 .nav [href]::after,
 .subnav [href]::after,
 .footer [href]::after,
 .mod-dam--gallery a::before {
 	content: none;
+	inline-size: auto;
 	padding: 0;
 }
 .os-url .show-icon[href^="https://govis-kunde.backslash.ch"]::after,
@@ -668,13 +670,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
 	background-color: var(--clr-neutral-100, #fff);
 	border-radius: var(--radius-sm);
 	transition: box-shadow 0.2s;
-}
-
-@supports (-ms-ime-align: auto) { /* targets only legacy edge */
-	[type=radio],
-	[type=checkbox] {
-		-webkit-appearance: checkbox;
-	}
 }
 
 [type=radio],
@@ -935,6 +930,60 @@ table.reset thead ~ tbody tr:last-child {
 	inset-inline-start: 0;
 	inline-size: 100%;
 	block-size: 100%;
+}
+
+@supports (animation-timeline: scroll()) {
+	.table-responsive {
+		--_indicator-inline-size: 50px;
+		--_indicator-color: rgb(0 0 0 / .5);
+
+		display: grid;
+		grid-template-areas: "leftindicator content rightindicator";
+		grid-template-columns: var(--_indicator-inline-size) maxcontent var(--_indicator-inline-size);
+
+		&::before,
+		&::after {
+			content: "";
+			block-size: 100%;
+			inline-size: var(--_indicator-inline-size);
+			display: block;
+			z-index: 10;
+			position: sticky;
+			opacity: 0;
+			pointer-events: none;
+
+			animation-name: show-indicator;
+			animation-fill-mode: both;
+			animation-timeline: scroll(nearest inline);
+		}
+		&::before {
+			grid-area: leftindicator;
+			inset-inline-start: 0;
+			background-image: linear-gradient(to right, var(--_indicator-color), transparent);
+
+			animation-direction: forwards;
+			animation-range: 0 var(--_indicator-inline-size);
+		}
+		&::after {
+			grid-area: rightindicator;
+			inset-inline-end: 0;
+			background-image: linear-gradient(to left, var(--_indicator-color), transparent);
+
+			animation-direction: reverse;
+			animation-range: calc(100% - var(--_indicator-inline-size)) 100%;
+		}
+
+		table {
+			grid-column: 1 / -1;
+			grid-row: 1 / -1;
+		}
+	}
+
+	@keyframes show-indicator {
+		to {
+			opacity: 1;
+		}
+	}
 }
 
 /* =scrollbars
