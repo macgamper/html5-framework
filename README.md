@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6.3] - 2026-03-10
+
+### Added
+- basics.css: Fokusierte Links innerhalb `.link-expanded` bekommen die Fokus-Outline nicht mehr, sondern das Eltern-Element mit `.link-expanded`, was das Layout meist ruhiger macht.
+
 ## [2.6.2] - 2026-02-24
 
 ### Added
@@ -2200,7 +2205,7 @@ In den IE < 9 CC’s den HTML5 Shiv ergänzt
 erstellt
 
 ---
-Anmerkungen: 0,72399 SHA-256 ab1a4b1258acb5e2de8d  
+Anmerkungen: 0,72617 SHA-256 77458e65bb38b155ca65  
 &Schreibwerkzeuge:   
-@Mathias Gamper: 68,2 77,2 86 88,2 91,2 119,87 215,25 337,39 377 404,36 447,2 461,2 489,74 682,5  
+@Mathias Gamper: 68,2 77,2 86 88,2 91,2 104 119,28 161,73 248,40 295,2 304 306,2 309,2 337,87 433,25 555,39 595 622,36 665,2 679,2 707,74 900,5  
 ...

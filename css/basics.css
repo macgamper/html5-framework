@@ -39,8 +39,6 @@
 *::before,
 *::after,
 input[type="search"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 html {
@@ -616,6 +614,14 @@ a.link-expanded__ignore::after,
 .link-expanded a[tabindex="-1"]::after {
 	content: none;
 }
+.link-expanded:has(a:focus-visible) {
+	outline: 5px auto Highlight;
+	outline: 5px auto -webkit-focus-ring-color;
+
+	& a:focus-visible {
+		outline: none;
+	}
+} 
 
 /* MARK: =forms
 --------------------------------------------------------------- */
