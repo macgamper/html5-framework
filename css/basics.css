@@ -615,6 +615,7 @@ a.link-expanded__ignore::after,
 	content: none;
 }
 .link-expanded:has(a:focus-visible) {
+	z-index: 1;
 	outline: 5px auto Highlight;
 	outline: 5px auto -webkit-focus-ring-color;
 
@@ -1104,16 +1105,17 @@ pre::-webkit-scrollbar-thumb:hover,
 .reverse {
 	display: flex;
 	flex-direction: column;
-	row-gap: .5em;
-}
-.reverse > .reverse__child,
-.reverse > .date,
-.reverse > .visuallyfirst,
-.reverse > .mod-entry-meta {
-	order: -1;
-}
-.reverse > * {
-	margin-block: 0;
+	row-gap: var(--reverse-gap, .5em);
+
+	:is(.mod-entry-title, .mod-entry-meta, .mod-entry-desc) {
+		margin-block: 0;
+	}
+	> :is(.reverse__child, .date, .visuallyfirst, .mod-entry-meta) {
+		order: -1;
+	}
+	+ .mod-entry-desc {
+		margin-block-start: var(--reverse-gap, .5em);
+	}
 }
 
 .reset,

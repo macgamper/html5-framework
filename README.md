@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6.4] - 2026-03-25
+
+### Changed
+- default.html: Beim Suchelement `<search class="co-search">` und dessen Kindelementen wurden die Klassen mit dem in Update 1.8.110 aktualisierten Master-Template harmonisiert.
+- basics.css: Die Klasse `.reverse` und ihre Kindelemente regeln ihre Abstände nun zentral via `gap`. Über die Variable `--reverse-gap` kann optional eingegriffen werden.
+
 ## [2.6.3] - 2026-03-10
 
 ### Added
@@ -2205,7 +2211,7 @@ In den IE < 9 CC’s den HTML5 Shiv ergänzt
 erstellt
 
 ---
-Anmerkungen: 0,72617 SHA-256 77458e65bb38b155ca65  
+Anmerkungen: 0,73003 SHA-256 c79764f808f581af9549  
 &Schreibwerkzeuge:   
-@Mathias Gamper: 68,2 77,2 86 88,2 91,2 104 119,28 161,73 248,40 295,2 304 306,2 309,2 337,87 433,25 555,39 595 622,36 665,2 679,2 707,74 900,5  
+@Mathias Gamper: 68,2 77,2 86 88,2 91,2 106 109,12 123,26 165,240 418,38 463,2 472 474,2 477,2 490 505,28 547,73 634,40 681,2 690 692,2 695,2 723,87 819,25 941,39 981 1008,36 1051,2 1065,2 1093,74 1286,5  
 ...
