@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6.5] - 2026-04-10
+
+### Added
+- mail.css: List-Styles `.form-valuelist ` für bessere Darstellung von Werten aus Radios, Checkboxen und Selects.
+
 ## [2.6.4] - 2026-03-25
 
 ### Changed
@@ -2211,7 +2216,7 @@ In den IE < 9 CC’s den HTML5 Shiv ergänzt
 erstellt
 
 ---
-Anmerkungen: 0,73003 SHA-256 c79764f808f581af9549  
+Anmerkungen: 0,73153 SHA-256 e0e3be278e8c2f1c2ed0  
 &Schreibwerkzeuge:   
-@Mathias Gamper: 68,2 77,2 86 88,2 91,2 106 109,12 123,26 165,240 418,38 463,2 472 474,2 477,2 490 505,28 547,73 634,40 681,2 690 692,2 695,2 723,87 819,25 941,39 981 1008,36 1051,2 1065,2 1093,74 1286,5  
+@Mathias Gamper: 68,2 77,2 86 88,2 91,2 104 107,8 116,14 145,75 227,2 236 238,2 241,2 256 259,12 273,26 315,240 568,38 613,2 622 624,2 627,2 640 655,28 697,73 784,40 831,2 840 842,2 845,2 873,87 969,25 1091,39 1131 1158,36 1201,2 1215,2 1243,74 1436,5  
 ...

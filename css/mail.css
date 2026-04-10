@@ -123,6 +123,17 @@ table.zebra tbody tr:nth-child(even),
 	text-align: right;
 }
 
+.form-valuelist {
+	margin: 0;
+	padding: 0;
+}
+.form-valuelist > li {
+	margin-left: 1.5em;
+}
+.form-valuelist > li + li {
+	margin-top: 0.25em;
+}
+
 /* OSM Sales
 -------------------------------------------- */
 .sales-table {
