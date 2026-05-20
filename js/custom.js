@@ -50,6 +50,9 @@
                 this.toggle(true);
             }
             setListeners() {
+                document.addEventListener("govisA11yDropdownOpen", (() => {
+                    if (this.isActive) this.toggle(true);
+                }));
                 [ this.button, this.background ].forEach((element => {
                     element && element.addEventListener("click", (e => {
                         e.preventDefault();
@@ -75,6 +78,7 @@
                     this.slider.up();
                     this.animate.animate(this.background, true, getBackgroundFrames);
                 } else {
+                    document.dispatchEvent(new CustomEvent("govisA11yDropdownClose"));
                     html.classList.add(classes.headActive);
                     this.button.classList.add(classes.buttonActive);
                     this.animate.animate(this.background, false, getBackgroundFrames);
