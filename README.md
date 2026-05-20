@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+
+## [2.6.6] - 2026-05-18
+
+### Changed
+- custom.js: Fix verhindert, dass sich A11yDialog und Mobile-Menu gleichzeitig öffnen.
+
 ## [2.6.5] - 2026-04-10
 
 ### Added
@@ -2181,6 +2187,7 @@ Version 3
 
 ergänzt:
 
+```CSS
 *,
 *:before,
 *:after {
@@ -2188,6 +2195,7 @@ ergänzt:
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	}
+```
 
 ## 2013-11-01
 ### normalize.css
@@ -2205,18 +2213,14 @@ http://goo.gl/E9dgRb
 
 In den IE < 9 CC’s den HTML5 Shiv ergänzt
 
+```html
 <!—[if lt IE 9]>
 	<link href=«css/ie.css» rel=«stylesheet» type=«text/css» media=«screen» />
 	<script src=«http://cdn-backslash.ch/lib/html5shiv/html5shiv.js» type=«text/javascript»></script>
 <![endif]—>
+```
 
 ## 2013-09-26
 ### template.htm
 
 erstellt
-
----
-Anmerkungen: 0,73153 SHA-256 e0e3be278e8c2f1c2ed0  
-&Schreibwerkzeuge:   
-@Mathias Gamper: 68,2 77,2 86 88,2 91,2 104 107,8 116,14 145,75 227,2 236 238,2 241,2 256 259,12 273,26 315,240 568,38 613,2 622 624,2 627,2 640 655,28 697,73 784,40 831,2 840 842,2 845,2 873,87 969,25 1091,39 1131 1158,36 1201,2 1215,2 1243,74 1436,5  
-...
