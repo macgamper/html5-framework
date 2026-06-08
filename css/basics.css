@@ -24,7 +24,7 @@
 
 	--radius-sm: .1875em;
 	--radius-md: .25em;
-	--radius-xl: 100vw;
+	--radius-full: 100vw;
 
 	accent-color: var(--clr-primary);
 
@@ -980,7 +980,7 @@ table.reset thead ~ tbody tr:last-child {
 			animation-range: calc(100% - var(--_indicator-inline-size)) 100%;
 		}
 
-		table {
+		& > * {
 			grid-column: 1 / -1;
 			grid-row: 1 / -1;
 		}
@@ -1285,7 +1285,7 @@ th > *:last-child, td > *:last-child,
 	--_column-gap: 1.875em; /* 30/16 */
 	--_row-gap: 1.5em;
 	display: grid;
-	grid-template-columns: repeat(var(--_column-count), 1fr);
+	grid-template-columns: repeat(var(--_column-count, 1), 1fr);
 	column-gap: var(--_column-gap);
 	row-gap: var(--_row-gap);
 }

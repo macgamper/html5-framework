@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [2.6.7] - 2026-06-08
+
+### Changed
+- application.css: `MARK:`-Präfixes vor den wichtigen CSS-Codeblocks für besseres Auffinden im Editor-Minimap.
+- application.css: OSM-Checkout neu Mobile-First und mit Container- anstatt Media-Query und einigen Farbvariablen.
+- application.css: `.mod-entry--istop` ergänzt, um angeheftete Newsmeldungen sichtbar zu machen.
 
 ## [2.6.6] - 2026-05-18
 

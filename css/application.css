@@ -1,4 +1,4 @@
-/* =global module-lists
+/* MARK: =global module-lists
 --------------------------------------------------------------- */
 .mod-wrapper {
 	clear: both;
@@ -17,6 +17,18 @@
 .mod-entry > *:last-child,
 .mod-entry a > *:last-child {
 	margin-block-end: 0;
+}
+.mod-entry--istop {
+	position: relative;
+	&::before {
+		content: "Topnews";
+		position: absolute;
+		inset-block-start: 1em;
+		inset-inline-end: 0;
+		padding: .25em .75em;
+		color: var(--clr-neutral-100, #fff);
+		background-color: var(--clr-primary, #000);
+	}
 }
 .mod-category-title {
 	
@@ -43,7 +55,7 @@
 	display: block;
 }
 
-/* =global module-navigation
+/* MARK: =global module-navigation
 --------------------------------------------------------------- */
 .mod-nav {
 	display: flex;
@@ -76,7 +88,7 @@
 	}
 }
 
-/* =Files
+/* MARK: =Files
 --------------------------------------------------------------- */
 .asset-meta {
 	white-space: nowrap;
@@ -88,7 +100,7 @@
 	
 }
 
-/* =form-builder
+/* MARK: =form-builder
 --------------------------------------------------------------- */
 .form-builder {
 	--_form-clr-hint: #585858;
@@ -431,7 +443,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	}
 }
 
-/* =form-builder multistep
+/* MARK: =form-builder multistep
 --------------------------------------------------------------- */
 .form-to-wizard-commands {
 	display: flex;
@@ -464,7 +476,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	border-end-start-radius: 0;
 }
 
-/* =checkbox toggle
+/* MARK: =checkbox toggle
 --------------------------------------------------------------- */
 .form-builder .form-builder__item--toggle {
 	--_toggle-off: lightgrey;
@@ -592,7 +604,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	opacity: 1;
 }
 
-/* =flex-search
+/* MARK: =flex-search
 --------------------------------------------------------------- */
 .flex-search {
 	display: flex;
@@ -623,7 +635,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	padding-inline-end: 1em;
 }
 
-/* =searchresults
+/* MARK: =searchresults
 --------------------------------------------------------------- */
 .search-result-title--assets a {
 	display: flex;
@@ -647,7 +659,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	hyphens: auto;
 }
 
-/* =events: anmeldungen
+/* MARK: =events: anmeldungen
 --------------------------------------------------------------- */
 .btn-group-grid, .event-participant-buttongroup {
 	display: flex;
@@ -687,7 +699,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: min-content;
 }
 
-/* =calendar (events, reservations)
+/* MARK: =calendar (events, reservations)
 --------------------------------------------------------------- */
 .calendar {
 	inline-size: 50%;
@@ -738,7 +750,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 
 }
 
-/* =Tageszustände
+/* MARK: =Tageszustände
 --------------------------------------------------------------- */
 .cal-entry { /* Daten mit Eintrag */
 	font-weight: bold;
@@ -785,7 +797,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	outline: 3px solid yellow;
 }
 
-/* =Reservations-Tageszustände
+/* MARK: =Reservations-Tageszustände
 --------------------------------------------------------------- */
 .calendar-legend {
 	margin-block-end: 1.5em;
@@ -845,7 +857,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	text-shadow: 0 1px 0 var(--clr-neutral-900, #000);
 }
 
-/* =travelpass
+/* MARK: =travelpass
 --------------------------------------------------------------- */
 .travelpass .calendar {
 	inline-size: 100%;
@@ -872,7 +884,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	}
 }
 
-/* =magnific gallery
+/* MARK: =magnific gallery
 --------------------------------------------------------------- */
 .mod-dam--gallery,
 .report__files {
@@ -919,7 +931,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	}
 }
 
-/* =breadcrumb
+/* MARK: =breadcrumb
 --------------------------------------------------------------- */
 .breadcrumb {
 	position: relative;
@@ -982,7 +994,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	min-inline-size: 200px;
 }
 
-/* =osm online-schalter
+/* MARK: =osm online-schalter
 --------------------------------------------------------------- */
 .os-category-title {}
 .os-tbl-caption {}
@@ -1021,7 +1033,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	margin-block-end: .7em;
 }
 
-/* =sales warenkorb
+/* MARK: =sales warenkorb
 --------------------------------------------------------------- */
 .sales-basket-infobox .btn {
 	display: block;
@@ -1051,10 +1063,14 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	font-weight: bold;
 }
 
-/* =osm checkout steps
+/* MARK: =osm checkout steps
 --------------------------------------------------------------- */
 .cart-checkout {
+    --_clr-checkout-border: var(--clr-ui-border-subtle, #ccc);
+    --_clr-checkout-inactive: #706f6f;
+    --_clr-checkout-active: #bc111e;
 	margin-block-end: 1.5em;
+    container: checkout / inline-size;
 }
 .cart-checkout__lst,
 .cart-checkout__item {
@@ -1064,64 +1080,44 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 }
 .cart-checkout__lst {
 	display: flex;
+    flex-direction: column;
 	inline-size: 100%;
-	box-shadow: inset 0 1px 0 #ccc,
-				inset 0 -1px 0 #ccc;
 }
 .cart-checkout__item {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 	gap: .5em;
-	padding: 1.5em 0;
-	text-align: center;
+    padding-block: .15em;
+    text-align: start;
 	line-height: 1.2;
-}
-.cart-checkout__item + .cart-checkout__item {
-	margin-inline-start: 1.5em;
-}
-.cart-checkout__item--active {
-	position: relative;
-	font-weight: bold;
-}
-.cart-checkout__item--active::after, 
-.cart-checkout__item--active::before {
-	inset-block-end: 0;
-	inset-inline-start: 50%;
-	border: solid transparent;
-	content: "";
-	block-size: 0;
-	inline-size: 0;
-	position: absolute;
-	pointer-events: none;
-}
-.cart-checkout__item--active::after {
-	margin-inline-start: -10px;
-	border-color: rgba(255, 255, 255, 0);
-	border-block-end-color: var(--clr-neutral-100, #fff);
-	border-width: 10px;
-}
-.cart-checkout__item--active::before {
-	border-color: rgba(242, 242, 242, 0);
-	border-block-end-color: #ccc;
-	border-width: 11px;
-	margin-inline-start: -11px;
-}
-.cart-checkout__item--active ~ li {
-	color: #706f6f;
+
+    &.cart-checkout__item--active {
+        position: relative;
+        font-weight: bold;
+
+        ~ li {
+            color: var(--_clr-checkout-inactive);
+        }
+    }
 }
 
 .cart-checkout__step {
+    flex: none;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	inline-size: 1.5em;
 	block-size: 1.5em;
 	color: var(--clr-neutral-100, #fff);
-	background-color: #706f6f;
+	background-color: var(--_clr-checkout-inactive);
 	border-radius: 3em;
-}
 
+    .cart-checkout__item--active & {
+        background-color: var(--_clr-checkout-active);
+    }
+}
 .checkout__step-checkmark {
 	display: none;
 }
@@ -1140,36 +1136,45 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	clip-path: inset(100%);
 	overflow: hidden;
 }
-.cart-checkout__item--active .cart-checkout__step {
-	background-color: #bc111e;
-}
 
-@media only screen and (max-width: 48em) { /* 768/16 */
-
+@container checkout (min-width: 48em) { /* 768/16 */
 	.cart-checkout__lst {
-		flex-direction: column;
-		box-shadow: none;
+        flex-direction: row;
+        gap: 0 1.5em;
+        box-shadow: inset 0 1px 0 var(--_clr-checkout-border),
+				    inset 0 -1px 0 var(--_clr-checkout-border);
 	}
-	.cart-checkout__item {
-		justify-content: flex-start;
-		align-items: center;
-		padding: .15em 0;
-		text-align: start;
-	}
-	.cart-checkout__item + .cart-checkout__item {
-		margin: inherit;
-	}
-	.cart-checkout__item--active::after, .cart-checkout__item--active::before {
-		content: none;
-	}
-	.cart-checkout__step {
-		margin-inline-end: .5em;
-		margin-block-end: 0;
-	}
-
+    .cart-checkout__item {
+        justify-content: center;
+        padding-block: 1.5em;
+        text-align: center;
+    }
+    .cart-checkout__item--active::after, 
+    .cart-checkout__item--active::before {
+        inset-block-end: 0;
+        inset-inline-start: 50%;
+        border: solid transparent;
+        content: "";
+        block-size: 0;
+        inline-size: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    .cart-checkout__item--active::after {
+        margin-inline-start: -10px;
+        border-color: transparent;
+        border-block-end-color: var(--clr-neutral-100, #fff);
+        border-width: 10px;
+    }
+    .cart-checkout__item--active::before {
+        border-color: transparent;
+        border-block-end-color: var(--_clr-checkout-border);
+        border-width: 11px;
+        margin-inline-start: -11px;
+    }
 }
 
-/* =osm payment: KK-Auswahl
+/* MARK: =osm payment: KK-Auswahl
 --------------------------------------------------------------- */
 .cc-lst li {
 	position: relative;
@@ -1226,7 +1231,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	font-weight: 500;
 }
 
-/* =messenger
+/* MARK: =messenger
 --------------------------------------------------------------- */
 .subscription-opt-lst thead th {
 	white-space: nowrap;
@@ -1256,13 +1261,13 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	float: none;
 }
 
-/* =mod-index toc
+/* MARK: =mod-index toc
 --------------------------------------------------------------- */
 .mod-index-toc {
 	position: relative;
 	margin-block-end: 2em;
 	overflow: hidden;
-	background-color: #f6f4f3;
+	background-color: var(--clr-ui-bg-subtle, #f6f4f3);
 }
 
 .mod-index-toc ul {
@@ -1318,7 +1323,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 
 }
 
-/* =mod-index a-z list
+/* MARK: =mod-index a-z list
 --------------------------------------------------------------- */
 .mod-index-pages > div {
 	margin-block-end: 1.5em;
@@ -1343,13 +1348,13 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	padding-block-end: 1em;
 }
 
-/* =mod-egov
+/* MARK: =mod-egov
 --------------------------------------------------------------- */
 .mod-egov-contact .mod-index-box th:is(.contact-name, .contact-department, .contact-contact) {
 	inline-size: 33.333333333333333%;
 }
 
-/* =collections
+/* MARK: =collections
 --------------------------------------------------------------- */
 .collection-lst {
 	margin-block-end: 0;
@@ -1439,7 +1444,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	margin-block-end: 0;
 }
 
-/* =FAQ
+/* MARK: =FAQ
 --------------------------------------------------------------- */
 .faq__topic {
 	margin-block-end: 0.75em;
@@ -1452,7 +1457,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	margin-block-end: .5em
 }
 
-/* =blog (news in blogform)
+/* MARK: =blog (news in blogform)
 --------------------------------------------------------------- */
 .mod-blog .mod-entry {
 	clear: both;
@@ -1476,7 +1481,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
   	padding: 1em;
 }
 
-/* =kommentare
+/* MARK: =kommentare
 --------------------------------------------------------------- */
 .mod-lst-comments li {
 	list-style: none;
@@ -1512,7 +1517,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	font-size: var(--fontsize-300);
 }
 
-/* =cookie law
+/* MARK: =cookie law
 --------------------------------------------------------------- */
 .cookie-alert {
 	position: fixed;
@@ -1531,13 +1536,13 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	margin-inline-start: 1em;
 }
 
-/* =Vereine
+/* MARK: =Vereine
 --------------------------------------------------------------- */
 .mod-association .association-category .association-name {
 	inline-size: 50%;
 }
 
-/* =KataBox
+/* MARK: =KataBox
 --------------------------------------------------------------- */
 .katabox {
 	position: relative;
@@ -1568,7 +1573,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	text-align: center;
 }
 
-/* =hamburger
+/* MARK: =hamburger
 --------------------------------------------------------------- */
 .hamburger {
 	--_hamburger-size: 3.4375em; /* 55/16 */
@@ -1631,7 +1636,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	transform: rotate(-45deg);
 }
 
-/* =Mobilenav AJAX
+/* MARK: =Mobilenav AJAX
 --------------------------------------------------------------- */
 .mobilenav {
 	display: none;
@@ -1795,7 +1800,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	}
 }
 
-/* =a11y dropdown component
+/* MARK: =A11Y dropdown component
 --------------------------------------------------------------- */
 .c-dropdown {
 	position: relative;
@@ -1851,7 +1856,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	background-color: var(--clr-neutral-100, #fff);
 }
 
-/* =Bürgerkonto
+/* MARK: =Bürgerkonto
 --------------------------------------------------------------- */
 .m-citizensaccount__dropdown {
 	inline-size: 250px;
@@ -1894,7 +1899,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	text-align: end;
 }
 
-/* =tags
+/* MARK: =tags
 --------------------------------------------------------------- */
 .tag-lst {
 	display: flex;
@@ -1924,7 +1929,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
     background-color: var(--clr-primary);
 }
 
-/* =cards-layout
+/* MARK: =cards-layout
 --------------------------------------------------------------- */
 .cards {}
 .cards__item {}
@@ -1934,7 +1939,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	grid-gap: 30px;
 }
 
-/* =card-item
+/* MARK: =card-item
 --------------------------------------------------------------- */
 .card {}
 
@@ -1944,7 +1949,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	margin-block-end: .5em;
 }
 
-/* =Dialog
+/* MARK: =Dialog
 --------------------------------------------------------------- */
 .dialog__header {
 	display: flex;
@@ -1960,7 +1965,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	display: block;
 }
 
-/* =Stadtmelder
+/* MARK: =Stadtmelder
 --------------------------------------------------------------- */
 .report {
 	--stepper-bullet-bg-current: var(--clr-primary);
