@@ -1,53 +1,56 @@
 /* MARK: =global
 --------------------------------------------------------------- */
 .wrapper {
-	outline: 2px solid black;
-	inline-size: 90%;
+	--_inline-offset: 3vw;
+	inline-size: calc(100% - var(--_inline-offset) * 2);
 	max-inline-size: 1410px;
 	margin-inline: auto;
+
+	@media (width > 32.5em) { /* 520/16 */
+		--_inline-offset: 5%;
+	}
 }
 	
 /* MARK: =header
 --------------------------------------------------------------- */
-.header {
-	background-color: #9cf; /* blue */
-}
+.header {}
 
 /* MARK: =mainnav
 --------------------------------------------------------------- */
-.mainnav {
-	background-color: #f99; /* red */
+.mainnav  {
+	display: none;
+}
+
+@media (width > 32.5em) { /* 520/16 */
+	.mainnav  {
+		display: block;
+	}
+	.mobilenav {
+		display: none;
+	}
 }
 
 /* MARK: =content
 --------------------------------------------------------------- */
-.content {
-	background-color: #ededed; /* grey */
-}
+.content {}
+
 .wrapper--content {
-	display: flex;
+	@media (width > 32.5em) { /* 520/16 */
+		display: grid;
+		grid-template-columns: 20% minmax(0, 1fr) 20%;
+	}
 }
-.main {
-	inline-size: 60%;
-	background-color: #9f9; /* green */
-}
+	
+.main {}
 
 /* MARK: =subnav
 --------------------------------------------------------------- */
-.subnav {
-	inline-size: 20%;
-	background-color: #f99; /* red */
-}
+.subnav {}
 
 /* MARK: =sidebar
 --------------------------------------------------------------- */
-.sidebar {
-	inline-size: 20%;
-	background-color: #ff6; /* yellow */
-}
+.sidebar {}
 
 /* MARK: =footer
 --------------------------------------------------------------- */
-.footer {
-	background-color: #c9f; /* violet */
-}
+.footer {}

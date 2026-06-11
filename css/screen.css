@@ -1,6 +1,6 @@
 /* ***********************************************************************************
 FileName	: screen.css
-Date		: 13.05.2024
+Date		: 11.06.2026
 Author		: gamperm
 Purpose		: Framework
 
@@ -8,14 +8,12 @@ Modification Log:
 
 Name		Date			Description
 ================================================================================
-gamperm		11.11.2014		new application.css for comet modules & frontend UI
-gamperm		26.09.2013		Created
+gamperm		11.06.2026		Release Notes: https://github.com/macgamper/html5-framework
 *********************************************************************************** */
 @import url(normalize.css);
 @import url(basics.css);
 @import url(application.css);
 @import url(layout.css);
-@import url(responsive.css);
 @import url(https://ext.cdn-backslash.ch/lib/font-awesome7/7.0.1/fontawesome-light.css);
 
 #__bs_notify__ {

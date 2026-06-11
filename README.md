@@ -1,6 +1,31 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [3.0.0] - 2026-06-11
+
+### Changed
+- Genereller Wechsel zu «Mobile First», der aber noch im Gange ist.
+- default.html: Eine Klasse `html.debug` vergibt nun Farben und Outline in der Entwicklungsphase und kann dann entfernt werden.
+- screen.css: responsive.css aus dem Loader-CSS entfernt.
+- basics.css: Die Farbreihe `--clr-neutral-XX` wurde vervollständigt.
+- application.css: Layout-Logik der Main-/Mobilenav ins layout.css verschoben.
+- layout.css: Breiten- und Farben- und Outline-Hilfsformatierungen entfernt. Die visuellen Angaben sind nun an die `.debug` Klasse gebunden. Das Grundlayout neu mit Grid gelöst, damit die Kindelemente keine eigenen Anweisungen mehr benötigen. Neue Wrapper-Variable `--_inline-offset`, die den Inline-Abstand in verschiedenen Breakpoints regelt und so beispielsweise auch von der Mobile-Nav übernommen werden kann.
+
+```CSS
+/* Beispiel */
+.wrapper--header {
+	position: relative;
+	
+	.mobilenav__container {
+		inline-size: calc(100% + var(--_inline-offset) * 2);
+		inset-inline-start: calc(var(--_inline-offset) * -1);
+	}
+}
+```
+
+### Removed
+- responsive.css: Komplettes File entfernt. Alle noch vorhandenen Regeln wurden zum passenden Kontext gestellt.
+
 ## [2.6.7] - 2026-06-08
 
 ### Changed

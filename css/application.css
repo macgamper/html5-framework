@@ -103,7 +103,7 @@
 /* MARK: =form-builder
 --------------------------------------------------------------- */
 .form-builder {
-	--_form-clr-hint: #585858;
+	--_form-clr-hint: var(--clr-ui-text-subtle);
 	--_form-clr-error: #cc0000;
 }
 .form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) {
@@ -330,7 +330,8 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	color: var(--_form-clr-hint);
 	background-color: var(--clr-neutral-200);
 	border-radius: var(--radius-sm, .25em);
-	transition: all .2s;
+	transition-property: color, box-shadow;
+	transition-duration: .2s;
 }
 .form-builder .js-simple-uploader-dropzone-active {
 	color: var(--clr-neutral-900, #000);
@@ -1638,29 +1639,17 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 
 /* MARK: =Mobilenav AJAX
 --------------------------------------------------------------- */
-.mobilenav {
-	display: none;
-}
-
-@media only screen and (max-width: 32.5em) { /* 520/16 */
-	.mainnav {
-		display: none;
-	}
-	.mobilenav {
-		display: block;
-	}
-}
-
 .mobilenav__container {
 	display: none;
 	position: absolute;
 	inset-inline-start: 0;
 	z-index: 100;
 	inline-size: 100%;
-	padding: 0 0 1.5em 0;
+	padding-block-end: 1.5em;
 	background-color: #333;
-	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+	box-shadow: var(--shadow-md);
 }
+
 .mobilenav__container :is(input, button):focus {
 	box-shadow: none;
 }
@@ -1703,7 +1692,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	overflow: hidden;
 	position: relative;
 	margin: 0;
-	padding: 1em 0.75em 1em 3%;
+	padding: 1em .75em 1em var(--_inline-offset, 3%);
 	list-style-type: none;
 	color: var(--clr-neutral-100, #fff);
 	white-space: nowrap;
@@ -1713,8 +1702,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 .govis-menu-node-item > a {
 	display: block;
 }
-.govis-menu-node-item > a:hover,
-.govis-menu-node-item > a:focus {
+.govis-menu-node-item > a:is(:hover, :focus) {
 	text-decoration: none;
 }
 .govis-menu-node-item.folder > a {
@@ -1744,8 +1732,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	transition: transform 0.2s 0s;
 	transform: translateX(0) scale(1.5);
 }
-.mobilenav-current-pagetitle a:hover .icon,
-.mobilenav-current-pagetitle a:focus .icon {
+.mobilenav-current-pagetitle a:is(:hover, :focus) .icon {
 	transform: translateX(-.25em) scale(1.5);
 }
 
