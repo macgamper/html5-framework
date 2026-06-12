@@ -1648,6 +1648,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	padding-block-end: 1.5em;
 	background-color: #333;
 	box-shadow: var(--shadow-md);
+	overflow: hidden;
 }
 
 .mobilenav__container :is(input, button):focus {

@@ -7,7 +7,7 @@
 	margin-inline: auto;
 
 	@media (width > 32.5em) { /* 520/16 */
-		--_inline-offset: 5%;
+		--_inline-offset: 5vw;
 	}
 }
 	
