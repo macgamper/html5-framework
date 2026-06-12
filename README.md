@@ -9,6 +9,7 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 
 ### Removed
 - normalize.css: Das komplette [normalize.css 8.0.1](https://necolas.github.io/normalize.css/) wurde aus dem Framework entfernt. Das meiste wurde nur noch für Legacy-Browser benötigt. Einige heute noch relevanten Regeln wurden ins basics.css übernommen.
+- Browser-Sync und damit die Files package.json und gulpfile.js  wurden entfernt, da es hier heute einfachere Möglichkeiten gibt.
 
 ## [3.0.0] - 2026-06-11
 
@@ -954,7 +955,7 @@ nav li::before {
 
 ```css
 …
-th > *:last-child, td > *:last-child … {
+th > *:last-child, td > *:last-child… {
 	margin-bottom: 0;
 }
 ```
