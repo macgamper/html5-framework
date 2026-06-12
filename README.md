@@ -1,6 +1,15 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [3.0.1] - 2026-06-12
+
+### Changed
+- basics.css: Einige noch relevante Regeln aus dem gelöschten normalize.css übernommen. Legacy-Code von älteren IE/Edge/Safaris entfernt. @media-Regeln modernisiert und wo einfach möglich Wechsel zu «Mobile First».
+- application.css: @media-Regeln modernisiert und wo einfach möglich Wechsel zu «Mobile First».
+
+### Removed
+- normalize.css: Das komplette [normalize.css 8.0.1](https://necolas.github.io/normalize.css/) wurde aus dem Framework entfernt. Das meiste wurde nur noch für Legacy-Browser benötigt. Einige heute noch relevanten Regeln wurden ins basics.css übernommen.
+
 ## [3.0.0] - 2026-06-11
 
 ### Changed

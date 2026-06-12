@@ -90,8 +90,10 @@ input[type="search"] {
 }
 html {
 	font-size: 62.5%; /* 10/16 */
+	-webkit-text-size-adjust: 100%; /* Normalize: Prevent adjustments of font size after orientation changes in iOS. */
 }
 body {
+	margin: 0;
 	font: var(--fontsize-400)/1.5 system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size-adjust: from-font;
 	position: relative;
@@ -183,6 +185,8 @@ dd {
 	padding-inline-start: 1.5em;
 }
 abbr[title] {
+	border-block-end: 0;
+	text-decoration: underline dotted;
 	cursor: help;
 }
 hr {
@@ -218,9 +222,9 @@ blockquote p:has(cite) {
     font-size: var(--fontsize-400);
 }
 address {}
-tt, code, kbd, samp, pre,
+code, kbd, samp, pre,
 .monospace {
-	font-family: "Courier New", Courier, monospace;
+	font-family: monospace;
 }
 kbd {
 	border-style: solid;
@@ -241,6 +245,18 @@ small, .small,
 strong, b,
 .strong, .lead {
 	font-weight: bold;
+}
+sub, sup {
+	position: relative;
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
 }
 mark {
 	padding-inline: .15em;
@@ -445,7 +461,7 @@ a img {
 [href$=".ppt" i]::before, [href*=".ppt?" i]::before, [href*=".ppt/" i]::before,
 [href$=".pptm" i]::before, [href*=".pptm?" i]::before, [href*=".pptm/" i]::before,
 [href$=".pptx" i]::before, [href*=".pptx?" i]::before, [href*=".pptx/" i]::before,
-[href$=".psd" i]::before, [href*=".psd? " i]::before, [href*=".psd/ " i]::before,
+[href$=".psd" i]::before, [href*=".psd?" i]::before, [href*=".psd/" i]::before,
 [href$=".rss" i]::before, [href*=".rss?" i]::before, [href*=".rss/" i]::before,
 [href$=".rtf" i]::before, [href*=".rtf?" i]::before, [href*=".rtf/" i]::before,
 [href$=".svg" i]::before, [href*=".svg?" i]::before, [href*=".svg/" i]::before,
@@ -690,10 +706,10 @@ fieldset.reset {
 legend {
 	--_legend-spacing: .25em;
 	margin-inline-start: calc(var(--_legend-spacing) * -1);
-	padding-inline: var(--_legend-spacing);
-	color: inherit;
+	padding: 0 var(--_legend-spacing);
 	font-weight: bold;
 	font-size: var(--fontsize-600);
+	color: inherit;
 }
 [type=date],
 [type=datetime],
@@ -718,8 +734,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
 	-webkit-appearance: none;
 	appearance: none;
 	outline-offset: 0;
+	margin: 0; /* Normalize: Remove the margin in Firefox and Safari. */
 	border: 1px solid var(--clr-ui-border-subtle, #666);
 	padding: 0.25em 0.5em;
+	font: inherit; /* Normalize: Change the font styles in all browsers. */
 	line-height: inherit;
 	color: inherit;
 	background-color: var(--clr-neutral-100, #fff);
@@ -807,8 +825,8 @@ select:not([multiple]) {
 [dir="rtl"] select:not([multiple]) {
 	background-position: left .75em top 50%;
 }
-select::-ms-expand { /* Hide arrow icon in IE browsers */
-	display: none;
+progress {
+	vertical-align: baseline; /* Normalize: Add the correct vertical alignment in Chrome, Firefox, and Opera. */
 }
 ::-webkit-date-and-time-value { /* fixes Safari Mobile Bug, where empty date fields colapses */
 	min-block-size: 1.25em;
@@ -1251,7 +1269,6 @@ th > *:last-child, td > *:last-child,
 /* MARK: =Sticky 2.0
 --------------------------------------------------------------- */
 .sticky {
-	position: -webkit-sticky;
 	position: sticky;
 	inset-block-start: 0;
 }

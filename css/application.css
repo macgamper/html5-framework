@@ -76,15 +76,12 @@
 }
 
 .login-pw-reset {
-	float: right;
-	float: inline-end; /* not best support yet */
-}
+	margin-block-start: 0.75em;
+	text-align: center;
 
-@media only screen and (max-width: 32.5em) { /* 520/16 */
-	.login-pw-reset {
-		float: none;
-		margin-block-start: 0.75em;
-		text-align: center;
+	@media (width > 32.5em) { /* 520/16 */
+		float: right;
+		float: inline-end; /* not best support yet */
 	}
 }
 
@@ -385,7 +382,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: 70%;
 }
 
-@media only screen and (max-width: 32.5em) { /* 520/16 */
+@media (width <= 32.5em) { /* 520/16 */
 	button + button[type=reset] {
 		margin-block-start: 0.7em;
 		margin-inline-start: 0;
@@ -703,9 +700,13 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 /* MARK: =calendar (events, reservations)
 --------------------------------------------------------------- */
 .calendar {
-	inline-size: 50%;
+	inline-size: 100%;
 	line-height: 2;
 	border-block-start: 1px solid #ccc;
+
+	@media (width > 32.5em) { /* 520/16 */
+		inline-size: 50%;
+	}
 }
 .calendar,
 .calendar :is(th, td) {
@@ -741,14 +742,6 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 }
 .cal-year a {
 	display: inline;
-}
-
-@media only screen and (max-width: 37.5em) { /* 600/16 */
-
-	.calendar {
-		inline-size: 100%;
-	}
-
 }
 
 /* MARK: =Tageszustände
@@ -868,21 +861,18 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: 48.181818181818%;
 	float: left;
 	float: inline-start; /* not best support yet */
+
+	@media (width <= 48em) { /* 768/16 */
+		float: none;
+		inline-size: 100%;
+		margin-inline-start: 0;
+	}
 }
 .travelpass-order-wrapper {
 	margin-inline-start: 3.636363636364%; /* 20 / 550 */
 }
 .terms {
 	margin-block-end: 1.5em;
-}
-
-@media only screen and (max-width: 48em) { /* 768/16 */
-	.travelpass-cal-wrapper,
-	.travelpass-order-wrapper {
-		float: none;
-		inline-size: 100%;
-		margin-inline-start: 0;
-	}
 }
 
 /* MARK: =magnific gallery
@@ -1296,8 +1286,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	color: var(--clr-neutral-900, #000);
 }
 
-@media only screen and (max-width: 32.5em) { /* 520/16 */
-
+@media (width <= 32.5em) { /* 520/16 */
 	.mod-index-toc::after {
 		display: block;
 		pointer-events: none;
@@ -1308,7 +1297,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 		inline-size: 20%;
 		block-size: 100%;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+100&0+0,1+100 */
-		background-image: linear-gradient(to right,  transparent, rgba(240,240,240,1) 100%);
+		background-image: linear-gradient(to right,  transparent, var(--clr-ui-bg-subtle, #f6f4f3) 100%);
 	}
 	.mod-index-toc ul {
 		display: block;
@@ -1321,7 +1310,6 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	.mod-index-toc a {
 		padding: 0.25em 0.5em;
 	}
-
 }
 
 /* MARK: =mod-index a-z list
