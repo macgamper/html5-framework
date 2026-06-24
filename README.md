@@ -1,6 +1,27 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [3.0.2] - 2026-06-24
+
+### Changed
+
+#### default.html
+- neue Klasse `html.debug` für die Einfärbung der Landmarks.
+- `.mobilenav__bg` per default innerhalb der `nav.mobilenav` um gemeinsame Custom Properties zu nutzen.
+- Ausgabe aller gängigen Box-Typen (aus Platzgründen innerhalb eines Grid).
+
+#### basics.css
+- Komplette Überarbeitung der Farb-Variablen im Hinblick auf Auftritte mit Darkmode und für mehr Konsistenz zwischen Design und Entwicklung.
+- Darkmode-Support für Debug-Modus.
+- Darkmode-Support für alle Box-Typen.
+- Moderne CSS-Syntax für Media-Queries.
+- Moderne Color-Syntax `color: rgb(0 0 0 / .2)` für noch verbleibende Fix-Farbwerte.
+
+#### application.css
+- Farben in Mobilenav mit Custom Properties ersetzt.
+- Moderne CSS-Syntax für Media-Queries.
+- Moderne Color-Syntax `color: rgb(0 0 0 / .2)` für noch verbleibende Fix-Farbwerte.
+
 ## [3.0.1] - 2026-06-12
 
 ### Changed

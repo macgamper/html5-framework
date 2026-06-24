@@ -1,6 +1,6 @@
 /* ***********************************************************************************
 FileName	: screen.css
-Date		: 12.06.2026
+Date		: 18.06.2026
 Author		: gamperm
 Purpose		: Framework
 
@@ -8,18 +8,9 @@ Modification Log:
 
 Name		Date			Description
 ================================================================================
-gamperm		12.06.2026		Release Notes: https://github.com/macgamper/html5-framework
+gamperm		18.06.2026		Release Notes: https://github.com/macgamper/html5-framework
 *********************************************************************************** */
 @import url(basics.css);
 @import url(application.css);
 @import url(layout.css);
 @import url(https://ext.cdn-backslash.ch/lib/font-awesome7/7.0.1/fontawesome-light.css);
-
-#__bs_notify__ {
-	/* Move notification to bottom */
-	top: auto !important;
-	bottom: 0 !important;
-	border-top-left-radius: 5px !important; 
-	border-bottom-left-radius: 0 !important;
-	opacity: .75;
-}
