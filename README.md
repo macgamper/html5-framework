@@ -1,6 +1,19 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [3.0.3] - 2026-07-01
+
+### Changed
+
+#### basics.css
+- Standard Theme: `color-scheme: light;`
+- Tabellen-Header: Beim `th` wurde die normale Grundschrift wiederhergestellt und die komplexen Padding-Berechnungen entfernt.
+- `.overflow-scroll` als Utility-Klasse für dynamische Schatten bei horizontalem Scrollen via «Scroll-driven animation»  ergänzt (siehe auch Änderungen im application.css).
+
+#### application.css
+- Top-News: Die Klasse `.mod-entry--istop` bekommt ein neutraleres grafisches Label anstatt eines Textes «Topnews». Eine Textersetzung kann neu aber via `content: attr(data-istop);` ebenfalls erreicht werden und greift den Text des hinterlegten Data-Attributes ab, das so auch via Comet-Übersetzungen angepasst werden könnte.
+- Breadcrumb und A–Z-Index: Ein möglicher Overflow wurde bisher mit einem Pseudoelement mit Verlauf angedeutet. Das wird nun grundsätzlich via «Scroll-driven animation» und der Klasse `.overflow-scroll` durch dynamische Schatten in beide Laufrichtungen angedeutet, [sofern es vom Browser unterstützt wird](https://caniuse.com/wf-scroll-driven-animations). Die alte Lösung ist als Fallback vorläufig noch integriert.
+
 ## [3.0.2] - 2026-06-24
 
 ### Changed
@@ -94,11 +107,11 @@ HTML & CSS-Boilerplate für Projekte bei backslash.
 ### Removed
 - basics.css: Form-CSS für legacy Edge entfernt.
 
-## [2.6.1] - 2025-12-32
+## [2.6.1] - 2025-12-23
 
 ### Added
 - basics.css: Besseres Scrollverhalten bei geöffneten Dialogen (Chrome ab 144). [Infos](https://www.bram.us/2025/11/25/use-overscroll-behavior-contain-to-prevent-a-page-from-scrolling-while-a-dialog-is-open/).
-- 
+
 ## [2.6] - 2025-12-01
 
 ### Added

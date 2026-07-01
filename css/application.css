@@ -8,7 +8,7 @@
 }
 .mod-lst > .mod-entry {
 	border-block-start: 1px solid var(--clr-border-subtle, #666);
-	padding: 0.75em 0;
+	padding: .75em 0;
 }
 .mod-entry:first-child {
 	border-block-start: 0;
@@ -19,15 +19,20 @@
 	margin-block-end: 0;
 }
 .mod-entry--istop {
+	--_topnews-hightlight: var(--clr-primary);
 	position: relative;
+
 	&::before {
-		content: "Topnews";
+		content: ""; /* Falls Text-Label gewünscht: attr(data-istop) */
 		position: absolute;
-		inset-block-start: 1em;
-		inset-inline-end: 0;
-		padding: .25em .75em;
-		color: var(--clr-txt, #fff);
-		background-color: var(--clr-primary, #000);
+		inset-inline-end: .75em;
+		inset-block-start: 0;
+		inline-size: 0;
+		block-size: 0;
+		border-width: 1em .5em .4em;
+		border-style: solid;
+		border-color: var(--_topnews-hightlight);
+		border-block-end-color: transparent;
 	}
 }
 .mod-category-title {
@@ -35,7 +40,7 @@
 }
 .mod-entry-meta {
 	display: block;
-	margin-block-end: 0.5em;
+	margin-block-end: .5em;
 	color: var(--clr-txt-subtle, #767676);
 	font-size: var(--fontsize-300);
 }
@@ -60,7 +65,7 @@
 .mod-nav {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.25em 1em;
+	gap: .25em 1em;
 	margin: .5em 0 1.5em 0;
 }
 .mod-nav a {
@@ -76,7 +81,7 @@
 }
 
 .login-pw-reset {
-	margin-block-start: 0.75em;
+	margin-block-start: .75em;
 	text-align: center;
 
 	@media (width > 32.5em) { /* 520/16 */
@@ -175,7 +180,7 @@
 }
 .form-builder [type=radio],
 .form-builder [type=checkbox] {
-	margin-inline-end: 0.75em;
+	margin-inline-end: .75em;
 }
 .form-builder .form-hint,
 .form-builder .form-hint-complex__rules,
@@ -200,7 +205,7 @@
 	padding-block-start: 0;
 }
 .form-builder .form-option-lst li + li {
-	margin-block-start: 0.5em;
+	margin-block-start: .5em;
 }
 .form-builder .form-option-lst .form-hint {
 	inline-size: auto;
@@ -250,7 +255,7 @@
 .form-builder .form-option-lst li label > input,
 .form-builder .form-builder-tac label > input {
 	flex: none;
-	inset-block-start: 0.18em;
+	inset-block-start: .18em;
 }
 div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: 100%;
@@ -347,7 +352,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	min-inline-size: 0;
 }
 .form-builder .accessibility-date > select + select {
-	margin-inline-start: 0.75em;
+	margin-inline-start: .75em;
 }
 
 /* =form-builder stacked: Label sits on top of input
@@ -361,7 +366,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 .form-builder .form-builder__item.stacked > label,
 .form-builder .clearfix.stacked > label {
 	padding-block-start: 0;
-	margin-block-end: 0.25em;
+	margin-block-end: .25em;
 }
 
 /* =form-builder 30% label / 70% input
@@ -384,7 +389,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 
 @media (width <= 32.5em) { /* 520/16 */
 	button + button[type=reset] {
-		margin-block-start: 0.7em;
+		margin-block-start: .75em;
 		margin-inline-start: 0;
 	}
 	.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) {
@@ -426,7 +431,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	.form-builder :is(.co-form__section, .form-builder__item, .clearfix, .cf) > label,
 	.form-builder .form-option-lst-title {
 		padding-inline-end: 0;
-		padding-block-end: 0.2em;
+		padding-block-end: .2em;
 	}
 	.form-builder [type=submit],
 	.form-builder button {
@@ -445,7 +450,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 --------------------------------------------------------------- */
 .form-to-wizard-commands {
 	display: flex;
-	gap: 0.75em 1.5em;
+	gap: .75em 1.5em;
 	flex-wrap: wrap;
 	margin-block-start: 1.5em;
 }
@@ -484,7 +489,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	--_toggle-radius: var(--radius-full);
 	justify-content: flex-start;
 	align-items: center;
-	gap: 0.2em 0;
+	gap: .2em 0;
 }
 .form-builder__toggle-wrapper {
 	position: relative;
@@ -802,7 +807,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	display: inline-flex;
 	align-items: center;
 	inline-size: 100%;
-	margin-block-end: 0.25em;
+	margin-block-end: .25em;
 }
 .calendar-legend span {
 	display: block;
@@ -896,7 +901,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	margin: 0;
 }
 .gallery-magnific figcaption {
-	padding: 0 0.5em 0.5em 0.5em;
+	padding: 0 .5em .5em .5em;
 	text-align: center;
 }
 .gallery-magnific img {
@@ -927,29 +932,32 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	position: relative;
 	overflow: hidden;
 }
-.breadcrumb::after {
-	content: '';
-	display: block;
-	position: absolute;
-	inset-block-start: 0;
-	inset-inline-end: 0;
-	inline-size: 20%;
-	block-size: 100%;
-	pointer-events: none;
-	background-image: linear-gradient(to right, rgb(255 255 255 / 0) 0%,rgb(255 255 255 / 1) 100%);
+
+@supports not (animation-timeline: scroll()) {
+	.breadcrumb::after {
+		content: '';
+		display: block;
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline-end: 0;
+		inline-size: 20%;
+		block-size: 100%;
+		background-image: linear-gradient(to right, rgb(255 255 255 / 0) 0%,rgb(255 255 255 / 1) 100%);
+	}
 }
+
 .breadcrumb__lst {
 	display: flex;
 	inline-size: 100%;
 	margin: 0;
-	padding: 0.5em 0;
-	overflow-y: hidden;
-	overflow-x: auto;
+	padding: .5em 0;
+	overflow: auto;
+	overflow-y: clip;
 	-webkit-overflow-scrolling: touch;
 }
 .breadcrumb__item {
 	position: relative;
-	padding-inline-end: 0.5em;
+	padding-inline-end: .5em;
 	white-space: nowrap;
 }
 .breadcrumb__item:last-child {
@@ -1000,7 +1008,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	border-block: 1px solid var(--clr-border, #a1acb0);
 	border-block-end-width: 3px;
 	border-block-end-style: double;
-	padding: 0.25em 0 0.15em 0;
+	padding: .25em 0 .15em 0;
 }
 .infobox {
 	overflow: hidden;
@@ -1028,7 +1036,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 .sales-basket-infobox .btn {
 	display: block;
 	color: var(--clr-min, #fff);
-	padding: 0.25em 0.5em;
+	padding: .25em .5em;
 }
 .sales-basket-article {
 	inline-size: 100%;
@@ -1171,7 +1179,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 .cc-lst li {
 	position: relative;
 	display: flex;
-	margin-block-end: 0.5em;
+	margin-block-end: .5em;
 }
 .cc-lst li > * {
 	transition: all 0.2s ease-in-out;
@@ -1256,26 +1264,27 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 /* MARK: =mod-index toc
 --------------------------------------------------------------- */
 .mod-index-toc {
+	container: index / inline-size;
 	position: relative;
 	margin-block-end: 2em;
 	overflow: hidden;
 	background-color: var(--clr-bg-subtle, #f6f4f3);
 }
-
 .mod-index-toc ul {
-	display: table;
-	table-layout: fixed;
-	inline-size: 100%;
+	display: grid;
+	grid-auto-flow: column;
+  	grid-auto-columns: 1fr;
 	margin: 0;
+	overflow: auto;
+	overflow-y: clip;
+	-webkit-overflow-scrolling: touch;
 }
 .mod-index-toc li {
-	display: table-cell;
 	text-align: center;
-	white-space: nowrap;
 }
 .mod-index-toc a {
 	display: block;
-	padding: 0.25em 0;
+	padding: .25em .5em;
 	color: var(--clr-txt-subtle, #000);
 	text-decoration: none;
 	box-shadow: inset 1px 0 rgb(0 0 0 / .2);
@@ -1287,29 +1296,19 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	color: var(--clr-max, #000);
 }
 
-@media (width <= 32.5em) { /* 520/16 */
-	.mod-index-toc::after {
-		display: block;
-		pointer-events: none;
-		content: '';
-		position: absolute;
-		inset-block-start: 0;
-		inset-inline-end: 0;
-		inline-size: 20%;
-		block-size: 100%;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+100&0+0,1+100 */
-		background-image: linear-gradient(to right,  transparent, var(--clr-bg-subtle, #f6f4f3) 100%);
-	}
-	.mod-index-toc ul {
-		display: block;
-		inline-size: auto;
-		margin: 0;
-		overflow-x: auto;
-		overflow-y: hidden;
-		-webkit-overflow-scrolling: touch;
-	}
-	.mod-index-toc a {
-		padding: 0.25em 0.5em;
+@supports not (animation-timeline: scroll()) {
+	@container index (width <= 40.625em) { /* 650/16 */
+		.mod-index-toc::after {
+			content: "";
+			display: block;
+			pointer-events: none;
+			position: absolute;
+			inset-block-start: 0;
+			inset-inline-end: 0;
+			inline-size: 20%;
+			block-size: 100%;
+			background-image: linear-gradient(to right,  transparent, var(--clr-bg-subtle, #f6f4f3) 100%);
+		}
 	}
 }
 
@@ -1323,7 +1322,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	z-index: 5;
 	inset-block-start: 0;
 	border-block-start: 1px solid var(--clr-border-subtle, #666);
-	padding: 0.25em;
+	padding: .25em;
 	color: var(--clr-max, #000);
 	background-color: var(--clr-bg-subtle, #ececec);
 }
@@ -1437,7 +1436,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 /* MARK: =FAQ
 --------------------------------------------------------------- */
 .faq__topic {
-	margin-block-end: 0.75em;
+	margin-block-end: .75em;
 }
 .faq__main {
 	margin: 0;
@@ -1454,7 +1453,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 }
 .mod-blog .mod-entry--has-img > a {
 	overflow: hidden;
-	padding-block-start: 0.75em;
+	padding-block-start: .75em;
 }
 .mod-blog .mod-entry-title {
 	clear: none;
@@ -1484,19 +1483,19 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: baseline;
-	margin-block-end: 0.7em;
+	margin-block-end: .75em;
 }
 .mod-comments .mod-entry-header > * {
 	margin: 0;
 }
 .mod-comments .mod-entry-body {
-	margin-block-end: 0.7em;
+	margin-block-end: .75em;
 }
 .mod-comments .mod-entry-footer {
 	text-align: end;
 }
 .mod-entry-footer + ol {
-	margin-block-start: 0.75em;
+	margin-block-start: .75em;
 }
 .mod-entry-footer + ol > .mod-entry,
 .mod-entry-footer + ol > .mod-entry:first-child {
@@ -1847,7 +1846,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	inline-size: 250px;
 	padding-block: 1em;
 	padding-inline: 0;
-	font-size: 0.85em;
+	font-size: .85em;
 	background-color: var(--clr-bg-subtle);
 	box-shadow: var(--shadow-md);
 }
@@ -1865,7 +1864,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 	line-height: 1.2;
 }
 .m-citizensaccount__menu + .m-citizensaccount__menu {
-	margin-block-start: 0.75em;
+	margin-block-start: .75em;
 	border-block-start: 1px solid var(--clr-max, #000);
 }
 .m-citizensaccount__menu a {

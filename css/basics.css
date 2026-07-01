@@ -1,7 +1,7 @@
 /* MARK: =custom properties
 --------------------------------------------------------------- */
 :root {
-	color-scheme: light dark;
+	color-scheme: light;
 	interpolate-size: allow-keywords;
 
 	--shadow-xs: 0 0.1px 0.3px rgb(0 0 0 / 0.06), 0 1px 2px rgb(0 0 0 / 0.12);
@@ -10,6 +10,7 @@
 	--shadow-lg: 0 1.2px 1.9px -1px rgb(0 0 0 / 0.014), 0 3.3px 5.3px -1px rgb(0 0 0 / 0.038), 0 8.5px 12.7px -1px rgb(0 0 0 / 0.085), 0 30px 42px -1px rgb(0 0 0 / 0.15);
 	--shadow-xl: 0 1.5px 2.1px -6px rgb(0 0 0 / 0.012), 0 3.6px 5.2px -6px rgb(0 0 0 / 0.035), 0 7.3px 10.6px -6px rgb(0 0 0 / 0.07), 0 16.2px 21.9px -6px rgb(0 0 0 / 0.117), 0 46px 60px -6px rgb(0 0 0 / 0.2);
 
+	/* Primitives */
 	--clr-primary: hotpink;
 	accent-color: var(--clr-primary);
 
@@ -134,7 +135,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, caption,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	margin: 0 0 0.75em;
+	margin: 0 0 .75em;
 	line-height: 1.2;
 }
 h1, .h1 {
@@ -153,11 +154,11 @@ h4, .h4 {
 	font-size: var(--fontsize-600);
 }
 h5, .h5 {
-	margin-block-end: 0.4em;
+	margin-block-end: .4em;
 	font-size: var(--fontsize-400);
 }
 h6, .h6 {
-	margin-block-end: 0.3em;
+	margin-block-end: .3em;
 	font-size: var(--fontsize-400);
 }
 p, ul, ol, dl, pre, fieldset, figure, address, 
@@ -208,7 +209,7 @@ ol ol li, ul ul li {
 }
 li + li, ul ul li, ol ol li,
 ul ol li, ol ul li  {
-	margin-block-start: 0.25em;
+	margin-block-start: .25em;
 }
 dt {
 	font-weight: bold;
@@ -239,7 +240,7 @@ video, audio {
 }
 figure {}
 figcaption {
-	margin-block-start: 0.75em;
+	margin-block-start: .75em;
 }
 blockquote {
 	border-inline-start: 2px solid var(--clr-max);
@@ -285,10 +286,10 @@ sub, sup {
 	line-height: 0;
 }
 sub {
-	bottom: -0.25em;
+	bottom: -.25em;
 }
 sup {
-	top: -0.5em;
+	top: -.5em;
 }
 mark {
 	padding-inline: .15em;
@@ -455,7 +456,7 @@ a img {
 	inset-block-start: -9999px;
 	inset-inline-start: 1.5em;
 	z-index: 10;
-	padding: 0.5em 1em;
+	padding: .5em 1em;
 	text-decoration: none;
 	color: var(--clr-min);
 	background-color: var(--clr-max);
@@ -765,7 +766,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 	outline-offset: 0;
 	margin: 0; /* Normalize: Remove the margin in Firefox and Safari. */
 	border: 1px solid var(--clr-border-subtle, #666);
-	padding: 0.25em 0.5em;
+	padding: .25em .5em;
 	font: inherit; /* Normalize: Change the font styles in all browsers. */
 	line-height: inherit;
 	color: inherit;
@@ -801,7 +802,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 [type=radio]:checked::before {
-	border: 0.3125em solid transparent;
+	border: .3125em solid transparent;
 	border-radius: inherit;
 	outline-offset: -6px;
 	background-color: var(--clr-primary, #000);
@@ -868,7 +869,7 @@ progress {
 .form-builder__item--toggle [type="checkbox"]:focus ~ .form-builder__toggle::before {
 	outline: 3px solid transparent;
 	border-color: var(--clr-max, #000);
-	box-shadow: 0 0 0 0.3125em rgb(21 156 228 / 0.4);
+	box-shadow: 0 0 0 .3125em rgb(21 156 228 / 0.4);
 }
 summary:focus:not(:focus-visible),
 [type=range]:focus:not(:focus-visible) {
@@ -880,7 +881,7 @@ summary:focus:not(:focus-visible),
 	cursor: not-allowed;
 }
 [disabled], [aria-disabled=true] {
-	opacity: 0.5;
+	opacity: .5;
 }
 button + button[type=reset] {
 	margin-inline-start: 1em;
@@ -890,6 +891,7 @@ button + button[type=reset] {
 --------------------------------------------------------------- */
 table {
 	--_tbl-border-color: var(--clr-border-muted);
+	--_tbl-spacing: .5em 1em;
 	inline-size: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -901,13 +903,12 @@ caption {
 caption, th {
 	text-align: start;
 }
-th,
-td {
+th, td {
 	vertical-align: top;
 	border-color: var(--_tbl-border-color);
 	border-block-end-width: 1px;
 	border-block-end-style: solid;
-	padding: 0.5em 1em;
+	padding: var(--_tbl-spacing);
 }
 th {
 	font-weight: bold;
@@ -915,11 +916,6 @@ th {
 table:not(.calendar, .reset) thead th {
 	vertical-align: bottom;
 	border-block-end-width: 2px;
-	padding: calc((1.6 / 1.2) * 0.5em) calc((1.6 / 1.2) * 1em); /* Faktor der Schriftgrösse * padding */
-	font-size: var(--fontsize-200);
-	line-height: 1.3;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
 }
 :is(tbody, tfoot) th {
 	border-inline-end-width: 1px;
@@ -1038,10 +1034,9 @@ table.reset thead ~ tbody tr:last-child {
 	inline-size: 100%;
 	block-size: 100%;
 }
-
 @supports (animation-timeline: scroll()) {
 	:is(.table-responsive, .overflow-scroll) {
-		--_indicator-inline-size: 3em; /*  */
+		--_indicator-inline-size: 3em;
 		--_indicator-color: rgb(0 0 0 / .2);
 
 		display: grid;
@@ -1083,7 +1078,17 @@ table.reset thead ~ tbody tr:last-child {
 		& > * {
 			grid-column: 1 / -1;
 			grid-row: 1 / -1;
+			
 		}
+
+		/* Progressive Enhance Breadcrumb */
+		&:is(.breadcrumb, .mod-index-toc) {
+			overflow: auto;
+			> * {
+				overflow: initial;
+			}
+		}
+
 	}
 
 	@keyframes show-indicator {
@@ -1096,26 +1101,34 @@ table.reset thead ~ tbody tr:last-child {
 /* =scrollbars
 --------------------------------------------------------------- */
 pre,
-.table-responsive, .visible-scrollbar {
+.table-responsive, .visible-scrollbar, .overflow-scroll {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 }
 pre::-webkit-scrollbar,
-.table-responsive::-webkit-scrollbar, .visible-scrollbar::-webkit-scrollbar {
+.table-responsive::-webkit-scrollbar, 
+.visible-scrollbar::-webkit-scrollbar,
+.overflow-scroll::-webkit-scrollbar {
 	block-size: 8px;
 	inline-size: 8px;
 }
 pre::-webkit-scrollbar-track,
-.table-responsive::-webkit-scrollbar-track, .visible-scrollbar::-webkit-scrollbar-track {
+.table-responsive::-webkit-scrollbar-track, 
+.visible-scrollbar::-webkit-scrollbar-track, 
+.overflow-scroll::-webkit-scrollbar-track {
 	background-color: var(--clr-bg-subtle, #f6f4f3);
 }
 pre::-webkit-scrollbar-thumb,
-.table-responsive::-webkit-scrollbar-thumb, .visible-scrollbar::-webkit-scrollbar-thumb {
+.table-responsive::-webkit-scrollbar-thumb, 
+.visible-scrollbar::-webkit-scrollbar-thumb,
+.overflow-scroll::-webkit-scrollbar-thumb {
 	background-color: var(--clr-bg-raised, grey);
 	border-radius: var(--radius-full);
 }
 pre::-webkit-scrollbar-thumb:hover,
-.table-responsive::-webkit-scrollbar-thumb:hover, .visible-scrollbar::-webkit-scrollbar-thumb:hover {
+.table-responsive::-webkit-scrollbar-thumb:hover, 
+.visible-scrollbar::-webkit-scrollbar-thumb:hover,
+.overflow-scroll::-webkit-scrollbar-thumb:hover {
 	background-color: var(--clr-max, #000);
 }
 
