@@ -1,6 +1,11 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [3.0.4] - 2026-07-09
+
+### Added
+- application.css: Besseres Grundstyling für die Standard-Suche und ihre Optionen, insbesondere den Suchbegriff-Vorschlägen.
+
 ## [3.0.3] - 2026-07-01
 
 ### Changed

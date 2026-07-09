@@ -254,7 +254,9 @@ blockquote p:has(cite) {
     text-align: end;
     font-size: var(--fontsize-400);
 }
-address {}
+address {
+	font-style: normal;
+}
 code, kbd, samp, pre,
 .monospace {
 	font-family: monospace;
