@@ -326,7 +326,7 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 }
 .form-builder .js-simple-uploader-dropzone {
 	block-size: auto;
-	max-height: none;
+	max-block-size: none;
 	margin-block-start: .75em;
 	padding: 1.5em;
 	color: var(--_form-clr-hint);
@@ -1959,12 +1959,13 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 /* MARK: =Search Component
 --------------------------------------------------------------- */
 .co-search {
+	isolation: isolate;
+	
 	*:focus-visible {
 		z-index: 1;
 	}
 	& button {
 		flex: none;
-		aspect-ratio: 1;
 	}
 	[type="search"] {
 		flex: 1 1 auto;
@@ -2019,8 +2020,8 @@ div:not([class*="form-option-lst-show-title"]) :is(label, span).error {
 		margin: 0;
 	}
 	button.auto-clear {
-		width: auto;
-		height: auto;
+		inline-size: auto;
+		block-size: auto;
 	}
 	&.auto-is-loading::after {
 		--_loadingspinner-size: 1.25em;

@@ -1,6 +1,12 @@
 # html5-framework
 HTML & CSS-Boilerplate für Projekte bei backslash.
 
+## [3.0.5] - 2026-07-16
+
+### Changed
+- Legacy-Code zu Logical Properties umgerüstet (Ausnahmen: print.css und mail.css).
+- application.css: `.co-search` mit z-index-Fix.
+
 ## [3.0.4] - 2026-07-09
 
 ### Added

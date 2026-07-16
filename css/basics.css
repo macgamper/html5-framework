@@ -288,10 +288,10 @@ sub, sup {
 	line-height: 0;
 }
 sub {
-	bottom: -.25em;
+	inset-block-end: -.25em;
 }
 sup {
-	top: -.5em;
+	inset-block-start: -.5em;
 }
 mark {
 	padding-inline: .15em;
