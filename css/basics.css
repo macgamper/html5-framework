@@ -84,7 +84,7 @@
 
 /* MARK: =Debug Visualizer
 --------------------------------------------------------------- */
-html.debug {
+:where(html.debug) {
 	.wrapper {
 		outline: 2px solid black;
 	}
@@ -261,6 +261,7 @@ address {
 code, kbd, samp, pre,
 .monospace {
 	font-family: monospace;
+	font-variant-numeric: slashed-zero;
 }
 kbd {
 	border-style: solid;
@@ -720,7 +721,7 @@ a.link-expanded__ignore::after,
 	& a:focus-visible {
 		outline: none;
 	}
-} 
+}
 
 /* MARK: =forms
 --------------------------------------------------------------- */
